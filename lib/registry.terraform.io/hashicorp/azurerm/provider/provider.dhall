@@ -11,6 +11,7 @@
     , partner_id : Optional Text
     , skip_credentials_validation : Optional Bool
     , skip_provider_registration : Optional Bool
+    , storage_use_azuread : Optional Bool
     , subscription_id : Optional Text
     , tenant_id : Optional Text
     , use_msi : Optional Bool
@@ -37,6 +38,7 @@
   , partner_id = None Text
   , skip_credentials_validation = None Bool
   , skip_provider_registration = None Bool
+  , storage_use_azuread = None Bool
   , subscription_id = None Text
   , tenant_id = None Text
   , use_msi = None Bool

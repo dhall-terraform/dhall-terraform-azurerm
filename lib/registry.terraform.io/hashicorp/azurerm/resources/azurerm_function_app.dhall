@@ -72,7 +72,8 @@
     , identity :
         Optional
           ( List
-              { principal_id : Optional Text
+              { identity_ids : Optional (List Text)
+              , principal_id : Optional Text
               , tenant_id : Optional Text
               , type : Text
               }
@@ -83,6 +84,8 @@
               { always_on : Optional Bool
               , ftps_state : Optional Text
               , http2_enabled : Optional Bool
+              , ip_restriction :
+                  Optional (List { ip_address : Text, subnet_id : Text })
               , linux_fx_version : Optional Text
               , min_tls_version : Optional Text
               , use_32_bit_worker_process : Optional Bool
@@ -165,7 +168,8 @@
   , identity =
       None
         ( List
-            { principal_id : Optional Text
+            { identity_ids : Optional (List Text)
+            , principal_id : Optional Text
             , tenant_id : Optional Text
             , type : Text
             }
@@ -176,6 +180,8 @@
             { always_on : Optional Bool
             , ftps_state : Optional Text
             , http2_enabled : Optional Bool
+            , ip_restriction :
+                Optional (List { ip_address : Text, subnet_id : Text })
             , linux_fx_version : Optional Text
             , min_tls_version : Optional Text
             , use_32_bit_worker_process : Optional Bool

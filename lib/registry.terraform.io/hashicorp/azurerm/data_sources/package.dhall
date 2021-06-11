@@ -40,15 +40,19 @@
 , azurerm_disk_encryption_set = ./azurerm_disk_encryption_set.dhall
 , azurerm_dns_zone = ./azurerm_dns_zone.dhall
 , azurerm_eventgrid_topic = ./azurerm_eventgrid_topic.dhall
+, azurerm_eventhub_consumer_group = ./azurerm_eventhub_consumer_group.dhall
 , azurerm_eventhub_namespace_authorization_rule =
     ./azurerm_eventhub_namespace_authorization_rule.dhall
 , azurerm_eventhub_namespace = ./azurerm_eventhub_namespace.dhall
 , azurerm_express_route_circuit = ./azurerm_express_route_circuit.dhall
 , azurerm_firewall = ./azurerm_firewall.dhall
+, azurerm_function_app = ./azurerm_function_app.dhall
 , azurerm_hdinsight_cluster = ./azurerm_hdinsight_cluster.dhall
 , azurerm_healthcare_service = ./azurerm_healthcare_service.dhall
 , azurerm_image = ./azurerm_image.dhall
 , azurerm_iothub_dps = ./azurerm_iothub_dps.dhall
+, azurerm_iothub_dps_shared_access_policy =
+    ./azurerm_iothub_dps_shared_access_policy.dhall
 , azurerm_iothub_shared_access_policy =
     ./azurerm_iothub_shared_access_policy.dhall
 , azurerm_key_vault_access_policy = ./azurerm_key_vault_access_policy.dhall

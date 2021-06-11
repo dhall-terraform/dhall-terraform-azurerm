@@ -85,6 +85,7 @@
               , type : Text
               }
           )
+    , protocols : Optional (List { enable_http2 : Optional Bool })
     , security :
         Optional
           ( List
@@ -202,6 +203,7 @@
             , type : Text
             }
         )
+  , protocols = None (List { enable_http2 : Optional Bool })
   , security =
       None
         ( List
