@@ -54,6 +54,20 @@
               , write_accelerator_enabled : Optional Bool
               }
           )
+    , extension :
+        Optional
+          ( List
+              { auto_upgrade_minor_version : Optional Bool
+              , force_update_tag : Optional Text
+              , name : Text
+              , protected_settings : Optional Text
+              , provision_after_extensions : Optional (List Text)
+              , publisher : Text
+              , settings : Optional Text
+              , type : Text
+              , type_handler_version : Text
+              }
+          )
     , identity :
         Optional
           ( List
@@ -179,6 +193,20 @@
             , lun : Natural
             , storage_account_type : Text
             , write_accelerator_enabled : Optional Bool
+            }
+        )
+  , extension =
+      None
+        ( List
+            { auto_upgrade_minor_version : Optional Bool
+            , force_update_tag : Optional Text
+            , name : Text
+            , protected_settings : Optional Text
+            , provision_after_extensions : Optional (List Text)
+            , publisher : Text
+            , settings : Optional Text
+            , type : Text
+            , type_handler_version : Text
             }
         )
   , identity =

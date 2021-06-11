@@ -1,5 +1,6 @@
 { Type =
-    { api_management_name : Text
+    { allow_tracing : Optional Bool
+    , api_management_name : Text
     , display_name : Text
     , id : Optional Text
     , primary_key : Optional Text
@@ -18,7 +19,8 @@
           }
     }
 , default =
-  { id = None Text
+  { allow_tracing = None Bool
+  , id = None Text
   , primary_key = None Text
   , product_id = None Text
   , secondary_key = None Text

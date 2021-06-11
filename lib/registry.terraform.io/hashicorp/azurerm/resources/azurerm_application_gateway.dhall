@@ -95,6 +95,7 @@
               , name : Text
               , path : Text
               , pick_host_name_from_backend_http_settings : Optional Bool
+              , port : Optional Natural
               , protocol : Text
               , timeout : Natural
               , unhealthy_threshold : Natural
@@ -284,6 +285,7 @@
             , name : Text
             , path : Text
             , pick_host_name_from_backend_http_settings : Optional Bool
+            , port : Optional Natural
             , protocol : Text
             , timeout : Natural
             , unhealthy_threshold : Natural

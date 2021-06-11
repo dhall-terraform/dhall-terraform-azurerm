@@ -344,6 +344,8 @@
     ./azurerm_log_analytics_datasource_windows_performance_counter.dhall
 , azurerm_log_analytics_linked_service =
     ./azurerm_log_analytics_linked_service.dhall
+, azurerm_log_analytics_saved_search =
+    ./azurerm_log_analytics_saved_search.dhall
 , azurerm_log_analytics_solution = ./azurerm_log_analytics_solution.dhall
 , azurerm_log_analytics_workspace = ./azurerm_log_analytics_workspace.dhall
 , azurerm_logic_app_action_custom = ./azurerm_logic_app_action_custom.dhall
