@@ -1,11 +1,13 @@
 { Type =
-    { hub_to_vitual_network_traffic_allowed : Optional Bool
+    { debug_level : Optional Text
+    , deployment_mode : Text
     , id : Optional Text
-    , internet_security_enabled : Optional Bool
     , name : Text
-    , remote_virtual_network_id : Text
-    , virtual_hub_id : Text
-    , vitual_network_to_hub_gateways_traffic_allowed : Optional Bool
+    , output_content : Optional Text
+    , parameters_content : Optional Text
+    , resource_group_name : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , template_content : Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -15,10 +17,11 @@
           }
     }
 , default =
-  { hub_to_vitual_network_traffic_allowed = None Bool
+  { debug_level = None Text
   , id = None Text
-  , internet_security_enabled = None Bool
-  , vitual_network_to_hub_gateways_traffic_allowed = None Bool
+  , output_content = None Text
+  , parameters_content = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text

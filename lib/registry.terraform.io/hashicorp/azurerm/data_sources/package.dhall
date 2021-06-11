@@ -40,6 +40,7 @@
     ./azurerm_database_migration_project.dhall
 , azurerm_database_migration_service =
     ./azurerm_database_migration_service.dhall
+, azurerm_databricks_workspace = ./azurerm_databricks_workspace.dhall
 , azurerm_data_factory = ./azurerm_data_factory.dhall
 , azurerm_data_lake_store = ./azurerm_data_lake_store.dhall
 , azurerm_data_share_account = ./azurerm_data_share_account.dhall
@@ -49,6 +50,8 @@
     ./azurerm_data_share_dataset_data_lake_gen1.dhall
 , azurerm_data_share_dataset_data_lake_gen2 =
     ./azurerm_data_share_dataset_data_lake_gen2.dhall
+, azurerm_data_share_dataset_kusto_cluster =
+    ./azurerm_data_share_dataset_kusto_cluster.dhall
 , azurerm_data_share = ./azurerm_data_share.dhall
 , azurerm_dedicated_host = ./azurerm_dedicated_host.dhall
 , azurerm_dedicated_host_group = ./azurerm_dedicated_host_group.dhall
@@ -66,6 +69,7 @@
 , azurerm_eventhub_namespace = ./azurerm_eventhub_namespace.dhall
 , azurerm_express_route_circuit = ./azurerm_express_route_circuit.dhall
 , azurerm_firewall = ./azurerm_firewall.dhall
+, azurerm_firewall_policy = ./azurerm_firewall_policy.dhall
 , azurerm_function_app = ./azurerm_function_app.dhall
 , azurerm_function_app_host_keys = ./azurerm_function_app_host_keys.dhall
 , azurerm_hdinsight_cluster = ./azurerm_hdinsight_cluster.dhall
@@ -76,6 +80,7 @@
     ./azurerm_iothub_dps_shared_access_policy.dhall
 , azurerm_iothub_shared_access_policy =
     ./azurerm_iothub_shared_access_policy.dhall
+, azurerm_ip_group = ./azurerm_ip_group.dhall
 , azurerm_key_vault_access_policy = ./azurerm_key_vault_access_policy.dhall
 , azurerm_key_vault_certificate = ./azurerm_key_vault_certificate.dhall
 , azurerm_key_vault_certificate_issuer =
@@ -115,6 +120,7 @@
     ./azurerm_monitor_scheduled_query_rules_log.dhall
 , azurerm_mssql_database = ./azurerm_mssql_database.dhall
 , azurerm_mssql_elasticpool = ./azurerm_mssql_elasticpool.dhall
+, azurerm_mssql_server = ./azurerm_mssql_server.dhall
 , azurerm_nat_gateway = ./azurerm_nat_gateway.dhall
 , azurerm_netapp_account = ./azurerm_netapp_account.dhall
 , azurerm_netapp_pool = ./azurerm_netapp_pool.dhall
@@ -174,6 +180,7 @@
 , azurerm_storage_container = ./azurerm_storage_container.dhall
 , azurerm_storage_management_policy = ./azurerm_storage_management_policy.dhall
 , azurerm_storage_sync = ./azurerm_storage_sync.dhall
+, azurerm_storage_sync_group = ./azurerm_storage_sync_group.dhall
 , azurerm_stream_analytics_job = ./azurerm_stream_analytics_job.dhall
 , azurerm_subnet = ./azurerm_subnet.dhall
 , azurerm_subscription = ./azurerm_subscription.dhall

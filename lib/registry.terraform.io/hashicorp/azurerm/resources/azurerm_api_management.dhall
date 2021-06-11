@@ -23,7 +23,10 @@
           ( List
               { gateway_regional_url : Optional Text
               , location : Text
+              , private_ip_addresses : Optional (List Text)
               , public_ip_addresses : Optional (List Text)
+              , virtual_network_configuration :
+                  Optional (List { subnet_id : Text })
               }
           )
     , certificate :
@@ -153,7 +156,10 @@
         ( List
             { gateway_regional_url : Optional Text
             , location : Text
+            , private_ip_addresses : Optional (List Text)
             , public_ip_addresses : Optional (List Text)
+            , virtual_network_configuration :
+                Optional (List { subnet_id : Text })
             }
         )
   , certificate =

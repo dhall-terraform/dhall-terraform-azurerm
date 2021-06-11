@@ -15,6 +15,7 @@
               , correlation_id : Optional Text
               , label : Optional Text
               , message_id : Optional Text
+              , properties : Optional (List { mapKey : Text, mapValue : Text })
               , reply_to : Optional Text
               , reply_to_session_id : Optional Text
               , session_id : Optional Text
@@ -40,6 +41,7 @@
             , correlation_id : Optional Text
             , label : Optional Text
             , message_id : Optional Text
+            , properties : Optional (List { mapKey : Text, mapValue : Text })
             , reply_to : Optional Text
             , reply_to_session_id : Optional Text
             , session_id : Optional Text

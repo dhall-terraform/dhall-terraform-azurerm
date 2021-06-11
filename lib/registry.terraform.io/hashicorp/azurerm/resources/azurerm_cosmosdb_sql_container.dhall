@@ -8,6 +8,14 @@
     , resource_group_name : Text
     , throughput : Optional Natural
     , autoscale_settings : Optional (List { max_throughput : Optional Natural })
+    , indexing_policy :
+        Optional
+          ( List
+              { indexing_mode : Optional Text
+              , excluded_path : Optional (List { path : Text })
+              , included_path : Optional (List { path : Text })
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -23,6 +31,14 @@
   , partition_key_path = None Text
   , throughput = None Natural
   , autoscale_settings = None (List { max_throughput : Optional Natural })
+  , indexing_policy =
+      None
+        ( List
+            { indexing_mode : Optional Text
+            , excluded_path : Optional (List { path : Text })
+            , included_path : Optional (List { path : Text })
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

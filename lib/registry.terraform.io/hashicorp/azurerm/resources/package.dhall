@@ -138,6 +138,8 @@
 , azurerm_cosmosdb_mongo_database = ./azurerm_cosmosdb_mongo_database.dhall
 , azurerm_cosmosdb_sql_container = ./azurerm_cosmosdb_sql_container.dhall
 , azurerm_cosmosdb_sql_database = ./azurerm_cosmosdb_sql_database.dhall
+, azurerm_cosmosdb_sql_stored_procedure =
+    ./azurerm_cosmosdb_sql_stored_procedure.dhall
 , azurerm_cosmosdb_table = ./azurerm_cosmosdb_table.dhall
 , azurerm_cost_management_export_resource_group =
     ./azurerm_cost_management_export_resource_group.dhall
@@ -209,6 +211,8 @@
     ./azurerm_data_share_dataset_data_lake_gen1.dhall
 , azurerm_data_share_dataset_data_lake_gen2 =
     ./azurerm_data_share_dataset_data_lake_gen2.dhall
+, azurerm_data_share_dataset_kusto_cluster =
+    ./azurerm_data_share_dataset_kusto_cluster.dhall
 , azurerm_data_share = ./azurerm_data_share.dhall
 , azurerm_dedicated_hardware_security_module =
     ./azurerm_dedicated_hardware_security_module.dhall
@@ -264,6 +268,7 @@
     ./azurerm_firewall_nat_rule_collection.dhall
 , azurerm_firewall_network_rule_collection =
     ./azurerm_firewall_network_rule_collection.dhall
+, azurerm_firewall_policy = ./azurerm_firewall_policy.dhall
 , azurerm_frontdoor_custom_https_configuration =
     ./azurerm_frontdoor_custom_https_configuration.dhall
 , azurerm_frontdoor = ./azurerm_frontdoor.dhall
@@ -311,6 +316,7 @@
     ./azurerm_iot_time_series_insights_reference_data_set.dhall
 , azurerm_iot_time_series_insights_standard_environment =
     ./azurerm_iot_time_series_insights_standard_environment.dhall
+, azurerm_ip_group = ./azurerm_ip_group.dhall
 , azurerm_key_vault_access_policy = ./azurerm_key_vault_access_policy.dhall
 , azurerm_key_vault_certificate = ./azurerm_key_vault_certificate.dhall
 , azurerm_key_vault_certificate_issuer =
@@ -425,6 +431,7 @@
 , azurerm_mysql_database = ./azurerm_mysql_database.dhall
 , azurerm_mysql_firewall_rule = ./azurerm_mysql_firewall_rule.dhall
 , azurerm_mysql_server = ./azurerm_mysql_server.dhall
+, azurerm_mysql_server_key = ./azurerm_mysql_server_key.dhall
 , azurerm_mysql_virtual_network_rule =
     ./azurerm_mysql_virtual_network_rule.dhall
 , azurerm_nat_gateway = ./azurerm_nat_gateway.dhall
@@ -474,6 +481,7 @@
 , azurerm_postgresql_database = ./azurerm_postgresql_database.dhall
 , azurerm_postgresql_firewall_rule = ./azurerm_postgresql_firewall_rule.dhall
 , azurerm_postgresql_server = ./azurerm_postgresql_server.dhall
+, azurerm_postgresql_server_key = ./azurerm_postgresql_server_key.dhall
 , azurerm_postgresql_virtual_network_rule =
     ./azurerm_postgresql_virtual_network_rule.dhall
 , azurerm_powerbi_embedded = ./azurerm_powerbi_embedded.dhall
@@ -499,6 +507,8 @@
 , azurerm_relay_hybrid_connection = ./azurerm_relay_hybrid_connection.dhall
 , azurerm_relay_namespace = ./azurerm_relay_namespace.dhall
 , azurerm_resource_group = ./azurerm_resource_group.dhall
+, azurerm_resource_group_template_deployment =
+    ./azurerm_resource_group_template_deployment.dhall
 , azurerm_role_assignment = ./azurerm_role_assignment.dhall
 , azurerm_role_definition = ./azurerm_role_definition.dhall
 , azurerm_route = ./azurerm_route.dhall
@@ -570,6 +580,7 @@
 , azurerm_storage_share = ./azurerm_storage_share.dhall
 , azurerm_storage_share_directory = ./azurerm_storage_share_directory.dhall
 , azurerm_storage_sync = ./azurerm_storage_sync.dhall
+, azurerm_storage_sync_group = ./azurerm_storage_sync_group.dhall
 , azurerm_storage_table = ./azurerm_storage_table.dhall
 , azurerm_storage_table_entity = ./azurerm_storage_table_entity.dhall
 , azurerm_stream_analytics_function_javascript_udf =
@@ -600,6 +611,8 @@
     ./azurerm_subnet_network_security_group_association.dhall
 , azurerm_subnet_route_table_association =
     ./azurerm_subnet_route_table_association.dhall
+, azurerm_subscription_template_deployment =
+    ./azurerm_subscription_template_deployment.dhall
 , azurerm_synapse_firewall_rule = ./azurerm_synapse_firewall_rule.dhall
 , azurerm_synapse_spark_pool = ./azurerm_synapse_spark_pool.dhall
 , azurerm_synapse_sql_pool = ./azurerm_synapse_sql_pool.dhall

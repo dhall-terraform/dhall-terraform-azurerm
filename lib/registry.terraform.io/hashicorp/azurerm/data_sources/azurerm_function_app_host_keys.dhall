@@ -3,6 +3,7 @@
     , id : Optional Text
     , master_key : Optional Text
     , name : Text
+    , primary_key : Optional Text
     , resource_group_name : Text
     , timeouts : Optional { read : Optional Text }
     }
@@ -10,6 +11,7 @@
   { default_function_key = None Text
   , id = None Text
   , master_key = None Text
+  , primary_key = None Text
   , timeouts = None { read : Optional Text }
   }
 }

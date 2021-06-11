@@ -9,7 +9,8 @@
     , policy_definition_reference :
         Optional
           ( List
-              { parameters : List { mapKey : Text, mapValue : Text }
+              { parameter_values : Text
+              , parameters : List { mapKey : Text, mapValue : Text }
               , policy_definition_id : Text
               , reference_id : Text
               }
@@ -29,7 +30,8 @@
   , policy_definition_reference =
       None
         ( List
-            { parameters : List { mapKey : Text, mapValue : Text }
+            { parameter_values : Text
+            , parameters : List { mapKey : Text, mapValue : Text }
             , policy_definition_id : Text
             , reference_id : Text
             }

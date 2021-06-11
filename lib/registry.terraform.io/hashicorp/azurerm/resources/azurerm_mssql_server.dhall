@@ -17,6 +17,7 @@
     , name : Text
     , public_network_access_enabled : Optional Bool
     , resource_group_name : Text
+    , restorable_dropped_database_ids : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , version : Text
     , azuread_administrator :
@@ -57,6 +58,7 @@
   , fully_qualified_domain_name = None Text
   , id = None Text
   , public_network_access_enabled = None Bool
+  , restorable_dropped_database_ids = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
   , azuread_administrator =
       None

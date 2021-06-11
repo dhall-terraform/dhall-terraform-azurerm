@@ -11,11 +11,15 @@
     , location : Text
     , name : Text
     , offer_type : Text
+    , primary_key : Optional Text
     , primary_master_key : Optional Text
+    , primary_readonly_key : Optional Text
     , primary_readonly_master_key : Optional Text
     , read_endpoints : Optional (List Text)
     , resource_group_name : Text
+    , secondary_key : Optional Text
     , secondary_master_key : Optional Text
+    , secondary_readonly_key : Optional Text
     , secondary_readonly_master_key : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , write_endpoints : Optional (List Text)
@@ -32,6 +36,7 @@
           , id : Optional Text
           , location : Text
           , prefix : Optional Text
+          , zone_redundant : Optional Bool
           }
     , timeouts :
         Optional
@@ -58,10 +63,14 @@
   , ip_range_filter = None Text
   , is_virtual_network_filter_enabled = None Bool
   , kind = None Text
+  , primary_key = None Text
   , primary_master_key = None Text
+  , primary_readonly_key = None Text
   , primary_readonly_master_key = None Text
   , read_endpoints = None (List Text)
+  , secondary_key = None Text
   , secondary_master_key = None Text
+  , secondary_readonly_key = None Text
   , secondary_readonly_master_key = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , write_endpoints = None (List Text)

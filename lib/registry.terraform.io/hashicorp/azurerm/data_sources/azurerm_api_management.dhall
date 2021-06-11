@@ -4,6 +4,7 @@
           ( List
               { gateway_regional_url : Text
               , location : Text
+              , private_ip_addresses : List Text
               , public_ip_addresses : List Text
               }
           )
@@ -61,6 +62,7 @@
     , name : Text
     , notification_sender_email : Optional Text
     , portal_url : Optional Text
+    , private_ip_addresses : Optional (List Text)
     , public_ip_addresses : Optional (List Text)
     , publisher_email : Optional Text
     , publisher_name : Optional Text
@@ -76,6 +78,7 @@
         ( List
             { gateway_regional_url : Text
             , location : Text
+            , private_ip_addresses : List Text
             , public_ip_addresses : List Text
             }
         )
@@ -132,6 +135,7 @@
   , management_api_url = None Text
   , notification_sender_email = None Text
   , portal_url = None Text
+  , private_ip_addresses = None (List Text)
   , public_ip_addresses = None (List Text)
   , publisher_email = None Text
   , publisher_name = None Text

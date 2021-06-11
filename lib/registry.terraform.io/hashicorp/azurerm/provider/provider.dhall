@@ -26,7 +26,9 @@
                     , recover_soft_deleted_key_vaults : Optional Bool
                     }
                 )
-          , network : Optional (List { relaxed_locking : Optional Bool })
+          , network : Optional (List { relaxed_locking : Bool })
+          , template_deployment :
+              Optional (List { delete_nested_items_during_deletion : Bool })
           , virtual_machine :
               Optional (List { delete_os_disk_on_deletion : Bool })
           , virtual_machine_scale_set :

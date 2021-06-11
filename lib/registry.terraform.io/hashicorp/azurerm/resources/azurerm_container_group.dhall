@@ -90,6 +90,14 @@
                     }
               }
           )
+    , dns_config :
+        Optional
+          ( List
+              { nameservers : List Text
+              , options : List Text
+              , search_domains : List Text
+              }
+          )
     , identity :
         Optional
           ( List
@@ -128,6 +136,14 @@
                   , workspace_id : Text
                   , workspace_key : Text
                   }
+            }
+        )
+  , dns_config =
+      None
+        ( List
+            { nameservers : List Text
+            , options : List Text
+            , search_domains : List Text
             }
         )
   , identity =

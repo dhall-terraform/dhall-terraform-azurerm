@@ -20,6 +20,8 @@
     , name : Text
     , read_replica_count : Optional Natural
     , read_scale : Optional Bool
+    , recover_database_id : Optional Text
+    , restore_dropped_database_id : Optional Text
     , restore_point_in_time : Optional Text
     , sample_name : Optional Text
     , server_id : Text
@@ -68,6 +70,8 @@
   , min_capacity = None Natural
   , read_replica_count = None Natural
   , read_scale = None Bool
+  , recover_database_id = None Text
+  , restore_dropped_database_id = None Text
   , restore_point_in_time = None Text
   , sample_name = None Text
   , sku_name = None Text

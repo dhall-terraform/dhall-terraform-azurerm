@@ -12,7 +12,8 @@
           , destination_ports : List Text
           , name : Text
           , protocols : List Text
-          , source_addresses : List Text
+          , source_addresses : Optional (List Text)
+          , source_ip_groups : Optional (List Text)
           , translated_address : Text
           , translated_port : Text
           }

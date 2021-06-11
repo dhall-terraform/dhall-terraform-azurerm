@@ -46,6 +46,16 @@
                     )
               }
           )
+    , network :
+        Optional
+          ( List
+              { app_network_resource_group : Optional Text
+              , app_subnet_id : Text
+              , cidr_ranges : List Text
+              , service_runtime_network_resource_group : Optional Text
+              , service_runtime_subnet_id : Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -98,6 +108,16 @@
                       , strict_host_key_checking_enabled : Optional Bool
                       }
                   )
+            }
+        )
+  , network =
+      None
+        ( List
+            { app_network_resource_group : Optional Text
+            , app_subnet_id : Text
+            , cidr_ranges : List Text
+            , service_runtime_network_resource_group : Optional Text
+            , service_runtime_subnet_id : Text
             }
         )
   , timeouts =

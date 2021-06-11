@@ -1,20 +1,11 @@
 { Type =
-    { action : Text
-    , azure_firewall_name : Text
+    { account_name : Text
+    , body : Text
+    , container_name : Text
+    , database_name : Text
     , id : Optional Text
     , name : Text
-    , priority : Natural
     , resource_group_name : Text
-    , rule :
-        List
-          { description : Optional Text
-          , fqdn_tags : Optional (List Text)
-          , name : Text
-          , source_addresses : Optional (List Text)
-          , source_ip_groups : Optional (List Text)
-          , target_fqdns : Optional (List Text)
-          , protocol : Optional (List { port : Optional Natural, type : Text })
-          }
     , timeouts :
         Optional
           { create : Optional Text

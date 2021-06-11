@@ -11,6 +11,7 @@
               , tenant_id : Text
               }
           )
+    , enable_rbac_authorization : Optional Bool
     , enabled_for_deployment : Optional Bool
     , enabled_for_disk_encryption : Optional Bool
     , enabled_for_template_deployment : Optional Bool
@@ -55,6 +56,7 @@
             , tenant_id : Text
             }
         )
+  , enable_rbac_authorization = None Bool
   , enabled_for_deployment = None Bool
   , enabled_for_disk_encryption = None Bool
   , enabled_for_template_deployment = None Bool
