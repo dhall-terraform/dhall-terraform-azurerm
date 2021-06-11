@@ -1,5 +1,6 @@
 { Type =
-    { api_management_name : Text
+    { api_management_logger_id : Text
+    , api_management_name : Text
     , enabled : Optional Bool
     , id : Optional Text
     , identifier : Text

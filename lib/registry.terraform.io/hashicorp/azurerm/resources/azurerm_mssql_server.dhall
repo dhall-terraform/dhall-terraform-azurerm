@@ -10,6 +10,14 @@
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , version : Text
+    , azuread_administrator :
+        Optional
+          ( List
+              { login_username : Text
+              , object_id : Text
+              , tenant_id : Optional Text
+              }
+          )
     , extended_auditing_policy :
         Optional
           ( List
@@ -41,6 +49,14 @@
   , id = None Text
   , public_network_access_enabled = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , azuread_administrator =
+      None
+        ( List
+            { login_username : Text
+            , object_id : Text
+            , tenant_id : Optional Text
+            }
+        )
   , extended_auditing_policy =
       None
         ( List

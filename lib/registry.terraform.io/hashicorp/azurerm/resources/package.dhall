@@ -185,6 +185,7 @@
 , azurerm_dns_txt_record = ./azurerm_dns_txt_record.dhall
 , azurerm_dns_zone = ./azurerm_dns_zone.dhall
 , azurerm_eventgrid_domain = ./azurerm_eventgrid_domain.dhall
+, azurerm_eventgrid_domain_topic = ./azurerm_eventgrid_domain_topic.dhall
 , azurerm_eventgrid_event_subscription =
     ./azurerm_eventgrid_event_subscription.dhall
 , azurerm_eventgrid_topic = ./azurerm_eventgrid_topic.dhall

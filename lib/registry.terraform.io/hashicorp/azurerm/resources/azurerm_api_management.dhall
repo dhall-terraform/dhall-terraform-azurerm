@@ -36,7 +36,17 @@
     , hostname_configuration :
         Optional
           ( List
-              { management :
+              { developer_portal :
+                  Optional
+                    ( List
+                        { certificate : Optional Text
+                        , certificate_password : Optional Text
+                        , host_name : Text
+                        , key_vault_id : Optional Text
+                        , negotiate_client_certificate : Optional Bool
+                        }
+                    )
+              , management :
                   Optional
                     ( List
                         { certificate : Optional Text
@@ -82,9 +92,10 @@
     , identity :
         Optional
           ( List
-              { principal_id : Optional Text
+              { identity_ids : Optional (List Text)
+              , principal_id : Optional Text
               , tenant_id : Optional Text
-              , type : Text
+              , type : Optional Text
               }
           )
     , protocols : Optional (List { enable_http2 : Optional Bool })
@@ -154,7 +165,17 @@
   , hostname_configuration =
       None
         ( List
-            { management :
+            { developer_portal :
+                Optional
+                  ( List
+                      { certificate : Optional Text
+                      , certificate_password : Optional Text
+                      , host_name : Text
+                      , key_vault_id : Optional Text
+                      , negotiate_client_certificate : Optional Bool
+                      }
+                  )
+            , management :
                 Optional
                   ( List
                       { certificate : Optional Text
@@ -200,9 +221,10 @@
   , identity =
       None
         ( List
-            { principal_id : Optional Text
+            { identity_ids : Optional (List Text)
+            , principal_id : Optional Text
             , tenant_id : Optional Text
-            , type : Text
+            , type : Optional Text
             }
         )
   , protocols = None (List { enable_http2 : Optional Bool })

@@ -30,6 +30,18 @@
               , storage_mb : Optional Natural
               }
           )
+    , threat_detection_policy :
+        Optional
+          ( List
+              { disabled_alerts : Optional (List Text)
+              , email_account_admins : Optional Bool
+              , email_addresses : Optional (List Text)
+              , enabled : Optional Bool
+              , retention_days : Optional Natural
+              , storage_account_access_key : Optional Text
+              , storage_endpoint : Optional Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -63,6 +75,18 @@
             , backup_retention_days : Optional Natural
             , geo_redundant_backup : Optional Text
             , storage_mb : Optional Natural
+            }
+        )
+  , threat_detection_policy =
+      None
+        ( List
+            { disabled_alerts : Optional (List Text)
+            , email_account_admins : Optional Bool
+            , email_addresses : Optional (List Text)
+            , enabled : Optional Bool
+            , retention_days : Optional Natural
+            , storage_account_access_key : Optional Text
+            , storage_endpoint : Optional Text
             }
         )
   , timeouts =

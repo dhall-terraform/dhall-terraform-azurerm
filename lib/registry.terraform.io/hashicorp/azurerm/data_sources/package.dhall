@@ -48,6 +48,7 @@
 , azurerm_eventhub_authorization_rule =
     ./azurerm_eventhub_authorization_rule.dhall
 , azurerm_eventhub_consumer_group = ./azurerm_eventhub_consumer_group.dhall
+, azurerm_eventhub = ./azurerm_eventhub.dhall
 , azurerm_eventhub_namespace_authorization_rule =
     ./azurerm_eventhub_namespace_authorization_rule.dhall
 , azurerm_eventhub_namespace = ./azurerm_eventhub_namespace.dhall

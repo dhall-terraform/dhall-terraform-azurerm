@@ -1,6 +1,5 @@
 { Type =
     { administrator_login : Optional Text
-    , administrator_login_password : Optional Text
     , fqdn : Optional Text
     , id : Optional Text
     , location : Optional Text
@@ -23,7 +22,6 @@
     }
 , default =
   { administrator_login = None Text
-  , administrator_login_password = None Text
   , fqdn = None Text
   , id = None Text
   , location = None Text

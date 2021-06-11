@@ -3,6 +3,7 @@
     , cname : Optional Text
     , enforce_backend_pools_certificate_name_check : Bool
     , friendly_name : Optional Text
+    , header_frontdoor_id : Optional Text
     , id : Optional Text
     , load_balancer_enabled : Optional Bool
     , location : Optional Text
@@ -109,6 +110,7 @@
   { backend_pools_send_receive_timeout_seconds = None Natural
   , cname = None Text
   , friendly_name = None Text
+  , header_frontdoor_id = None Text
   , id = None Text
   , load_balancer_enabled = None Bool
   , location = None Text

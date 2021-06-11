@@ -38,6 +38,7 @@
           ( List
               { identity_ids : Optional (List Text)
               , principal_id : Optional Text
+              , tenant_id : Optional Text
               , type : Text
               }
           )
@@ -103,6 +104,7 @@
         ( List
             { identity_ids : Optional (List Text)
             , principal_id : Optional Text
+            , tenant_id : Optional Text
             , type : Text
             }
         )

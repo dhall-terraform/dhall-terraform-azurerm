@@ -12,7 +12,13 @@
     , hostname_configuration :
         Optional
           ( List
-              { management :
+              { developer_portal :
+                  List
+                    { host_name : Text
+                    , key_vault_id : Text
+                    , negotiate_client_certificate : Bool
+                    }
+              , management :
                   List
                     { host_name : Text
                     , key_vault_id : Text
@@ -40,6 +46,15 @@
               }
           )
     , id : Optional Text
+    , identity :
+        Optional
+          ( List
+              { identity_ids : List Text
+              , principal_id : Text
+              , tenant_id : Text
+              , type : Text
+              }
+          )
     , location : Optional Text
     , management_api_url : Optional Text
     , name : Text
@@ -68,7 +83,13 @@
   , hostname_configuration =
       None
         ( List
-            { management :
+            { developer_portal :
+                List
+                  { host_name : Text
+                  , key_vault_id : Text
+                  , negotiate_client_certificate : Bool
+                  }
+            , management :
                 List
                   { host_name : Text
                   , key_vault_id : Text
@@ -96,6 +117,15 @@
             }
         )
   , id = None Text
+  , identity =
+      None
+        ( List
+            { identity_ids : List Text
+            , principal_id : Text
+            , tenant_id : Text
+            , type : Text
+            }
+        )
   , location = None Text
   , management_api_url = None Text
   , notification_sender_email = None Text

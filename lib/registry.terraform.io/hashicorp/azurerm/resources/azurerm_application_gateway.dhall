@@ -1,5 +1,6 @@
 { Type =
     { enable_http2 : Optional Bool
+    , firewall_policy_id : Optional Text
     , id : Optional Text
     , location : Text
     , name : Text
@@ -255,6 +256,7 @@
     }
 , default =
   { enable_http2 = None Bool
+  , firewall_policy_id = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zones = None (List Text)
