@@ -4,7 +4,7 @@
     , enable_node_public_ip : Optional Bool
     , eviction_policy : Optional Text
     , id : Optional Text
-    , kubernetes_cluster_id : Text
+    , kubernetes_cluster_name : Text
     , max_count : Optional Natural
     , max_pods : Optional Natural
     , min_count : Optional Natural
@@ -17,17 +17,12 @@
     , os_disk_size_gb : Optional Natural
     , os_type : Optional Text
     , priority : Optional Text
+    , resource_group_name : Text
     , spot_max_price : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
-    , vm_size : Text
+    , vm_size : Optional Text
     , vnet_subnet_id : Optional Text
-    , timeouts :
-        Optional
-          { create : Optional Text
-          , delete : Optional Text
-          , read : Optional Text
-          , update : Optional Text
-          }
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { availability_zones = None (List Text)
@@ -48,13 +43,8 @@
   , priority = None Text
   , spot_max_price = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , vm_size = None Text
   , vnet_subnet_id = None Text
-  , timeouts =
-      None
-        { create : Optional Text
-        , delete : Optional Text
-        , read : Optional Text
-        , update : Optional Text
-        }
+  , timeouts = None { read : Optional Text }
   }
 }

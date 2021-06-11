@@ -38,6 +38,14 @@
                   Optional (List { key : Text, values : List Text })
               }
           )
+    , azure_function_endpoint :
+        Optional
+          ( List
+              { function_id : Text
+              , max_events_per_batch : Optional Natural
+              , preferred_batch_size_in_kilobytes : Optional Natural
+              }
+          )
     , eventhub_endpoint : Optional (List { eventhub_id : Optional Text })
     , hybrid_connection_endpoint :
         Optional (List { hybrid_connection_id : Optional Text })
@@ -68,7 +76,17 @@
           , read : Optional Text
           , update : Optional Text
           }
-    , webhook_endpoint : Optional (List { url : Text })
+    , webhook_endpoint :
+        Optional
+          ( List
+              { active_directory_app_id_or_uri : Optional Text
+              , active_directory_tenant_id : Optional Text
+              , base_url : Optional Text
+              , max_events_per_batch : Optional Natural
+              , preferred_batch_size_in_kilobytes : Optional Natural
+              , url : Text
+              }
+          )
     }
 , default =
   { event_delivery_schema = None Text
@@ -105,6 +123,14 @@
             , string_not_in : Optional (List { key : Text, values : List Text })
             }
         )
+  , azure_function_endpoint =
+      None
+        ( List
+            { function_id : Text
+            , max_events_per_batch : Optional Natural
+            , preferred_batch_size_in_kilobytes : Optional Natural
+            }
+        )
   , eventhub_endpoint = None (List { eventhub_id : Optional Text })
   , hybrid_connection_endpoint =
       None (List { hybrid_connection_id : Optional Text })
@@ -131,6 +157,16 @@
         , read : Optional Text
         , update : Optional Text
         }
-  , webhook_endpoint = None (List { url : Text })
+  , webhook_endpoint =
+      None
+        ( List
+            { active_directory_app_id_or_uri : Optional Text
+            , active_directory_tenant_id : Optional Text
+            , base_url : Optional Text
+            , max_events_per_batch : Optional Natural
+            , preferred_batch_size_in_kilobytes : Optional Natural
+            , url : Text
+            }
+        )
   }
 }

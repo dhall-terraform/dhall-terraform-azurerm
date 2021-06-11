@@ -28,6 +28,9 @@
 , azurerm_batch_account = ./azurerm_batch_account.dhall
 , azurerm_batch_certificate = ./azurerm_batch_certificate.dhall
 , azurerm_batch_pool = ./azurerm_batch_pool.dhall
+, azurerm_blueprint_definition = ./azurerm_blueprint_definition.dhall
+, azurerm_blueprint_published_version =
+    ./azurerm_blueprint_published_version.dhall
 , azurerm_cdn_profile = ./azurerm_cdn_profile.dhall
 , azurerm_client_config = ./azurerm_client_config.dhall
 , azurerm_container_registry = ./azurerm_container_registry.dhall
@@ -66,10 +69,13 @@
 , azurerm_iothub_shared_access_policy =
     ./azurerm_iothub_shared_access_policy.dhall
 , azurerm_key_vault_access_policy = ./azurerm_key_vault_access_policy.dhall
+, azurerm_key_vault_certificate = ./azurerm_key_vault_certificate.dhall
 , azurerm_key_vault = ./azurerm_key_vault.dhall
 , azurerm_key_vault_key = ./azurerm_key_vault_key.dhall
 , azurerm_key_vault_secret = ./azurerm_key_vault_secret.dhall
 , azurerm_kubernetes_cluster = ./azurerm_kubernetes_cluster.dhall
+, azurerm_kubernetes_cluster_node_pool =
+    ./azurerm_kubernetes_cluster_node_pool.dhall
 , azurerm_kubernetes_service_versions =
     ./azurerm_kubernetes_service_versions.dhall
 , azurerm_kusto_cluster = ./azurerm_kusto_cluster.dhall

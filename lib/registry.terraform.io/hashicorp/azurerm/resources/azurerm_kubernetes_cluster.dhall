@@ -1,5 +1,6 @@
 { Type =
     { api_server_authorized_ip_ranges : Optional (List Text)
+    , disk_encryption_set_id : Optional Text
     , dns_prefix : Text
     , enable_pod_security_policy : Optional Bool
     , fqdn : Optional Text
@@ -44,6 +45,7 @@
     , private_fqdn : Optional Text
     , private_link_enabled : Optional Bool
     , resource_group_name : Text
+    , sku_tier : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , addon_profile :
         Optional
@@ -77,6 +79,20 @@
                     )
               }
           )
+    , auto_scaler_profile :
+        Optional
+          ( List
+              { balance_similar_node_groups : Optional Bool
+              , max_graceful_termination_sec : Optional Text
+              , scale_down_delay_after_add : Optional Text
+              , scale_down_delay_after_delete : Optional Text
+              , scale_down_delay_after_failure : Optional Text
+              , scale_down_unneeded : Optional Text
+              , scale_down_unready : Optional Text
+              , scale_down_utilization_threshold : Optional Text
+              , scan_interval : Optional Text
+              }
+          )
     , default_node_pool :
         List
           { availability_zones : Optional (List Text)
@@ -89,6 +105,7 @@
           , node_count : Optional Natural
           , node_labels : Optional (List { mapKey : Text, mapValue : Text })
           , node_taints : Optional (List Text)
+          , orchestrator_version : Optional Text
           , os_disk_size_gb : Optional Natural
           , tags : Optional (List { mapKey : Text, mapValue : Text })
           , type : Optional Text
@@ -121,9 +138,11 @@
                   Optional
                     ( List
                         { effective_outbound_ips : Optional (List Text)
+                        , idle_timeout_in_minutes : Optional Natural
                         , managed_outbound_ip_count : Optional Natural
                         , outbound_ip_address_ids : Optional (List Text)
                         , outbound_ip_prefix_ids : Optional (List Text)
+                        , outbound_ports_allocated : Optional Natural
                         }
                     )
               }
@@ -135,9 +154,11 @@
               , azure_active_directory :
                   Optional
                     ( List
-                        { client_app_id : Text
-                        , server_app_id : Text
-                        , server_app_secret : Text
+                        { admin_group_object_ids : Optional (List Text)
+                        , client_app_id : Optional Text
+                        , managed : Optional Bool
+                        , server_app_id : Optional Text
+                        , server_app_secret : Optional Text
                         , tenant_id : Optional Text
                         }
                     )
@@ -158,6 +179,7 @@
     }
 , default =
   { api_server_authorized_ip_ranges = None (List Text)
+  , disk_encryption_set_id = None Text
   , enable_pod_security_policy = None Bool
   , fqdn = None Text
   , id = None Text
@@ -198,6 +220,7 @@
   , private_cluster_enabled = None Bool
   , private_fqdn = None Text
   , private_link_enabled = None Bool
+  , sku_tier = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , addon_profile =
       None
@@ -230,6 +253,20 @@
                   )
             }
         )
+  , auto_scaler_profile =
+      None
+        ( List
+            { balance_similar_node_groups : Optional Bool
+            , max_graceful_termination_sec : Optional Text
+            , scale_down_delay_after_add : Optional Text
+            , scale_down_delay_after_delete : Optional Text
+            , scale_down_delay_after_failure : Optional Text
+            , scale_down_unneeded : Optional Text
+            , scale_down_unready : Optional Text
+            , scale_down_utilization_threshold : Optional Text
+            , scan_interval : Optional Text
+            }
+        )
   , identity =
       None
         ( List
@@ -255,9 +292,11 @@
                 Optional
                   ( List
                       { effective_outbound_ips : Optional (List Text)
+                      , idle_timeout_in_minutes : Optional Natural
                       , managed_outbound_ip_count : Optional Natural
                       , outbound_ip_address_ids : Optional (List Text)
                       , outbound_ip_prefix_ids : Optional (List Text)
+                      , outbound_ports_allocated : Optional Natural
                       }
                   )
             }
@@ -269,9 +308,11 @@
             , azure_active_directory :
                 Optional
                   ( List
-                      { client_app_id : Text
-                      , server_app_id : Text
-                      , server_app_secret : Text
+                      { admin_group_object_ids : Optional (List Text)
+                      , client_app_id : Optional Text
+                      , managed : Optional Bool
+                      , server_app_id : Optional Text
+                      , server_app_secret : Optional Text
                       , tenant_id : Optional Text
                       }
                   )

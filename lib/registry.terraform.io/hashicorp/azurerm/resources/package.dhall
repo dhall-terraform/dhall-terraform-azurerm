@@ -64,6 +64,8 @@
     ./azurerm_app_service_custom_hostname_binding.dhall
 , azurerm_app_service = ./azurerm_app_service.dhall
 , azurerm_app_service_environment = ./azurerm_app_service_environment.dhall
+, azurerm_app_service_hybrid_connection =
+    ./azurerm_app_service_hybrid_connection.dhall
 , azurerm_app_service_plan = ./azurerm_app_service_plan.dhall
 , azurerm_app_service_slot = ./azurerm_app_service_slot.dhall
 , azurerm_app_service_source_control_token =
@@ -100,6 +102,7 @@
 , azurerm_batch_application = ./azurerm_batch_application.dhall
 , azurerm_batch_certificate = ./azurerm_batch_certificate.dhall
 , azurerm_batch_pool = ./azurerm_batch_pool.dhall
+, azurerm_blueprint_assignment = ./azurerm_blueprint_assignment.dhall
 , azurerm_bot_channel_directline = ./azurerm_bot_channel_directline.dhall
 , azurerm_bot_channel_email = ./azurerm_bot_channel_email.dhall
 , azurerm_bot_channel_ms_teams = ./azurerm_bot_channel_ms_teams.dhall
@@ -144,6 +147,8 @@
     ./azurerm_data_factory_integration_runtime_managed.dhall
 , azurerm_data_factory_linked_service_data_lake_storage_gen2 =
     ./azurerm_data_factory_linked_service_data_lake_storage_gen2.dhall
+, azurerm_data_factory_linked_service_key_vault =
+    ./azurerm_data_factory_linked_service_key_vault.dhall
 , azurerm_data_factory_linked_service_mysql =
     ./azurerm_data_factory_linked_service_mysql.dhall
 , azurerm_data_factory_linked_service_postgresql =
@@ -251,6 +256,10 @@
 , azurerm_iothub_route = ./azurerm_iothub_route.dhall
 , azurerm_iothub_shared_access_policy =
     ./azurerm_iothub_shared_access_policy.dhall
+, azurerm_iot_time_series_insights_access_policy =
+    ./azurerm_iot_time_series_insights_access_policy.dhall
+, azurerm_iot_time_series_insights_reference_data_set =
+    ./azurerm_iot_time_series_insights_reference_data_set.dhall
 , azurerm_iot_time_series_insights_standard_environment =
     ./azurerm_iot_time_series_insights_standard_environment.dhall
 , azurerm_key_vault_access_policy = ./azurerm_key_vault_access_policy.dhall

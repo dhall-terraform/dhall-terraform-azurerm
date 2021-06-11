@@ -35,6 +35,7 @@
               , name : Text
               , node_labels : List { mapKey : Text, mapValue : Text }
               , node_taints : List Text
+              , orchestrator_version : Text
               , os_disk_size_gb : Natural
               , os_type : Text
               , tags : List { mapKey : Text, mapValue : Text }
@@ -44,6 +45,7 @@
               }
           )
     , api_server_authorized_ip_ranges : Optional (List Text)
+    , disk_encryption_set_id : Optional Text
     , dns_prefix : Optional Text
     , fqdn : Optional Text
     , id : Optional Text
@@ -109,7 +111,9 @@
           ( List
               { azure_active_directory :
                   List
-                    { client_app_id : Text
+                    { admin_group_object_ids : List Text
+                    , client_app_id : Text
+                    , managed : Bool
                     , server_app_id : Text
                     , tenant_id : Text
                     }
@@ -156,6 +160,7 @@
             , name : Text
             , node_labels : List { mapKey : Text, mapValue : Text }
             , node_taints : List Text
+            , orchestrator_version : Text
             , os_disk_size_gb : Natural
             , os_type : Text
             , tags : List { mapKey : Text, mapValue : Text }
@@ -165,6 +170,7 @@
             }
         )
   , api_server_authorized_ip_ranges = None (List Text)
+  , disk_encryption_set_id = None Text
   , dns_prefix = None Text
   , fqdn = None Text
   , id = None Text
@@ -227,7 +233,9 @@
         ( List
             { azure_active_directory :
                 List
-                  { client_app_id : Text
+                  { admin_group_object_ids : List Text
+                  , client_app_id : Text
+                  , managed : Bool
                   , server_app_id : Text
                   , tenant_id : Text
                   }
