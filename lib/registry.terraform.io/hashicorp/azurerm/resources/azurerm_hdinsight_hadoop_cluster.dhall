@@ -12,7 +12,15 @@
     , gateway : List { enabled : Bool, password : Text, username : Text }
     , roles :
         List
-          { head_node :
+          { edge_node :
+              Optional
+                ( List
+                    { target_instance_count : Natural
+                    , vm_size : Text
+                    , install_script_action : List { name : Text, uri : Text }
+                    }
+                )
+          , head_node :
               List
                 { password : Optional Text
                 , ssh_keys : Optional (List Text)
@@ -43,16 +51,44 @@
                 }
           }
     , storage_account :
-        List
-          { is_default : Bool
-          , storage_account_key : Text
-          , storage_container_id : Text
-          }
+        Optional
+          ( List
+              { is_default : Bool
+              , storage_account_key : Text
+              , storage_container_id : Text
+              }
+          )
+    , storage_account_gen2 :
+        Optional
+          ( List
+              { filesystem_id : Text
+              , is_default : Bool
+              , managed_identity_resource_id : Text
+              , storage_resource_id : Text
+              }
+          )
     }
 , default =
   { https_endpoint = None Text
   , id = None Text
   , ssh_endpoint = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , storage_account =
+      None
+        ( List
+            { is_default : Bool
+            , storage_account_key : Text
+            , storage_container_id : Text
+            }
+        )
+  , storage_account_gen2 =
+      None
+        ( List
+            { filesystem_id : Text
+            , is_default : Bool
+            , managed_identity_resource_id : Text
+            , storage_resource_id : Text
+            }
+        )
   }
 }

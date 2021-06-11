@@ -11,7 +11,7 @@
           , name : Text
           , private_ip_address : Optional Text
           , public_ip_address_id : Optional Text
-          , subnet_id : Text
+          , subnet_id : Optional Text
           }
     }
 , default =

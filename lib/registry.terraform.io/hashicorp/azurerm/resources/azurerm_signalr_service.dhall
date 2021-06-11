@@ -12,6 +12,8 @@
     , secondary_connection_string : Optional Text
     , server_port : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , cors : Optional (List { allowed_origins : List Text })
+    , features : Optional (List { flag : Text, value : Text })
     , sku : List { capacity : Natural, name : Text }
     }
 , default =
@@ -25,5 +27,7 @@
   , secondary_connection_string = None Text
   , server_port = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , cors = None (List { allowed_origins : List Text })
+  , features = None (List { flag : Text, value : Text })
   }
 }

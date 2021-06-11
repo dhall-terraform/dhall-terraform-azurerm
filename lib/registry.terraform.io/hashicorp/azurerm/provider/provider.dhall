@@ -5,6 +5,7 @@
     , client_id : Optional Text
     , client_secret : Optional Text
     , disable_correlation_request_id : Optional Bool
+    , disable_terraform_partner_id : Optional Bool
     , environment : Optional Text
     , msi_endpoint : Optional Text
     , partner_id : Optional Text
@@ -21,6 +22,7 @@
   , client_id = None Text
   , client_secret = None Text
   , disable_correlation_request_id = None Bool
+  , disable_terraform_partner_id = None Bool
   , environment = None Text
   , msi_endpoint = None Text
   , partner_id = None Text

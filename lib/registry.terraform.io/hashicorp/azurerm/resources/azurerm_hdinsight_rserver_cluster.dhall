@@ -53,11 +53,13 @@
                 }
           }
     , storage_account :
-        List
-          { is_default : Bool
-          , storage_account_key : Text
-          , storage_container_id : Text
-          }
+        Optional
+          ( List
+              { is_default : Bool
+              , storage_account_key : Text
+              , storage_container_id : Text
+              }
+          )
     }
 , default =
   { edge_ssh_endpoint = None Text
@@ -65,5 +67,13 @@
   , id = None Text
   , ssh_endpoint = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , storage_account =
+      None
+        ( List
+            { is_default : Bool
+            , storage_account_key : Text
+            , storage_container_id : Text
+            }
+        )
   }
 }

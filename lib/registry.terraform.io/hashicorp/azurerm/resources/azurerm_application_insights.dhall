@@ -6,12 +6,14 @@
     , location : Text
     , name : Text
     , resource_group_name : Text
+    , sampling_percentage : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
   { app_id = None Text
   , id = None Text
   , instrumentation_key = None Text
+  , sampling_percentage = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
   }
 }

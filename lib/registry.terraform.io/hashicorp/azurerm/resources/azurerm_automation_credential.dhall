@@ -1,5 +1,6 @@
 { Type =
-    { account_name : Text
+    { account_name : Optional Text
+    , automation_account_name : Optional Text
     , description : Optional Text
     , id : Optional Text
     , name : Text
@@ -7,5 +8,10 @@
     , resource_group_name : Text
     , username : Text
     }
-, default = { description = None Text, id = None Text }
+, default =
+  { account_name = None Text
+  , automation_account_name = None Text
+  , description = None Text
+  , id = None Text
+  }
 }

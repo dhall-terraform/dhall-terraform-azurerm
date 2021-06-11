@@ -10,7 +10,8 @@
     , frontend_ip_configuration :
         Optional
           ( List
-              { inbound_nat_rules : Optional (List Text)
+              { id : Optional Text
+              , inbound_nat_rules : Optional (List Text)
               , load_balancer_rules : Optional (List Text)
               , name : Text
               , outbound_rules : Optional (List Text)
@@ -32,7 +33,8 @@
   , frontend_ip_configuration =
       None
         ( List
-            { inbound_nat_rules : Optional (List Text)
+            { id : Optional Text
+            , inbound_nat_rules : Optional (List Text)
             , load_balancer_rules : Optional (List Text)
             , name : Text
             , outbound_rules : Optional (List Text)

@@ -1,5 +1,6 @@
 { Type =
     { address_prefix : Text
+    , enforce_private_link_service_network_policies : Optional Bool
     , id : Optional Text
     , ip_configurations : Optional (List Text)
     , name : Text
@@ -18,7 +19,8 @@
           )
     }
 , default =
-  { id = None Text
+  { enforce_private_link_service_network_policies = None Bool
+  , id = None Text
   , ip_configurations = None (List Text)
   , network_security_group_id = None Text
   , route_table_id = None Text

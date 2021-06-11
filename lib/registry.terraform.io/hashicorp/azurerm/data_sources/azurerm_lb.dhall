@@ -2,7 +2,8 @@
     { frontend_ip_configuration :
         Optional
           ( List
-              { name : Text
+              { id : Text
+              , name : Text
               , private_ip_address : Text
               , private_ip_address_allocation : Text
               , public_ip_address_id : Text
@@ -24,7 +25,8 @@
   { frontend_ip_configuration =
       None
         ( List
-            { name : Text
+            { id : Text
+            , name : Text
             , private_ip_address : Text
             , private_ip_address_allocation : Text
             , public_ip_address_id : Text

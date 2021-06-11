@@ -20,6 +20,7 @@
               , count : Natural
               , dns_prefix : Text
               , enable_auto_scaling : Bool
+              , enable_node_public_ip : Bool
               , max_count : Natural
               , max_pods : Natural
               , min_count : Natural
@@ -116,6 +117,7 @@
             , count : Natural
             , dns_prefix : Text
             , enable_auto_scaling : Bool
+            , enable_node_public_ip : Bool
             , max_count : Natural
             , max_pods : Natural
             , min_count : Natural

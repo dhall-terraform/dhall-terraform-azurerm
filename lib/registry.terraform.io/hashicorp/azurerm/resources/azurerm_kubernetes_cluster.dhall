@@ -59,23 +59,44 @@
               }
           )
     , agent_pool_profile :
-        List
-          { availability_zones : Optional (List Text)
-          , count : Optional Natural
-          , dns_prefix : Optional Text
-          , enable_auto_scaling : Optional Bool
-          , fqdn : Optional Text
-          , max_count : Optional Natural
-          , max_pods : Optional Natural
-          , min_count : Optional Natural
-          , name : Text
-          , node_taints : Optional (List Text)
-          , os_disk_size_gb : Optional Natural
-          , os_type : Optional Text
-          , type : Optional Text
-          , vm_size : Text
-          , vnet_subnet_id : Optional Text
-          }
+        Optional
+          ( List
+              { availability_zones : Optional (List Text)
+              , count : Optional Natural
+              , dns_prefix : Optional Text
+              , enable_auto_scaling : Optional Bool
+              , enable_node_public_ip : Optional Bool
+              , fqdn : Optional Text
+              , max_count : Optional Natural
+              , max_pods : Optional Natural
+              , min_count : Optional Natural
+              , name : Text
+              , node_taints : Optional (List Text)
+              , os_disk_size_gb : Optional Natural
+              , os_type : Optional Text
+              , type : Optional Text
+              , vm_size : Text
+              , vnet_subnet_id : Optional Text
+              }
+          )
+    , default_node_pool :
+        Optional
+          ( List
+              { availability_zones : Optional (List Text)
+              , enable_auto_scaling : Optional Bool
+              , enable_node_public_ip : Optional Bool
+              , max_count : Optional Natural
+              , max_pods : Optional Natural
+              , min_count : Optional Natural
+              , name : Text
+              , node_count : Optional Natural
+              , node_taints : Optional (List Text)
+              , os_disk_size_gb : Optional Natural
+              , type : Optional Text
+              , vm_size : Text
+              , vnet_subnet_id : Optional Text
+              }
+          )
     , linux_profile :
         Optional
           (List { admin_username : Text, ssh_key : List { key_data : Text } })
@@ -164,6 +185,45 @@
                       , log_analytics_workspace_id : Optional Text
                       }
                   )
+            }
+        )
+  , agent_pool_profile =
+      None
+        ( List
+            { availability_zones : Optional (List Text)
+            , count : Optional Natural
+            , dns_prefix : Optional Text
+            , enable_auto_scaling : Optional Bool
+            , enable_node_public_ip : Optional Bool
+            , fqdn : Optional Text
+            , max_count : Optional Natural
+            , max_pods : Optional Natural
+            , min_count : Optional Natural
+            , name : Text
+            , node_taints : Optional (List Text)
+            , os_disk_size_gb : Optional Natural
+            , os_type : Optional Text
+            , type : Optional Text
+            , vm_size : Text
+            , vnet_subnet_id : Optional Text
+            }
+        )
+  , default_node_pool =
+      None
+        ( List
+            { availability_zones : Optional (List Text)
+            , enable_auto_scaling : Optional Bool
+            , enable_node_public_ip : Optional Bool
+            , max_count : Optional Natural
+            , max_pods : Optional Natural
+            , min_count : Optional Natural
+            , name : Text
+            , node_count : Optional Natural
+            , node_taints : Optional (List Text)
+            , os_disk_size_gb : Optional Natural
+            , type : Optional Text
+            , vm_size : Text
+            , vnet_subnet_id : Optional Text
             }
         )
   , linux_profile =

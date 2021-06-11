@@ -134,6 +134,7 @@
           ( List
               { always_on : Optional Bool
               , app_command_line : Optional Text
+              , auto_swap_slot_name : Optional Text
               , default_documents : Optional (List Text)
               , dotnet_framework_version : Optional Text
               , ftps_state : Optional Text
@@ -311,6 +312,7 @@
         ( List
             { always_on : Optional Bool
             , app_command_line : Optional Text
+            , auto_swap_slot_name : Optional Text
             , default_documents : Optional (List Text)
             , dotnet_framework_version : Optional Text
             , ftps_state : Optional Text

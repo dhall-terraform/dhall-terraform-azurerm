@@ -4,6 +4,7 @@
     , dead_lettering_on_message_expiration : Optional Bool
     , default_message_ttl : Optional Text
     , enable_batched_operations : Optional Bool
+    , forward_dead_lettered_messages_to : Optional Text
     , forward_to : Optional Text
     , id : Optional Text
     , location : Optional Text
@@ -21,6 +22,7 @@
   , dead_lettering_on_message_expiration = None Bool
   , default_message_ttl = None Text
   , enable_batched_operations = None Bool
+  , forward_dead_lettered_messages_to = None Text
   , forward_to = None Text
   , id = None Text
   , location = None Text
