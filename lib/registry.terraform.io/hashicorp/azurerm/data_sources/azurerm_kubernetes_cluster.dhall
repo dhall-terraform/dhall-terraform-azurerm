@@ -13,6 +13,12 @@
                     { effective_gateway_id : Text
                     , enabled : Bool
                     , gateway_id : Text
+                    , ingress_application_gateway_identity :
+                        List
+                          { client_id : Text
+                          , object_id : Text
+                          , user_assigned_identity_id : Text
+                          }
                     , subnet_cidr : Text
                     , subnet_id : Text
                     }
@@ -154,6 +160,12 @@
                   { effective_gateway_id : Text
                   , enabled : Bool
                   , gateway_id : Text
+                  , ingress_application_gateway_identity :
+                      List
+                        { client_id : Text
+                        , object_id : Text
+                        , user_assigned_identity_id : Text
+                        }
                   , subnet_cidr : Text
                   , subnet_id : Text
                   }

@@ -1,5 +1,6 @@
 { Type =
     { account_name : Text
+    , analytical_storage_ttl : Optional Natural
     , database_name : Text
     , default_ttl : Optional Natural
     , id : Optional Text
@@ -37,7 +38,8 @@
     , unique_key : Optional (List { paths : List Text })
     }
 , default =
-  { default_ttl = None Natural
+  { analytical_storage_ttl = None Natural
+  , default_ttl = None Natural
   , id = None Text
   , partition_key_version = None Natural
   , throughput = None Natural

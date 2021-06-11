@@ -6,6 +6,13 @@
     , resource_group_name : Text
     , storage_account_name : Text
     , virtual_network_subnet_ids : Optional (List Text)
+    , private_link_access :
+        Optional
+          ( List
+              { endpoint_resource_id : Text
+              , endpoint_tenant_id : Optional Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -19,6 +26,11 @@
   , id = None Text
   , ip_rules = None (List Text)
   , virtual_network_subnet_ids = None (List Text)
+  , private_link_access =
+      None
+        ( List
+            { endpoint_resource_id : Text, endpoint_tenant_id : Optional Text }
+        )
   , timeouts =
       None
         { create : Optional Text

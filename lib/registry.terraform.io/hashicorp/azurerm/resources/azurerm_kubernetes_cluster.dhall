@@ -70,6 +70,14 @@
                         { effective_gateway_id : Optional Text
                         , enabled : Bool
                         , gateway_id : Optional Text
+                        , ingress_application_gateway_identity :
+                            Optional
+                              ( List
+                                  { client_id : Text
+                                  , object_id : Text
+                                  , user_assigned_identity_id : Text
+                                  }
+                              )
                         , subnet_cidr : Optional Text
                         , subnet_id : Optional Text
                         }
@@ -274,6 +282,14 @@
                       { effective_gateway_id : Optional Text
                       , enabled : Bool
                       , gateway_id : Optional Text
+                      , ingress_application_gateway_identity :
+                          Optional
+                            ( List
+                                { client_id : Text
+                                , object_id : Text
+                                , user_assigned_identity_id : Text
+                                }
+                            )
                       , subnet_cidr : Optional Text
                       , subnet_id : Optional Text
                       }

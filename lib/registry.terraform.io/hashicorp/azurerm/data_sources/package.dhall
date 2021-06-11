@@ -187,6 +187,8 @@
 , azurerm_servicebus_namespace_authorization_rule =
     ./azurerm_servicebus_namespace_authorization_rule.dhall
 , azurerm_servicebus_namespace = ./azurerm_servicebus_namespace.dhall
+, azurerm_servicebus_namespace_disaster_recovery_config =
+    ./azurerm_servicebus_namespace_disaster_recovery_config.dhall
 , azurerm_servicebus_queue_authorization_rule =
     ./azurerm_servicebus_queue_authorization_rule.dhall
 , azurerm_servicebus_queue = ./azurerm_servicebus_queue.dhall

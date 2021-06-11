@@ -141,6 +141,10 @@
 , azurerm_cdn_profile = ./azurerm_cdn_profile.dhall
 , azurerm_cognitive_account = ./azurerm_cognitive_account.dhall
 , azurerm_communication_service = ./azurerm_communication_service.dhall
+, azurerm_consumption_budget_resource_group =
+    ./azurerm_consumption_budget_resource_group.dhall
+, azurerm_consumption_budget_subscription =
+    ./azurerm_consumption_budget_subscription.dhall
 , azurerm_container_group = ./azurerm_container_group.dhall
 , azurerm_container_registry = ./azurerm_container_registry.dhall
 , azurerm_container_registry_scope_map =
@@ -495,6 +499,8 @@
 , azurerm_media_streaming_locator = ./azurerm_media_streaming_locator.dhall
 , azurerm_media_streaming_policy = ./azurerm_media_streaming_policy.dhall
 , azurerm_media_transform = ./azurerm_media_transform.dhall
+, azurerm_monitor_aad_diagnostic_setting =
+    ./azurerm_monitor_aad_diagnostic_setting.dhall
 , azurerm_monitor_action_group = ./azurerm_monitor_action_group.dhall
 , azurerm_monitor_action_rule_action_group =
     ./azurerm_monitor_action_rule_action_group.dhall
@@ -650,6 +656,8 @@
 , azurerm_security_center_workspace = ./azurerm_security_center_workspace.dhall
 , azurerm_sentinel_alert_rule_fusion =
     ./azurerm_sentinel_alert_rule_fusion.dhall
+, azurerm_sentinel_alert_rule_machine_learning_behavior_analytics =
+    ./azurerm_sentinel_alert_rule_machine_learning_behavior_analytics.dhall
 , azurerm_sentinel_alert_rule_ms_security_incident =
     ./azurerm_sentinel_alert_rule_ms_security_incident.dhall
 , azurerm_sentinel_alert_rule_scheduled =
@@ -673,6 +681,8 @@
 , azurerm_servicebus_namespace_authorization_rule =
     ./azurerm_servicebus_namespace_authorization_rule.dhall
 , azurerm_servicebus_namespace = ./azurerm_servicebus_namespace.dhall
+, azurerm_servicebus_namespace_disaster_recovery_config =
+    ./azurerm_servicebus_namespace_disaster_recovery_config.dhall
 , azurerm_servicebus_namespace_network_rule_set =
     ./azurerm_servicebus_namespace_network_rule_set.dhall
 , azurerm_servicebus_queue_authorization_rule =

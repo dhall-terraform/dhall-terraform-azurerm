@@ -17,6 +17,7 @@
     , storage_account_id : Optional Text
     , storage_account_type : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tier : Optional Text
     , zones : Optional (List Text)
     , encryption_settings :
         Optional
@@ -50,6 +51,7 @@
   , source_uri = None Text
   , storage_account_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tier = None Text
   , zones = None (List Text)
   , encryption_settings =
       None

@@ -2,6 +2,14 @@
     { admin_enabled : Optional Bool
     , admin_password : Optional Text
     , admin_username : Optional Text
+    , encryption :
+        Optional
+          ( List
+              { enabled : Bool
+              , identity_client_id : Text
+              , key_vault_key_id : Text
+              }
+          )
     , georeplication_locations : Optional (List Text)
     , georeplications :
         Optional
@@ -30,6 +38,14 @@
     , storage_account_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , trust_policy : Optional (List { enabled : Bool })
+    , identity :
+        Optional
+          ( List
+              { identity_ids : Optional (List Text)
+              , principal_id : Optional Text
+              , type : Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -42,6 +58,14 @@
   { admin_enabled = None Bool
   , admin_password = None Text
   , admin_username = None Text
+  , encryption =
+      None
+        ( List
+            { enabled : Bool
+            , identity_client_id : Text
+            , key_vault_key_id : Text
+            }
+        )
   , georeplication_locations = None (List Text)
   , georeplications =
       None
@@ -65,6 +89,14 @@
   , storage_account_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , trust_policy = None (List { enabled : Bool })
+  , identity =
+      None
+        ( List
+            { identity_ids : Optional (List Text)
+            , principal_id : Optional Text
+            , type : Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

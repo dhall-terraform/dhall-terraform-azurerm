@@ -46,10 +46,28 @@
     , secondary_web_endpoint : Optional Text
     , secondary_web_host : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , azure_files_authentication :
+        Optional
+          ( List
+              { directory_type : Text
+              , active_directory :
+                  Optional
+                    ( List
+                        { domain_guid : Text
+                        , domain_name : Text
+                        , domain_sid : Text
+                        , forest_name : Text
+                        , netbios_domain_name : Text
+                        , storage_sid : Text
+                        }
+                    )
+              }
+          )
     , blob_properties :
         Optional
           ( List
-              { default_service_version : Optional Text
+              { change_feed_enabled : Optional Bool
+              , default_service_version : Optional Text
               , last_access_time_enabled : Optional Bool
               , versioning_enabled : Optional Bool
               , container_delete_retention_policy :
@@ -85,6 +103,13 @@
               , default_action : Text
               , ip_rules : Optional (List Text)
               , virtual_network_subnet_ids : Optional (List Text)
+              , private_link_access :
+                  Optional
+                    ( List
+                        { endpoint_resource_id : Text
+                        , endpoint_tenant_id : Optional Text
+                        }
+                    )
               }
           )
     , queue_properties :
@@ -128,6 +153,14 @@
                         , version : Text
                         }
                     )
+              }
+          )
+    , routing :
+        Optional
+          ( List
+              { choice : Optional Text
+              , publish_internet_endpoints : Optional Bool
+              , publish_microsoft_endpoints : Optional Bool
               }
           )
     , static_website :
@@ -188,10 +221,28 @@
   , secondary_web_endpoint = None Text
   , secondary_web_host = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , azure_files_authentication =
+      None
+        ( List
+            { directory_type : Text
+            , active_directory :
+                Optional
+                  ( List
+                      { domain_guid : Text
+                      , domain_name : Text
+                      , domain_sid : Text
+                      , forest_name : Text
+                      , netbios_domain_name : Text
+                      , storage_sid : Text
+                      }
+                  )
+            }
+        )
   , blob_properties =
       None
         ( List
-            { default_service_version : Optional Text
+            { change_feed_enabled : Optional Bool
+            , default_service_version : Optional Text
             , last_access_time_enabled : Optional Bool
             , versioning_enabled : Optional Bool
             , container_delete_retention_policy :
@@ -226,6 +277,13 @@
             , default_action : Text
             , ip_rules : Optional (List Text)
             , virtual_network_subnet_ids : Optional (List Text)
+            , private_link_access :
+                Optional
+                  ( List
+                      { endpoint_resource_id : Text
+                      , endpoint_tenant_id : Optional Text
+                      }
+                  )
             }
         )
   , queue_properties =
@@ -269,6 +327,14 @@
                       , version : Text
                       }
                   )
+            }
+        )
+  , routing =
+      None
+        ( List
+            { choice : Optional Text
+            , publish_internet_endpoints : Optional Bool
+            , publish_microsoft_endpoints : Optional Bool
             }
         )
   , static_website =

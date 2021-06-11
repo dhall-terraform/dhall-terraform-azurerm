@@ -30,6 +30,14 @@
     , secondary_readonly_master_key : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , write_endpoints : Optional (List Text)
+    , backup :
+        Optional
+          ( List
+              { interval_in_minutes : Optional Natural
+              , retention_in_hours : Optional Natural
+              , type : Text
+              }
+          )
     , capabilities : Optional (List { name : Text })
     , consistency_policy :
         List
@@ -37,6 +45,16 @@
           , max_interval_in_seconds : Optional Natural
           , max_staleness_prefix : Optional Natural
           }
+    , cors_rule :
+        Optional
+          ( List
+              { allowed_headers : List Text
+              , allowed_methods : List Text
+              , allowed_origins : List Text
+              , exposed_headers : List Text
+              , max_age_in_seconds : Natural
+              }
+          )
     , geo_location :
         List
           { failover_priority : Natural
@@ -45,6 +63,14 @@
           , prefix : Optional Text
           , zone_redundant : Optional Bool
           }
+    , identity :
+        Optional
+          ( List
+              { principal_id : Optional Text
+              , tenant_id : Optional Text
+              , type : Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -88,7 +114,33 @@
   , secondary_readonly_master_key = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , write_endpoints = None (List Text)
+  , backup =
+      None
+        ( List
+            { interval_in_minutes : Optional Natural
+            , retention_in_hours : Optional Natural
+            , type : Text
+            }
+        )
   , capabilities = None (List { name : Text })
+  , cors_rule =
+      None
+        ( List
+            { allowed_headers : List Text
+            , allowed_methods : List Text
+            , allowed_origins : List Text
+            , exposed_headers : List Text
+            , max_age_in_seconds : Natural
+            }
+        )
+  , identity =
+      None
+        ( List
+            { principal_id : Optional Text
+            , tenant_id : Optional Text
+            , type : Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text
