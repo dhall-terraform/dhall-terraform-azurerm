@@ -223,6 +223,7 @@
 , azurerm_healthcare_service = ./azurerm_healthcare_service.dhall
 , azurerm_hpc_cache_blob_target = ./azurerm_hpc_cache_blob_target.dhall
 , azurerm_hpc_cache = ./azurerm_hpc_cache.dhall
+, azurerm_hpc_cache_nfs_target = ./azurerm_hpc_cache_nfs_target.dhall
 , azurerm_image = ./azurerm_image.dhall
 , azurerm_iotcentral_application = ./azurerm_iotcentral_application.dhall
 , azurerm_iothub_consumer_group = ./azurerm_iothub_consumer_group.dhall
@@ -266,6 +267,10 @@
 , azurerm_linux_virtual_machine_scale_set =
     ./azurerm_linux_virtual_machine_scale_set.dhall
 , azurerm_local_network_gateway = ./azurerm_local_network_gateway.dhall
+, azurerm_log_analytics_datasource_windows_event =
+    ./azurerm_log_analytics_datasource_windows_event.dhall
+, azurerm_log_analytics_datasource_windows_performance_counter =
+    ./azurerm_log_analytics_datasource_windows_performance_counter.dhall
 , azurerm_log_analytics_linked_service =
     ./azurerm_log_analytics_linked_service.dhall
 , azurerm_log_analytics_solution = ./azurerm_log_analytics_solution.dhall
@@ -280,6 +285,8 @@
 , azurerm_logic_app_workflow = ./azurerm_logic_app_workflow.dhall
 , azurerm_machine_learning_workspace =
     ./azurerm_machine_learning_workspace.dhall
+, azurerm_managed_application_definition =
+    ./azurerm_managed_application_definition.dhall
 , azurerm_managed_disk = ./azurerm_managed_disk.dhall
 , azurerm_management_group = ./azurerm_management_group.dhall
 , azurerm_management_lock = ./azurerm_management_lock.dhall
@@ -422,6 +429,7 @@
     ./azurerm_site_recovery_replication_policy.dhall
 , azurerm_snapshot = ./azurerm_snapshot.dhall
 , azurerm_spatial_anchors_account = ./azurerm_spatial_anchors_account.dhall
+, azurerm_spring_cloud_service = ./azurerm_spring_cloud_service.dhall
 , azurerm_sql_active_directory_administrator =
     ./azurerm_sql_active_directory_administrator.dhall
 , azurerm_sql_database = ./azurerm_sql_database.dhall

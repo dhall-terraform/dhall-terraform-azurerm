@@ -1,10 +1,12 @@
 { Type =
-    { display_name : Optional Text
-    , group_id : Optional Text
+    { counter_name : Text
     , id : Optional Text
-    , name : Optional Text
-    , parent_management_group_id : Optional Text
-    , subscription_ids : Optional (List Text)
+    , instance_name : Text
+    , interval_seconds : Natural
+    , name : Text
+    , object_name : Text
+    , resource_group_name : Text
+    , workspace_name : Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -14,12 +16,7 @@
           }
     }
 , default =
-  { display_name = None Text
-  , group_id = None Text
-  , id = None Text
-  , name = None Text
-  , parent_management_group_id = None Text
-  , subscription_ids = None (List Text)
+  { id = None Text
   , timeouts =
       None
         { create : Optional Text

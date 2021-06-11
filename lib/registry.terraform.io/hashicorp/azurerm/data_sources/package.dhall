@@ -75,6 +75,8 @@
 , azurerm_logic_app_workflow = ./azurerm_logic_app_workflow.dhall
 , azurerm_machine_learning_workspace =
     ./azurerm_machine_learning_workspace.dhall
+, azurerm_managed_application_definition =
+    ./azurerm_managed_application_definition.dhall
 , azurerm_managed_disk = ./azurerm_managed_disk.dhall
 , azurerm_management_group = ./azurerm_management_group.dhall
 , azurerm_maps_account = ./azurerm_maps_account.dhall
@@ -131,6 +133,7 @@
 , azurerm_shared_image_version = ./azurerm_shared_image_version.dhall
 , azurerm_signalr_service = ./azurerm_signalr_service.dhall
 , azurerm_snapshot = ./azurerm_snapshot.dhall
+, azurerm_spring_cloud_service = ./azurerm_spring_cloud_service.dhall
 , azurerm_sql_database = ./azurerm_sql_database.dhall
 , azurerm_sql_server = ./azurerm_sql_server.dhall
 , azurerm_storage_account_blob_container_sas =
