@@ -7,6 +7,8 @@
     , resource_group_name : Text
     , sku : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , workspace_id : Optional Text
+    , workspace_url : Optional Text
     , custom_parameters :
         Optional
           ( List
@@ -29,6 +31,8 @@
   , managed_resource_group_id = None Text
   , managed_resource_group_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , workspace_id = None Text
+  , workspace_url = None Text
   , custom_parameters =
       None
         ( List

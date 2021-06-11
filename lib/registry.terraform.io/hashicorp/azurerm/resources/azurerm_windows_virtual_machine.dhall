@@ -27,6 +27,7 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timezone : Optional Text
     , virtual_machine_id : Optional Text
+    , virtual_machine_scale_set_id : Optional Text
     , zone : Optional Text
     , additional_capabilities :
         Optional (List { ultra_ssd_enabled : Optional Bool })
@@ -95,6 +96,7 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timezone = None Text
   , virtual_machine_id = None Text
+  , virtual_machine_scale_set_id = None Text
   , zone = None Text
   , additional_capabilities = None (List { ultra_ssd_enabled : Optional Bool })
   , additional_unattend_content = None (List { content : Text, setting : Text })

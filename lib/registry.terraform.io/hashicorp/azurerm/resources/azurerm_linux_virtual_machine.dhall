@@ -25,6 +25,7 @@
     , source_image_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , virtual_machine_id : Optional Text
+    , virtual_machine_scale_set_id : Optional Text
     , zone : Optional Text
     , additional_capabilities :
         Optional (List { ultra_ssd_enabled : Optional Bool })
@@ -85,6 +86,7 @@
   , source_image_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , virtual_machine_id = None Text
+  , virtual_machine_scale_set_id = None Text
   , zone = None Text
   , additional_capabilities = None (List { ultra_ssd_enabled : Optional Bool })
   , admin_ssh_key = None (List { public_key : Text, username : Text })

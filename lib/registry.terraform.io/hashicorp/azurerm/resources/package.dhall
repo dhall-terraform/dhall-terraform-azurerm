@@ -162,6 +162,7 @@
 , azurerm_data_lake_store_firewall_rule =
     ./azurerm_data_lake_store_firewall_rule.dhall
 , azurerm_data_share_account = ./azurerm_data_share_account.dhall
+, azurerm_data_share = ./azurerm_data_share.dhall
 , azurerm_dedicated_host = ./azurerm_dedicated_host.dhall
 , azurerm_dedicated_host_group = ./azurerm_dedicated_host_group.dhall
 , azurerm_devspace_controller = ./azurerm_devspace_controller.dhall
@@ -248,6 +249,8 @@
 , azurerm_iothub_route = ./azurerm_iothub_route.dhall
 , azurerm_iothub_shared_access_policy =
     ./azurerm_iothub_shared_access_policy.dhall
+, azurerm_iot_time_series_insights_standard_environment =
+    ./azurerm_iot_time_series_insights_standard_environment.dhall
 , azurerm_key_vault_access_policy = ./azurerm_key_vault_access_policy.dhall
 , azurerm_key_vault_certificate = ./azurerm_key_vault_certificate.dhall
 , azurerm_key_vault = ./azurerm_key_vault.dhall
@@ -365,6 +368,8 @@
 , azurerm_notification_hub = ./azurerm_notification_hub.dhall
 , azurerm_notification_hub_namespace =
     ./azurerm_notification_hub_namespace.dhall
+, azurerm_orchestrated_virtual_machine_scale_set =
+    ./azurerm_orchestrated_virtual_machine_scale_set.dhall
 , azurerm_packet_capture = ./azurerm_packet_capture.dhall
 , azurerm_point_to_site_vpn_gateway = ./azurerm_point_to_site_vpn_gateway.dhall
 , azurerm_policy_assignment = ./azurerm_policy_assignment.dhall

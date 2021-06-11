@@ -2,6 +2,7 @@
     { account_name : Text
     , id : Optional Text
     , location : Text
+    , mount_ip_addresses : Optional (List Text)
     , name : Text
     , pool_name : Text
     , protocols : Optional (List Text)
@@ -34,6 +35,7 @@
     }
 , default =
   { id = None Text
+  , mount_ip_addresses = None (List Text)
   , protocols = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
   , export_policy_rule =

@@ -124,7 +124,8 @@
               , ip_restriction :
                   Optional
                     ( List
-                        { ip_address : Text
+                        { action : Text
+                        , ip_address : Text
                         , name : Text
                         , priority : Natural
                         , virtual_network_subnet_id : Text
@@ -279,7 +280,8 @@
             , ip_restriction :
                 Optional
                   ( List
-                      { ip_address : Text
+                      { action : Text
+                      , ip_address : Text
                       , name : Text
                       , priority : Natural
                       , virtual_network_subnet_id : Text
