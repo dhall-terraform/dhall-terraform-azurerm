@@ -32,6 +32,7 @@
                     , ip_address : Text
                     , name : Text
                     , priority : Natural
+                    , service_tag : Text
                     , subnet_id : Text
                     , virtual_network_subnet_id : Text
                     }
@@ -44,6 +45,7 @@
                     , ip_address : Text
                     , name : Text
                     , priority : Natural
+                    , service_tag : Text
                     , subnet_id : Text
                     , virtual_network_subnet_id : Text
                     }
@@ -97,6 +99,7 @@
                   , ip_address : Text
                   , name : Text
                   , priority : Natural
+                  , service_tag : Text
                   , subnet_id : Text
                   , virtual_network_subnet_id : Text
                   }
@@ -109,6 +112,7 @@
                   , ip_address : Text
                   , name : Text
                   , priority : Natural
+                  , service_tag : Text
                   , subnet_id : Text
                   , virtual_network_subnet_id : Text
                   }

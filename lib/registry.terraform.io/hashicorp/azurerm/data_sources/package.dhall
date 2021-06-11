@@ -61,8 +61,10 @@
 , azurerm_dev_test_lab = ./azurerm_dev_test_lab.dhall
 , azurerm_dev_test_virtual_network = ./azurerm_dev_test_virtual_network.dhall
 , azurerm_digital_twins_instance = ./azurerm_digital_twins_instance.dhall
+, azurerm_disk_access = ./azurerm_disk_access.dhall
 , azurerm_disk_encryption_set = ./azurerm_disk_encryption_set.dhall
 , azurerm_dns_zone = ./azurerm_dns_zone.dhall
+, azurerm_eventgrid_domain_topic = ./azurerm_eventgrid_domain_topic.dhall
 , azurerm_eventgrid_topic = ./azurerm_eventgrid_topic.dhall
 , azurerm_eventhub_authorization_rule =
     ./azurerm_eventhub_authorization_rule.dhall
@@ -180,6 +182,7 @@
 , azurerm_spring_cloud_service = ./azurerm_spring_cloud_service.dhall
 , azurerm_sql_database = ./azurerm_sql_database.dhall
 , azurerm_sql_server = ./azurerm_sql_server.dhall
+, azurerm_ssh_public_key = ./azurerm_ssh_public_key.dhall
 , azurerm_storage_account_blob_container_sas =
     ./azurerm_storage_account_blob_container_sas.dhall
 , azurerm_storage_account = ./azurerm_storage_account.dhall

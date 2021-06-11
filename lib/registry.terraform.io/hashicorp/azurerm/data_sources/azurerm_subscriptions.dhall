@@ -11,6 +11,7 @@
               , spending_limit : Text
               , state : Text
               , subscription_id : Text
+              , tags : List { mapKey : Text, mapValue : Text }
               , tenant_id : Text
               }
           )
@@ -29,6 +30,7 @@
             , spending_limit : Text
             , state : Text
             , subscription_id : Text
+            , tags : List { mapKey : Text, mapValue : Text }
             , tenant_id : Text
             }
         )

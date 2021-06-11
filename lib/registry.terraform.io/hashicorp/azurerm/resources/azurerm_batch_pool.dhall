@@ -46,7 +46,8 @@
     , network_configuration :
         Optional
           ( List
-              { public_ips : Optional (List Text)
+              { public_address_provisioning_type : Optional Text
+              , public_ips : Optional (List Text)
               , subnet_id : Text
               , endpoint_configuration :
                   Optional
@@ -157,7 +158,8 @@
   , network_configuration =
       None
         ( List
-            { public_ips : Optional (List Text)
+            { public_address_provisioning_type : Optional Text
+            , public_ips : Optional (List Text)
             , subnet_id : Text
             , endpoint_configuration :
                 Optional

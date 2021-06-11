@@ -6,6 +6,7 @@
     , spending_limit : Optional Text
     , state : Optional Text
     , subscription_id : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tenant_id : Optional Text
     , timeouts : Optional { read : Optional Text }
     }
@@ -17,6 +18,7 @@
   , spending_limit = None Text
   , state = None Text
   , subscription_id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , tenant_id = None Text
   , timeouts = None { read : Optional Text }
   }

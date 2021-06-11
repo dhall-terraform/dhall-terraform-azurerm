@@ -68,7 +68,8 @@
           , volume :
               Optional
                 ( List
-                    { mount_path : Text
+                    { empty_dir : Optional Bool
+                    , mount_path : Text
                     , name : Text
                     , read_only : Optional Bool
                     , secret :

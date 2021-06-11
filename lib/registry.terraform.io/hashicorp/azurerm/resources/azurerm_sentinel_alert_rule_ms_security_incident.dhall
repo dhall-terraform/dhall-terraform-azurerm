@@ -1,6 +1,8 @@
 { Type =
-    { description : Optional Text
+    { alert_rule_template_guid : Optional Text
+    , description : Optional Text
     , display_name : Text
+    , display_name_exclude_filter : Optional (List Text)
     , display_name_filter : Optional (List Text)
     , enabled : Optional Bool
     , id : Optional Text
@@ -18,7 +20,9 @@
           }
     }
 , default =
-  { description = None Text
+  { alert_rule_template_guid = None Text
+  , description = None Text
+  , display_name_exclude_filter = None (List Text)
   , display_name_filter = None (List Text)
   , enabled = None Bool
   , id = None Text

@@ -6,6 +6,7 @@
         Optional (List { enabled : Bool, password : Text, username : Text })
     , https_endpoint : Optional Text
     , id : Optional Text
+    , kafka_rest_proxy_endpoint : Optional Text
     , kind : Optional Text
     , location : Optional Text
     , name : Text
@@ -23,6 +24,7 @@
   , gateway = None (List { enabled : Bool, password : Text, username : Text })
   , https_endpoint = None Text
   , id = None Text
+  , kafka_rest_proxy_endpoint = None Text
   , kind = None Text
   , location = None Text
   , ssh_endpoint = None Text

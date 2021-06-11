@@ -1,8 +1,11 @@
 { Type =
-    { id : Optional Text
+    { https_only : Optional Bool
+    , id : Optional Text
+    , is_public : Optional Bool
     , name : Text
     , resource_group_name : Text
     , service_name : Text
+    , url : Optional Text
     , identity :
         Optional
           ( List
@@ -11,6 +14,8 @@
               , type : Text
               }
           )
+    , persistent_disk :
+        Optional (List { mount_path : Optional Text, size_in_gb : Natural })
     , timeouts :
         Optional
           { create : Optional Text
@@ -20,7 +25,10 @@
           }
     }
 , default =
-  { id = None Text
+  { https_only = None Bool
+  , id = None Text
+  , is_public = None Bool
+  , url = None Text
   , identity =
       None
         ( List
@@ -29,6 +37,8 @@
             , type : Text
             }
         )
+  , persistent_disk =
+      None (List { mount_path : Optional Text, size_in_gb : Natural })
   , timeouts =
       None
         { create : Optional Text

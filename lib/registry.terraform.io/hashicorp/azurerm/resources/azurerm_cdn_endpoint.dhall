@@ -28,7 +28,7 @@
               , cookies_condition :
                   Optional
                     ( List
-                        { match_values : List Text
+                        { match_values : Optional (List Text)
                         , negate_condition : Optional Bool
                         , operator : Text
                         , selector : Text
@@ -60,7 +60,7 @@
               , post_arg_condition :
                   Optional
                     ( List
-                        { match_values : List Text
+                        { match_values : Optional (List Text)
                         , negate_condition : Optional Bool
                         , operator : Text
                         , selector : Text
@@ -70,7 +70,7 @@
               , query_string_condition :
                   Optional
                     ( List
-                        { match_values : List Text
+                        { match_values : Optional (List Text)
                         , negate_condition : Optional Bool
                         , operator : Text
                         , transforms : Optional (List Text)
@@ -79,7 +79,7 @@
               , remote_address_condition :
                   Optional
                     ( List
-                        { match_values : List Text
+                        { match_values : Optional (List Text)
                         , negate_condition : Optional Bool
                         , operator : Text
                         }
@@ -87,7 +87,7 @@
               , request_body_condition :
                   Optional
                     ( List
-                        { match_values : List Text
+                        { match_values : Optional (List Text)
                         , negate_condition : Optional Bool
                         , operator : Text
                         , transforms : Optional (List Text)
@@ -96,7 +96,7 @@
               , request_header_condition :
                   Optional
                     ( List
-                        { match_values : List Text
+                        { match_values : Optional (List Text)
                         , negate_condition : Optional Bool
                         , operator : Text
                         , selector : Text
@@ -122,7 +122,7 @@
               , request_uri_condition :
                   Optional
                     ( List
-                        { match_values : List Text
+                        { match_values : Optional (List Text)
                         , negate_condition : Optional Bool
                         , operator : Text
                         , transforms : Optional (List Text)
@@ -131,7 +131,7 @@
               , url_file_extension_condition :
                   Optional
                     ( List
-                        { match_values : List Text
+                        { match_values : Optional (List Text)
                         , negate_condition : Optional Bool
                         , operator : Text
                         , transforms : Optional (List Text)
@@ -140,7 +140,7 @@
               , url_file_name_condition :
                   Optional
                     ( List
-                        { match_values : List Text
+                        { match_values : Optional (List Text)
                         , negate_condition : Optional Bool
                         , operator : Text
                         , transforms : Optional (List Text)
@@ -149,7 +149,7 @@
               , url_path_condition :
                   Optional
                     ( List
-                        { match_values : List Text
+                        { match_values : Optional (List Text)
                         , negate_condition : Optional Bool
                         , operator : Text
                         , transforms : Optional (List Text)
@@ -256,7 +256,7 @@
             , cookies_condition :
                 Optional
                   ( List
-                      { match_values : List Text
+                      { match_values : Optional (List Text)
                       , negate_condition : Optional Bool
                       , operator : Text
                       , selector : Text
@@ -288,7 +288,7 @@
             , post_arg_condition :
                 Optional
                   ( List
-                      { match_values : List Text
+                      { match_values : Optional (List Text)
                       , negate_condition : Optional Bool
                       , operator : Text
                       , selector : Text
@@ -298,7 +298,7 @@
             , query_string_condition :
                 Optional
                   ( List
-                      { match_values : List Text
+                      { match_values : Optional (List Text)
                       , negate_condition : Optional Bool
                       , operator : Text
                       , transforms : Optional (List Text)
@@ -307,7 +307,7 @@
             , remote_address_condition :
                 Optional
                   ( List
-                      { match_values : List Text
+                      { match_values : Optional (List Text)
                       , negate_condition : Optional Bool
                       , operator : Text
                       }
@@ -315,7 +315,7 @@
             , request_body_condition :
                 Optional
                   ( List
-                      { match_values : List Text
+                      { match_values : Optional (List Text)
                       , negate_condition : Optional Bool
                       , operator : Text
                       , transforms : Optional (List Text)
@@ -324,7 +324,7 @@
             , request_header_condition :
                 Optional
                   ( List
-                      { match_values : List Text
+                      { match_values : Optional (List Text)
                       , negate_condition : Optional Bool
                       , operator : Text
                       , selector : Text
@@ -350,7 +350,7 @@
             , request_uri_condition :
                 Optional
                   ( List
-                      { match_values : List Text
+                      { match_values : Optional (List Text)
                       , negate_condition : Optional Bool
                       , operator : Text
                       , transforms : Optional (List Text)
@@ -359,7 +359,7 @@
             , url_file_extension_condition :
                 Optional
                   ( List
-                      { match_values : List Text
+                      { match_values : Optional (List Text)
                       , negate_condition : Optional Bool
                       , operator : Text
                       , transforms : Optional (List Text)
@@ -368,7 +368,7 @@
             , url_file_name_condition :
                 Optional
                   ( List
-                      { match_values : List Text
+                      { match_values : Optional (List Text)
                       , negate_condition : Optional Bool
                       , operator : Text
                       , transforms : Optional (List Text)
@@ -377,7 +377,7 @@
             , url_path_condition :
                 Optional
                   ( List
-                      { match_values : List Text
+                      { match_values : Optional (List Text)
                       , negate_condition : Optional Bool
                       , operator : Text
                       , transforms : Optional (List Text)

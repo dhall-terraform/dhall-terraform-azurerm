@@ -7,6 +7,7 @@
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , traffic_routing_method : Text
+    , traffic_view_enabled : Optional Bool
     , dns_config : List { relative_name : Text, ttl : Natural }
     , monitor_config :
         List
@@ -33,6 +34,7 @@
   , max_return = None Natural
   , profile_status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , traffic_view_enabled = None Bool
   , timeouts =
       None
         { create : Optional Text

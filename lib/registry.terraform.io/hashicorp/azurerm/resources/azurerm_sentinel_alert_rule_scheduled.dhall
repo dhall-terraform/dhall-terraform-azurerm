@@ -1,5 +1,6 @@
 { Type =
-    { description : Optional Text
+    { alert_rule_template_guid : Optional Text
+    , description : Optional Text
     , display_name : Text
     , enabled : Optional Bool
     , id : Optional Text
@@ -14,6 +15,20 @@
     , tactics : Optional (List Text)
     , trigger_operator : Optional Text
     , trigger_threshold : Optional Natural
+    , incident_configuration :
+        Optional
+          ( List
+              { create_incident : Bool
+              , grouping :
+                  List
+                    { enabled : Optional Bool
+                    , entity_matching_method : Optional Text
+                    , group_by : Optional (List Text)
+                    , lookback_duration : Optional Text
+                    , reopen_closed_incidents : Optional Bool
+                    }
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -23,7 +38,8 @@
           }
     }
 , default =
-  { description = None Text
+  { alert_rule_template_guid = None Text
+  , description = None Text
   , enabled = None Bool
   , id = None Text
   , query_frequency = None Text
@@ -33,6 +49,20 @@
   , tactics = None (List Text)
   , trigger_operator = None Text
   , trigger_threshold = None Natural
+  , incident_configuration =
+      None
+        ( List
+            { create_incident : Bool
+            , grouping :
+                List
+                  { enabled : Optional Bool
+                  , entity_matching_method : Optional Text
+                  , group_by : Optional (List Text)
+                  , lookback_duration : Optional Text
+                  , reopen_closed_incidents : Optional Bool
+                  }
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

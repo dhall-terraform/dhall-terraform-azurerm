@@ -131,6 +131,7 @@
               { dns_service_ip : Optional Text
               , docker_bridge_cidr : Optional Text
               , load_balancer_sku : Optional Text
+              , network_mode : Optional Text
               , network_plugin : Text
               , network_policy : Optional Text
               , outbound_type : Optional Text
@@ -285,6 +286,7 @@
             { dns_service_ip : Optional Text
             , docker_bridge_cidr : Optional Text
             , load_balancer_sku : Optional Text
+            , network_mode : Optional Text
             , network_plugin : Text
             , network_policy : Optional Text
             , outbound_type : Optional Text

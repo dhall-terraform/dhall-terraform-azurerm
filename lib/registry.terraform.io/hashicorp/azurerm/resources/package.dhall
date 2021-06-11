@@ -198,6 +198,8 @@
     ./azurerm_data_factory_linked_service_sftp.dhall
 , azurerm_data_factory_linked_service_sql_server =
     ./azurerm_data_factory_linked_service_sql_server.dhall
+, azurerm_data_factory_linked_service_synapse =
+    ./azurerm_data_factory_linked_service_synapse.dhall
 , azurerm_data_factory_linked_service_web =
     ./azurerm_data_factory_linked_service_web.dhall
 , azurerm_data_factory_pipeline = ./azurerm_data_factory_pipeline.dhall
@@ -245,6 +247,7 @@
 , azurerm_digital_twins_endpoint_servicebus =
     ./azurerm_digital_twins_endpoint_servicebus.dhall
 , azurerm_digital_twins_instance = ./azurerm_digital_twins_instance.dhall
+, azurerm_disk_access = ./azurerm_disk_access.dhall
 , azurerm_disk_encryption_set = ./azurerm_disk_encryption_set.dhall
 , azurerm_dns_aaaa_record = ./azurerm_dns_aaaa_record.dhall
 , azurerm_dns_a_record = ./azurerm_dns_a_record.dhall
@@ -430,6 +433,7 @@
 , azurerm_media_job = ./azurerm_media_job.dhall
 , azurerm_media_services_account = ./azurerm_media_services_account.dhall
 , azurerm_media_streaming_endpoint = ./azurerm_media_streaming_endpoint.dhall
+, azurerm_media_streaming_locator = ./azurerm_media_streaming_locator.dhall
 , azurerm_media_transform = ./azurerm_media_transform.dhall
 , azurerm_monitor_action_group = ./azurerm_monitor_action_group.dhall
 , azurerm_monitor_action_rule_action_group =
@@ -564,6 +568,8 @@
 , azurerm_security_center_subscription_pricing =
     ./azurerm_security_center_subscription_pricing.dhall
 , azurerm_security_center_workspace = ./azurerm_security_center_workspace.dhall
+, azurerm_sentinel_alert_rule_fusion =
+    ./azurerm_sentinel_alert_rule_fusion.dhall
 , azurerm_sentinel_alert_rule_ms_security_incident =
     ./azurerm_sentinel_alert_rule_ms_security_incident.dhall
 , azurerm_sentinel_alert_rule_scheduled =
@@ -619,6 +625,7 @@
 , azurerm_sql_firewall_rule = ./azurerm_sql_firewall_rule.dhall
 , azurerm_sql_server = ./azurerm_sql_server.dhall
 , azurerm_sql_virtual_network_rule = ./azurerm_sql_virtual_network_rule.dhall
+, azurerm_ssh_public_key = ./azurerm_ssh_public_key.dhall
 , azurerm_stack_hci_cluster = ./azurerm_stack_hci_cluster.dhall
 , azurerm_storage_account_customer_managed_key =
     ./azurerm_storage_account_customer_managed_key.dhall

@@ -76,7 +76,9 @@
     , logs :
         Optional
           ( List
-              { application_logs :
+              { detailed_error_messages_enabled : Optional Bool
+              , failed_request_tracing_enabled : Optional Bool
+              , application_logs :
                   Optional
                     ( List
                         { file_system_level : Optional Text
@@ -129,6 +131,7 @@
                         , ip_address : Text
                         , name : Text
                         , priority : Natural
+                        , service_tag : Text
                         , subnet_id : Text
                         , virtual_network_subnet_id : Text
                         }
@@ -151,6 +154,7 @@
                         , ip_address : Text
                         , name : Text
                         , priority : Natural
+                        , service_tag : Text
                         , subnet_id : Text
                         , virtual_network_subnet_id : Text
                         }
@@ -248,7 +252,9 @@
   , logs =
       None
         ( List
-            { application_logs :
+            { detailed_error_messages_enabled : Optional Bool
+            , failed_request_tracing_enabled : Optional Bool
+            , application_logs :
                 Optional
                   ( List
                       { file_system_level : Optional Text
@@ -299,6 +305,7 @@
                       , ip_address : Text
                       , name : Text
                       , priority : Natural
+                      , service_tag : Text
                       , subnet_id : Text
                       , virtual_network_subnet_id : Text
                       }
@@ -321,6 +328,7 @@
                       , ip_address : Text
                       , name : Text
                       , priority : Natural
+                      , service_tag : Text
                       , subnet_id : Text
                       , virtual_network_subnet_id : Text
                       }

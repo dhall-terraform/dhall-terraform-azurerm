@@ -20,6 +20,7 @@
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , traffic_routing_method : Optional Text
+    , traffic_view_enabled : Optional Bool
     , timeouts : Optional { read : Optional Text }
     }
 , default =
@@ -42,6 +43,7 @@
   , profile_status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , traffic_routing_method = None Text
+  , traffic_view_enabled = None Bool
   , timeouts = None { read : Optional Text }
   }
 }
