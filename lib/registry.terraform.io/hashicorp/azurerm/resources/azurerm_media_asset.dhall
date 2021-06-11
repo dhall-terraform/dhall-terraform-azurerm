@@ -1,16 +1,12 @@
 { Type =
-    { cluster_name : Text
-    , compression : Optional Text
-    , consumer_group : Text
-    , data_format : Optional Text
-    , database_name : Text
-    , eventhub_id : Text
+    { alternate_id : Optional Text
+    , container : Optional Text
+    , description : Optional Text
     , id : Optional Text
-    , location : Text
-    , mapping_rule_name : Optional Text
+    , media_services_account_name : Text
     , name : Text
     , resource_group_name : Text
-    , table_name : Optional Text
+    , storage_account_name : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -20,11 +16,11 @@
           }
     }
 , default =
-  { compression = None Text
-  , data_format = None Text
+  { alternate_id = None Text
+  , container = None Text
+  , description = None Text
   , id = None Text
-  , mapping_rule_name = None Text
-  , table_name = None Text
+  , storage_account_name = None Text
   , timeouts =
       None
         { create : Optional Text

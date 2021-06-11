@@ -3,6 +3,7 @@
     , enable_disk_encryption : Optional Bool
     , enable_purge : Optional Bool
     , enable_streaming_ingest : Optional Bool
+    , engine : Optional Text
     , id : Optional Text
     , language_extensions : Optional (List Text)
     , location : Text
@@ -46,6 +47,7 @@
   , enable_disk_encryption = None Bool
   , enable_purge = None Bool
   , enable_streaming_ingest = None Bool
+  , engine = None Text
   , id = None Text
   , language_extensions = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })

@@ -1,10 +1,12 @@
 { Type =
-    { enabled : Optional Bool
+    { description : Optional Text
+    , enabled : Optional Bool
     , id : Optional Text
     , location : Text
     , name : Text
     , resource_group_name : Text
     , scopes : List Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , action :
         List
           { connection_string : Optional Text
@@ -37,8 +39,10 @@
           }
     }
 , default =
-  { enabled = None Bool
+  { description = None Text
+  , enabled = None Bool
   , id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text

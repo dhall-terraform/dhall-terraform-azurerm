@@ -62,6 +62,8 @@
 , azurerm_application_security_group =
     ./azurerm_application_security_group.dhall
 , azurerm_app_service_active_slot = ./azurerm_app_service_active_slot.dhall
+, azurerm_app_service_certificate_binding =
+    ./azurerm_app_service_certificate_binding.dhall
 , azurerm_app_service_certificate = ./azurerm_app_service_certificate.dhall
 , azurerm_app_service_certificate_order =
     ./azurerm_app_service_certificate_order.dhall
@@ -238,6 +240,10 @@
     ./azurerm_dev_test_windows_virtual_machine.dhall
 , azurerm_digital_twins_endpoint_eventgrid =
     ./azurerm_digital_twins_endpoint_eventgrid.dhall
+, azurerm_digital_twins_endpoint_eventhub =
+    ./azurerm_digital_twins_endpoint_eventhub.dhall
+, azurerm_digital_twins_endpoint_servicebus =
+    ./azurerm_digital_twins_endpoint_servicebus.dhall
 , azurerm_digital_twins_instance = ./azurerm_digital_twins_instance.dhall
 , azurerm_disk_encryption_set = ./azurerm_disk_encryption_set.dhall
 , azurerm_dns_aaaa_record = ./azurerm_dns_aaaa_record.dhall
@@ -418,7 +424,9 @@
 , azurerm_mariadb_virtual_network_rule =
     ./azurerm_mariadb_virtual_network_rule.dhall
 , azurerm_marketplace_agreement = ./azurerm_marketplace_agreement.dhall
+, azurerm_media_asset = ./azurerm_media_asset.dhall
 , azurerm_media_services_account = ./azurerm_media_services_account.dhall
+, azurerm_media_transform = ./azurerm_media_transform.dhall
 , azurerm_monitor_action_group = ./azurerm_monitor_action_group.dhall
 , azurerm_monitor_action_rule_action_group =
     ./azurerm_monitor_action_rule_action_group.dhall
@@ -535,6 +543,8 @@
 , azurerm_resource_group = ./azurerm_resource_group.dhall
 , azurerm_resource_group_template_deployment =
     ./azurerm_resource_group_template_deployment.dhall
+, azurerm_resource_provider_registration =
+    ./azurerm_resource_provider_registration.dhall
 , azurerm_role_assignment = ./azurerm_role_assignment.dhall
 , azurerm_role_definition = ./azurerm_role_definition.dhall
 , azurerm_route = ./azurerm_route.dhall
@@ -605,6 +615,7 @@
 , azurerm_sql_firewall_rule = ./azurerm_sql_firewall_rule.dhall
 , azurerm_sql_server = ./azurerm_sql_server.dhall
 , azurerm_sql_virtual_network_rule = ./azurerm_sql_virtual_network_rule.dhall
+, azurerm_stack_hci_cluster = ./azurerm_stack_hci_cluster.dhall
 , azurerm_storage_account_customer_managed_key =
     ./azurerm_storage_account_customer_managed_key.dhall
 , azurerm_storage_account = ./azurerm_storage_account.dhall
@@ -621,6 +632,9 @@
 , azurerm_storage_queue = ./azurerm_storage_queue.dhall
 , azurerm_storage_share = ./azurerm_storage_share.dhall
 , azurerm_storage_share_directory = ./azurerm_storage_share_directory.dhall
+, azurerm_storage_share_file = ./azurerm_storage_share_file.dhall
+, azurerm_storage_sync_cloud_endpoint =
+    ./azurerm_storage_sync_cloud_endpoint.dhall
 , azurerm_storage_sync = ./azurerm_storage_sync.dhall
 , azurerm_storage_sync_group = ./azurerm_storage_sync_group.dhall
 , azurerm_storage_table = ./azurerm_storage_table.dhall

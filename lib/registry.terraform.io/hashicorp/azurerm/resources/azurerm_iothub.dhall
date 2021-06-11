@@ -22,6 +22,7 @@
     , hostname : Optional Text
     , id : Optional Text
     , location : Text
+    , min_tls_version : Optional Text
     , name : Text
     , public_network_access_enabled : Optional Bool
     , resource_group_name : Text
@@ -101,6 +102,7 @@
   , event_hub_retention_in_days = None Natural
   , hostname = None Text
   , id = None Text
+  , min_tls_version = None Text
   , public_network_access_enabled = None Bool
   , route =
       None
