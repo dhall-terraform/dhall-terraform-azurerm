@@ -57,6 +57,7 @@
                     , azure_key_vault_certificate_secret_version : Optional Text
                     , azure_key_vault_certificate_vault_id : Optional Text
                     , certificate_source : Optional Text
+                    , minimum_tls_version : Optional Text
                     , provisioning_state : Optional Text
                     , provisioning_substate : Optional Text
                     }

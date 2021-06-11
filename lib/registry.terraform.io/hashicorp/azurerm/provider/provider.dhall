@@ -14,6 +14,15 @@
     , subscription_id : Optional Text
     , tenant_id : Optional Text
     , use_msi : Optional Bool
+    , features :
+        Optional
+          ( List
+              { virtual_machine :
+                  Optional (List { delete_os_disk_on_deletion : Bool })
+              , virtual_machine_scale_set :
+                  Optional (List { roll_instances_when_required : Bool })
+              }
+          )
     }
 , default =
   { auxiliary_tenant_ids = None (List Text)
@@ -31,5 +40,14 @@
   , subscription_id = None Text
   , tenant_id = None Text
   , use_msi = None Bool
+  , features =
+      None
+        ( List
+            { virtual_machine :
+                Optional (List { delete_os_disk_on_deletion : Bool })
+            , virtual_machine_scale_set :
+                Optional (List { roll_instances_when_required : Bool })
+            }
+        )
   }
 }

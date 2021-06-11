@@ -40,6 +40,8 @@
 , azurerm_disk_encryption_set = ./azurerm_disk_encryption_set.dhall
 , azurerm_dns_zone = ./azurerm_dns_zone.dhall
 , azurerm_eventgrid_topic = ./azurerm_eventgrid_topic.dhall
+, azurerm_eventhub_namespace_authorization_rule =
+    ./azurerm_eventhub_namespace_authorization_rule.dhall
 , azurerm_eventhub_namespace = ./azurerm_eventhub_namespace.dhall
 , azurerm_express_route_circuit = ./azurerm_express_route_circuit.dhall
 , azurerm_firewall = ./azurerm_firewall.dhall
@@ -63,6 +65,7 @@
 , azurerm_managed_disk = ./azurerm_managed_disk.dhall
 , azurerm_management_group = ./azurerm_management_group.dhall
 , azurerm_maps_account = ./azurerm_maps_account.dhall
+, azurerm_mariadb_server = ./azurerm_mariadb_server.dhall
 , azurerm_monitor_action_group = ./azurerm_monitor_action_group.dhall
 , azurerm_monitor_diagnostic_categories =
     ./azurerm_monitor_diagnostic_categories.dhall

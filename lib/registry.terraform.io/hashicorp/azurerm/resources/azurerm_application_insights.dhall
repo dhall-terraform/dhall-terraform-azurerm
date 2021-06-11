@@ -1,6 +1,8 @@
 { Type =
     { app_id : Optional Text
     , application_type : Text
+    , daily_data_cap_in_gb : Optional Natural
+    , daily_data_cap_notifications_disabled : Optional Bool
     , id : Optional Text
     , instrumentation_key : Optional Text
     , location : Text
@@ -12,6 +14,8 @@
     }
 , default =
   { app_id = None Text
+  , daily_data_cap_in_gb = None Natural
+  , daily_data_cap_notifications_disabled = None Bool
   , id = None Text
   , instrumentation_key = None Text
   , retention_in_days = None Natural
