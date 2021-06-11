@@ -6,6 +6,7 @@
     , ip_address_type : Optional Text
     , location : Text
     , name : Text
+    , network_profile_id : Optional Text
     , os_type : Text
     , resource_group_name : Text
     , restart_policy : Optional Text
@@ -84,7 +85,7 @@
           ( List
               { log_analytics :
                   List
-                    { log_type : Text
+                    { log_type : Optional Text
                     , metadata :
                         Optional (List { mapKey : Text, mapValue : Text })
                     , workspace_id : Text
@@ -109,6 +110,7 @@
   , id = None Text
   , ip_address = None Text
   , ip_address_type = None Text
+  , network_profile_id = None Text
   , restart_policy = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , diagnostics =
@@ -116,7 +118,7 @@
         ( List
             { log_analytics :
                 List
-                  { log_type : Text
+                  { log_type : Optional Text
                   , metadata :
                       Optional (List { mapKey : Text, mapValue : Text })
                   , workspace_id : Text

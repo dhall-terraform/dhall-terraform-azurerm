@@ -83,7 +83,15 @@
               { always_on : Optional Bool
               , linux_fx_version : Optional Text
               , use_32_bit_worker_process : Optional Bool
+              , virtual_network_name : Optional Text
               , websockets_enabled : Optional Bool
+              , cors :
+                  Optional
+                    ( List
+                        { allowed_origins : List Text
+                        , support_credentials : Optional Bool
+                        }
+                    )
               }
           )
     }
@@ -165,7 +173,15 @@
             { always_on : Optional Bool
             , linux_fx_version : Optional Text
             , use_32_bit_worker_process : Optional Bool
+            , virtual_network_name : Optional Text
             , websockets_enabled : Optional Bool
+            , cors :
+                Optional
+                  ( List
+                      { allowed_origins : List Text
+                      , support_credentials : Optional Bool
+                      }
+                  )
             }
         )
   }

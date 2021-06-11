@@ -19,7 +19,20 @@
               , visibility : Optional (List Text)
               }
           )
-    , container_configuration : Optional (List { type : Optional Text })
+    , container_configuration :
+        Optional
+          ( List
+              { container_registries :
+                  Optional
+                    ( List
+                        { password : Text
+                        , registry_server : Text
+                        , user_name : Text
+                        }
+                    )
+              , type : Optional Text
+              }
+          )
     , fixed_scale :
         Optional
           ( List
@@ -84,7 +97,20 @@
             , visibility : Optional (List Text)
             }
         )
-  , container_configuration = None (List { type : Optional Text })
+  , container_configuration =
+      None
+        ( List
+            { container_registries :
+                Optional
+                  ( List
+                      { password : Text
+                      , registry_server : Text
+                      , user_name : Text
+                      }
+                  )
+            , type : Optional Text
+            }
+        )
   , fixed_scale =
       None
         ( List

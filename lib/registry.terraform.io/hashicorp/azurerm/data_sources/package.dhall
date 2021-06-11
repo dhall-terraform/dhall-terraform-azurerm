@@ -27,6 +27,7 @@
 , azurerm_cosmosdb_account = ./azurerm_cosmosdb_account.dhall
 , azurerm_data_lake_store = ./azurerm_data_lake_store.dhall
 , azurerm_dev_test_lab = ./azurerm_dev_test_lab.dhall
+, azurerm_dev_test_virtual_network = ./azurerm_dev_test_virtual_network.dhall
 , azurerm_dns_zone = ./azurerm_dns_zone.dhall
 , azurerm_eventhub_namespace = ./azurerm_eventhub_namespace.dhall
 , azurerm_express_route_circuit = ./azurerm_express_route_circuit.dhall

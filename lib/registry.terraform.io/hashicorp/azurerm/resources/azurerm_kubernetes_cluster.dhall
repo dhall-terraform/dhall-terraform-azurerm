@@ -1,6 +1,7 @@
 { Type =
     { api_server_authorized_ip_ranges : Optional (List Text)
     , dns_prefix : Text
+    , enable_pod_security_policy : Optional Bool
     , fqdn : Optional Text
     , id : Optional Text
     , kube_admin_config :
@@ -105,6 +106,7 @@
     }
 , default =
   { api_server_authorized_ip_ranges = None (List Text)
+  , enable_pod_security_policy = None Bool
   , fqdn = None Text
   , id = None Text
   , kube_admin_config =

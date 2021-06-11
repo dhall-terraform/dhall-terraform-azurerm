@@ -2,7 +2,18 @@
     { account_name : Text
     , auto_scale :
         Optional (List { evaluation_interval : Text, formula : Text })
-    , container_configuration : Optional (List { type : Text })
+    , container_configuration :
+        Optional
+          ( List
+              { container_registries :
+                  List
+                    { password : Text
+                    , registry_server : Text
+                    , user_name : Text
+                    }
+              , type : Text
+              }
+          )
     , display_name : Optional Text
     , fixed_scale :
         Optional
@@ -68,7 +79,15 @@
     }
 , default =
   { auto_scale = None (List { evaluation_interval : Text, formula : Text })
-  , container_configuration = None (List { type : Text })
+  , container_configuration =
+      None
+        ( List
+            { container_registries :
+                List
+                  { password : Text, registry_server : Text, user_name : Text }
+            , type : Text
+            }
+        )
   , display_name = None Text
   , fixed_scale =
       None

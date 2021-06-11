@@ -108,6 +108,18 @@
                               )
                         }
                     )
+              , http_logs :
+                  Optional
+                    ( List
+                        { file_system :
+                            Optional
+                              ( List
+                                  { retention_in_days : Natural
+                                  , retention_in_mb : Natural
+                                  }
+                              )
+                        }
+                    )
               }
           )
     , site_config :
@@ -258,6 +270,18 @@
                                 { level : Text
                                 , retention_in_days : Natural
                                 , sas_url : Text
+                                }
+                            )
+                      }
+                  )
+            , http_logs :
+                Optional
+                  ( List
+                      { file_system :
+                          Optional
+                            ( List
+                                { retention_in_days : Natural
+                                , retention_in_mb : Natural
                                 }
                             )
                       }

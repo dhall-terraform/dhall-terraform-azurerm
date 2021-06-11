@@ -8,7 +8,14 @@
     , traffic_routing_method : Text
     , dns_config : List { relative_name : Text, ttl : Natural }
     , monitor_config :
-        List { path : Optional Text, port : Natural, protocol : Text }
+        List
+          { interval_in_seconds : Optional Natural
+          , path : Optional Text
+          , port : Natural
+          , protocol : Text
+          , timeout_in_seconds : Optional Natural
+          , tolerated_number_of_failures : Optional Natural
+          }
     }
 , default =
   { fqdn = None Text

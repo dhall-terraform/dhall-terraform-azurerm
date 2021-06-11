@@ -75,12 +75,15 @@
 , azurerm_connection_monitor = ./azurerm_connection_monitor.dhall
 , azurerm_container_group = ./azurerm_container_group.dhall
 , azurerm_container_registry = ./azurerm_container_registry.dhall
+, azurerm_container_registry_webhook =
+    ./azurerm_container_registry_webhook.dhall
 , azurerm_container_service = ./azurerm_container_service.dhall
 , azurerm_cosmosdb_account = ./azurerm_cosmosdb_account.dhall
 , azurerm_cosmosdb_cassandra_keyspace =
     ./azurerm_cosmosdb_cassandra_keyspace.dhall
 , azurerm_cosmosdb_mongo_collection = ./azurerm_cosmosdb_mongo_collection.dhall
 , azurerm_cosmosdb_mongo_database = ./azurerm_cosmosdb_mongo_database.dhall
+, azurerm_cosmosdb_sql_container = ./azurerm_cosmosdb_sql_container.dhall
 , azurerm_cosmosdb_sql_database = ./azurerm_cosmosdb_sql_database.dhall
 , azurerm_cosmosdb_table = ./azurerm_cosmosdb_table.dhall
 , azurerm_databricks_workspace = ./azurerm_databricks_workspace.dhall
@@ -114,6 +117,7 @@
 , azurerm_dev_test_linux_virtual_machine =
     ./azurerm_dev_test_linux_virtual_machine.dhall
 , azurerm_dev_test_policy = ./azurerm_dev_test_policy.dhall
+, azurerm_dev_test_schedule = ./azurerm_dev_test_schedule.dhall
 , azurerm_dev_test_virtual_network = ./azurerm_dev_test_virtual_network.dhall
 , azurerm_dev_test_windows_virtual_machine =
     ./azurerm_dev_test_windows_virtual_machine.dhall
@@ -200,9 +204,12 @@
 , azurerm_management_group = ./azurerm_management_group.dhall
 , azurerm_management_lock = ./azurerm_management_lock.dhall
 , azurerm_maps_account = ./azurerm_maps_account.dhall
+, azurerm_mariadb_configuration = ./azurerm_mariadb_configuration.dhall
 , azurerm_mariadb_database = ./azurerm_mariadb_database.dhall
 , azurerm_mariadb_firewall_rule = ./azurerm_mariadb_firewall_rule.dhall
 , azurerm_mariadb_server = ./azurerm_mariadb_server.dhall
+, azurerm_mariadb_virtual_network_rule =
+    ./azurerm_mariadb_virtual_network_rule.dhall
 , azurerm_media_services_account = ./azurerm_media_services_account.dhall
 , azurerm_metric_alertrule = ./azurerm_metric_alertrule.dhall
 , azurerm_monitor_action_group = ./azurerm_monitor_action_group.dhall
@@ -255,13 +262,23 @@
 , azurerm_postgresql_virtual_network_rule =
     ./azurerm_postgresql_virtual_network_rule.dhall
 , azurerm_private_dns_a_record = ./azurerm_private_dns_a_record.dhall
+, azurerm_private_dns_cname_record = ./azurerm_private_dns_cname_record.dhall
 , azurerm_private_dns_zone = ./azurerm_private_dns_zone.dhall
 , azurerm_public_ip = ./azurerm_public_ip.dhall
 , azurerm_public_ip_prefix = ./azurerm_public_ip_prefix.dhall
+, azurerm_recovery_network_mapping = ./azurerm_recovery_network_mapping.dhall
+, azurerm_recovery_replicated_vm = ./azurerm_recovery_replicated_vm.dhall
+, azurerm_recovery_services_fabric = ./azurerm_recovery_services_fabric.dhall
 , azurerm_recovery_services_protected_vm =
     ./azurerm_recovery_services_protected_vm.dhall
+, azurerm_recovery_services_protection_container =
+    ./azurerm_recovery_services_protection_container.dhall
+, azurerm_recovery_services_protection_container_mapping =
+    ./azurerm_recovery_services_protection_container_mapping.dhall
 , azurerm_recovery_services_protection_policy_vm =
     ./azurerm_recovery_services_protection_policy_vm.dhall
+, azurerm_recovery_services_replication_policy =
+    ./azurerm_recovery_services_replication_policy.dhall
 , azurerm_recovery_services_vault = ./azurerm_recovery_services_vault.dhall
 , azurerm_redis_cache = ./azurerm_redis_cache.dhall
 , azurerm_redis_firewall_rule = ./azurerm_redis_firewall_rule.dhall
@@ -300,6 +317,7 @@
     ./azurerm_sql_active_directory_administrator.dhall
 , azurerm_sql_database = ./azurerm_sql_database.dhall
 , azurerm_sql_elasticpool = ./azurerm_sql_elasticpool.dhall
+, azurerm_sql_failover_group = ./azurerm_sql_failover_group.dhall
 , azurerm_sql_firewall_rule = ./azurerm_sql_firewall_rule.dhall
 , azurerm_sql_server = ./azurerm_sql_server.dhall
 , azurerm_sql_virtual_network_rule = ./azurerm_sql_virtual_network_rule.dhall
@@ -347,4 +365,5 @@
     ./azurerm_virtual_network_gateway_connection.dhall
 , azurerm_virtual_network_gateway = ./azurerm_virtual_network_gateway.dhall
 , azurerm_virtual_network_peering = ./azurerm_virtual_network_peering.dhall
+, azurerm_virtual_wan = ./azurerm_virtual_wan.dhall
 }

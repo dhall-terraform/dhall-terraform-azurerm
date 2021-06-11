@@ -61,7 +61,7 @@
         Optional
           ( List
               { bypass : Optional (List Text)
-              , default_action : Optional Text
+              , default_action : Text
               , ip_rules : Optional (List Text)
               , virtual_network_subnet_ids : Optional (List Text)
               }
@@ -167,7 +167,7 @@
       None
         ( List
             { bypass : Optional (List Text)
-            , default_action : Optional Text
+            , default_action : Text
             , ip_rules : Optional (List Text)
             , virtual_network_subnet_ids : Optional (List Text)
             }
