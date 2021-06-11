@@ -21,6 +21,27 @@
                     }
               }
           )
+    , managed_rules :
+        List
+          { exclusion :
+              Optional
+                ( List
+                    { match_variable : Text
+                    , selector : Text
+                    , selector_match_operator : Text
+                    }
+                )
+          , managed_rule_set :
+              List
+                { type : Optional Text
+                , version : Text
+                , rule_group_override :
+                    Optional
+                      ( List
+                          { disabled_rules : List Text, rule_group_name : Text }
+                      )
+                }
+          }
     , policy_settings :
         Optional (List { enabled : Optional Bool, mode : Optional Text })
     , timeouts :

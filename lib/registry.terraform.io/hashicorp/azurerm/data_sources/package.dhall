@@ -126,6 +126,7 @@
 , azurerm_resources = ./azurerm_resources.dhall
 , azurerm_role_definition = ./azurerm_role_definition.dhall
 , azurerm_route_table = ./azurerm_route_table.dhall
+, azurerm_sentinel_alert_rule = ./azurerm_sentinel_alert_rule.dhall
 , azurerm_servicebus_namespace_authorization_rule =
     ./azurerm_servicebus_namespace_authorization_rule.dhall
 , azurerm_servicebus_namespace = ./azurerm_servicebus_namespace.dhall
@@ -134,6 +135,7 @@
 , azurerm_shared_image = ./azurerm_shared_image.dhall
 , azurerm_shared_image_gallery = ./azurerm_shared_image_gallery.dhall
 , azurerm_shared_image_version = ./azurerm_shared_image_version.dhall
+, azurerm_shared_image_versions = ./azurerm_shared_image_versions.dhall
 , azurerm_signalr_service = ./azurerm_signalr_service.dhall
 , azurerm_snapshot = ./azurerm_snapshot.dhall
 , azurerm_spring_cloud_service = ./azurerm_spring_cloud_service.dhall

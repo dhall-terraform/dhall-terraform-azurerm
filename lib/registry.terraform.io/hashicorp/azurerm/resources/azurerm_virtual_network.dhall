@@ -6,17 +6,17 @@
     , location : Text
     , name : Text
     , resource_group_name : Text
-    , tags : Optional (List { mapKey : Text, mapValue : Text })
-    , ddos_protection_plan : Optional (List { enable : Bool, id : Text })
     , subnet :
         Optional
           ( List
               { address_prefix : Text
-              , id : Optional Text
+              , id : Text
               , name : Text
-              , security_group : Optional Text
+              , security_group : Text
               }
           )
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , ddos_protection_plan : Optional (List { enable : Bool, id : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -29,17 +29,17 @@
   { dns_servers = None (List Text)
   , guid = None Text
   , id = None Text
-  , tags = None (List { mapKey : Text, mapValue : Text })
-  , ddos_protection_plan = None (List { enable : Bool, id : Text })
   , subnet =
       None
         ( List
             { address_prefix : Text
-            , id : Optional Text
+            , id : Text
             , name : Text
-            , security_group : Optional Text
+            , security_group : Text
             }
         )
+  , tags = None (List { mapKey : Text, mapValue : Text })
+  , ddos_protection_plan = None (List { enable : Bool, id : Text })
   , timeouts =
       None
         { create : Optional Text

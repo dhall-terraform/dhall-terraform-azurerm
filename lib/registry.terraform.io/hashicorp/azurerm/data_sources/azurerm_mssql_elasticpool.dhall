@@ -1,5 +1,6 @@
 { Type =
     { id : Optional Text
+    , license_type : Optional Text
     , location : Optional Text
     , max_size_bytes : Optional Natural
     , max_size_gb : Optional Natural
@@ -14,6 +15,7 @@
     }
 , default =
   { id = None Text
+  , license_type = None Text
   , location = None Text
   , max_size_bytes = None Natural
   , max_size_gb = None Natural

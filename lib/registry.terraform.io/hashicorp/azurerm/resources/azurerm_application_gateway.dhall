@@ -65,6 +65,7 @@
           , frontend_port_id : Optional Text
           , frontend_port_name : Text
           , host_name : Optional Text
+          , host_names : Optional (List Text)
           , id : Optional Text
           , name : Text
           , protocol : Text

@@ -290,6 +290,7 @@
 , azurerm_maintenance_configuration = ./azurerm_maintenance_configuration.dhall
 , azurerm_managed_application_definition =
     ./azurerm_managed_application_definition.dhall
+, azurerm_managed_application = ./azurerm_managed_application.dhall
 , azurerm_managed_disk = ./azurerm_managed_disk.dhall
 , azurerm_management_group = ./azurerm_management_group.dhall
 , azurerm_management_lock = ./azurerm_management_lock.dhall
@@ -318,6 +319,7 @@
 , azurerm_mssql_database_vulnerability_assessment_rule_baseline =
     ./azurerm_mssql_database_vulnerability_assessment_rule_baseline.dhall
 , azurerm_mssql_elasticpool = ./azurerm_mssql_elasticpool.dhall
+, azurerm_mssql_server = ./azurerm_mssql_server.dhall
 , azurerm_mssql_server_security_alert_policy =
     ./azurerm_mssql_server_security_alert_policy.dhall
 , azurerm_mssql_server_vulnerability_assessment =
@@ -403,6 +405,8 @@
 , azurerm_security_center_subscription_pricing =
     ./azurerm_security_center_subscription_pricing.dhall
 , azurerm_security_center_workspace = ./azurerm_security_center_workspace.dhall
+, azurerm_sentinel_alert_rule_ms_security_incident =
+    ./azurerm_sentinel_alert_rule_ms_security_incident.dhall
 , azurerm_servicebus_namespace_authorization_rule =
     ./azurerm_servicebus_namespace_authorization_rule.dhall
 , azurerm_servicebus_namespace = ./azurerm_servicebus_namespace.dhall

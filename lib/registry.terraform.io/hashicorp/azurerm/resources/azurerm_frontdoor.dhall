@@ -1,5 +1,6 @@
 { Type =
-    { cname : Optional Text
+    { backend_pools_send_receive_timeout_seconds : Optional Natural
+    , cname : Optional Text
     , enforce_backend_pools_certificate_name_check : Bool
     , friendly_name : Optional Text
     , id : Optional Text
@@ -105,7 +106,8 @@
           }
     }
 , default =
-  { cname = None Text
+  { backend_pools_send_receive_timeout_seconds = None Natural
+  , cname = None Text
   , friendly_name = None Text
   , id = None Text
   , load_balancer_enabled = None Bool

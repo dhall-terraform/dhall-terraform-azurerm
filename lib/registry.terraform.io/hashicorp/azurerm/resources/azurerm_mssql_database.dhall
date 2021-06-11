@@ -17,6 +17,15 @@
     , sku_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , zone_redundant : Optional Bool
+    , extended_auditing_policy :
+        Optional
+          ( List
+              { retention_in_days : Optional Natural
+              , storage_account_access_key : Text
+              , storage_account_access_key_is_secondary : Optional Bool
+              , storage_endpoint : Text
+              }
+          )
     , threat_detection_policy :
         Optional
           ( List
@@ -55,6 +64,15 @@
   , sku_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zone_redundant = None Bool
+  , extended_auditing_policy =
+      None
+        ( List
+            { retention_in_days : Optional Natural
+            , storage_account_access_key : Text
+            , storage_account_access_key_is_secondary : Optional Bool
+            , storage_endpoint : Text
+            }
+        )
   , threat_detection_policy =
       None
         ( List

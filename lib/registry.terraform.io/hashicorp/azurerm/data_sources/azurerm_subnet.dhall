@@ -1,5 +1,6 @@
 { Type =
     { address_prefix : Optional Text
+    , address_prefixes : Optional (List Text)
     , enforce_private_link_endpoint_network_policies : Optional Bool
     , enforce_private_link_service_network_policies : Optional Bool
     , id : Optional Text
@@ -13,6 +14,7 @@
     }
 , default =
   { address_prefix = None Text
+  , address_prefixes = None (List Text)
   , enforce_private_link_endpoint_network_policies = None Bool
   , enforce_private_link_service_network_policies = None Bool
   , id = None Text

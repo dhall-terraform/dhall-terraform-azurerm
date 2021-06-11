@@ -12,7 +12,13 @@
     , shared_key : Optional Text
     , vlan_id : Natural
     , microsoft_peering_config :
-        Optional (List { advertised_public_prefixes : List Text })
+        Optional
+          ( List
+              { advertised_public_prefixes : List Text
+              , customer_asn : Optional Natural
+              , routing_registry_name : Optional Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -29,7 +35,13 @@
   , secondary_azure_port = None Text
   , shared_key = None Text
   , microsoft_peering_config =
-      None (List { advertised_public_prefixes : List Text })
+      None
+        ( List
+            { advertised_public_prefixes : List Text
+            , customer_asn : Optional Natural
+            , routing_registry_name : Optional Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

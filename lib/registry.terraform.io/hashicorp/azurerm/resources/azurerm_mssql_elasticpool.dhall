@@ -1,5 +1,6 @@
 { Type =
     { id : Optional Text
+    , license_type : Optional Text
     , location : Text
     , max_size_bytes : Optional Natural
     , max_size_gb : Optional Natural
@@ -27,6 +28,7 @@
     }
 , default =
   { id = None Text
+  , license_type = None Text
   , max_size_bytes = None Natural
   , max_size_gb = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })

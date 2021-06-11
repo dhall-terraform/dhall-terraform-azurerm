@@ -13,7 +13,7 @@
               { category : Text
               , enabled : Optional Bool
               , retention_policy :
-                  List { days : Optional Natural, enabled : Bool }
+                  Optional (List { days : Optional Natural, enabled : Bool })
               }
           )
     , metric :
@@ -22,7 +22,7 @@
               { category : Text
               , enabled : Optional Bool
               , retention_policy :
-                  List { days : Optional Natural, enabled : Bool }
+                  Optional (List { days : Optional Natural, enabled : Bool })
               }
           )
     , timeouts :
@@ -46,7 +46,7 @@
             { category : Text
             , enabled : Optional Bool
             , retention_policy :
-                List { days : Optional Natural, enabled : Bool }
+                Optional (List { days : Optional Natural, enabled : Bool })
             }
         )
   , metric =
@@ -55,7 +55,7 @@
             { category : Text
             , enabled : Optional Bool
             , retention_policy :
-                List { days : Optional Natural, enabled : Bool }
+                Optional (List { days : Optional Natural, enabled : Bool })
             }
         )
   , timeouts =
