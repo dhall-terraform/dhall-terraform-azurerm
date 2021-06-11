@@ -31,14 +31,6 @@
               }
           )
     , kube_config_raw : Optional Text
-    , kubelet_identity :
-        Optional
-          ( List
-              { client_id : Text
-              , object_id : Text
-              , user_assigned_identity_id : Text
-              }
-          )
     , kubernetes_version : Optional Text
     , location : Text
     , name : Text
@@ -157,6 +149,14 @@
               , user_assigned_identity_id : Optional Text
               }
           )
+    , kubelet_identity :
+        Optional
+          ( List
+              { client_id : Optional Text
+              , object_id : Optional Text
+              , user_assigned_identity_id : Optional Text
+              }
+          )
     , linux_profile :
         Optional
           (List { admin_username : Text, ssh_key : List { key_data : Text } })
@@ -249,14 +249,6 @@
             }
         )
   , kube_config_raw = None Text
-  , kubelet_identity =
-      None
-        ( List
-            { client_id : Text
-            , object_id : Text
-            , user_assigned_identity_id : Text
-            }
-        )
   , kubernetes_version = None Text
   , node_resource_group = None Text
   , private_cluster_enabled = None Bool
@@ -343,6 +335,14 @@
             { principal_id : Optional Text
             , tenant_id : Optional Text
             , type : Text
+            , user_assigned_identity_id : Optional Text
+            }
+        )
+  , kubelet_identity =
+      None
+        ( List
+            { client_id : Optional Text
+            , object_id : Optional Text
             , user_assigned_identity_id : Optional Text
             }
         )

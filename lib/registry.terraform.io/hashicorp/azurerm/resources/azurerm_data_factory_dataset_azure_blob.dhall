@@ -3,6 +3,8 @@
     , annotations : Optional (List Text)
     , data_factory_name : Text
     , description : Optional Text
+    , dynamic_filename_enabled : Optional Bool
+    , dynamic_path_enabled : Optional Bool
     , filename : Optional Text
     , folder : Optional Text
     , id : Optional Text
@@ -28,6 +30,8 @@
   { additional_properties = None (List { mapKey : Text, mapValue : Text })
   , annotations = None (List Text)
   , description = None Text
+  , dynamic_filename_enabled = None Bool
+  , dynamic_path_enabled = None Bool
   , filename = None Text
   , folder = None Text
   , id = None Text

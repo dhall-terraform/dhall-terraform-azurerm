@@ -10,6 +10,7 @@
     , personal_desktop_assignment_type : Optional Text
     , preferred_app_group_type : Optional Text
     , resource_group_name : Text
+    , start_vm_on_connect : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , type : Text
     , validate_environment : Optional Bool
@@ -37,6 +38,7 @@
   , maximum_sessions_allowed = None Natural
   , personal_desktop_assignment_type = None Text
   , preferred_app_group_type = None Text
+  , start_vm_on_connect = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
   , validate_environment = None Bool
   , registration_info =

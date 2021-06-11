@@ -215,6 +215,8 @@
     ./azurerm_data_factory_linked_service_azure_file_storage.dhall
 , azurerm_data_factory_linked_service_azure_function =
     ./azurerm_data_factory_linked_service_azure_function.dhall
+, azurerm_data_factory_linked_service_azure_search =
+    ./azurerm_data_factory_linked_service_azure_search.dhall
 , azurerm_data_factory_linked_service_azure_sql_database =
     ./azurerm_data_factory_linked_service_azure_sql_database.dhall
 , azurerm_data_factory_linked_service_azure_table_storage =
@@ -225,6 +227,8 @@
     ./azurerm_data_factory_linked_service_data_lake_storage_gen2.dhall
 , azurerm_data_factory_linked_service_key_vault =
     ./azurerm_data_factory_linked_service_key_vault.dhall
+, azurerm_data_factory_linked_service_kusto =
+    ./azurerm_data_factory_linked_service_kusto.dhall
 , azurerm_data_factory_linked_service_mysql =
     ./azurerm_data_factory_linked_service_mysql.dhall
 , azurerm_data_factory_linked_service_postgresql =

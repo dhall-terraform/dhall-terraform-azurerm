@@ -18,6 +18,14 @@
     , quote_character : Optional Text
     , resource_group_name : Text
     , row_delimiter : Optional Text
+    , azure_blob_fs_location :
+        Optional
+          ( List
+              { file_system : Text
+              , filename : Optional Text
+              , path : Optional Text
+              }
+          )
     , azure_blob_storage_location :
         Optional (List { container : Text, filename : Text, path : Text })
     , http_server_location :
@@ -51,6 +59,14 @@
   , parameters = None (List { mapKey : Text, mapValue : Text })
   , quote_character = None Text
   , row_delimiter = None Text
+  , azure_blob_fs_location =
+      None
+        ( List
+            { file_system : Text
+            , filename : Optional Text
+            , path : Optional Text
+            }
+        )
   , azure_blob_storage_location =
       None (List { container : Text, filename : Text, path : Text })
   , http_server_location =

@@ -6,6 +6,7 @@
     , partition_count : Natural
     , partition_ids : Optional (List Text)
     , resource_group_name : Text
+    , status : Optional Text
     , capture_description :
         Optional
           ( List
@@ -34,6 +35,7 @@
 , default =
   { id = None Text
   , partition_ids = None (List Text)
+  , status = None Text
   , capture_description =
       None
         ( List

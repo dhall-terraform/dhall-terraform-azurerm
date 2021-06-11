@@ -1,5 +1,6 @@
 { Type =
-    { id : Optional Text
+    { availability_zone : Optional Text
+    , id : Optional Text
     , ip_prefix : Optional Text
     , location : Text
     , name : Text
@@ -17,7 +18,8 @@
           }
     }
 , default =
-  { id = None Text
+  { availability_zone = None Text
+  , id = None Text
   , ip_prefix = None Text
   , prefix_length = None Natural
   , sku = None Text

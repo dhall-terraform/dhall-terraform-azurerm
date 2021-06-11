@@ -4,6 +4,7 @@
     , key_name : Text
     , key_vault_id : Text
     , key_version : Text
+    , user_identity : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -14,6 +15,7 @@
     }
 , default =
   { id = None Text
+  , user_identity = None Text
   , timeouts =
       None
         { create : Optional Text

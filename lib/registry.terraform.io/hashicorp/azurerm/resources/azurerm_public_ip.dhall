@@ -1,5 +1,6 @@
 { Type =
     { allocation_method : Text
+    , availability_zone : Optional Text
     , domain_name_label : Optional Text
     , fqdn : Optional Text
     , id : Optional Text
@@ -24,7 +25,8 @@
           }
     }
 , default =
-  { domain_name_label = None Text
+  { availability_zone = None Text
+  , domain_name_label = None Text
   , fqdn = None Text
   , id = None Text
   , idle_timeout_in_minutes = None Natural

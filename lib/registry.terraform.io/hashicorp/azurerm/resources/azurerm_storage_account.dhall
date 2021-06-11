@@ -91,7 +91,8 @@
     , identity :
         Optional
           ( List
-              { principal_id : Optional Text
+              { identity_ids : Optional (List Text)
+              , principal_id : Optional Text
               , tenant_id : Optional Text
               , type : Text
               }
@@ -265,7 +266,8 @@
   , identity =
       None
         ( List
-            { principal_id : Optional Text
+            { identity_ids : Optional (List Text)
+            , principal_id : Optional Text
             , tenant_id : Optional Text
             , type : Text
             }

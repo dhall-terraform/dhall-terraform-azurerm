@@ -10,6 +10,7 @@
     , resource_group_name : Text
     , service_principal_id : Optional Text
     , service_principal_key : Optional Text
+    , storage_account_key : Optional Text
     , tenant : Optional Text
     , url : Text
     , use_managed_identity : Optional Bool
@@ -30,6 +31,7 @@
   , parameters = None (List { mapKey : Text, mapValue : Text })
   , service_principal_id = None Text
   , service_principal_key = None Text
+  , storage_account_key = None Text
   , tenant = None Text
   , use_managed_identity = None Bool
   , timeouts =
