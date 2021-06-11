@@ -2,8 +2,10 @@
     { auto_inflate_enabled : Optional Bool
     , capacity : Optional Natural
     , default_primary_connection_string : Optional Text
+    , default_primary_connection_string_alias : Optional Text
     , default_primary_key : Optional Text
     , default_secondary_connection_string : Optional Text
+    , default_secondary_connection_string_alias : Optional Text
     , default_secondary_key : Optional Text
     , id : Optional Text
     , location : Text
@@ -36,8 +38,10 @@
   { auto_inflate_enabled = None Bool
   , capacity = None Natural
   , default_primary_connection_string = None Text
+  , default_primary_connection_string_alias = None Text
   , default_primary_key = None Text
   , default_secondary_connection_string = None Text
+  , default_secondary_connection_string_alias = None Text
   , default_secondary_key = None Text
   , id = None Text
   , maximum_throughput_units = None Natural

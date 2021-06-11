@@ -46,6 +46,7 @@
         Optional
           ( List
               { caching : Text
+              , create_option : Optional Text
               , disk_encryption_set_id : Optional Text
               , disk_size_gb : Natural
               , lun : Natural
@@ -172,6 +173,7 @@
       None
         ( List
             { caching : Text
+            , create_option : Optional Text
             , disk_encryption_set_id : Optional Text
             , disk_size_gb : Natural
             , lun : Natural

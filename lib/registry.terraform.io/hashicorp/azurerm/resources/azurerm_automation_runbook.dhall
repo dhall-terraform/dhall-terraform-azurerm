@@ -11,11 +11,13 @@
     , runbook_type : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , publish_content_link :
-        List
-          { uri : Text
-          , version : Optional Text
-          , hash : Optional (List { algorithm : Text, value : Text })
-          }
+        Optional
+          ( List
+              { uri : Text
+              , version : Optional Text
+              , hash : Optional (List { algorithm : Text, value : Text })
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -29,6 +31,14 @@
   , description = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , publish_content_link =
+      None
+        ( List
+            { uri : Text
+            , version : Optional Text
+            , hash : Optional (List { algorithm : Text, value : Text })
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

@@ -1,17 +1,26 @@
 { Type =
-    { app_service_name : Text
-    , app_service_plan_id : Text
+    { app_service_plan_id : Text
     , app_settings : Optional (List { mapKey : Text, mapValue : Text })
     , client_affinity_enabled : Optional Bool
-    , default_site_hostname : Optional Text
+    , daily_memory_time_quota : Optional Natural
+    , default_hostname : Optional Text
+    , enable_builtin_logging : Optional Bool
     , enabled : Optional Bool
+    , function_app_name : Text
     , https_only : Optional Bool
     , id : Optional Text
+    , kind : Optional Text
     , location : Text
     , name : Text
+    , os_type : Optional Text
+    , outbound_ip_addresses : Optional Text
+    , possible_outbound_ip_addresses : Optional Text
     , resource_group_name : Text
     , site_credential : Optional (List { password : Text, username : Text })
+    , storage_account_access_key : Text
+    , storage_account_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , version : Optional Text
     , auth_settings :
         Optional
           ( List
@@ -73,78 +82,19 @@
               , type : Text
               }
           )
-    , logs :
-        Optional
-          ( List
-              { application_logs :
-                  Optional
-                    ( List
-                        { azure_blob_storage :
-                            Optional
-                              ( List
-                                  { level : Text
-                                  , retention_in_days : Natural
-                                  , sas_url : Text
-                                  }
-                              )
-                        }
-                    )
-              , http_logs :
-                  Optional
-                    ( List
-                        { azure_blob_storage :
-                            Optional
-                              ( List
-                                  { retention_in_days : Natural
-                                  , sas_url : Text
-                                  }
-                              )
-                        , file_system :
-                            Optional
-                              ( List
-                                  { retention_in_days : Natural
-                                  , retention_in_mb : Natural
-                                  }
-                              )
-                        }
-                    )
-              }
-          )
     , site_config :
         Optional
           ( List
               { always_on : Optional Bool
-              , app_command_line : Optional Text
-              , auto_swap_slot_name : Optional Text
-              , default_documents : Optional (List Text)
-              , dotnet_framework_version : Optional Text
               , ftps_state : Optional Text
-              , health_check_path : Optional Text
               , http2_enabled : Optional Bool
               , ip_restriction :
-                  Optional
-                    ( List
-                        { ip_address : Text
-                        , name : Text
-                        , priority : Natural
-                        , virtual_network_subnet_id : Text
-                        }
-                    )
-              , java_container : Optional Text
-              , java_container_version : Optional Text
-              , java_version : Optional Text
+                  Optional (List { ip_address : Text, subnet_id : Text })
               , linux_fx_version : Optional Text
-              , local_mysql_enabled : Optional Bool
-              , managed_pipeline_mode : Optional Text
               , min_tls_version : Optional Text
-              , php_version : Optional Text
-              , python_version : Optional Text
-              , remote_debugging_enabled : Optional Bool
-              , remote_debugging_version : Optional Text
-              , scm_type : Optional Text
+              , pre_warmed_instance_count : Optional Natural
               , use_32_bit_worker_process : Optional Bool
               , websockets_enabled : Optional Bool
-              , windows_fx_version : Optional Text
               , cors :
                   Optional
                     ( List
@@ -165,12 +115,19 @@
 , default =
   { app_settings = None (List { mapKey : Text, mapValue : Text })
   , client_affinity_enabled = None Bool
-  , default_site_hostname = None Text
+  , daily_memory_time_quota = None Natural
+  , default_hostname = None Text
+  , enable_builtin_logging = None Bool
   , enabled = None Bool
   , https_only = None Bool
   , id = None Text
+  , kind = None Text
+  , os_type = None Text
+  , outbound_ip_addresses = None Text
+  , possible_outbound_ip_addresses = None Text
   , site_credential = None (List { password : Text, username : Text })
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , version = None Text
   , auth_settings =
       None
         ( List
@@ -230,76 +187,19 @@
             , type : Text
             }
         )
-  , logs =
-      None
-        ( List
-            { application_logs :
-                Optional
-                  ( List
-                      { azure_blob_storage :
-                          Optional
-                            ( List
-                                { level : Text
-                                , retention_in_days : Natural
-                                , sas_url : Text
-                                }
-                            )
-                      }
-                  )
-            , http_logs :
-                Optional
-                  ( List
-                      { azure_blob_storage :
-                          Optional
-                            ( List
-                                { retention_in_days : Natural, sas_url : Text }
-                            )
-                      , file_system :
-                          Optional
-                            ( List
-                                { retention_in_days : Natural
-                                , retention_in_mb : Natural
-                                }
-                            )
-                      }
-                  )
-            }
-        )
   , site_config =
       None
         ( List
             { always_on : Optional Bool
-            , app_command_line : Optional Text
-            , auto_swap_slot_name : Optional Text
-            , default_documents : Optional (List Text)
-            , dotnet_framework_version : Optional Text
             , ftps_state : Optional Text
-            , health_check_path : Optional Text
             , http2_enabled : Optional Bool
             , ip_restriction :
-                Optional
-                  ( List
-                      { ip_address : Text
-                      , name : Text
-                      , priority : Natural
-                      , virtual_network_subnet_id : Text
-                      }
-                  )
-            , java_container : Optional Text
-            , java_container_version : Optional Text
-            , java_version : Optional Text
+                Optional (List { ip_address : Text, subnet_id : Text })
             , linux_fx_version : Optional Text
-            , local_mysql_enabled : Optional Bool
-            , managed_pipeline_mode : Optional Text
             , min_tls_version : Optional Text
-            , php_version : Optional Text
-            , python_version : Optional Text
-            , remote_debugging_enabled : Optional Bool
-            , remote_debugging_version : Optional Text
-            , scm_type : Optional Text
+            , pre_warmed_instance_count : Optional Natural
             , use_32_bit_worker_process : Optional Bool
             , websockets_enabled : Optional Bool
-            , windows_fx_version : Optional Text
             , cors :
                 Optional
                   ( List

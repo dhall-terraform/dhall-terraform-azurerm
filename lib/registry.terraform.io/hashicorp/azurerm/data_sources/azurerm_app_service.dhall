@@ -25,9 +25,15 @@
               , default_documents : List Text
               , dotnet_framework_version : Text
               , ftps_state : Text
+              , health_check_path : Text
               , http2_enabled : Bool
               , ip_restriction :
-                  List { ip_address : Text, virtual_network_subnet_id : Text }
+                  List
+                    { ip_address : Text
+                    , name : Text
+                    , priority : Natural
+                    , virtual_network_subnet_id : Text
+                    }
               , java_container : Text
               , java_container_version : Text
               , java_version : Text
@@ -73,9 +79,15 @@
             , default_documents : List Text
             , dotnet_framework_version : Text
             , ftps_state : Text
+            , health_check_path : Text
             , http2_enabled : Bool
             , ip_restriction :
-                List { ip_address : Text, virtual_network_subnet_id : Text }
+                List
+                  { ip_address : Text
+                  , name : Text
+                  , priority : Natural
+                  , virtual_network_subnet_id : Text
+                  }
             , java_container : Text
             , java_container_version : Text
             , java_version : Text

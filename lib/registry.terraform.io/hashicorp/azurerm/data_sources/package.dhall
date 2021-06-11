@@ -37,6 +37,7 @@
     ./azurerm_database_migration_service.dhall
 , azurerm_data_factory = ./azurerm_data_factory.dhall
 , azurerm_data_lake_store = ./azurerm_data_lake_store.dhall
+, azurerm_data_share_account = ./azurerm_data_share_account.dhall
 , azurerm_dedicated_host = ./azurerm_dedicated_host.dhall
 , azurerm_dedicated_host_group = ./azurerm_dedicated_host_group.dhall
 , azurerm_dev_test_lab = ./azurerm_dev_test_lab.dhall

@@ -161,6 +161,7 @@
 , azurerm_data_lake_store_file = ./azurerm_data_lake_store_file.dhall
 , azurerm_data_lake_store_firewall_rule =
     ./azurerm_data_lake_store_firewall_rule.dhall
+, azurerm_data_share_account = ./azurerm_data_share_account.dhall
 , azurerm_dedicated_host = ./azurerm_dedicated_host.dhall
 , azurerm_dedicated_host_group = ./azurerm_dedicated_host_group.dhall
 , azurerm_devspace_controller = ./azurerm_devspace_controller.dhall
@@ -212,6 +213,7 @@
 , azurerm_frontdoor = ./azurerm_frontdoor.dhall
 , azurerm_frontdoor_firewall_policy = ./azurerm_frontdoor_firewall_policy.dhall
 , azurerm_function_app = ./azurerm_function_app.dhall
+, azurerm_function_app_slot = ./azurerm_function_app_slot.dhall
 , azurerm_hdinsight_hadoop_cluster = ./azurerm_hdinsight_hadoop_cluster.dhall
 , azurerm_hdinsight_hbase_cluster = ./azurerm_hdinsight_hbase_cluster.dhall
 , azurerm_hdinsight_interactive_query_cluster =
@@ -407,6 +409,8 @@
 , azurerm_security_center_workspace = ./azurerm_security_center_workspace.dhall
 , azurerm_sentinel_alert_rule_ms_security_incident =
     ./azurerm_sentinel_alert_rule_ms_security_incident.dhall
+, azurerm_sentinel_alert_rule_scheduled =
+    ./azurerm_sentinel_alert_rule_scheduled.dhall
 , azurerm_servicebus_namespace_authorization_rule =
     ./azurerm_servicebus_namespace_authorization_rule.dhall
 , azurerm_servicebus_namespace = ./azurerm_servicebus_namespace.dhall

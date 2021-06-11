@@ -138,11 +138,16 @@
               , default_documents : Optional (List Text)
               , dotnet_framework_version : Optional Text
               , ftps_state : Optional Text
+              , health_check_path : Optional Text
               , http2_enabled : Optional Bool
               , ip_restriction :
                   Optional
                     ( List
-                        { ip_address : Text, virtual_network_subnet_id : Text }
+                        { ip_address : Text
+                        , name : Text
+                        , priority : Natural
+                        , virtual_network_subnet_id : Text
+                        }
                     )
               , java_container : Optional Text
               , java_container_version : Optional Text
@@ -319,10 +324,17 @@
             , default_documents : Optional (List Text)
             , dotnet_framework_version : Optional Text
             , ftps_state : Optional Text
+            , health_check_path : Optional Text
             , http2_enabled : Optional Bool
             , ip_restriction :
                 Optional
-                  (List { ip_address : Text, virtual_network_subnet_id : Text })
+                  ( List
+                      { ip_address : Text
+                      , name : Text
+                      , priority : Natural
+                      , virtual_network_subnet_id : Text
+                      }
+                  )
             , java_container : Optional Text
             , java_container_version : Optional Text
             , java_version : Optional Text
