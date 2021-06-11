@@ -354,12 +354,16 @@
 , azurerm_linux_virtual_machine_scale_set =
     ./azurerm_linux_virtual_machine_scale_set.dhall
 , azurerm_local_network_gateway = ./azurerm_local_network_gateway.dhall
+, azurerm_log_analytics_data_export_rule =
+    ./azurerm_log_analytics_data_export_rule.dhall
 , azurerm_log_analytics_datasource_windows_event =
     ./azurerm_log_analytics_datasource_windows_event.dhall
 , azurerm_log_analytics_datasource_windows_performance_counter =
     ./azurerm_log_analytics_datasource_windows_performance_counter.dhall
 , azurerm_log_analytics_linked_service =
     ./azurerm_log_analytics_linked_service.dhall
+, azurerm_log_analytics_linked_storage_account =
+    ./azurerm_log_analytics_linked_storage_account.dhall
 , azurerm_log_analytics_saved_search =
     ./azurerm_log_analytics_saved_search.dhall
 , azurerm_log_analytics_solution = ./azurerm_log_analytics_solution.dhall
@@ -516,6 +520,8 @@
 , azurerm_route_filter = ./azurerm_route_filter.dhall
 , azurerm_route_table = ./azurerm_route_table.dhall
 , azurerm_search_service = ./azurerm_search_service.dhall
+, azurerm_security_center_auto_provisioning =
+    ./azurerm_security_center_auto_provisioning.dhall
 , azurerm_security_center_contact = ./azurerm_security_center_contact.dhall
 , azurerm_security_center_setting = ./azurerm_security_center_setting.dhall
 , azurerm_security_center_subscription_pricing =
@@ -624,6 +630,7 @@
 , azurerm_subscription_template_deployment =
     ./azurerm_subscription_template_deployment.dhall
 , azurerm_synapse_firewall_rule = ./azurerm_synapse_firewall_rule.dhall
+, azurerm_synapse_role_assignment = ./azurerm_synapse_role_assignment.dhall
 , azurerm_synapse_spark_pool = ./azurerm_synapse_spark_pool.dhall
 , azurerm_synapse_sql_pool = ./azurerm_synapse_sql_pool.dhall
 , azurerm_synapse_workspace = ./azurerm_synapse_workspace.dhall
@@ -654,6 +661,7 @@
 , azurerm_virtual_wan = ./azurerm_virtual_wan.dhall
 , azurerm_vpn_gateway = ./azurerm_vpn_gateway.dhall
 , azurerm_vpn_server_configuration = ./azurerm_vpn_server_configuration.dhall
+, azurerm_vpn_site = ./azurerm_vpn_site.dhall
 , azurerm_web_application_firewall_policy =
     ./azurerm_web_application_firewall_policy.dhall
 , azurerm_windows_virtual_machine = ./azurerm_windows_virtual_machine.dhall

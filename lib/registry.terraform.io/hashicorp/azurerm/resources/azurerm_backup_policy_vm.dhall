@@ -1,5 +1,6 @@
 { Type =
     { id : Optional Text
+    , instant_restore_retention_days : Optional Natural
     , name : Text
     , recovery_vault_name : Text
     , resource_group_name : Text
@@ -32,6 +33,7 @@
     }
 , default =
   { id = None Text
+  , instant_restore_retention_days = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timezone = None Text
   , retention_daily = None (List { count : Natural })

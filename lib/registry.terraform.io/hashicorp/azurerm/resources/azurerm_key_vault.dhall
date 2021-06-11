@@ -26,6 +26,9 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tenant_id : Text
     , vault_uri : Optional Text
+    , contact :
+        Optional
+          (List { email : Text, name : Optional Text, phone : Optional Text })
     , network_acls :
         Optional
           ( List
@@ -66,6 +69,8 @@
   , soft_delete_retention_days = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
   , vault_uri = None Text
+  , contact =
+      None (List { email : Text, name : Optional Text, phone : Optional Text })
   , network_acls =
       None
         ( List

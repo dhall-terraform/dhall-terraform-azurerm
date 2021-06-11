@@ -9,6 +9,7 @@
               , file_name_format : Text
               , max_chunk_size_in_bytes : Natural
               , name : Text
+              , resource_group_name : Text
               , type : Text
               }
           )
@@ -88,6 +89,7 @@
             , file_name_format : Text
             , max_chunk_size_in_bytes : Natural
             , name : Text
+            , resource_group_name : Text
             , type : Text
             }
         )

@@ -7,6 +7,7 @@
     , log_analytics_workspace_id : Text
     , name : Text
     , query : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -19,6 +20,7 @@
   { function_alias = None Text
   , function_parameters = None (List Text)
   , id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text

@@ -1,6 +1,7 @@
 { Type =
     { address_space : List Text
-    , gateway_address : Text
+    , gateway_address : Optional Text
+    , gateway_fqdn : Optional Text
     , id : Optional Text
     , location : Text
     , name : Text
@@ -23,7 +24,9 @@
           }
     }
 , default =
-  { id = None Text
+  { gateway_address = None Text
+  , gateway_fqdn = None Text
+  , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , bgp_settings =
       None

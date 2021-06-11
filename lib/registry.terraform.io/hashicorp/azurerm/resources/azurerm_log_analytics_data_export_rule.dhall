@@ -1,11 +1,12 @@
 { Type =
-    { frequency : Text
+    { destination_resource_id : Text
+    , enabled : Optional Bool
+    , export_rule_id : Optional Text
     , id : Optional Text
-    , interval : Natural
-    , logic_app_id : Text
     , name : Text
-    , start_time : Optional Text
-    , time_zone : Optional Text
+    , resource_group_name : Text
+    , table_names : List Text
+    , workspace_resource_id : Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -15,9 +16,9 @@
           }
     }
 , default =
-  { id = None Text
-  , start_time = None Text
-  , time_zone = None Text
+  { enabled = None Bool
+  , export_rule_id = None Text
+  , id = None Text
   , timeouts =
       None
         { create : Optional Text

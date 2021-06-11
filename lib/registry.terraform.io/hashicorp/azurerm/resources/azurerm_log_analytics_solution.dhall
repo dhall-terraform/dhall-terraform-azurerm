@@ -3,6 +3,7 @@
     , location : Text
     , resource_group_name : Text
     , solution_name : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , workspace_name : Text
     , workspace_resource_id : Text
     , plan :
@@ -22,6 +23,7 @@
     }
 , default =
   { id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text

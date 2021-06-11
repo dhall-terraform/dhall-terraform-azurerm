@@ -71,9 +71,17 @@
                     { mount_path : Text
                     , name : Text
                     , read_only : Optional Bool
-                    , share_name : Text
-                    , storage_account_key : Text
-                    , storage_account_name : Text
+                    , share_name : Optional Text
+                    , storage_account_key : Optional Text
+                    , storage_account_name : Optional Text
+                    , git_repo :
+                        Optional
+                          ( List
+                              { directory : Optional Text
+                              , revision : Optional Text
+                              , url : Text
+                              }
+                          )
                     }
                 )
           }

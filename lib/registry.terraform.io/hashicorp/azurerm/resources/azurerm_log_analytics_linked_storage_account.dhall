@@ -1,11 +1,9 @@
 { Type =
-    { frequency : Text
+    { data_source_type : Text
     , id : Optional Text
-    , interval : Natural
-    , logic_app_id : Text
-    , name : Text
-    , start_time : Optional Text
-    , time_zone : Optional Text
+    , resource_group_name : Text
+    , storage_account_ids : List Text
+    , workspace_resource_id : Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -16,8 +14,6 @@
     }
 , default =
   { id = None Text
-  , start_time = None Text
-  , time_zone = None Text
   , timeouts =
       None
         { create : Optional Text

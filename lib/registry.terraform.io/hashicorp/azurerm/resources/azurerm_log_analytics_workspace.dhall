@@ -1,5 +1,6 @@
 { Type =
-    { id : Optional Text
+    { daily_quota_gb : Optional Natural
+    , id : Optional Text
     , location : Text
     , name : Text
     , portal_url : Optional Text
@@ -19,7 +20,8 @@
           }
     }
 , default =
-  { id = None Text
+  { daily_quota_gb = None Natural
+  , id = None Text
   , portal_url = None Text
   , primary_shared_key = None Text
   , retention_in_days = None Natural

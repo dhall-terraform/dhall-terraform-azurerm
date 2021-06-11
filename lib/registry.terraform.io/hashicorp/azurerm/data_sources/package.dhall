@@ -34,6 +34,7 @@
     ./azurerm_blueprint_published_version.dhall
 , azurerm_cdn_profile = ./azurerm_cdn_profile.dhall
 , azurerm_client_config = ./azurerm_client_config.dhall
+, azurerm_cognitive_account = ./azurerm_cognitive_account.dhall
 , azurerm_container_registry = ./azurerm_container_registry.dhall
 , azurerm_cosmosdb_account = ./azurerm_cosmosdb_account.dhall
 , azurerm_database_migration_project =
