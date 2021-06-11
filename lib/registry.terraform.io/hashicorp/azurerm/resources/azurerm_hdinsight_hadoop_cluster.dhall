@@ -8,6 +8,7 @@
     , ssh_endpoint : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tier : Text
+    , tls_min_version : Optional Text
     , component_version : List { hadoop : Text }
     , gateway : List { enabled : Bool, password : Text, username : Text }
     , roles :
@@ -80,6 +81,7 @@
   , id = None Text
   , ssh_endpoint = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tls_min_version = None Text
   , storage_account =
       None
         ( List

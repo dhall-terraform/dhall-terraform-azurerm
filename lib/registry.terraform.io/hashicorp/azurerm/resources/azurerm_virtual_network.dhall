@@ -1,6 +1,7 @@
 { Type =
     { address_space : List Text
     , dns_servers : Optional (List Text)
+    , guid : Optional Text
     , id : Optional Text
     , location : Text
     , name : Text
@@ -26,6 +27,7 @@
     }
 , default =
   { dns_servers = None (List Text)
+  , guid = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , ddos_protection_plan = None (List { enable : Bool, id : Text })

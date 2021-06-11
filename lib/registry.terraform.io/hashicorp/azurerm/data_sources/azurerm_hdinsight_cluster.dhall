@@ -13,6 +13,7 @@
     , ssh_endpoint : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tier : Optional Text
+    , tls_min_version : Optional Text
     , timeouts : Optional { read : Optional Text }
     }
 , default =
@@ -27,6 +28,7 @@
   , ssh_endpoint = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , tier = None Text
+  , tls_min_version = None Text
   , timeouts = None { read : Optional Text }
   }
 }

@@ -5,6 +5,7 @@
     , enable_ip_forwarding : Optional Bool
     , id : Optional Text
     , internal_dns_name_label : Optional Text
+    , internal_domain_name_suffix : Optional Text
     , location : Text
     , mac_address : Optional Text
     , name : Text
@@ -38,6 +39,7 @@
   , enable_ip_forwarding = None Bool
   , id = None Text
   , internal_dns_name_label = None Text
+  , internal_domain_name_suffix = None Text
   , mac_address = None Text
   , private_ip_address = None Text
   , private_ip_addresses = None (List Text)

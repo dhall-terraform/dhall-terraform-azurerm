@@ -107,6 +107,7 @@
     ./azurerm_notification_hub_namespace.dhall
 , azurerm_platform_image = ./azurerm_platform_image.dhall
 , azurerm_policy_definition = ./azurerm_policy_definition.dhall
+, azurerm_policy_set_definition = ./azurerm_policy_set_definition.dhall
 , azurerm_postgresql_server = ./azurerm_postgresql_server.dhall
 , azurerm_private_endpoint_connection =
     ./azurerm_private_endpoint_connection.dhall

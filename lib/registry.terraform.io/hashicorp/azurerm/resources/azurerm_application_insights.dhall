@@ -3,6 +3,7 @@
     , application_type : Text
     , daily_data_cap_in_gb : Optional Natural
     , daily_data_cap_notifications_disabled : Optional Bool
+    , disable_ip_masking : Optional Bool
     , id : Optional Text
     , instrumentation_key : Optional Text
     , location : Text
@@ -23,6 +24,7 @@
   { app_id = None Text
   , daily_data_cap_in_gb = None Natural
   , daily_data_cap_notifications_disabled = None Bool
+  , disable_ip_masking = None Bool
   , id = None Text
   , instrumentation_key = None Text
   , retention_in_days = None Natural

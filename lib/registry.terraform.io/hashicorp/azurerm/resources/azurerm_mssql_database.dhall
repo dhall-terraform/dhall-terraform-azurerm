@@ -17,6 +17,19 @@
     , sku_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , zone_redundant : Optional Bool
+    , threat_detection_policy :
+        Optional
+          ( List
+              { disabled_alerts : Optional (List Text)
+              , email_account_admins : Optional Text
+              , email_addresses : Optional (List Text)
+              , retention_days : Optional Natural
+              , state : Optional Text
+              , storage_account_access_key : Optional Text
+              , storage_endpoint : Optional Text
+              , use_server_default : Optional Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -42,6 +55,19 @@
   , sku_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zone_redundant = None Bool
+  , threat_detection_policy =
+      None
+        ( List
+            { disabled_alerts : Optional (List Text)
+            , email_account_admins : Optional Text
+            , email_addresses : Optional (List Text)
+            , retention_days : Optional Natural
+            , state : Optional Text
+            , storage_account_access_key : Optional Text
+            , storage_endpoint : Optional Text
+            , use_server_default : Optional Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

@@ -90,6 +90,7 @@
                   Optional (List { ip_address : Text, subnet_id : Text })
               , linux_fx_version : Optional Text
               , min_tls_version : Optional Text
+              , pre_warmed_instance_count : Optional Natural
               , use_32_bit_worker_process : Optional Bool
               , websockets_enabled : Optional Bool
               , cors :
@@ -194,6 +195,7 @@
                 Optional (List { ip_address : Text, subnet_id : Text })
             , linux_fx_version : Optional Text
             , min_tls_version : Optional Text
+            , pre_warmed_instance_count : Optional Natural
             , use_32_bit_worker_process : Optional Bool
             , websockets_enabled : Optional Bool
             , cors :

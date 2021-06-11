@@ -3,6 +3,7 @@
     , display_name : Text
     , id : Optional Text
     , management_group_id : Optional Text
+    , management_group_name : Optional Text
     , metadata : Optional Text
     , mode : Text
     , name : Text
@@ -21,6 +22,7 @@
   { description = None Text
   , id = None Text
   , management_group_id = None Text
+  , management_group_name = None Text
   , metadata = None Text
   , parameters = None Text
   , policy_rule = None Text
