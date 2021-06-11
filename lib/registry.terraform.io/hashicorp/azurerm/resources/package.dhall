@@ -141,6 +141,9 @@
 , azurerm_communication_service = ./azurerm_communication_service.dhall
 , azurerm_container_group = ./azurerm_container_group.dhall
 , azurerm_container_registry = ./azurerm_container_registry.dhall
+, azurerm_container_registry_scope_map =
+    ./azurerm_container_registry_scope_map.dhall
+, azurerm_container_registry_token = ./azurerm_container_registry_token.dhall
 , azurerm_container_registry_webhook =
     ./azurerm_container_registry_webhook.dhall
 , azurerm_cosmosdb_account = ./azurerm_cosmosdb_account.dhall
@@ -181,6 +184,8 @@
     ./azurerm_data_factory_dataset_parquet.dhall
 , azurerm_data_factory_dataset_postgresql =
     ./azurerm_data_factory_dataset_postgresql.dhall
+, azurerm_data_factory_dataset_snowflake =
+    ./azurerm_data_factory_dataset_snowflake.dhall
 , azurerm_data_factory_dataset_sql_server_table =
     ./azurerm_data_factory_dataset_sql_server_table.dhall
 , azurerm_data_factory = ./azurerm_data_factory.dhall
@@ -334,6 +339,7 @@
 , azurerm_hdinsight_rserver_cluster = ./azurerm_hdinsight_rserver_cluster.dhall
 , azurerm_hdinsight_spark_cluster = ./azurerm_hdinsight_spark_cluster.dhall
 , azurerm_hdinsight_storm_cluster = ./azurerm_hdinsight_storm_cluster.dhall
+, azurerm_healthbot = ./azurerm_healthbot.dhall
 , azurerm_healthcare_service = ./azurerm_healthcare_service.dhall
 , azurerm_hpc_cache_access_policy = ./azurerm_hpc_cache_access_policy.dhall
 , azurerm_hpc_cache_blob_target = ./azurerm_hpc_cache_blob_target.dhall
@@ -378,6 +384,8 @@
     ./azurerm_key_vault_certificate_issuer.dhall
 , azurerm_key_vault = ./azurerm_key_vault.dhall
 , azurerm_key_vault_key = ./azurerm_key_vault_key.dhall
+, azurerm_key_vault_managed_hardware_security_module =
+    ./azurerm_key_vault_managed_hardware_security_module.dhall
 , azurerm_key_vault_secret = ./azurerm_key_vault_secret.dhall
 , azurerm_kubernetes_cluster = ./azurerm_kubernetes_cluster.dhall
 , azurerm_kubernetes_cluster_node_pool =
@@ -469,6 +477,7 @@
     ./azurerm_mariadb_virtual_network_rule.dhall
 , azurerm_marketplace_agreement = ./azurerm_marketplace_agreement.dhall
 , azurerm_media_asset = ./azurerm_media_asset.dhall
+, azurerm_media_asset_filter = ./azurerm_media_asset_filter.dhall
 , azurerm_media_content_key_policy = ./azurerm_media_content_key_policy.dhall
 , azurerm_media_job = ./azurerm_media_job.dhall
 , azurerm_media_live_event = ./azurerm_media_live_event.dhall
@@ -503,11 +512,15 @@
     ./azurerm_mssql_database_vulnerability_assessment_rule_baseline.dhall
 , azurerm_mssql_elasticpool = ./azurerm_mssql_elasticpool.dhall
 , azurerm_mssql_firewall_rule = ./azurerm_mssql_firewall_rule.dhall
+, azurerm_mssql_job_agent = ./azurerm_mssql_job_agent.dhall
+, azurerm_mssql_job_credential = ./azurerm_mssql_job_credential.dhall
 , azurerm_mssql_server = ./azurerm_mssql_server.dhall
 , azurerm_mssql_server_extended_auditing_policy =
     ./azurerm_mssql_server_extended_auditing_policy.dhall
 , azurerm_mssql_server_security_alert_policy =
     ./azurerm_mssql_server_security_alert_policy.dhall
+, azurerm_mssql_server_transparent_data_encryption =
+    ./azurerm_mssql_server_transparent_data_encryption.dhall
 , azurerm_mssql_server_vulnerability_assessment =
     ./azurerm_mssql_server_vulnerability_assessment.dhall
 , azurerm_mssql_virtual_machine = ./azurerm_mssql_virtual_machine.dhall
@@ -568,6 +581,8 @@
 , azurerm_postgresql_configuration = ./azurerm_postgresql_configuration.dhall
 , azurerm_postgresql_database = ./azurerm_postgresql_database.dhall
 , azurerm_postgresql_firewall_rule = ./azurerm_postgresql_firewall_rule.dhall
+, azurerm_postgresql_flexible_server =
+    ./azurerm_postgresql_flexible_server.dhall
 , azurerm_postgresql_server = ./azurerm_postgresql_server.dhall
 , azurerm_postgresql_server_key = ./azurerm_postgresql_server_key.dhall
 , azurerm_postgresql_virtual_network_rule =
@@ -641,6 +656,8 @@
     ./azurerm_sentinel_data_connector_azure_security_center.dhall
 , azurerm_sentinel_data_connector_microsoft_cloud_app_security =
     ./azurerm_sentinel_data_connector_microsoft_cloud_app_security.dhall
+, azurerm_sentinel_data_connector_microsoft_defender_advanced_threat_protection =
+    ./azurerm_sentinel_data_connector_microsoft_defender_advanced_threat_protection.dhall
 , azurerm_sentinel_data_connector_office_365 =
     ./azurerm_sentinel_data_connector_office_365.dhall
 , azurerm_sentinel_data_connector_threat_intelligence =
@@ -687,6 +704,8 @@
 , azurerm_spatial_anchors_account = ./azurerm_spatial_anchors_account.dhall
 , azurerm_spring_cloud_active_deployment =
     ./azurerm_spring_cloud_active_deployment.dhall
+, azurerm_spring_cloud_app_cosmosdb_association =
+    ./azurerm_spring_cloud_app_cosmosdb_association.dhall
 , azurerm_spring_cloud_app = ./azurerm_spring_cloud_app.dhall
 , azurerm_spring_cloud_app_mysql_association =
     ./azurerm_spring_cloud_app_mysql_association.dhall
@@ -791,6 +810,8 @@
 , azurerm_virtual_hub_route_table = ./azurerm_virtual_hub_route_table.dhall
 , azurerm_virtual_hub_security_partner_provider =
     ./azurerm_virtual_hub_security_partner_provider.dhall
+, azurerm_virtual_machine_configuration_policy_assignment =
+    ./azurerm_virtual_machine_configuration_policy_assignment.dhall
 , azurerm_virtual_machine_data_disk_attachment =
     ./azurerm_virtual_machine_data_disk_attachment.dhall
 , azurerm_virtual_machine = ./azurerm_virtual_machine.dhall
@@ -804,6 +825,7 @@
 , azurerm_virtual_network_gateway = ./azurerm_virtual_network_gateway.dhall
 , azurerm_virtual_network_peering = ./azurerm_virtual_network_peering.dhall
 , azurerm_virtual_wan = ./azurerm_virtual_wan.dhall
+, azurerm_vmware_cluster = ./azurerm_vmware_cluster.dhall
 , azurerm_vmware_private_cloud = ./azurerm_vmware_private_cloud.dhall
 , azurerm_vpn_gateway_connection = ./azurerm_vpn_gateway_connection.dhall
 , azurerm_vpn_gateway = ./azurerm_vpn_gateway.dhall

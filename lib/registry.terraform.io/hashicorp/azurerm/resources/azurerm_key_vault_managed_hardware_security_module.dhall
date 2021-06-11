@@ -1,14 +1,15 @@
 { Type =
-    { hostname : Optional Text
+    { admin_object_ids : List Text
+    , hsm_uri : Optional Text
     , id : Optional Text
     , location : Text
-    , minimum_tls_version : Optional Text
     , name : Text
+    , purge_protection_enabled : Optional Bool
     , resource_group_name : Text
     , sku_name : Text
+    , soft_delete_retention_days : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
-    , version : Optional Text
-    , zones : Optional (List Text)
+    , tenant_id : Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -17,12 +18,11 @@
           }
     }
 , default =
-  { hostname = None Text
+  { hsm_uri = None Text
   , id = None Text
-  , minimum_tls_version = None Text
+  , purge_protection_enabled = None Bool
+  , soft_delete_retention_days = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
-  , version = None Text
-  , zones = None (List Text)
   , timeouts =
       None
         { create : Optional Text, delete : Optional Text, read : Optional Text }

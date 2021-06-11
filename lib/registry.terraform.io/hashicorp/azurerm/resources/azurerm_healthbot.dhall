@@ -1,17 +1,11 @@
 { Type =
-    { description : Optional Text
+    { bot_management_portal_url : Optional Text
     , id : Optional Text
-    , lighthouse_definition_id : Optional Text
-    , managing_tenant_id : Text
+    , location : Text
     , name : Text
-    , scope : Text
-    , authorization :
-        List
-          { delegated_role_definition_ids : Optional (List Text)
-          , principal_display_name : Optional Text
-          , principal_id : Text
-          , role_definition_id : Text
-          }
+    , resource_group_name : Text
+    , sku_name : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -21,9 +15,9 @@
           }
     }
 , default =
-  { description = None Text
+  { bot_management_portal_url = None Text
   , id = None Text
-  , lighthouse_definition_id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text

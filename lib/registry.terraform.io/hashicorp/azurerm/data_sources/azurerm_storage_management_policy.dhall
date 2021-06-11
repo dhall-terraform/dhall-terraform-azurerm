@@ -16,13 +16,30 @@
                           }
                     , snapshot :
                         List
-                          { delete_after_days_since_creation_greater_than :
+                          { change_tier_to_archive_after_days_since_creation :
                               Natural
+                          , change_tier_to_cool_after_days_since_creation :
+                              Natural
+                          , delete_after_days_since_creation_greater_than :
+                              Natural
+                          }
+                    , version :
+                        List
+                          { change_tier_to_archive_after_days_since_creation :
+                              Natural
+                          , change_tier_to_cool_after_days_since_creation :
+                              Natural
+                          , delete_after_days_since_creation : Natural
                           }
                     }
               , enabled : Bool
               , filters :
-                  List { blob_types : List Text, prefix_match : List Text }
+                  List
+                    { blob_types : List Text
+                    , match_blob_index_tag :
+                        List { name : Text, operation : Text, value : Text }
+                    , prefix_match : List Text
+                    }
               , name : Text
               }
           )
@@ -47,13 +64,30 @@
                         }
                   , snapshot :
                       List
-                        { delete_after_days_since_creation_greater_than :
+                        { change_tier_to_archive_after_days_since_creation :
                             Natural
+                        , change_tier_to_cool_after_days_since_creation :
+                            Natural
+                        , delete_after_days_since_creation_greater_than :
+                            Natural
+                        }
+                  , version :
+                      List
+                        { change_tier_to_archive_after_days_since_creation :
+                            Natural
+                        , change_tier_to_cool_after_days_since_creation :
+                            Natural
+                        , delete_after_days_since_creation : Natural
                         }
                   }
             , enabled : Bool
             , filters :
-                List { blob_types : List Text, prefix_match : List Text }
+                List
+                  { blob_types : List Text
+                  , match_blob_index_tag :
+                      List { name : Text, operation : Text, value : Text }
+                  , prefix_match : List Text
+                  }
             , name : Text
             }
         )

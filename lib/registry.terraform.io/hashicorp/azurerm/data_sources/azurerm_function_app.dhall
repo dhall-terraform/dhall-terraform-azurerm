@@ -36,6 +36,7 @@
                     , service_tag : Text
                     , virtual_network_subnet_id : Text
                     }
+              , java_version : Text
               , linux_fx_version : Text
               , min_tls_version : Text
               , pre_warmed_instance_count : Natural
@@ -102,6 +103,7 @@
                   , service_tag : Text
                   , virtual_network_subnet_id : Text
                   }
+            , java_version : Text
             , linux_fx_version : Text
             , min_tls_version : Text
             , pre_warmed_instance_count : Natural

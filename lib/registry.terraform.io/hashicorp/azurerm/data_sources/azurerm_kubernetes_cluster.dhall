@@ -8,6 +8,14 @@
                     { enabled : Bool
                     , http_application_routing_zone_name : Text
                     }
+              , ingress_application_gateway :
+                  List
+                    { effective_gateway_id : Text
+                    , enabled : Bool
+                    , gateway_id : Text
+                    , subnet_cidr : Text
+                    , subnet_id : Text
+                    }
               , kube_dashboard : List { enabled : Bool }
               , oms_agent :
                   List
@@ -141,6 +149,14 @@
             , http_application_routing :
                 List
                   { enabled : Bool, http_application_routing_zone_name : Text }
+            , ingress_application_gateway :
+                List
+                  { effective_gateway_id : Text
+                  , enabled : Bool
+                  , gateway_id : Text
+                  , subnet_cidr : Text
+                  , subnet_id : Text
+                  }
             , kube_dashboard : List { enabled : Bool }
             , oms_agent :
                 List

@@ -1,12 +1,14 @@
 { Type =
-    { automatic_placement_enabled : Optional Bool
-    , id : Optional Text
+    { id : Optional Text
     , location : Text
     , name : Text
-    , platform_fault_domain_count : Natural
-    , resource_group_name : Text
-    , tags : Optional (List { mapKey : Text, mapValue : Text })
-    , zones : Optional (List Text)
+    , virtual_machine_id : Text
+    , configuration :
+        List
+          { name : Text
+          , version : Optional Text
+          , parameter : Optional (List { name : Text, value : Text })
+          }
     , timeouts :
         Optional
           { create : Optional Text
@@ -16,10 +18,7 @@
           }
     }
 , default =
-  { automatic_placement_enabled = None Bool
-  , id = None Text
-  , tags = None (List { mapKey : Text, mapValue : Text })
-  , zones = None (List Text)
+  { id = None Text
   , timeouts =
       None
         { create : Optional Text

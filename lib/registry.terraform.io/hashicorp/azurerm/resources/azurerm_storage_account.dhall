@@ -11,6 +11,7 @@
     , location : Text
     , min_tls_version : Optional Text
     , name : Text
+    , nfsv3_enabled : Optional Bool
     , primary_access_key : Optional Text
     , primary_blob_connection_string : Optional Text
     , primary_blob_endpoint : Optional Text
@@ -48,7 +49,10 @@
     , blob_properties :
         Optional
           ( List
-              { container_delete_retention_policy :
+              { default_service_version : Optional Text
+              , last_access_time_enabled : Optional Bool
+              , versioning_enabled : Optional Bool
+              , container_delete_retention_policy :
                   Optional (List { days : Optional Natural })
               , cors_rule :
                   Optional
@@ -150,6 +154,7 @@
   , is_hns_enabled = None Bool
   , large_file_share_enabled = None Bool
   , min_tls_version = None Text
+  , nfsv3_enabled = None Bool
   , primary_access_key = None Text
   , primary_blob_connection_string = None Text
   , primary_blob_endpoint = None Text
@@ -186,7 +191,10 @@
   , blob_properties =
       None
         ( List
-            { container_delete_retention_policy :
+            { default_service_version : Optional Text
+            , last_access_time_enabled : Optional Bool
+            , versioning_enabled : Optional Bool
+            , container_delete_retention_policy :
                 Optional (List { days : Optional Natural })
             , cors_rule :
                 Optional

@@ -94,6 +94,13 @@
                   Optional
                     ( List
                         { action : Text
+                        , headers :
+                            List
+                              { x_azure_fdid : List Text
+                              , x_fd_health_probe : List Text
+                              , x_forwarded_for : List Text
+                              , x_forwarded_host : List Text
+                              }
                         , ip_address : Text
                         , name : Text
                         , priority : Natural
@@ -101,6 +108,7 @@
                         , virtual_network_subnet_id : Text
                         }
                     )
+              , java_version : Optional Text
               , linux_fx_version : Optional Text
               , min_tls_version : Optional Text
               , pre_warmed_instance_count : Optional Natural
@@ -108,6 +116,13 @@
                   Optional
                     ( List
                         { action : Text
+                        , headers :
+                            List
+                              { x_azure_fdid : List Text
+                              , x_fd_health_probe : List Text
+                              , x_forwarded_for : List Text
+                              , x_forwarded_host : List Text
+                              }
                         , ip_address : Text
                         , name : Text
                         , priority : Natural
@@ -223,6 +238,13 @@
                 Optional
                   ( List
                       { action : Text
+                      , headers :
+                          List
+                            { x_azure_fdid : List Text
+                            , x_fd_health_probe : List Text
+                            , x_forwarded_for : List Text
+                            , x_forwarded_host : List Text
+                            }
                       , ip_address : Text
                       , name : Text
                       , priority : Natural
@@ -230,6 +252,7 @@
                       , virtual_network_subnet_id : Text
                       }
                   )
+            , java_version : Optional Text
             , linux_fx_version : Optional Text
             , min_tls_version : Optional Text
             , pre_warmed_instance_count : Optional Natural
@@ -237,6 +260,13 @@
                 Optional
                   ( List
                       { action : Text
+                      , headers :
+                          List
+                            { x_azure_fdid : List Text
+                            , x_fd_health_probe : List Text
+                            , x_forwarded_for : List Text
+                            , x_forwarded_host : List Text
+                            }
                       , ip_address : Text
                       , name : Text
                       , priority : Natural

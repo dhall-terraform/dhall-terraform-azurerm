@@ -22,7 +22,22 @@
                     , snapshot :
                         Optional
                           ( List
-                              { delete_after_days_since_creation_greater_than :
+                              { change_tier_to_archive_after_days_since_creation :
+                                  Optional Natural
+                              , change_tier_to_cool_after_days_since_creation :
+                                  Optional Natural
+                              , delete_after_days_since_creation_greater_than :
+                                  Optional Natural
+                              }
+                          )
+                    , version :
+                        Optional
+                          ( List
+                              { change_tier_to_archive_after_days_since_creation :
+                                  Optional Natural
+                              , change_tier_to_cool_after_days_since_creation :
+                                  Optional Natural
+                              , delete_after_days_since_creation :
                                   Optional Natural
                               }
                           )
@@ -32,6 +47,14 @@
                     ( List
                         { blob_types : Optional (List Text)
                         , prefix_match : Optional (List Text)
+                        , match_blob_index_tag :
+                            Optional
+                              ( List
+                                  { name : Text
+                                  , operation : Optional Text
+                                  , value : Text
+                                  }
+                              )
                         }
                     )
               }
@@ -67,7 +90,22 @@
                   , snapshot :
                       Optional
                         ( List
-                            { delete_after_days_since_creation_greater_than :
+                            { change_tier_to_archive_after_days_since_creation :
+                                Optional Natural
+                            , change_tier_to_cool_after_days_since_creation :
+                                Optional Natural
+                            , delete_after_days_since_creation_greater_than :
+                                Optional Natural
+                            }
+                        )
+                  , version :
+                      Optional
+                        ( List
+                            { change_tier_to_archive_after_days_since_creation :
+                                Optional Natural
+                            , change_tier_to_cool_after_days_since_creation :
+                                Optional Natural
+                            , delete_after_days_since_creation :
                                 Optional Natural
                             }
                         )
@@ -77,6 +115,14 @@
                   ( List
                       { blob_types : Optional (List Text)
                       , prefix_match : Optional (List Text)
+                      , match_blob_index_tag :
+                          Optional
+                            ( List
+                                { name : Text
+                                , operation : Optional Text
+                                , value : Text
+                                }
+                            )
                       }
                   )
             }

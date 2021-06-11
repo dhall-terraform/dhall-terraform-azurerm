@@ -4,16 +4,18 @@
     , default_ttl : Optional Natural
     , id : Optional Text
     , name : Text
-    , partition_key_path : Optional Text
+    , partition_key_path : Text
     , resource_group_name : Text
     , throughput : Optional Natural
     , autoscale_settings : Optional (List { max_throughput : Optional Natural })
     , conflict_resolution_policy :
-        List
-          { conflict_resolution_path : Optional Text
-          , conflict_resolution_procedure : Optional Text
-          , mode : Text
-          }
+        Optional
+          ( List
+              { conflict_resolution_path : Optional Text
+              , conflict_resolution_procedure : Optional Text
+              , mode : Text
+              }
+          )
     , index_policy :
         List
           { automatic : Optional Bool
@@ -33,9 +35,16 @@
 , default =
   { default_ttl = None Natural
   , id = None Text
-  , partition_key_path = None Text
   , throughput = None Natural
   , autoscale_settings = None (List { max_throughput : Optional Natural })
+  , conflict_resolution_policy =
+      None
+        ( List
+            { conflict_resolution_path : Optional Text
+            , conflict_resolution_procedure : Optional Text
+            , mode : Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

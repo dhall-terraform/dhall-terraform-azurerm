@@ -6,6 +6,7 @@
     , managed_resource_group_name : Text
     , name : Text
     , outputs : Optional (List { mapKey : Text, mapValue : Text })
+    , parameter_values : Optional Text
     , parameters : Optional (List { mapKey : Text, mapValue : Text })
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -31,6 +32,7 @@
   { application_definition_id = None Text
   , id = None Text
   , outputs = None (List { mapKey : Text, mapValue : Text })
+  , parameter_values = None Text
   , parameters = None (List { mapKey : Text, mapValue : Text })
   , tags = None (List { mapKey : Text, mapValue : Text })
   , plan =

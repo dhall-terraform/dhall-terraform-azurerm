@@ -3,6 +3,7 @@
         Optional (List { login : Text, object_id : Text, tenant_id : Text })
     , connectivity_endpoints :
         Optional (List { mapKey : Text, mapValue : Text })
+    , customer_managed_key_versionless_id : Optional Text
     , id : Optional Text
     , identity :
         Optional (List { principal_id : Text, tenant_id : Text, type : Text })
@@ -47,6 +48,7 @@
 , default =
   { aad_admin = None (List { login : Text, object_id : Text, tenant_id : Text })
   , connectivity_endpoints = None (List { mapKey : Text, mapValue : Text })
+  , customer_managed_key_versionless_id = None Text
   , id = None Text
   , identity =
       None (List { principal_id : Text, tenant_id : Text, type : Text })

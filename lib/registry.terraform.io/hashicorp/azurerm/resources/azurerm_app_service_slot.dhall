@@ -128,6 +128,13 @@
                   Optional
                     ( List
                         { action : Text
+                        , headers :
+                            List
+                              { x_azure_fdid : List Text
+                              , x_fd_health_probe : List Text
+                              , x_forwarded_for : List Text
+                              , x_forwarded_host : List Text
+                              }
                         , ip_address : Text
                         , name : Text
                         , priority : Natural
@@ -151,6 +158,13 @@
                   Optional
                     ( List
                         { action : Text
+                        , headers :
+                            List
+                              { x_azure_fdid : List Text
+                              , x_fd_health_probe : List Text
+                              , x_forwarded_for : List Text
+                              , x_forwarded_host : List Text
+                              }
                         , ip_address : Text
                         , name : Text
                         , priority : Natural
@@ -301,6 +315,13 @@
                 Optional
                   ( List
                       { action : Text
+                      , headers :
+                          List
+                            { x_azure_fdid : List Text
+                            , x_fd_health_probe : List Text
+                            , x_forwarded_for : List Text
+                            , x_forwarded_host : List Text
+                            }
                       , ip_address : Text
                       , name : Text
                       , priority : Natural
@@ -324,6 +345,13 @@
                 Optional
                   ( List
                       { action : Text
+                      , headers :
+                          List
+                            { x_azure_fdid : List Text
+                            , x_fd_health_probe : List Text
+                            , x_forwarded_for : List Text
+                            , x_forwarded_host : List Text
+                            }
                       , ip_address : Text
                       , name : Text
                       , priority : Natural

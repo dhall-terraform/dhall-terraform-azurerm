@@ -7,7 +7,8 @@
               { issuer_parameters : List { name : Text }
               , key_properties :
                   List
-                    { exportable : Bool
+                    { curve : Text
+                    , exportable : Bool
                     , key_size : Natural
                     , key_type : Text
                     , reuse_key : Bool
@@ -55,7 +56,8 @@
             { issuer_parameters : List { name : Text }
             , key_properties :
                 List
-                  { exportable : Bool
+                  { curve : Text
+                  , exportable : Bool
                   , key_size : Natural
                   , key_type : Text
                   , reuse_key : Bool

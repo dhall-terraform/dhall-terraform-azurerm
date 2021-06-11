@@ -1,5 +1,6 @@
 { Type =
     { dns_name_label : Optional Text
+    , exposed_port : Optional (List { port : Natural, protocol : Text })
     , fqdn : Optional Text
     , id : Optional Text
     , ip_address : Optional Text
@@ -129,6 +130,7 @@
     }
 , default =
   { dns_name_label = None Text
+  , exposed_port = None (List { port : Natural, protocol : Text })
   , fqdn = None Text
   , id = None Text
   , ip_address = None Text

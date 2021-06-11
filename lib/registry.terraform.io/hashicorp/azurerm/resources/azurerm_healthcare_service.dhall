@@ -1,5 +1,6 @@
 { Type =
     { access_policy_object_ids : Optional (List Text)
+    , cosmosdb_key_vault_key_versionless_id : Optional Text
     , cosmosdb_throughput : Optional Natural
     , id : Optional Text
     , kind : Optional Text
@@ -35,6 +36,7 @@
     }
 , default =
   { access_policy_object_ids = None (List Text)
+  , cosmosdb_key_vault_key_versionless_id = None Text
   , cosmosdb_throughput = None Natural
   , id = None Text
   , kind = None Text

@@ -1,20 +1,21 @@
 { Type =
     { additional_properties : Optional (List { mapKey : Text, mapValue : Text })
     , annotations : Optional (List Text)
-    , connection_string : Text
     , data_factory_name : Text
     , description : Optional Text
-    , file_share : Optional Text
-    , host : Optional Text
+    , folder : Optional Text
     , id : Optional Text
-    , integration_runtime_name : Optional Text
+    , linked_service_name : Text
     , name : Text
     , parameters : Optional (List { mapKey : Text, mapValue : Text })
-    , password : Optional Text
     , resource_group_name : Text
-    , user_id : Optional Text
-    , key_vault_password :
-        Optional (List { linked_service_name : Text, secret_name : Text })
+    , schema_name : Optional Text
+    , table_name : Optional Text
+    , schema_column :
+        Optional
+          ( List
+              { description : Optional Text, name : Text, type : Optional Text }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -27,15 +28,16 @@
   { additional_properties = None (List { mapKey : Text, mapValue : Text })
   , annotations = None (List Text)
   , description = None Text
-  , file_share = None Text
-  , host = None Text
+  , folder = None Text
   , id = None Text
-  , integration_runtime_name = None Text
   , parameters = None (List { mapKey : Text, mapValue : Text })
-  , password = None Text
-  , user_id = None Text
-  , key_vault_password =
-      None (List { linked_service_name : Text, secret_name : Text })
+  , schema_name = None Text
+  , table_name = None Text
+  , schema_column =
+      None
+        ( List
+            { description : Optional Text, name : Text, type : Optional Text }
+        )
   , timeouts =
       None
         { create : Optional Text

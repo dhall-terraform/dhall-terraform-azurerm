@@ -3,6 +3,13 @@
     , admin_password : Optional Text
     , admin_username : Optional Text
     , georeplication_locations : Optional (List Text)
+    , georeplications :
+        Optional
+          ( List
+              { location : Text
+              , tags : List { mapKey : Text, mapValue : Text }
+              }
+          )
     , id : Optional Text
     , location : Text
     , login_server : Optional Text
@@ -36,6 +43,11 @@
   , admin_password = None Text
   , admin_username = None Text
   , georeplication_locations = None (List Text)
+  , georeplications =
+      None
+        ( List
+            { location : Text, tags : List { mapKey : Text, mapValue : Text } }
+        )
   , id = None Text
   , login_server = None Text
   , network_rule_set =

@@ -6,6 +6,7 @@
               { endpoint_type : Text
               , remote_volume_location : Text
               , remote_volume_resource_id : Text
+              , replication_frequency : Text
               , replication_schedule : Text
               }
           )
@@ -29,6 +30,7 @@
             { endpoint_type : Text
             , remote_volume_location : Text
             , remote_volume_resource_id : Text
+            , replication_frequency : Text
             , replication_schedule : Text
             }
         )

@@ -2,7 +2,8 @@
     { api_server_authorized_ip_ranges : Optional (List Text)
     , automatic_channel_upgrade : Optional Text
     , disk_encryption_set_id : Optional Text
-    , dns_prefix : Text
+    , dns_prefix : Optional Text
+    , dns_prefix_private_cluster : Optional Text
     , enable_pod_security_policy : Optional Bool
     , fqdn : Optional Text
     , id : Optional Text
@@ -63,6 +64,16 @@
                         , http_application_routing_zone_name : Optional Text
                         }
                     )
+              , ingress_application_gateway :
+                  Optional
+                    ( List
+                        { effective_gateway_id : Optional Text
+                        , enabled : Bool
+                        , gateway_id : Optional Text
+                        , subnet_cidr : Optional Text
+                        , subnet_id : Optional Text
+                        }
+                    )
               , kube_dashboard : Optional (List { enabled : Bool })
               , oms_agent :
                   Optional
@@ -85,8 +96,12 @@
         Optional
           ( List
               { balance_similar_node_groups : Optional Bool
+              , empty_bulk_delete_max : Optional Text
               , expander : Optional Text
               , max_graceful_termination_sec : Optional Text
+              , max_node_provisioning_time : Optional Text
+              , max_unready_nodes : Optional Natural
+              , max_unready_percentage : Optional Natural
               , new_pod_scale_up_delay : Optional Text
               , scale_down_delay_after_add : Optional Text
               , scale_down_delay_after_delete : Optional Text
@@ -168,6 +183,7 @@
                   Optional
                     ( List
                         { admin_group_object_ids : Optional (List Text)
+                        , azure_rbac_enabled : Optional Bool
                         , client_app_id : Optional Text
                         , managed : Optional Bool
                         , server_app_id : Optional Text
@@ -194,6 +210,8 @@
   { api_server_authorized_ip_ranges = None (List Text)
   , automatic_channel_upgrade = None Text
   , disk_encryption_set_id = None Text
+  , dns_prefix = None Text
+  , dns_prefix_private_cluster = None Text
   , enable_pod_security_policy = None Bool
   , fqdn = None Text
   , id = None Text
@@ -250,6 +268,16 @@
                       , http_application_routing_zone_name : Optional Text
                       }
                   )
+            , ingress_application_gateway :
+                Optional
+                  ( List
+                      { effective_gateway_id : Optional Text
+                      , enabled : Bool
+                      , gateway_id : Optional Text
+                      , subnet_cidr : Optional Text
+                      , subnet_id : Optional Text
+                      }
+                  )
             , kube_dashboard : Optional (List { enabled : Bool })
             , oms_agent :
                 Optional
@@ -272,8 +300,12 @@
       None
         ( List
             { balance_similar_node_groups : Optional Bool
+            , empty_bulk_delete_max : Optional Text
             , expander : Optional Text
             , max_graceful_termination_sec : Optional Text
+            , max_node_provisioning_time : Optional Text
+            , max_unready_nodes : Optional Natural
+            , max_unready_percentage : Optional Natural
             , new_pod_scale_up_delay : Optional Text
             , scale_down_delay_after_add : Optional Text
             , scale_down_delay_after_delete : Optional Text
@@ -330,6 +362,7 @@
                 Optional
                   ( List
                       { admin_group_object_ids : Optional (List Text)
+                      , azure_rbac_enabled : Optional Bool
                       , client_app_id : Optional Text
                       , managed : Optional Bool
                       , server_app_id : Optional Text

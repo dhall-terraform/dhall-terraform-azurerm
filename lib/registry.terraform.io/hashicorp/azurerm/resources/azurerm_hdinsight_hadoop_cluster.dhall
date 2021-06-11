@@ -47,6 +47,13 @@
     , monitor :
         Optional
           (List { log_analytics_workspace_id : Text, primary_key : Text })
+    , network :
+        Optional
+          ( List
+              { connection_direction : Optional Text
+              , private_link_enabled : Optional Bool
+              }
+          )
     , roles :
         List
           { edge_node :
@@ -152,6 +159,13 @@
         )
   , monitor =
       None (List { log_analytics_workspace_id : Text, primary_key : Text })
+  , network =
+      None
+        ( List
+            { connection_direction : Optional Text
+            , private_link_enabled : Optional Bool
+            }
+        )
   , storage_account =
       None
         ( List

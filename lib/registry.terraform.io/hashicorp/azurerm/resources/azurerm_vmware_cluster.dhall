@@ -1,17 +1,11 @@
 { Type =
-    { description : Optional Text
+    { cluster_node_count : Natural
+    , cluster_number : Optional Natural
+    , hosts : Optional (List Text)
     , id : Optional Text
-    , lighthouse_definition_id : Optional Text
-    , managing_tenant_id : Text
     , name : Text
-    , scope : Text
-    , authorization :
-        List
-          { delegated_role_definition_ids : Optional (List Text)
-          , principal_display_name : Optional Text
-          , principal_id : Text
-          , role_definition_id : Text
-          }
+    , sku_name : Text
+    , vmware_cloud_id : Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -21,9 +15,9 @@
           }
     }
 , default =
-  { description = None Text
+  { cluster_number = None Natural
+  , hosts = None (List Text)
   , id = None Text
-  , lighthouse_definition_id = None Text
   , timeouts =
       None
         { create : Optional Text

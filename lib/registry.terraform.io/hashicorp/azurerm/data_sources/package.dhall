@@ -40,6 +40,9 @@
 , azurerm_client_config = ./azurerm_client_config.dhall
 , azurerm_cognitive_account = ./azurerm_cognitive_account.dhall
 , azurerm_container_registry = ./azurerm_container_registry.dhall
+, azurerm_container_registry_scope_map =
+    ./azurerm_container_registry_scope_map.dhall
+, azurerm_container_registry_token = ./azurerm_container_registry_token.dhall
 , azurerm_cosmosdb_account = ./azurerm_cosmosdb_account.dhall
 , azurerm_database_migration_project =
     ./azurerm_database_migration_project.dhall
@@ -101,6 +104,8 @@
     ./azurerm_key_vault_certificate_issuer.dhall
 , azurerm_key_vault = ./azurerm_key_vault.dhall
 , azurerm_key_vault_key = ./azurerm_key_vault_key.dhall
+, azurerm_key_vault_managed_hardware_security_module =
+    ./azurerm_key_vault_managed_hardware_security_module.dhall
 , azurerm_key_vault_secret = ./azurerm_key_vault_secret.dhall
 , azurerm_kubernetes_cluster = ./azurerm_kubernetes_cluster.dhall
 , azurerm_kubernetes_cluster_node_pool =
@@ -153,6 +158,8 @@
 , azurerm_platform_image = ./azurerm_platform_image.dhall
 , azurerm_policy_definition = ./azurerm_policy_definition.dhall
 , azurerm_policy_set_definition = ./azurerm_policy_set_definition.dhall
+, azurerm_postgresql_flexible_server =
+    ./azurerm_postgresql_flexible_server.dhall
 , azurerm_postgresql_server = ./azurerm_postgresql_server.dhall
 , azurerm_private_dns_zone = ./azurerm_private_dns_zone.dhall
 , azurerm_private_endpoint_connection =
@@ -200,6 +207,7 @@
     ./azurerm_storage_account_blob_container_sas.dhall
 , azurerm_storage_account = ./azurerm_storage_account.dhall
 , azurerm_storage_account_sas = ./azurerm_storage_account_sas.dhall
+, azurerm_storage_blob = ./azurerm_storage_blob.dhall
 , azurerm_storage_container = ./azurerm_storage_container.dhall
 , azurerm_storage_encryption_scope = ./azurerm_storage_encryption_scope.dhall
 , azurerm_storage_management_policy = ./azurerm_storage_management_policy.dhall

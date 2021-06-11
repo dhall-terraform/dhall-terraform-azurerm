@@ -28,6 +28,25 @@
     , max_tasks_per_node : Optional Natural
     , metadata : Optional (List { mapKey : Text, mapValue : Text })
     , name : Text
+    , network_configuration :
+        Optional
+          ( List
+              { endpoint_configuration :
+                  List
+                    { backend_port : Natural
+                    , frontend_port_range : Text
+                    , name : Text
+                    , network_security_group_rules :
+                        List
+                          { access : Text
+                          , priority : Natural
+                          , source_address_prefix : Text
+                          }
+                    , protocol : Text
+                    }
+              , subnet_id : Text
+              }
+          )
     , node_agent_sku_id : Optional Text
     , resource_group_name : Text
     , storage_image_reference :
@@ -48,29 +67,6 @@
               , store_location : Text
               , store_name : Optional Text
               , visibility : Optional (List Text)
-              }
-          )
-    , network_configuration :
-        Optional
-          ( List
-              { subnet_id : Optional Text
-              , endpoint_configuration :
-                  Optional
-                    ( List
-                        { backend_port : Optional Natural
-                        , frontend_port_range : Optional Text
-                        , name : Optional Text
-                        , protocol : Optional Text
-                        , network_security_group_rules :
-                            Optional
-                              ( List
-                                  { access : Optional Text
-                                  , priority : Optional Natural
-                                  , source_address_prefix : Optional Text
-                                  }
-                              )
-                        }
-                    )
               }
           )
     , start_task :
@@ -127,6 +123,25 @@
   , id = None Text
   , max_tasks_per_node = None Natural
   , metadata = None (List { mapKey : Text, mapValue : Text })
+  , network_configuration =
+      None
+        ( List
+            { endpoint_configuration :
+                List
+                  { backend_port : Natural
+                  , frontend_port_range : Text
+                  , name : Text
+                  , network_security_group_rules :
+                      List
+                        { access : Text
+                        , priority : Natural
+                        , source_address_prefix : Text
+                        }
+                  , protocol : Text
+                  }
+            , subnet_id : Text
+            }
+        )
   , node_agent_sku_id = None Text
   , storage_image_reference =
       None
@@ -146,29 +161,6 @@
             , store_location : Text
             , store_name : Optional Text
             , visibility : Optional (List Text)
-            }
-        )
-  , network_configuration =
-      None
-        ( List
-            { subnet_id : Optional Text
-            , endpoint_configuration :
-                Optional
-                  ( List
-                      { backend_port : Optional Natural
-                      , frontend_port_range : Optional Text
-                      , name : Optional Text
-                      , protocol : Optional Text
-                      , network_security_group_rules :
-                          Optional
-                            ( List
-                                { access : Optional Text
-                                , priority : Optional Natural
-                                , source_address_prefix : Optional Text
-                                }
-                            )
-                      }
-                  )
             }
         )
   , start_task =
