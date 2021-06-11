@@ -75,6 +75,24 @@
               , type : Text
               }
           )
+    , logs :
+        Optional
+          ( List
+              { application_logs :
+                  Optional
+                    ( List
+                        { azure_blob_storage :
+                            Optional
+                              ( List
+                                  { level : Text
+                                  , retention_in_days : Natural
+                                  , sas_url : Text
+                                  }
+                              )
+                        }
+                    )
+              }
+          )
     , site_config :
         Optional
           ( List
@@ -181,6 +199,24 @@
             { principal_id : Optional Text
             , tenant_id : Optional Text
             , type : Text
+            }
+        )
+  , logs =
+      None
+        ( List
+            { application_logs :
+                Optional
+                  ( List
+                      { azure_blob_storage :
+                          Optional
+                            ( List
+                                { level : Text
+                                , retention_in_days : Natural
+                                , sas_url : Text
+                                }
+                            )
+                      }
+                  )
             }
         )
   , site_config =

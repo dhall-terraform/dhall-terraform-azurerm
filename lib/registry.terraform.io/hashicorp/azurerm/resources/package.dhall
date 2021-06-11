@@ -159,6 +159,8 @@
 , azurerm_hdinsight_spark_cluster = ./azurerm_hdinsight_spark_cluster.dhall
 , azurerm_hdinsight_storm_cluster = ./azurerm_hdinsight_storm_cluster.dhall
 , azurerm_image = ./azurerm_image.dhall
+, azurerm_iot_dps_certificate = ./azurerm_iot_dps_certificate.dhall
+, azurerm_iot_dps = ./azurerm_iot_dps.dhall
 , azurerm_iothub_consumer_group = ./azurerm_iothub_consumer_group.dhall
 , azurerm_iothub = ./azurerm_iothub.dhall
 , azurerm_iothub_shared_access_policy =
@@ -195,6 +197,7 @@
 , azurerm_management_group = ./azurerm_management_group.dhall
 , azurerm_management_lock = ./azurerm_management_lock.dhall
 , azurerm_mariadb_database = ./azurerm_mariadb_database.dhall
+, azurerm_mariadb_firewall_rule = ./azurerm_mariadb_firewall_rule.dhall
 , azurerm_mariadb_server = ./azurerm_mariadb_server.dhall
 , azurerm_media_services_account = ./azurerm_media_services_account.dhall
 , azurerm_metric_alertrule = ./azurerm_metric_alertrule.dhall
@@ -247,6 +250,7 @@
 , azurerm_postgresql_server = ./azurerm_postgresql_server.dhall
 , azurerm_postgresql_virtual_network_rule =
     ./azurerm_postgresql_virtual_network_rule.dhall
+, azurerm_private_dns_zone = ./azurerm_private_dns_zone.dhall
 , azurerm_public_ip = ./azurerm_public_ip.dhall
 , azurerm_public_ip_prefix = ./azurerm_public_ip_prefix.dhall
 , azurerm_recovery_services_protected_vm =
@@ -307,6 +311,8 @@
     ./azurerm_stream_analytics_output_blob.dhall
 , azurerm_stream_analytics_output_eventhub =
     ./azurerm_stream_analytics_output_eventhub.dhall
+, azurerm_stream_analytics_output_mssql =
+    ./azurerm_stream_analytics_output_mssql.dhall
 , azurerm_stream_analytics_output_servicebus_queue =
     ./azurerm_stream_analytics_output_servicebus_queue.dhall
 , azurerm_stream_analytics_stream_input_blob =

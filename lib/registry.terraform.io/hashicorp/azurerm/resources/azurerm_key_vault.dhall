@@ -18,6 +18,7 @@
     , location : Text
     , name : Text
     , resource_group_name : Text
+    , sku_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tenant_id : Text
     , vault_uri : Optional Text
@@ -30,7 +31,7 @@
               , virtual_network_subnet_ids : Optional (List Text)
               }
           )
-    , sku : List { name : Text }
+    , sku : Optional (List { name : Optional Text })
     }
 , default =
   { access_policy =
@@ -49,6 +50,7 @@
   , enabled_for_disk_encryption = None Bool
   , enabled_for_template_deployment = None Bool
   , id = None Text
+  , sku_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , vault_uri = None Text
   , network_acls =
@@ -60,5 +62,6 @@
             , virtual_network_subnet_ids : Optional (List Text)
             }
         )
+  , sku = None (List { name : Optional Text })
   }
 }

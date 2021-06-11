@@ -1,6 +1,7 @@
 { Type =
     { backend_address_pool_id : Optional Text
     , backend_port : Natural
+    , disable_outbound_snat : Optional Bool
     , enable_floating_ip : Optional Bool
     , frontend_ip_configuration_id : Optional Text
     , frontend_ip_configuration_name : Text
@@ -17,6 +18,7 @@
     }
 , default =
   { backend_address_pool_id = None Text
+  , disable_outbound_snat = None Bool
   , enable_floating_ip = None Bool
   , frontend_ip_configuration_id = None Text
   , id = None Text

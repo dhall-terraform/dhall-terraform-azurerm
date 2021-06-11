@@ -17,6 +17,7 @@
               , private_ip_address : Optional Text
               , private_ip_address_allocation : Optional Text
               , public_ip_address_id : Optional Text
+              , public_ip_prefix_id : Optional Text
               , subnet_id : Optional Text
               , zones : Optional (List Text)
               }
@@ -38,6 +39,7 @@
             , private_ip_address : Optional Text
             , private_ip_address_allocation : Optional Text
             , public_ip_address_id : Optional Text
+            , public_ip_prefix_id : Optional Text
             , subnet_id : Optional Text
             , zones : Optional (List Text)
             }

@@ -6,8 +6,14 @@
     , namespace_type : Text
     , resource_group_name : Text
     , servicebus_endpoint : Optional Text
-    , sku : List { name : Text }
+    , sku_name : Optional Text
+    , sku : Optional (List { name : Text })
     }
 , default =
-  { enabled = None Bool, id = None Text, servicebus_endpoint = None Text }
+  { enabled = None Bool
+  , id = None Text
+  , servicebus_endpoint = None Text
+  , sku_name = None Text
+  , sku = None (List { name : Text })
+  }
 }

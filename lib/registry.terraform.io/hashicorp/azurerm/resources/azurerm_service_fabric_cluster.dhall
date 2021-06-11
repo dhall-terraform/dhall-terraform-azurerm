@@ -27,6 +27,17 @@
               , x509_store_name : Text
               }
           )
+    , certificate_common_names :
+        Optional
+          ( List
+              { x509_store_name : Text
+              , common_names :
+                  List
+                    { certificate_common_name : Text
+                    , certificate_issuer_thumbprint : Optional Text
+                    }
+              }
+          )
     , client_certificate_thumbprint :
         Optional (List { is_admin : Bool, thumbprint : Text })
     , diagnostics_config :
@@ -92,6 +103,17 @@
             { thumbprint : Text
             , thumbprint_secondary : Optional Text
             , x509_store_name : Text
+            }
+        )
+  , certificate_common_names =
+      None
+        ( List
+            { x509_store_name : Text
+            , common_names :
+                List
+                  { certificate_common_name : Text
+                  , certificate_issuer_thumbprint : Optional Text
+                  }
             }
         )
   , client_certificate_thumbprint =

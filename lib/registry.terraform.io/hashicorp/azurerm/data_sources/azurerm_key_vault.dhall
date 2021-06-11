@@ -28,6 +28,7 @@
           )
     , resource_group_name : Text
     , sku : Optional (List { name : Text })
+    , sku_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tenant_id : Optional Text
     , vault_uri : Optional Text
@@ -60,6 +61,7 @@
             }
         )
   , sku = None (List { name : Text })
+  , sku_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , tenant_id = None Text
   , vault_uri = None Text
