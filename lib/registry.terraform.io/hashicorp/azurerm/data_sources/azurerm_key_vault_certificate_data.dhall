@@ -1,5 +1,6 @@
 { Type =
-    { expires : Optional Text
+    { certificates_count : Optional Natural
+    , expires : Optional Text
     , hex : Optional Text
     , id : Optional Text
     , key : Optional Text
@@ -11,7 +12,8 @@
     , timeouts : Optional { read : Optional Text }
     }
 , default =
-  { expires = None Text
+  { certificates_count = None Natural
+  , expires = None Text
   , hex = None Text
   , id = None Text
   , key = None Text

@@ -1,5 +1,7 @@
 { Type =
-    { id : Optional Text
+    { account_domain : Optional Text
+    , account_id : Optional Text
+    , id : Optional Text
     , location : Text
     , name : Text
     , resource_group_name : Text
@@ -13,7 +15,9 @@
           }
     }
 , default =
-  { id = None Text
+  { account_domain = None Text
+  , account_id = None Text
+  , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None

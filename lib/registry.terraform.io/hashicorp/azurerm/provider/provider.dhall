@@ -36,10 +36,16 @@
                 ( List
                     { delete_os_disk_on_deletion : Optional Bool
                     , graceful_shutdown : Optional Bool
+                    , skip_shutdown_and_force_delete : Optional Bool
                     }
                 )
           , virtual_machine_scale_set :
-              Optional (List { roll_instances_when_required : Bool })
+              Optional
+                ( List
+                    { force_delete : Optional Bool
+                    , roll_instances_when_required : Bool
+                    }
+                )
           }
     }
 , default =

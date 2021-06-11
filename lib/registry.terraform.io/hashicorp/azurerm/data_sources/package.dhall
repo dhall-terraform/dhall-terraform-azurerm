@@ -204,6 +204,7 @@
 , azurerm_shared_image_versions = ./azurerm_shared_image_versions.dhall
 , azurerm_signalr_service = ./azurerm_signalr_service.dhall
 , azurerm_snapshot = ./azurerm_snapshot.dhall
+, azurerm_spatial_anchors_account = ./azurerm_spatial_anchors_account.dhall
 , azurerm_spring_cloud_app = ./azurerm_spring_cloud_app.dhall
 , azurerm_spring_cloud_service = ./azurerm_spring_cloud_service.dhall
 , azurerm_sql_database = ./azurerm_sql_database.dhall

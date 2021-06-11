@@ -5,6 +5,7 @@
     , data_factory_name : Text
     , description : Optional Text
     , host : Text
+    , host_key_fingerprint : Optional Text
     , id : Optional Text
     , integration_runtime_name : Optional Text
     , name : Text
@@ -12,6 +13,7 @@
     , password : Text
     , port : Natural
     , resource_group_name : Text
+    , skip_host_key_validation : Optional Bool
     , username : Text
     , timeouts :
         Optional
@@ -25,9 +27,11 @@
   { additional_properties = None (List { mapKey : Text, mapValue : Text })
   , annotations = None (List Text)
   , description = None Text
+  , host_key_fingerprint = None Text
   , id = None Text
   , integration_runtime_name = None Text
   , parameters = None (List { mapKey : Text, mapValue : Text })
+  , skip_host_key_validation = None Bool
   , timeouts =
       None
         { create : Optional Text
