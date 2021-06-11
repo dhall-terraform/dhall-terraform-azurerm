@@ -82,6 +82,8 @@
                     }
                 )
           }
+    , identity :
+        Optional (List { identity_ids : List Text, type : Optional Text })
     , probe :
         Optional
           ( List
@@ -260,6 +262,7 @@
             , status_code : Text
             }
         )
+  , identity = None (List { identity_ids : List Text, type : Optional Text })
   , probe =
       None
         ( List

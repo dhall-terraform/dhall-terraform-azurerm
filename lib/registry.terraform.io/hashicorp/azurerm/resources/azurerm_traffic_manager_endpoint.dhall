@@ -13,6 +13,12 @@
     , target_resource_id : Optional Text
     , type : Text
     , weight : Optional Natural
+    , custom_header : Optional (List { name : Text, value : Text })
+    , subnet :
+        Optional
+          ( List
+              { first : Text, last : Optional Text, scope : Optional Natural }
+          )
     }
 , default =
   { endpoint_location = None Text
@@ -25,5 +31,9 @@
   , target = None Text
   , target_resource_id = None Text
   , weight = None Natural
+  , custom_header = None (List { name : Text, value : Text })
+  , subnet =
+      None
+        (List { first : Text, last : Optional Text, scope : Optional Natural })
   }
 }

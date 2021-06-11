@@ -1,4 +1,5 @@
-{ azurerm_api_management_api = ./azurerm_api_management_api.dhall
+{ azurerm_analysis_services_server = ./azurerm_analysis_services_server.dhall
+, azurerm_api_management_api = ./azurerm_api_management_api.dhall
 , azurerm_api_management_api_operation =
     ./azurerm_api_management_api_operation.dhall
 , azurerm_api_management_api_operation_policy =
@@ -9,6 +10,7 @@
     ./azurerm_api_management_api_version_set.dhall
 , azurerm_api_management_authorization_server =
     ./azurerm_api_management_authorization_server.dhall
+, azurerm_api_management_backend = ./azurerm_api_management_backend.dhall
 , azurerm_api_management_certificate =
     ./azurerm_api_management_certificate.dhall
 , azurerm_api_management = ./azurerm_api_management.dhall
@@ -64,6 +66,7 @@
 , azurerm_azuread_service_principal_password =
     ./azurerm_azuread_service_principal_password.dhall
 , azurerm_batch_account = ./azurerm_batch_account.dhall
+, azurerm_batch_application = ./azurerm_batch_application.dhall
 , azurerm_batch_certificate = ./azurerm_batch_certificate.dhall
 , azurerm_batch_pool = ./azurerm_batch_pool.dhall
 , azurerm_cdn_endpoint = ./azurerm_cdn_endpoint.dhall
@@ -196,6 +199,7 @@
 , azurerm_managed_disk = ./azurerm_managed_disk.dhall
 , azurerm_management_group = ./azurerm_management_group.dhall
 , azurerm_management_lock = ./azurerm_management_lock.dhall
+, azurerm_maps_account = ./azurerm_maps_account.dhall
 , azurerm_mariadb_database = ./azurerm_mariadb_database.dhall
 , azurerm_mariadb_firewall_rule = ./azurerm_mariadb_firewall_rule.dhall
 , azurerm_mariadb_server = ./azurerm_mariadb_server.dhall
@@ -250,6 +254,7 @@
 , azurerm_postgresql_server = ./azurerm_postgresql_server.dhall
 , azurerm_postgresql_virtual_network_rule =
     ./azurerm_postgresql_virtual_network_rule.dhall
+, azurerm_private_dns_a_record = ./azurerm_private_dns_a_record.dhall
 , azurerm_private_dns_zone = ./azurerm_private_dns_zone.dhall
 , azurerm_public_ip = ./azurerm_public_ip.dhall
 , azurerm_public_ip_prefix = ./azurerm_public_ip_prefix.dhall
@@ -303,7 +308,9 @@
 , azurerm_storage_container = ./azurerm_storage_container.dhall
 , azurerm_storage_queue = ./azurerm_storage_queue.dhall
 , azurerm_storage_share = ./azurerm_storage_share.dhall
+, azurerm_storage_share_directory = ./azurerm_storage_share_directory.dhall
 , azurerm_storage_table = ./azurerm_storage_table.dhall
+, azurerm_storage_table_entity = ./azurerm_storage_table_entity.dhall
 , azurerm_stream_analytics_function_javascript_udf =
     ./azurerm_stream_analytics_function_javascript_udf.dhall
 , azurerm_stream_analytics_job = ./azurerm_stream_analytics_job.dhall

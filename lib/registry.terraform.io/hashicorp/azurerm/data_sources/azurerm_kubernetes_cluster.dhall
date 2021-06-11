@@ -14,10 +14,15 @@
     , agent_pool_profile :
         Optional
           ( List
-              { count : Natural
+              { availability_zones : List Text
+              , count : Natural
               , dns_prefix : Text
+              , enable_auto_scaling : Bool
+              , max_count : Natural
               , max_pods : Natural
+              , min_count : Natural
               , name : Text
+              , node_taints : List Text
               , os_disk_size_gb : Natural
               , os_type : Text
               , type : Text
@@ -63,6 +68,7 @@
           ( List
               { dns_service_ip : Text
               , docker_bridge_cidr : Text
+              , load_balancer_sku : Text
               , network_plugin : Text
               , network_policy : Text
               , pod_cidr : Text
@@ -85,6 +91,7 @@
           )
     , service_principal : Optional (List { client_id : Text })
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , windows_profile : Optional (List { admin_username : Text })
     }
 , default =
   { addon_profile =
@@ -100,10 +107,15 @@
   , agent_pool_profile =
       None
         ( List
-            { count : Natural
+            { availability_zones : List Text
+            , count : Natural
             , dns_prefix : Text
+            , enable_auto_scaling : Bool
+            , max_count : Natural
             , max_pods : Natural
+            , min_count : Natural
             , name : Text
+            , node_taints : List Text
             , os_disk_size_gb : Natural
             , os_type : Text
             , type : Text
@@ -147,6 +159,7 @@
         ( List
             { dns_service_ip : Text
             , docker_bridge_cidr : Text
+            , load_balancer_sku : Text
             , network_plugin : Text
             , network_policy : Text
             , pod_cidr : Text
@@ -168,5 +181,6 @@
         )
   , service_principal = None (List { client_id : Text })
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , windows_profile = None (List { admin_username : Text })
   }
 }

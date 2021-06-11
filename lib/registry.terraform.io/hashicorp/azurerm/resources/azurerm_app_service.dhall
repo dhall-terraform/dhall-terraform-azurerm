@@ -65,12 +65,29 @@
                     (List { consumer_key : Text, consumer_secret : Text })
               }
           )
+    , backup :
+        Optional
+          ( List
+              { enabled : Optional Bool
+              , name : Text
+              , storage_account_url : Text
+              , schedule :
+                  List
+                    { frequency_interval : Natural
+                    , frequency_unit : Text
+                    , keep_at_least_one_backup : Optional Bool
+                    , retention_period_in_days : Optional Natural
+                    , start_time : Optional Text
+                    }
+              }
+          )
     , connection_string :
         Optional (List { name : Text, type : Text, value : Text })
     , identity :
         Optional
           ( List
-              { principal_id : Optional Text
+              { identity_ids : Optional (List Text)
+              , principal_id : Optional Text
               , tenant_id : Optional Text
               , type : Text
               }
@@ -127,6 +144,17 @@
                         , support_credentials : Optional Bool
                         }
                     )
+              }
+          )
+    , storage_account :
+        Optional
+          ( List
+              { access_key : Text
+              , account_name : Text
+              , mount_path : Optional Text
+              , name : Text
+              , share_name : Text
+              , type : Text
               }
           )
     }
@@ -192,11 +220,28 @@
                 Optional (List { consumer_key : Text, consumer_secret : Text })
             }
         )
+  , backup =
+      None
+        ( List
+            { enabled : Optional Bool
+            , name : Text
+            , storage_account_url : Text
+            , schedule :
+                List
+                  { frequency_interval : Natural
+                  , frequency_unit : Text
+                  , keep_at_least_one_backup : Optional Bool
+                  , retention_period_in_days : Optional Natural
+                  , start_time : Optional Text
+                  }
+            }
+        )
   , connection_string = None (List { name : Text, type : Text, value : Text })
   , identity =
       None
         ( List
-            { principal_id : Optional Text
+            { identity_ids : Optional (List Text)
+            , principal_id : Optional Text
             , tenant_id : Optional Text
             , type : Text
             }
@@ -253,6 +298,17 @@
                       , support_credentials : Optional Bool
                       }
                   )
+            }
+        )
+  , storage_account =
+      None
+        ( List
+            { access_key : Text
+            , account_name : Text
+            , mount_path : Optional Text
+            , name : Text
+            , share_name : Text
+            , type : Text
             }
         )
   }

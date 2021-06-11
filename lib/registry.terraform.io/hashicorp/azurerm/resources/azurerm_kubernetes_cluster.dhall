@@ -52,11 +52,16 @@
           )
     , agent_pool_profile :
         List
-          { count : Optional Natural
+          { availability_zones : Optional (List Text)
+          , count : Optional Natural
           , dns_prefix : Optional Text
+          , enable_auto_scaling : Optional Bool
           , fqdn : Optional Text
+          , max_count : Optional Natural
           , max_pods : Optional Natural
+          , min_count : Optional Natural
           , name : Text
+          , node_taints : Optional (List Text)
           , os_disk_size_gb : Optional Natural
           , os_type : Optional Text
           , type : Optional Text
@@ -71,6 +76,7 @@
           ( List
               { dns_service_ip : Optional Text
               , docker_bridge_cidr : Optional Text
+              , load_balancer_sku : Optional Text
               , network_plugin : Text
               , network_policy : Optional Text
               , pod_cidr : Optional Text
@@ -93,6 +99,9 @@
               }
           )
     , service_principal : List { client_id : Text, client_secret : Text }
+    , windows_profile :
+        Optional
+          (List { admin_password : Optional Text, admin_username : Text })
     }
 , default =
   { api_server_authorized_ip_ranges = None (List Text)
@@ -149,6 +158,7 @@
         ( List
             { dns_service_ip : Optional Text
             , docker_bridge_cidr : Optional Text
+            , load_balancer_sku : Optional Text
             , network_plugin : Text
             , network_policy : Optional Text
             , pod_cidr : Optional Text
@@ -170,5 +180,7 @@
                   )
             }
         )
+  , windows_profile =
+      None (List { admin_password : Optional Text, admin_username : Text })
   }
 }

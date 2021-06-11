@@ -17,6 +17,56 @@
     , storage_connection_string : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Text
+    , auth_settings :
+        Optional
+          ( List
+              { additional_login_params :
+                  Optional (List { mapKey : Text, mapValue : Text })
+              , allowed_external_redirect_urls : Optional (List Text)
+              , default_provider : Optional Text
+              , enabled : Bool
+              , issuer : Optional Text
+              , runtime_version : Optional Text
+              , token_refresh_extension_hours : Optional Natural
+              , token_store_enabled : Optional Bool
+              , unauthenticated_client_action : Optional Text
+              , active_directory :
+                  Optional
+                    ( List
+                        { allowed_audiences : Optional (List Text)
+                        , client_id : Text
+                        , client_secret : Optional Text
+                        }
+                    )
+              , facebook :
+                  Optional
+                    ( List
+                        { app_id : Text
+                        , app_secret : Text
+                        , oauth_scopes : Optional (List Text)
+                        }
+                    )
+              , google :
+                  Optional
+                    ( List
+                        { client_id : Text
+                        , client_secret : Text
+                        , oauth_scopes : Optional (List Text)
+                        }
+                    )
+              , microsoft :
+                  Optional
+                    ( List
+                        { client_id : Text
+                        , client_secret : Text
+                        , oauth_scopes : Optional (List Text)
+                        }
+                    )
+              , twitter :
+                  Optional
+                    (List { consumer_key : Text, consumer_secret : Text })
+              }
+          )
     , connection_string :
         Optional (List { name : Text, type : Text, value : Text })
     , identity :
@@ -51,6 +101,55 @@
   , site_credential = None (List { password : Text, username : Text })
   , tags = None (List { mapKey : Text, mapValue : Text })
   , version = None Text
+  , auth_settings =
+      None
+        ( List
+            { additional_login_params :
+                Optional (List { mapKey : Text, mapValue : Text })
+            , allowed_external_redirect_urls : Optional (List Text)
+            , default_provider : Optional Text
+            , enabled : Bool
+            , issuer : Optional Text
+            , runtime_version : Optional Text
+            , token_refresh_extension_hours : Optional Natural
+            , token_store_enabled : Optional Bool
+            , unauthenticated_client_action : Optional Text
+            , active_directory :
+                Optional
+                  ( List
+                      { allowed_audiences : Optional (List Text)
+                      , client_id : Text
+                      , client_secret : Optional Text
+                      }
+                  )
+            , facebook :
+                Optional
+                  ( List
+                      { app_id : Text
+                      , app_secret : Text
+                      , oauth_scopes : Optional (List Text)
+                      }
+                  )
+            , google :
+                Optional
+                  ( List
+                      { client_id : Text
+                      , client_secret : Text
+                      , oauth_scopes : Optional (List Text)
+                      }
+                  )
+            , microsoft :
+                Optional
+                  ( List
+                      { client_id : Text
+                      , client_secret : Text
+                      , oauth_scopes : Optional (List Text)
+                      }
+                  )
+            , twitter :
+                Optional (List { consumer_key : Text, consumer_secret : Text })
+            }
+        )
   , connection_string = None (List { name : Text, type : Text, value : Text })
   , identity =
       None

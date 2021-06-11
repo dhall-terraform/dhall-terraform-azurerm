@@ -46,10 +46,12 @@
 , azurerm_logic_app_workflow = ./azurerm_logic_app_workflow.dhall
 , azurerm_managed_disk = ./azurerm_managed_disk.dhall
 , azurerm_management_group = ./azurerm_management_group.dhall
+, azurerm_maps_account = ./azurerm_maps_account.dhall
 , azurerm_monitor_action_group = ./azurerm_monitor_action_group.dhall
 , azurerm_monitor_diagnostic_categories =
     ./azurerm_monitor_diagnostic_categories.dhall
 , azurerm_monitor_log_profile = ./azurerm_monitor_log_profile.dhall
+, azurerm_mssql_elasticpool = ./azurerm_mssql_elasticpool.dhall
 , azurerm_network_interface = ./azurerm_network_interface.dhall
 , azurerm_network_security_group = ./azurerm_network_security_group.dhall
 , azurerm_network_watcher = ./azurerm_network_watcher.dhall

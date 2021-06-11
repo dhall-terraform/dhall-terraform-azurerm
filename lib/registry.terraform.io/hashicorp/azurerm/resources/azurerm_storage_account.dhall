@@ -5,6 +5,7 @@
     , account_replication_type : Text
     , account_tier : Text
     , account_type : Optional Text
+    , enable_advanced_threat_protection : Optional Bool
     , enable_blob_encryption : Optional Bool
     , enable_file_encryption : Optional Bool
     , enable_https_traffic_only : Optional Bool
@@ -65,12 +66,56 @@
               , virtual_network_subnet_ids : Optional (List Text)
               }
           )
+    , queue_properties :
+        Optional
+          ( List
+              { cors_rule :
+                  Optional
+                    ( List
+                        { allowed_headers : List Text
+                        , allowed_methods : List Text
+                        , allowed_origins : List Text
+                        , exposed_headers : List Text
+                        , max_age_in_seconds : Natural
+                        }
+                    )
+              , hour_metrics :
+                  Optional
+                    ( List
+                        { enabled : Bool
+                        , include_apis : Optional Bool
+                        , retention_policy_days : Optional Natural
+                        , version : Text
+                        }
+                    )
+              , logging :
+                  Optional
+                    ( List
+                        { delete : Bool
+                        , read : Bool
+                        , retention_policy_days : Optional Natural
+                        , version : Text
+                        , write : Bool
+                        }
+                    )
+              , minute_metrics :
+                  Optional
+                    ( List
+                        { enabled : Bool
+                        , include_apis : Optional Bool
+                        , retention_policy_days : Optional Natural
+                        , version : Text
+                        }
+                    )
+              }
+          )
     }
 , default =
   { access_tier = None Text
   , account_encryption_source = None Text
   , account_kind = None Text
   , account_type = None Text
+  , enable_advanced_threat_protection = None Bool
   , enable_blob_encryption = None Bool
   , enable_file_encryption = None Bool
   , enable_https_traffic_only = None Bool
@@ -125,6 +170,49 @@
             , default_action : Optional Text
             , ip_rules : Optional (List Text)
             , virtual_network_subnet_ids : Optional (List Text)
+            }
+        )
+  , queue_properties =
+      None
+        ( List
+            { cors_rule :
+                Optional
+                  ( List
+                      { allowed_headers : List Text
+                      , allowed_methods : List Text
+                      , allowed_origins : List Text
+                      , exposed_headers : List Text
+                      , max_age_in_seconds : Natural
+                      }
+                  )
+            , hour_metrics :
+                Optional
+                  ( List
+                      { enabled : Bool
+                      , include_apis : Optional Bool
+                      , retention_policy_days : Optional Natural
+                      , version : Text
+                      }
+                  )
+            , logging :
+                Optional
+                  ( List
+                      { delete : Bool
+                      , read : Bool
+                      , retention_policy_days : Optional Natural
+                      , version : Text
+                      , write : Bool
+                      }
+                  )
+            , minute_metrics :
+                Optional
+                  ( List
+                      { enabled : Bool
+                      , include_apis : Optional Bool
+                      , retention_policy_days : Optional Natural
+                      , version : Text
+                      }
+                  )
             }
         )
   }

@@ -11,6 +11,7 @@
               , spending_limit : Text
               , state : Text
               , subscription_id : Text
+              , tenant_id : Text
               }
           )
     }
@@ -27,6 +28,7 @@
             , spending_limit : Text
             , state : Text
             , subscription_id : Text
+            , tenant_id : Text
             }
         )
   }

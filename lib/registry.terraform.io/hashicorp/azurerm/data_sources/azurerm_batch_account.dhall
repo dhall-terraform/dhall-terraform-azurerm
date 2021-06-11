@@ -1,6 +1,7 @@
 { Type =
     { account_endpoint : Optional Text
     , id : Optional Text
+    , key_vault_reference : Optional (List { id : Text, url : Text })
     , location : Optional Text
     , name : Text
     , pool_allocation_mode : Optional Text
@@ -13,6 +14,7 @@
 , default =
   { account_endpoint = None Text
   , id = None Text
+  , key_vault_reference = None (List { id : Text, url : Text })
   , location = None Text
   , pool_allocation_mode = None Text
   , primary_access_key = None Text

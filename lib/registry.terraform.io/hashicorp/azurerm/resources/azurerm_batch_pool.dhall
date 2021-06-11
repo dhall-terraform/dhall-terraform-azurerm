@@ -62,10 +62,10 @@
     , storage_image_reference :
         List
           { id : Optional Text
-          , offer : Text
-          , publisher : Text
-          , sku : Text
-          , version : Text
+          , offer : Optional Text
+          , publisher : Optional Text
+          , sku : Optional Text
+          , version : Optional Text
           }
     }
 , default =

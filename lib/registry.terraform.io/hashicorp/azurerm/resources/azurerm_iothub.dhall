@@ -41,6 +41,18 @@
               , source : Optional Text
               }
           )
+    , file_upload :
+        Optional
+          ( List
+              { connection_string : Text
+              , container_name : Text
+              , default_ttl : Optional Text
+              , lock_duration : Optional Text
+              , max_delivery_count : Optional Natural
+              , notifications : Optional Bool
+              , sas_ttl : Optional Text
+              }
+          )
     , ip_filter_rule :
         Optional (List { action : Text, ip_mask : Text, name : Text })
     , route :
@@ -93,6 +105,18 @@
             , enabled : Optional Bool
             , endpoint_names : Optional (List Text)
             , source : Optional Text
+            }
+        )
+  , file_upload =
+      None
+        ( List
+            { connection_string : Text
+            , container_name : Text
+            , default_ttl : Optional Text
+            , lock_duration : Optional Text
+            , max_delivery_count : Optional Natural
+            , notifications : Optional Bool
+            , sas_ttl : Optional Text
             }
         )
   , ip_filter_rule = None (List { action : Text, ip_mask : Text, name : Text })
