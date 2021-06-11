@@ -97,6 +97,7 @@
               , load_balancer_sku : Optional Text
               , network_plugin : Text
               , network_policy : Optional Text
+              , outbound_type : Optional Text
               , pod_cidr : Optional Text
               , service_cidr : Optional Text
               , load_balancer_profile :
@@ -125,7 +126,8 @@
                     )
               }
           )
-    , service_principal : List { client_id : Text, client_secret : Text }
+    , service_principal :
+        Optional (List { client_id : Text, client_secret : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -212,6 +214,7 @@
             , load_balancer_sku : Optional Text
             , network_plugin : Text
             , network_policy : Optional Text
+            , outbound_type : Optional Text
             , pod_cidr : Optional Text
             , service_cidr : Optional Text
             , load_balancer_profile :
@@ -240,6 +243,7 @@
                   )
             }
         )
+  , service_principal = None (List { client_id : Text, client_secret : Text })
   , timeouts =
       None
         { create : Optional Text
