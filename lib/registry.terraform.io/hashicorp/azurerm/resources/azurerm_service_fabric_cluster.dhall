@@ -108,6 +108,35 @@
           , read : Optional Text
           , update : Optional Text
           }
+    , upgrade_policy :
+        Optional
+          ( List
+              { force_restart_enabled : Optional Bool
+              , health_check_retry_timeout : Optional Text
+              , health_check_stable_duration : Optional Text
+              , health_check_wait_duration : Optional Text
+              , upgrade_domain_timeout : Optional Text
+              , upgrade_replica_set_check_timeout : Optional Text
+              , upgrade_timeout : Optional Text
+              , delta_health_policy :
+                  Optional
+                    ( List
+                        { max_delta_unhealthy_applications_percent :
+                            Optional Natural
+                        , max_delta_unhealthy_nodes_percent : Optional Natural
+                        , max_upgrade_domain_delta_unhealthy_nodes_percent :
+                            Optional Natural
+                        }
+                    )
+              , health_policy :
+                  Optional
+                    ( List
+                        { max_unhealthy_applications_percent : Optional Natural
+                        , max_unhealthy_nodes_percent : Optional Natural
+                        }
+                    )
+              }
+          )
     }
 , default =
   { add_on_features = None (List Text)
@@ -195,5 +224,34 @@
         , read : Optional Text
         , update : Optional Text
         }
+  , upgrade_policy =
+      None
+        ( List
+            { force_restart_enabled : Optional Bool
+            , health_check_retry_timeout : Optional Text
+            , health_check_stable_duration : Optional Text
+            , health_check_wait_duration : Optional Text
+            , upgrade_domain_timeout : Optional Text
+            , upgrade_replica_set_check_timeout : Optional Text
+            , upgrade_timeout : Optional Text
+            , delta_health_policy :
+                Optional
+                  ( List
+                      { max_delta_unhealthy_applications_percent :
+                          Optional Natural
+                      , max_delta_unhealthy_nodes_percent : Optional Natural
+                      , max_upgrade_domain_delta_unhealthy_nodes_percent :
+                          Optional Natural
+                      }
+                  )
+            , health_policy :
+                Optional
+                  ( List
+                      { max_unhealthy_applications_percent : Optional Natural
+                      , max_unhealthy_nodes_percent : Optional Natural
+                      }
+                  )
+            }
+        )
   }
 }

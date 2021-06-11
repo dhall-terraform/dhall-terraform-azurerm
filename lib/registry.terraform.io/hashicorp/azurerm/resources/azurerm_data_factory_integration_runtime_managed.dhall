@@ -13,8 +13,8 @@
     , catalog_info :
         Optional
           ( List
-              { administrator_login : Text
-              , administrator_password : Text
+              { administrator_login : Optional Text
+              , administrator_password : Optional Text
               , pricing_tier : Optional Text
               , server_endpoint : Text
               }
@@ -40,8 +40,8 @@
   , catalog_info =
       None
         ( List
-            { administrator_login : Text
-            , administrator_password : Text
+            { administrator_login : Optional Text
+            , administrator_password : Optional Text
             , pricing_tier : Optional Text
             , server_endpoint : Text
             }

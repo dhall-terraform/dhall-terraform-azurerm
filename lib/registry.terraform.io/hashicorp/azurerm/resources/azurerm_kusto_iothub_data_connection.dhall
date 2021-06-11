@@ -1,10 +1,14 @@
 { Type =
-    { id : Optional Text
-    , key_vault_certificate_id : Text
+    { cluster_name : Text
+    , consumer_group : Text
+    , database_name : Text
+    , event_system_properties : Optional (List Text)
+    , id : Optional Text
+    , iothub_id : Text
+    , location : Text
     , name : Text
     , resource_group_name : Text
-    , service_name : Text
-    , thumbprint : Optional Text
+    , shared_access_policy_name : Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -13,8 +17,8 @@
           }
     }
 , default =
-  { id = None Text
-  , thumbprint = None Text
+  { event_system_properties = None (List Text)
+  , id = None Text
   , timeouts =
       None
         { create : Optional Text, delete : Optional Text, read : Optional Text }

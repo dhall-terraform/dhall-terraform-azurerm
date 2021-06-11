@@ -12,6 +12,15 @@
     , subnet_id : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , volume_path : Text
+    , data_protection_replication :
+        Optional
+          ( List
+              { endpoint_type : Optional Text
+              , remote_volume_location : Text
+              , remote_volume_resource_id : Text
+              , replication_frequency : Text
+              }
+          )
     , export_policy_rule :
         Optional
           ( List
@@ -38,6 +47,15 @@
   , mount_ip_addresses = None (List Text)
   , protocols = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , data_protection_replication =
+      None
+        ( List
+            { endpoint_type : Optional Text
+            , remote_volume_location : Text
+            , remote_volume_resource_id : Text
+            , replication_frequency : Text
+            }
+        )
   , export_policy_rule =
       None
         ( List

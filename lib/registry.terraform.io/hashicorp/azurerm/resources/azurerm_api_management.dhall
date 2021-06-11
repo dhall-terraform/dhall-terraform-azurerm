@@ -142,6 +142,15 @@
                     }
               }
           )
+    , tenant_access :
+        Optional
+          ( List
+              { enabled : Bool
+              , primary_key : Optional Text
+              , secondary_key : Optional Text
+              , tenant_id : Optional Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -285,6 +294,15 @@
                   , enabled : Bool
                   , text : Optional Text
                   }
+            }
+        )
+  , tenant_access =
+      None
+        ( List
+            { enabled : Bool
+            , primary_key : Optional Text
+            , secondary_key : Optional Text
+            , tenant_id : Optional Text
             }
         )
   , timeouts =

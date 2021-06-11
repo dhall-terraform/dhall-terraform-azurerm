@@ -1,5 +1,14 @@
 { Type =
     { account_name : Text
+    , data_protection_replication :
+        Optional
+          ( List
+              { endpoint_type : Text
+              , remote_volume_location : Text
+              , remote_volume_resource_id : Text
+              , replication_schedule : Text
+              }
+          )
     , id : Optional Text
     , location : Optional Text
     , mount_ip_addresses : Optional (List Text)
@@ -14,7 +23,16 @@
     , timeouts : Optional { read : Optional Text }
     }
 , default =
-  { id = None Text
+  { data_protection_replication =
+      None
+        ( List
+            { endpoint_type : Text
+            , remote_volume_location : Text
+            , remote_volume_resource_id : Text
+            , replication_schedule : Text
+            }
+        )
+  , id = None Text
   , location = None Text
   , mount_ip_addresses = None (List Text)
   , protocols = None (List Text)

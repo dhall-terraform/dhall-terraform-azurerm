@@ -8,6 +8,7 @@
     , resource_group_name : Text
     , scope_resource_ids : List Text
     , severity : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , throttling_duration : Optional Text
     , action_group :
         List
@@ -27,6 +28,7 @@
   { description = None Text
   , enabled = None Bool
   , id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , throttling_duration = None Text
   , timeouts =
       None

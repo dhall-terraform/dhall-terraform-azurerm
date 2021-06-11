@@ -1,5 +1,6 @@
 { Type =
-    { https_only : Optional Bool
+    { fqdn : Optional Text
+    , https_only : Optional Bool
     , id : Optional Text
     , is_public : Optional Bool
     , name : Text
@@ -25,7 +26,8 @@
           }
     }
 , default =
-  { https_only = None Bool
+  { fqdn = None Text
+  , https_only = None Bool
   , id = None Text
   , is_public = None Bool
   , url = None Text

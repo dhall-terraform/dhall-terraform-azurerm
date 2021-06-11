@@ -161,6 +161,8 @@
     ./azurerm_database_migration_project.dhall
 , azurerm_database_migration_service =
     ./azurerm_database_migration_service.dhall
+, azurerm_databox_edge_device = ./azurerm_databox_edge_device.dhall
+, azurerm_databox_edge_order = ./azurerm_databox_edge_order.dhall
 , azurerm_databricks_workspace = ./azurerm_databricks_workspace.dhall
 , azurerm_data_factory_dataset_azure_blob =
     ./azurerm_data_factory_dataset_azure_blob.dhall
@@ -382,6 +384,8 @@
 , azurerm_kusto_database_principal = ./azurerm_kusto_database_principal.dhall
 , azurerm_kusto_eventhub_data_connection =
     ./azurerm_kusto_eventhub_data_connection.dhall
+, azurerm_kusto_iothub_data_connection =
+    ./azurerm_kusto_iothub_data_connection.dhall
 , azurerm_lb_backend_address_pool_address =
     ./azurerm_lb_backend_address_pool_address.dhall
 , azurerm_lb_backend_address_pool = ./azurerm_lb_backend_address_pool.dhall
@@ -564,6 +568,8 @@
 , azurerm_public_ip_prefix = ./azurerm_public_ip_prefix.dhall
 , azurerm_recovery_services_vault = ./azurerm_recovery_services_vault.dhall
 , azurerm_redis_cache = ./azurerm_redis_cache.dhall
+, azurerm_redis_enterprise_cluster = ./azurerm_redis_enterprise_cluster.dhall
+, azurerm_redis_enterprise_database = ./azurerm_redis_enterprise_database.dhall
 , azurerm_redis_firewall_rule = ./azurerm_redis_firewall_rule.dhall
 , azurerm_redis_linked_server = ./azurerm_redis_linked_server.dhall
 , azurerm_relay_hybrid_connection = ./azurerm_relay_hybrid_connection.dhall
@@ -579,6 +585,8 @@
 , azurerm_route_filter = ./azurerm_route_filter.dhall
 , azurerm_route_table = ./azurerm_route_table.dhall
 , azurerm_search_service = ./azurerm_search_service.dhall
+, azurerm_security_center_assessment_metadata =
+    ./azurerm_security_center_assessment_metadata.dhall
 , azurerm_security_center_automation =
     ./azurerm_security_center_automation.dhall
 , azurerm_security_center_auto_provisioning =
@@ -638,6 +646,8 @@
     ./azurerm_spring_cloud_active_deployment.dhall
 , azurerm_spring_cloud_app = ./azurerm_spring_cloud_app.dhall
 , azurerm_spring_cloud_certificate = ./azurerm_spring_cloud_certificate.dhall
+, azurerm_spring_cloud_custom_domain =
+    ./azurerm_spring_cloud_custom_domain.dhall
 , azurerm_spring_cloud_java_deployment =
     ./azurerm_spring_cloud_java_deployment.dhall
 , azurerm_spring_cloud_service = ./azurerm_spring_cloud_service.dhall
