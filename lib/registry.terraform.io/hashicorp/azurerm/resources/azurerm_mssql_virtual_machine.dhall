@@ -25,6 +25,22 @@
               , service_principal_secret : Text
               }
           )
+    , storage_configuration :
+        Optional
+          ( List
+              { disk_type : Text
+              , storage_workload_type : Text
+              , data_settings :
+                  Optional
+                    (List { default_file_path : Text, luns : List Natural })
+              , log_settings :
+                  Optional
+                    (List { default_file_path : Text, luns : List Natural })
+              , temp_db_settings :
+                  Optional
+                    (List { default_file_path : Text, luns : List Natural })
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -56,6 +72,22 @@
             , name : Text
             , service_principal_name : Text
             , service_principal_secret : Text
+            }
+        )
+  , storage_configuration =
+      None
+        ( List
+            { disk_type : Text
+            , storage_workload_type : Text
+            , data_settings :
+                Optional
+                  (List { default_file_path : Text, luns : List Natural })
+            , log_settings :
+                Optional
+                  (List { default_file_path : Text, luns : List Natural })
+            , temp_db_settings :
+                Optional
+                  (List { default_file_path : Text, luns : List Natural })
             }
         )
   , timeouts =

@@ -1,7 +1,11 @@
 { Type =
-    { id : Optional Text
-    , resource_type : Optional Text
-    , tier : Text
+    { description : Optional Text
+    , friendly_name : Optional Text
+    , id : Optional Text
+    , location : Text
+    , name : Text
+    , resource_group_name : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -11,8 +15,10 @@
           }
     }
 , default =
-  { id = None Text
-  , resource_type = None Text
+  { description = None Text
+  , friendly_name = None Text
+  , id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text

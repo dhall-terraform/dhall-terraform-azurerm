@@ -22,6 +22,7 @@
     , id : Optional Text
     , location : Text
     , name : Text
+    , public_network_access_enabled : Optional Bool
     , resource_group_name : Text
     , route :
         Optional
@@ -98,6 +99,7 @@
   , event_hub_retention_in_days = None Natural
   , hostname = None Text
   , id = None Text
+  , public_network_access_enabled = None Bool
   , route =
       None
         ( List

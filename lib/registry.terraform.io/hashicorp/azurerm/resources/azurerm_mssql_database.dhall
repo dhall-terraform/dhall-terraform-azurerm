@@ -28,6 +28,16 @@
     , sku_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , zone_redundant : Optional Bool
+    , long_term_retention_policy :
+        Optional
+          ( List
+              { monthly_retention : Optional Text
+              , week_of_year : Optional Natural
+              , weekly_retention : Optional Text
+              , yearly_retention : Optional Text
+              }
+          )
+    , short_term_retention_policy : Optional (List { retention_days : Natural })
     , threat_detection_policy :
         Optional
           ( List
@@ -77,6 +87,16 @@
   , sku_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zone_redundant = None Bool
+  , long_term_retention_policy =
+      None
+        ( List
+            { monthly_retention : Optional Text
+            , week_of_year : Optional Natural
+            , weekly_retention : Optional Text
+            , yearly_retention : Optional Text
+            }
+        )
+  , short_term_retention_policy = None (List { retention_days : Natural })
   , threat_detection_policy =
       None
         ( List

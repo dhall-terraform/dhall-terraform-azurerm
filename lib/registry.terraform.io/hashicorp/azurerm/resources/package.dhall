@@ -538,6 +538,8 @@
     ./azurerm_servicebus_topic_authorization_rule.dhall
 , azurerm_servicebus_topic = ./azurerm_servicebus_topic.dhall
 , azurerm_service_fabric_cluster = ./azurerm_service_fabric_cluster.dhall
+, azurerm_service_fabric_mesh_application =
+    ./azurerm_service_fabric_mesh_application.dhall
 , azurerm_shared_image = ./azurerm_shared_image.dhall
 , azurerm_shared_image_gallery = ./azurerm_shared_image_gallery.dhall
 , azurerm_shared_image_version = ./azurerm_shared_image_version.dhall
@@ -621,6 +623,12 @@
 , azurerm_traffic_manager_endpoint = ./azurerm_traffic_manager_endpoint.dhall
 , azurerm_traffic_manager_profile = ./azurerm_traffic_manager_profile.dhall
 , azurerm_user_assigned_identity = ./azurerm_user_assigned_identity.dhall
+, azurerm_virtual_desktop_application_group =
+    ./azurerm_virtual_desktop_application_group.dhall
+, azurerm_virtual_desktop_host_pool = ./azurerm_virtual_desktop_host_pool.dhall
+, azurerm_virtual_desktop_workspace_application_group_association =
+    ./azurerm_virtual_desktop_workspace_application_group_association.dhall
+, azurerm_virtual_desktop_workspace = ./azurerm_virtual_desktop_workspace.dhall
 , azurerm_virtual_hub_connection = ./azurerm_virtual_hub_connection.dhall
 , azurerm_virtual_hub = ./azurerm_virtual_hub.dhall
 , azurerm_virtual_machine_data_disk_attachment =

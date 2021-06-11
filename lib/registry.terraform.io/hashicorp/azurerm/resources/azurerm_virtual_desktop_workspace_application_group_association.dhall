@@ -1,7 +1,7 @@
 { Type =
-    { id : Optional Text
-    , resource_type : Optional Text
-    , tier : Text
+    { application_group_id : Text
+    , id : Optional Text
+    , workspace_id : Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -12,7 +12,6 @@
     }
 , default =
   { id = None Text
-  , resource_type = None Text
   , timeouts =
       None
         { create : Optional Text

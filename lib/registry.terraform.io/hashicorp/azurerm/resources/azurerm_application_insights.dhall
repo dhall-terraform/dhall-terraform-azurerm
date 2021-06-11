@@ -1,6 +1,7 @@
 { Type =
     { app_id : Optional Text
     , application_type : Text
+    , connection_string : Optional Text
     , daily_data_cap_in_gb : Optional Natural
     , daily_data_cap_notifications_disabled : Optional Bool
     , disable_ip_masking : Optional Bool
@@ -22,6 +23,7 @@
     }
 , default =
   { app_id = None Text
+  , connection_string = None Text
   , daily_data_cap_in_gb = None Natural
   , daily_data_cap_notifications_disabled = None Bool
   , disable_ip_masking = None Bool

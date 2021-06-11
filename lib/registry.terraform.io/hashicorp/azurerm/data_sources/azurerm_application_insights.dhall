@@ -1,6 +1,7 @@
 { Type =
     { app_id : Optional Text
     , application_type : Optional Text
+    , connection_string : Optional Text
     , id : Optional Text
     , instrumentation_key : Optional Text
     , location : Optional Text
@@ -13,6 +14,7 @@
 , default =
   { app_id = None Text
   , application_type = None Text
+  , connection_string = None Text
   , id = None Text
   , instrumentation_key = None Text
   , location = None Text

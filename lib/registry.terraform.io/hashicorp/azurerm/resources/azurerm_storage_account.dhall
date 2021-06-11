@@ -7,6 +7,7 @@
     , enable_https_traffic_only : Optional Bool
     , id : Optional Text
     , is_hns_enabled : Optional Bool
+    , large_file_share_enabled : Optional Bool
     , location : Text
     , min_tls_version : Optional Text
     , name : Text
@@ -145,6 +146,7 @@
   , enable_https_traffic_only = None Bool
   , id = None Text
   , is_hns_enabled = None Bool
+  , large_file_share_enabled = None Bool
   , min_tls_version = None Text
   , primary_access_key = None Text
   , primary_blob_connection_string = None Text

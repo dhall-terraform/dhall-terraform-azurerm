@@ -14,6 +14,7 @@
     , fully_qualified_domain_name : Optional Text
     , id : Optional Text
     , location : Text
+    , minimum_tls_version : Optional Text
     , name : Text
     , public_network_access_enabled : Optional Bool
     , resource_group_name : Text
@@ -57,6 +58,7 @@
         )
   , fully_qualified_domain_name = None Text
   , id = None Text
+  , minimum_tls_version = None Text
   , public_network_access_enabled = None Bool
   , restorable_dropped_database_ids = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })

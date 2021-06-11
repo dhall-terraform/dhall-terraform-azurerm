@@ -3,7 +3,7 @@
     , id : Optional Text
     , key_vault_id : Text
     , name : Text
-    , org_id : Text
+    , org_id : Optional Text
     , password : Optional Text
     , provider_name : Text
     , admin :
@@ -26,6 +26,7 @@
 , default =
   { account_id = None Text
   , id = None Text
+  , org_id = None Text
   , password = None Text
   , admin =
       None
