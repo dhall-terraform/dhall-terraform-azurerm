@@ -9,6 +9,8 @@
     , name : Text
     , parameters : Optional (List { mapKey : Text, mapValue : Text })
     , resource_group_name : Text
+    , key_vault_password :
+        Optional (List { linked_service_name : Text, secret_name : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -24,6 +26,8 @@
   , id = None Text
   , integration_runtime_name = None Text
   , parameters = None (List { mapKey : Text, mapValue : Text })
+  , key_vault_password =
+      None (List { linked_service_name : Text, secret_name : Text })
   , timeouts =
       None
         { create : Optional Text

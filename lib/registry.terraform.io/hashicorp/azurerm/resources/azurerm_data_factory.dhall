@@ -2,6 +2,7 @@
     { id : Optional Text
     , location : Text
     , name : Text
+    , public_network_enabled : Optional Bool
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , github_configuration :
@@ -43,6 +44,7 @@
     }
 , default =
   { id = None Text
+  , public_network_enabled = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
   , github_configuration =
       None

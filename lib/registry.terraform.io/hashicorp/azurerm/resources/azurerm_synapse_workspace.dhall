@@ -13,6 +13,7 @@
     , resource_group_name : Text
     , sql_administrator_login : Text
     , sql_administrator_login_password : Text
+    , sql_identity_control_enabled : Optional Bool
     , storage_data_lake_gen2_filesystem_id : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts :
@@ -31,6 +32,7 @@
       None (List { principal_id : Text, tenant_id : Text, type : Text })
   , managed_resource_group_name = None Text
   , managed_virtual_network_enabled = None Bool
+  , sql_identity_control_enabled = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None

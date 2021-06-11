@@ -1,6 +1,7 @@
 { Type =
     { account_name : Text
     , database_name : Text
+    , default_ttl : Optional Natural
     , id : Optional Text
     , name : Text
     , partition_key_path : Optional Text
@@ -30,7 +31,8 @@
     , unique_key : Optional (List { paths : List Text })
     }
 , default =
-  { id = None Text
+  { default_ttl = None Natural
+  , id = None Text
   , partition_key_path = None Text
   , throughput = None Natural
   , autoscale_settings = None (List { max_throughput : Optional Natural })

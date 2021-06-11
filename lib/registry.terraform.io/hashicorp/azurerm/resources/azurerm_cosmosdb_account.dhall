@@ -1,5 +1,6 @@
 { Type =
-    { connection_strings : Optional (List Text)
+    { analytical_storage_enabled : Optional Bool
+    , connection_strings : Optional (List Text)
     , enable_automatic_failover : Optional Bool
     , enable_free_tier : Optional Bool
     , enable_multiple_write_locations : Optional Bool
@@ -56,7 +57,8 @@
           )
     }
 , default =
-  { connection_strings = None (List Text)
+  { analytical_storage_enabled = None Bool
+  , connection_strings = None (List Text)
   , enable_automatic_failover = None Bool
   , enable_free_tier = None Bool
   , enable_multiple_write_locations = None Bool

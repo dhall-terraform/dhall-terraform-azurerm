@@ -17,6 +17,7 @@
           ( List
               { default_action : Text
               , ip_rule : List { action : Text, ip_mask : Text }
+              , trusted_service_access_enabled : Bool
               , virtual_network_rule :
                   List
                     { ignore_missing_virtual_network_service_endpoint : Bool
@@ -61,6 +62,7 @@
         ( List
             { default_action : Text
             , ip_rule : List { action : Text, ip_mask : Text }
+            , trusted_service_access_enabled : Bool
             , virtual_network_rule :
                 List
                   { ignore_missing_virtual_network_service_endpoint : Bool
