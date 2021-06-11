@@ -11,6 +11,7 @@
     , primary_access_key : Optional Text
     , primary_connection_string : Optional Text
     , private_static_ip_address : Optional Text
+    , public_network_access_enabled : Optional Bool
     , resource_group_name : Text
     , secondary_access_key : Optional Text
     , secondary_connection_string : Optional Text
@@ -59,6 +60,7 @@
   , primary_access_key = None Text
   , primary_connection_string = None Text
   , private_static_ip_address = None Text
+  , public_network_access_enabled = None Bool
   , secondary_access_key = None Text
   , secondary_connection_string = None Text
   , shard_count = None Natural

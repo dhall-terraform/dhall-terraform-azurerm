@@ -1,6 +1,7 @@
 { Type =
     { availability_zones : Optional (List Text)
     , enable_auto_scaling : Optional Bool
+    , enable_host_encryption : Optional Bool
     , enable_node_public_ip : Optional Bool
     , eviction_policy : Optional Text
     , id : Optional Text
@@ -34,6 +35,7 @@
 , default =
   { availability_zones = None (List Text)
   , enable_auto_scaling = None Bool
+  , enable_host_encryption = None Bool
   , enable_node_public_ip = None Bool
   , eviction_policy = None Text
   , id = None Text

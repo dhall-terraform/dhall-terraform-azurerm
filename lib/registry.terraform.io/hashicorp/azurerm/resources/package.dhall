@@ -23,6 +23,8 @@
 , azurerm_api_management_diagnostic = ./azurerm_api_management_diagnostic.dhall
 , azurerm_api_management_group = ./azurerm_api_management_group.dhall
 , azurerm_api_management_group_user = ./azurerm_api_management_group_user.dhall
+, azurerm_api_management_identity_provider_aadb2c =
+    ./azurerm_api_management_identity_provider_aadb2c.dhall
 , azurerm_api_management_identity_provider_aad =
     ./azurerm_api_management_identity_provider_aad.dhall
 , azurerm_api_management_identity_provider_facebook =
@@ -139,6 +141,7 @@
 , azurerm_cosmosdb_account = ./azurerm_cosmosdb_account.dhall
 , azurerm_cosmosdb_cassandra_keyspace =
     ./azurerm_cosmosdb_cassandra_keyspace.dhall
+, azurerm_cosmosdb_cassandra_table = ./azurerm_cosmosdb_cassandra_table.dhall
 , azurerm_cosmosdb_gremlin_database = ./azurerm_cosmosdb_gremlin_database.dhall
 , azurerm_cosmosdb_gremlin_graph = ./azurerm_cosmosdb_gremlin_graph.dhall
 , azurerm_cosmosdb_mongo_collection = ./azurerm_cosmosdb_mongo_collection.dhall

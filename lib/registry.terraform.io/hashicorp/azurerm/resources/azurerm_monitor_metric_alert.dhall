@@ -35,6 +35,7 @@
               , metric_name : Text
               , metric_namespace : Text
               , operator : Text
+              , skip_metric_validation : Optional Bool
               , threshold : Natural
               , dimension :
                   Optional
@@ -52,6 +53,7 @@
               , metric_name : Text
               , metric_namespace : Text
               , operator : Text
+              , skip_metric_validation : Optional Bool
               , dimension :
                   Optional
                     (List { name : Text, operator : Text, values : List Text })
@@ -99,6 +101,7 @@
             , metric_name : Text
             , metric_namespace : Text
             , operator : Text
+            , skip_metric_validation : Optional Bool
             , threshold : Natural
             , dimension :
                 Optional
@@ -116,6 +119,7 @@
             , metric_name : Text
             , metric_namespace : Text
             , operator : Text
+            , skip_metric_validation : Optional Bool
             , dimension :
                 Optional
                   (List { name : Text, operator : Text, values : List Text })

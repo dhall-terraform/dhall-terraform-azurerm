@@ -98,6 +98,7 @@
         List
           { availability_zones : Optional (List Text)
           , enable_auto_scaling : Optional Bool
+          , enable_host_encryption : Optional Bool
           , enable_node_public_ip : Optional Bool
           , max_count : Optional Natural
           , max_pods : Optional Natural

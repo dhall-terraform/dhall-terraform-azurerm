@@ -90,6 +90,17 @@
               , x509_store_name : Text
               }
           )
+    , reverse_proxy_certificate_common_names :
+        Optional
+          ( List
+              { x509_store_name : Text
+              , common_names :
+                  List
+                    { certificate_common_name : Text
+                    , certificate_issuer_thumbprint : Optional Text
+                    }
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -164,6 +175,17 @@
             { thumbprint : Text
             , thumbprint_secondary : Optional Text
             , x509_store_name : Text
+            }
+        )
+  , reverse_proxy_certificate_common_names =
+      None
+        ( List
+            { x509_store_name : Text
+            , common_names :
+                List
+                  { certificate_common_name : Text
+                  , certificate_issuer_thumbprint : Optional Text
+                  }
             }
         )
   , timeouts =
