@@ -1,5 +1,6 @@
 { Type =
-    { description : Optional Text
+    { custom_rdp_properties : Optional Text
+    , description : Optional Text
     , friendly_name : Optional Text
     , id : Optional Text
     , load_balancer_type : Text
@@ -29,7 +30,8 @@
           }
     }
 , default =
-  { description = None Text
+  { custom_rdp_properties = None Text
+  , description = None Text
   , friendly_name = None Text
   , id = None Text
   , maximum_sessions_allowed = None Natural

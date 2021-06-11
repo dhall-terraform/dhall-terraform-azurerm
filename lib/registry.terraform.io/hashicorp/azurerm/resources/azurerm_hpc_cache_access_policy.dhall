@@ -1,11 +1,18 @@
 { Type =
-    { access_policy_name : Optional Text
-    , cache_name : Text
+    { hpc_cache_id : Text
     , id : Optional Text
     , name : Text
-    , namespace_path : Text
-    , resource_group_name : Text
-    , storage_container_id : Text
+    , access_rule :
+        List
+          { access : Text
+          , anonymous_gid : Optional Natural
+          , anonymous_uid : Optional Natural
+          , filter : Optional Text
+          , root_squash_enabled : Optional Bool
+          , scope : Text
+          , submount_access_enabled : Optional Bool
+          , suid_enabled : Optional Bool
+          }
     , timeouts :
         Optional
           { create : Optional Text
@@ -15,8 +22,7 @@
           }
     }
 , default =
-  { access_policy_name = None Text
-  , id = None Text
+  { id = None Text
   , timeouts =
       None
         { create : Optional Text

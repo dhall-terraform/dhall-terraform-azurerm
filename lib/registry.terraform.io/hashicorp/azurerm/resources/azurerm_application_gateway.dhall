@@ -164,6 +164,14 @@
                         , response_header_configuration :
                             Optional
                               (List { header_name : Text, header_value : Text })
+                        , url :
+                            Optional
+                              ( List
+                                  { path : Optional Text
+                                  , query_string : Optional Text
+                                  , reroute : Optional Bool
+                                  }
+                              )
                         }
                     )
               }
@@ -336,6 +344,14 @@
                       , response_header_configuration :
                           Optional
                             (List { header_name : Text, header_value : Text })
+                      , url :
+                          Optional
+                            ( List
+                                { path : Optional Text
+                                , query_string : Optional Text
+                                , reroute : Optional Bool
+                                }
+                            )
                       }
                   )
             }

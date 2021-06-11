@@ -4,6 +4,7 @@
     , id : Optional Text
     , location : Text
     , name : Text
+    , private_ip_ranges : Optional (List Text)
     , resource_group_name : Text
     , sku_name : Optional Text
     , sku_tier : Optional Text
@@ -49,6 +50,7 @@
   { dns_servers = None (List Text)
   , firewall_policy_id = None Text
   , id = None Text
+  , private_ip_ranges = None (List Text)
   , sku_name = None Text
   , sku_tier = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })

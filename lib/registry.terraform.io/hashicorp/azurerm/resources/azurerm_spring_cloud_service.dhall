@@ -64,7 +64,9 @@
           , read : Optional Text
           , update : Optional Text
           }
-    , trace : Optional (List { instrumentation_key : Text })
+    , trace :
+        Optional
+          (List { instrumentation_key : Text, sample_rate : Optional Natural })
     }
 , default =
   { id = None Text
@@ -129,6 +131,7 @@
         , read : Optional Text
         , update : Optional Text
         }
-  , trace = None (List { instrumentation_key : Text })
+  , trace =
+      None (List { instrumentation_key : Text, sample_rate : Optional Natural })
   }
 }

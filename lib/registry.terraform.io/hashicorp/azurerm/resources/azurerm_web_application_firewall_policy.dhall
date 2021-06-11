@@ -1,7 +1,9 @@
 { Type =
-    { id : Optional Text
+    { http_listener_ids : Optional (List Text)
+    , id : Optional Text
     , location : Text
     , name : Text
+    , path_based_rule_ids : Optional (List Text)
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , custom_rules :
@@ -62,7 +64,9 @@
           }
     }
 , default =
-  { id = None Text
+  { http_listener_ids = None (List Text)
+  , id = None Text
+  , path_based_rule_ids = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
   , custom_rules =
       None

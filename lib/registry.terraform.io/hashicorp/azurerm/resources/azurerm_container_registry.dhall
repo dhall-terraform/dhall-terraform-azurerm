@@ -16,6 +16,7 @@
               }
           )
     , public_network_access_enabled : Optional Bool
+    , quarantine_policy_enabled : Optional Bool
     , resource_group_name : Text
     , retention_policy : Optional (List { days : Natural, enabled : Bool })
     , sku : Optional Text
@@ -46,6 +47,7 @@
             }
         )
   , public_network_access_enabled = None Bool
+  , quarantine_policy_enabled = None Bool
   , retention_policy = None (List { days : Natural, enabled : Bool })
   , sku = None Text
   , storage_account_id = None Text

@@ -10,6 +10,7 @@
     , parameters : Optional (List { mapKey : Text, mapValue : Text })
     , resource_group_name : Text
     , sas_uri : Optional Text
+    , service_endpoint : Optional Text
     , service_principal_id : Optional Text
     , service_principal_key : Optional Text
     , tenant_id : Optional Text
@@ -31,6 +32,7 @@
   , integration_runtime_name = None Text
   , parameters = None (List { mapKey : Text, mapValue : Text })
   , sas_uri = None Text
+  , service_endpoint = None Text
   , service_principal_id = None Text
   , service_principal_key = None Text
   , tenant_id = None Text

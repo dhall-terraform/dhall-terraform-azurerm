@@ -327,6 +327,7 @@
 , azurerm_hdinsight_spark_cluster = ./azurerm_hdinsight_spark_cluster.dhall
 , azurerm_hdinsight_storm_cluster = ./azurerm_hdinsight_storm_cluster.dhall
 , azurerm_healthcare_service = ./azurerm_healthcare_service.dhall
+, azurerm_hpc_cache_access_policy = ./azurerm_hpc_cache_access_policy.dhall
 , azurerm_hpc_cache_blob_target = ./azurerm_hpc_cache_blob_target.dhall
 , azurerm_hpc_cache = ./azurerm_hpc_cache.dhall
 , azurerm_hpc_cache_nfs_target = ./azurerm_hpc_cache_nfs_target.dhall
@@ -446,6 +447,8 @@
 , azurerm_managed_application = ./azurerm_managed_application.dhall
 , azurerm_managed_disk = ./azurerm_managed_disk.dhall
 , azurerm_management_group = ./azurerm_management_group.dhall
+, azurerm_management_group_subscription_association =
+    ./azurerm_management_group_subscription_association.dhall
 , azurerm_management_group_template_deployment =
     ./azurerm_management_group_template_deployment.dhall
 , azurerm_management_lock = ./azurerm_management_lock.dhall
@@ -460,6 +463,7 @@
 , azurerm_media_asset = ./azurerm_media_asset.dhall
 , azurerm_media_content_key_policy = ./azurerm_media_content_key_policy.dhall
 , azurerm_media_job = ./azurerm_media_job.dhall
+, azurerm_media_live_event = ./azurerm_media_live_event.dhall
 , azurerm_media_services_account = ./azurerm_media_services_account.dhall
 , azurerm_media_streaming_endpoint = ./azurerm_media_streaming_endpoint.dhall
 , azurerm_media_streaming_locator = ./azurerm_media_streaming_locator.dhall

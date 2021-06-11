@@ -48,7 +48,9 @@
     , blob_properties :
         Optional
           ( List
-              { cors_rule :
+              { container_delete_retention_policy :
+                  Optional (List { days : Optional Natural })
+              , cors_rule :
                   Optional
                     ( List
                         { allowed_headers : List Text
@@ -184,7 +186,9 @@
   , blob_properties =
       None
         ( List
-            { cors_rule :
+            { container_delete_retention_policy :
+                Optional (List { days : Optional Natural })
+            , cors_rule :
                 Optional
                   ( List
                       { allowed_headers : List Text

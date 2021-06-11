@@ -32,7 +32,7 @@
     , certificate :
         Optional
           ( List
-              { certificate_password : Text
+              { certificate_password : Optional Text
               , encoded_certificate : Text
               , store_name : Text
               }
@@ -188,7 +188,7 @@
   , certificate =
       None
         ( List
-            { certificate_password : Text
+            { certificate_password : Optional Text
             , encoded_certificate : Text
             , store_name : Text
             }

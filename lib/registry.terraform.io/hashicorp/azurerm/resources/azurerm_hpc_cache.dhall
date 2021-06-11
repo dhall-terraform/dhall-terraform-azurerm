@@ -9,6 +9,22 @@
     , root_squash_enabled : Optional Bool
     , sku_name : Text
     , subnet_id : Text
+    , default_access_policy :
+        Optional
+          ( List
+              { access_rule :
+                  List
+                    { access : Text
+                    , anonymous_gid : Optional Natural
+                    , anonymous_uid : Optional Natural
+                    , filter : Optional Text
+                    , root_squash_enabled : Optional Bool
+                    , scope : Text
+                    , submount_access_enabled : Optional Bool
+                    , suid_enabled : Optional Bool
+                    }
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -22,6 +38,22 @@
   , mount_addresses = None (List Text)
   , mtu = None Natural
   , root_squash_enabled = None Bool
+  , default_access_policy =
+      None
+        ( List
+            { access_rule :
+                List
+                  { access : Text
+                  , anonymous_gid : Optional Natural
+                  , anonymous_uid : Optional Natural
+                  , filter : Optional Text
+                  , root_squash_enabled : Optional Bool
+                  , scope : Text
+                  , submount_access_enabled : Optional Bool
+                  , suid_enabled : Optional Bool
+                  }
+            }
+        )
   , timeouts =
       None
         { create : Optional Text
