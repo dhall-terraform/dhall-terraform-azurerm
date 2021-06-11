@@ -12,6 +12,14 @@
     , secondary_key : Optional Text
     , sku : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , identity :
+        Optional
+          ( List
+              { principal_id : Optional Text
+              , tenant_id : Optional Text
+              , type : Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -30,6 +38,14 @@
   , replica_count = None Natural
   , secondary_key = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , identity =
+      None
+        ( List
+            { principal_id : Optional Text
+            , tenant_id : Optional Text
+            , type : Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

@@ -12,6 +12,8 @@
         Optional
           ( List
               { indexing_mode : Optional Text
+              , composite_index :
+                  Optional (List { index : List { order : Text, path : Text } })
               , excluded_path : Optional (List { path : Text })
               , included_path : Optional (List { path : Text })
               }
@@ -35,6 +37,8 @@
       None
         ( List
             { indexing_mode : Optional Text
+            , composite_index :
+                Optional (List { index : List { order : Text, path : Text } })
             , excluded_path : Optional (List { path : Text })
             , included_path : Optional (List { path : Text })
             }

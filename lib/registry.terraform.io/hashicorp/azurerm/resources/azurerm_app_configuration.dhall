@@ -14,6 +14,14 @@
         Optional (List { connection_string : Text, id : Text, secret : Text })
     , sku : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , identity :
+        Optional
+          ( List
+              { principal_id : Optional Text
+              , tenant_id : Optional Text
+              , type : Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -35,6 +43,14 @@
       None (List { connection_string : Text, id : Text, secret : Text })
   , sku = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , identity =
+      None
+        ( List
+            { principal_id : Optional Text
+            , tenant_id : Optional Text
+            , type : Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

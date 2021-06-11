@@ -542,6 +542,12 @@
 , azurerm_service_fabric_cluster = ./azurerm_service_fabric_cluster.dhall
 , azurerm_service_fabric_mesh_application =
     ./azurerm_service_fabric_mesh_application.dhall
+, azurerm_service_fabric_mesh_local_network =
+    ./azurerm_service_fabric_mesh_local_network.dhall
+, azurerm_service_fabric_mesh_secret =
+    ./azurerm_service_fabric_mesh_secret.dhall
+, azurerm_service_fabric_mesh_secret_value =
+    ./azurerm_service_fabric_mesh_secret_value.dhall
 , azurerm_shared_image = ./azurerm_shared_image.dhall
 , azurerm_shared_image_gallery = ./azurerm_shared_image_gallery.dhall
 , azurerm_shared_image_version = ./azurerm_shared_image_version.dhall
