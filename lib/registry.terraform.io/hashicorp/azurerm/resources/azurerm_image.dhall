@@ -1,5 +1,6 @@
 { Type =
-    { id : Optional Text
+    { hyper_v_generation : Optional Text
+    , id : Optional Text
     , location : Text
     , name : Text
     , resource_group_name : Text
@@ -29,7 +30,8 @@
           )
     }
 , default =
-  { id = None Text
+  { hyper_v_generation = None Text
+  , id = None Text
   , source_virtual_machine_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zone_resilient = None Bool

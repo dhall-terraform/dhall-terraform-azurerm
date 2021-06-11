@@ -62,6 +62,8 @@
 , azurerm_nat_gateway = ./azurerm_nat_gateway.dhall
 , azurerm_netapp_account = ./azurerm_netapp_account.dhall
 , azurerm_netapp_pool = ./azurerm_netapp_pool.dhall
+, azurerm_netapp_snapshot = ./azurerm_netapp_snapshot.dhall
+, azurerm_netapp_volume = ./azurerm_netapp_volume.dhall
 , azurerm_network_ddos_protection_plan =
     ./azurerm_network_ddos_protection_plan.dhall
 , azurerm_network_interface = ./azurerm_network_interface.dhall
@@ -99,6 +101,7 @@
 , azurerm_shared_image = ./azurerm_shared_image.dhall
 , azurerm_shared_image_gallery = ./azurerm_shared_image_gallery.dhall
 , azurerm_shared_image_version = ./azurerm_shared_image_version.dhall
+, azurerm_signalr_service = ./azurerm_signalr_service.dhall
 , azurerm_snapshot = ./azurerm_snapshot.dhall
 , azurerm_sql_database = ./azurerm_sql_database.dhall
 , azurerm_sql_server = ./azurerm_sql_server.dhall

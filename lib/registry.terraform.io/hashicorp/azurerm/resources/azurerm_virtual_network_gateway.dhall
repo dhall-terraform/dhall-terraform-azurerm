@@ -2,6 +2,7 @@
     { active_active : Optional Bool
     , default_local_network_gateway_id : Optional Text
     , enable_bgp : Optional Bool
+    , generation : Optional Text
     , id : Optional Text
     , location : Text
     , name : Text
@@ -43,6 +44,7 @@
   { active_active = None Bool
   , default_local_network_gateway_id = None Text
   , enable_bgp = None Bool
+  , generation = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , vpn_type = None Text

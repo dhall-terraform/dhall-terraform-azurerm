@@ -33,6 +33,7 @@
               , vnet_subnet_id : Text
               }
           )
+    , api_server_authorized_ip_ranges : Optional (List Text)
     , dns_prefix : Optional Text
     , fqdn : Optional Text
     , id : Optional Text
@@ -79,6 +80,8 @@
               }
           )
     , node_resource_group : Optional Text
+    , private_fqdn : Optional Text
+    , private_link_enabled : Optional Bool
     , resource_group_name : Text
     , role_based_access_control :
         Optional
@@ -130,6 +133,7 @@
             , vnet_subnet_id : Text
             }
         )
+  , api_server_authorized_ip_ranges = None (List Text)
   , dns_prefix = None Text
   , fqdn = None Text
   , id = None Text
@@ -174,6 +178,8 @@
             }
         )
   , node_resource_group = None Text
+  , private_fqdn = None Text
+  , private_link_enabled = None Bool
   , role_based_access_control =
       None
         ( List

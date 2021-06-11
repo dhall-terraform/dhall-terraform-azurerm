@@ -1,6 +1,7 @@
 { Type =
     { alias : Optional Text
     , auto_approval_subscription_ids : Optional (List Text)
+    , enable_proxy_protocol : Optional Bool
     , id : Optional Text
     , load_balancer_frontend_ip_configuration_ids : Optional (List Text)
     , location : Optional Text
@@ -24,6 +25,7 @@
 , default =
   { alias = None Text
   , auto_approval_subscription_ids = None (List Text)
+  , enable_proxy_protocol = None Bool
   , id = None Text
   , load_balancer_frontend_ip_configuration_ids = None (List Text)
   , location = None Text

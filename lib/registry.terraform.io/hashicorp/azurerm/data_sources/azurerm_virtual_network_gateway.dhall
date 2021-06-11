@@ -7,6 +7,7 @@
           )
     , default_local_network_gateway_id : Optional Text
     , enable_bgp : Optional Bool
+    , generation : Optional Text
     , id : Optional Text
     , ip_configuration :
         Optional
@@ -44,6 +45,7 @@
         (List { asn : Natural, peer_weight : Natural, peering_address : Text })
   , default_local_network_gateway_id = None Text
   , enable_bgp = None Bool
+  , generation = None Text
   , id = None Text
   , ip_configuration =
       None

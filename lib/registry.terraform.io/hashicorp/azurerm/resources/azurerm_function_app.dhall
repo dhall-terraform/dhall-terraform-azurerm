@@ -81,6 +81,7 @@
         Optional
           ( List
               { always_on : Optional Bool
+              , ftps_state : Optional Text
               , http2_enabled : Optional Bool
               , linux_fx_version : Optional Text
               , min_tls_version : Optional Text
@@ -173,6 +174,7 @@
       None
         ( List
             { always_on : Optional Bool
+            , ftps_state : Optional Text
             , http2_enabled : Optional Bool
             , linux_fx_version : Optional Text
             , min_tls_version : Optional Text

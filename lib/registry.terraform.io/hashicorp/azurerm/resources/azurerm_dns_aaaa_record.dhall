@@ -2,15 +2,18 @@
     { fqdn : Optional Text
     , id : Optional Text
     , name : Text
-    , records : List Text
+    , records : Optional (List Text)
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , target_resource_id : Optional Text
     , ttl : Natural
     , zone_name : Text
     }
 , default =
   { fqdn = None Text
   , id = None Text
+  , records = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , target_resource_id = None Text
   }
 }

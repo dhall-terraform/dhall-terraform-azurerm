@@ -9,7 +9,13 @@
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , target_region :
-        Optional (List { name : Text, regional_replica_count : Natural })
+        Optional
+          ( List
+              { name : Text
+              , regional_replica_count : Natural
+              , storage_account_type : Text
+              }
+          )
     , timeouts : Optional { read : Optional Text }
     }
 , default =
@@ -19,7 +25,13 @@
   , managed_image_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , target_region =
-      None (List { name : Text, regional_replica_count : Natural })
+      None
+        ( List
+            { name : Text
+            , regional_replica_count : Natural
+            , storage_account_type : Text
+            }
+        )
   , timeouts = None { read : Optional Text }
   }
 }

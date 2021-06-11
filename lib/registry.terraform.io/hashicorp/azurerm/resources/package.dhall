@@ -1,4 +1,6 @@
-{ azurerm_analysis_services_server = ./azurerm_analysis_services_server.dhall
+{ azurerm_advanced_threat_protection =
+    ./azurerm_advanced_threat_protection.dhall
+, azurerm_analysis_services_server = ./azurerm_analysis_services_server.dhall
 , azurerm_api_management_api = ./azurerm_api_management_api.dhall
 , azurerm_api_management_api_operation =
     ./azurerm_api_management_api_operation.dhall
@@ -14,8 +16,13 @@
 , azurerm_api_management_certificate =
     ./azurerm_api_management_certificate.dhall
 , azurerm_api_management = ./azurerm_api_management.dhall
+, azurerm_api_management_diagnostic = ./azurerm_api_management_diagnostic.dhall
 , azurerm_api_management_group = ./azurerm_api_management_group.dhall
 , azurerm_api_management_group_user = ./azurerm_api_management_group_user.dhall
+, azurerm_api_management_identity_provider_aad =
+    ./azurerm_api_management_identity_provider_aad.dhall
+, azurerm_api_management_identity_provider_google =
+    ./azurerm_api_management_identity_provider_google.dhall
 , azurerm_api_management_logger = ./azurerm_api_management_logger.dhall
 , azurerm_api_management_openid_connect_provider =
     ./azurerm_api_management_openid_connect_provider.dhall
@@ -52,7 +59,10 @@
 , azurerm_app_service_slot = ./azurerm_app_service_slot.dhall
 , azurerm_app_service_source_control_token =
     ./azurerm_app_service_source_control_token.dhall
+, azurerm_app_service_virtual_network_swift_connection =
+    ./azurerm_app_service_virtual_network_swift_connection.dhall
 , azurerm_automation_account = ./azurerm_automation_account.dhall
+, azurerm_automation_certificate = ./azurerm_automation_certificate.dhall
 , azurerm_automation_credential = ./azurerm_automation_credential.dhall
 , azurerm_automation_dsc_configuration =
     ./azurerm_automation_dsc_configuration.dhall
@@ -74,6 +84,13 @@
 , azurerm_azuread_service_principal = ./azurerm_azuread_service_principal.dhall
 , azurerm_azuread_service_principal_password =
     ./azurerm_azuread_service_principal_password.dhall
+, azurerm_backup_container_storage_account =
+    ./azurerm_backup_container_storage_account.dhall
+, azurerm_backup_policy_file_share = ./azurerm_backup_policy_file_share.dhall
+, azurerm_backup_policy_vm = ./azurerm_backup_policy_vm.dhall
+, azurerm_backup_protected_file_share =
+    ./azurerm_backup_protected_file_share.dhall
+, azurerm_backup_protected_vm = ./azurerm_backup_protected_vm.dhall
 , azurerm_bastion_host = ./azurerm_bastion_host.dhall
 , azurerm_batch_account = ./azurerm_batch_account.dhall
 , azurerm_batch_application = ./azurerm_batch_application.dhall
@@ -97,6 +114,7 @@
 , azurerm_cosmosdb_account = ./azurerm_cosmosdb_account.dhall
 , azurerm_cosmosdb_cassandra_keyspace =
     ./azurerm_cosmosdb_cassandra_keyspace.dhall
+, azurerm_cosmosdb_gremlin_database = ./azurerm_cosmosdb_gremlin_database.dhall
 , azurerm_cosmosdb_mongo_collection = ./azurerm_cosmosdb_mongo_collection.dhall
 , azurerm_cosmosdb_mongo_database = ./azurerm_cosmosdb_mongo_database.dhall
 , azurerm_cosmosdb_sql_container = ./azurerm_cosmosdb_sql_container.dhall
@@ -198,6 +216,8 @@
 , azurerm_iothub = ./azurerm_iothub.dhall
 , azurerm_iothub_dps_certificate = ./azurerm_iothub_dps_certificate.dhall
 , azurerm_iothub_dps = ./azurerm_iothub_dps.dhall
+, azurerm_iothub_dps_shared_access_policy =
+    ./azurerm_iothub_dps_shared_access_policy.dhall
 , azurerm_iothub_endpoint_eventhub = ./azurerm_iothub_endpoint_eventhub.dhall
 , azurerm_iothub_endpoint_servicebus_queue =
     ./azurerm_iothub_endpoint_servicebus_queue.dhall
@@ -219,6 +239,7 @@
     ./azurerm_kubernetes_cluster_node_pool.dhall
 , azurerm_kusto_cluster = ./azurerm_kusto_cluster.dhall
 , azurerm_kusto_database = ./azurerm_kusto_database.dhall
+, azurerm_kusto_database_principal = ./azurerm_kusto_database_principal.dhall
 , azurerm_kusto_eventhub_data_connection =
     ./azurerm_kusto_eventhub_data_connection.dhall
 , azurerm_lb_backend_address_pool = ./azurerm_lb_backend_address_pool.dhall
@@ -281,6 +302,8 @@
 , azurerm_nat_gateway = ./azurerm_nat_gateway.dhall
 , azurerm_netapp_account = ./azurerm_netapp_account.dhall
 , azurerm_netapp_pool = ./azurerm_netapp_pool.dhall
+, azurerm_netapp_snapshot = ./azurerm_netapp_snapshot.dhall
+, azurerm_netapp_volume = ./azurerm_netapp_volume.dhall
 , azurerm_network_connection_monitor =
     ./azurerm_network_connection_monitor.dhall
 , azurerm_network_ddos_protection_plan =
@@ -299,6 +322,7 @@
 , azurerm_network_security_group = ./azurerm_network_security_group.dhall
 , azurerm_network_security_rule = ./azurerm_network_security_rule.dhall
 , azurerm_network_watcher = ./azurerm_network_watcher.dhall
+, azurerm_network_watcher_flow_log = ./azurerm_network_watcher_flow_log.dhall
 , azurerm_notification_hub_authorization_rule =
     ./azurerm_notification_hub_authorization_rule.dhall
 , azurerm_notification_hub = ./azurerm_notification_hub.dhall
@@ -377,6 +401,17 @@
 , azurerm_shared_image_gallery = ./azurerm_shared_image_gallery.dhall
 , azurerm_shared_image_version = ./azurerm_shared_image_version.dhall
 , azurerm_signalr_service = ./azurerm_signalr_service.dhall
+, azurerm_site_recovery_fabric = ./azurerm_site_recovery_fabric.dhall
+, azurerm_site_recovery_network_mapping =
+    ./azurerm_site_recovery_network_mapping.dhall
+, azurerm_site_recovery_protection_container =
+    ./azurerm_site_recovery_protection_container.dhall
+, azurerm_site_recovery_protection_container_mapping =
+    ./azurerm_site_recovery_protection_container_mapping.dhall
+, azurerm_site_recovery_replicated_vm =
+    ./azurerm_site_recovery_replicated_vm.dhall
+, azurerm_site_recovery_replication_policy =
+    ./azurerm_site_recovery_replication_policy.dhall
 , azurerm_snapshot = ./azurerm_snapshot.dhall
 , azurerm_sql_active_directory_administrator =
     ./azurerm_sql_active_directory_administrator.dhall
@@ -412,6 +447,8 @@
     ./azurerm_stream_analytics_output_servicebus_queue.dhall
 , azurerm_stream_analytics_output_servicebus_topic =
     ./azurerm_stream_analytics_output_servicebus_topic.dhall
+, azurerm_stream_analytics_reference_input_blob =
+    ./azurerm_stream_analytics_reference_input_blob.dhall
 , azurerm_stream_analytics_stream_input_blob =
     ./azurerm_stream_analytics_stream_input_blob.dhall
 , azurerm_stream_analytics_stream_input_eventhub =

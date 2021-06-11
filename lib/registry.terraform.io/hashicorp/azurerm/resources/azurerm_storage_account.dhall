@@ -47,6 +47,13 @@
     , secondary_web_endpoint : Optional Text
     , secondary_web_host : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , blob_properties :
+        Optional
+          ( List
+              { delete_retention_policy :
+                  Optional (List { days : Optional Natural })
+              }
+          )
     , custom_domain :
         Optional (List { name : Text, use_subdomain : Optional Bool })
     , identity :
@@ -154,6 +161,13 @@
   , secondary_web_endpoint = None Text
   , secondary_web_host = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , blob_properties =
+      None
+        ( List
+            { delete_retention_policy :
+                Optional (List { days : Optional Natural })
+            }
+        )
   , custom_domain = None (List { name : Text, use_subdomain : Optional Bool })
   , identity =
       None

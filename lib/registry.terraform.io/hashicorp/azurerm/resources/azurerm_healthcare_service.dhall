@@ -19,10 +19,10 @@
         Optional
           ( List
               { allow_credentials : Optional Bool
-              , allowed_headers : List Text
-              , allowed_methods : List Text
-              , allowed_origins : List Text
-              , max_age_in_seconds : Natural
+              , allowed_headers : Optional (List Text)
+              , allowed_methods : Optional (List Text)
+              , allowed_origins : Optional (List Text)
+              , max_age_in_seconds : Optional Natural
               }
           )
     }
@@ -43,10 +43,10 @@
       None
         ( List
             { allow_credentials : Optional Bool
-            , allowed_headers : List Text
-            , allowed_methods : List Text
-            , allowed_origins : List Text
-            , max_age_in_seconds : Natural
+            , allowed_headers : Optional (List Text)
+            , allowed_methods : Optional (List Text)
+            , allowed_origins : Optional (List Text)
+            , max_age_in_seconds : Optional Natural
             }
         )
   }

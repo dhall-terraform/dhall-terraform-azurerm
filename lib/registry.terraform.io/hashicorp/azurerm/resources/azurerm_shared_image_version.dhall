@@ -8,7 +8,12 @@
     , name : Text
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
-    , target_region : List { name : Text, regional_replica_count : Natural }
+    , target_region :
+        List
+          { name : Text
+          , regional_replica_count : Natural
+          , storage_account_type : Optional Text
+          }
     }
 , default =
   { exclude_from_latest = None Bool

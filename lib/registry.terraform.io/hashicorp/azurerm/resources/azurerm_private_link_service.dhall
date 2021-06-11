@@ -1,6 +1,7 @@
 { Type =
     { alias : Optional Text
     , auto_approval_subscription_ids : Optional (List Text)
+    , enable_proxy_protocol : Optional Bool
     , id : Optional Text
     , load_balancer_frontend_ip_configuration_ids : List Text
     , location : Text
@@ -21,6 +22,7 @@
 , default =
   { alias = None Text
   , auto_approval_subscription_ids = None (List Text)
+  , enable_proxy_protocol = None Bool
   , id = None Text
   , network_interface_ids = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })

@@ -32,6 +32,8 @@
     , location : Text
     , name : Text
     , node_resource_group : Optional Text
+    , private_fqdn : Optional Text
+    , private_link_enabled : Optional Bool
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , addon_profile :
@@ -95,6 +97,14 @@
               , type : Optional Text
               , vm_size : Text
               , vnet_subnet_id : Optional Text
+              }
+          )
+    , identity :
+        Optional
+          ( List
+              { principal_id : Optional Text
+              , tenant_id : Optional Text
+              , type : Text
               }
           )
     , linux_profile :
@@ -163,6 +173,8 @@
   , kube_config_raw = None Text
   , kubernetes_version = None Text
   , node_resource_group = None Text
+  , private_fqdn = None Text
+  , private_link_enabled = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
   , addon_profile =
       None
@@ -224,6 +236,14 @@
             , type : Optional Text
             , vm_size : Text
             , vnet_subnet_id : Optional Text
+            }
+        )
+  , identity =
+      None
+        ( List
+            { principal_id : Optional Text
+            , tenant_id : Optional Text
+            , type : Text
             }
         )
   , linux_profile =

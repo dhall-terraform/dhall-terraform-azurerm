@@ -1,5 +1,6 @@
 { Type =
     { authorization_key : Optional Text
+    , connection_protocol : Optional Text
     , enable_bgp : Optional Bool
     , express_route_circuit_id : Optional Text
     , express_route_gateway_bypass : Optional Bool
@@ -31,6 +32,7 @@
     }
 , default =
   { authorization_key = None Text
+  , connection_protocol = None Text
   , enable_bgp = None Bool
   , express_route_circuit_id = None Text
   , express_route_gateway_bypass = None Bool

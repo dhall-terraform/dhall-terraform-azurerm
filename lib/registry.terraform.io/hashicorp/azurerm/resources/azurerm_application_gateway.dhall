@@ -35,6 +35,7 @@
           , probe_name : Optional Text
           , protocol : Text
           , request_timeout : Optional Natural
+          , trusted_root_certificate_names : Optional (List Text)
           , authentication_certificate :
               Optional (List { id : Optional Text, name : Text })
           , connection_draining :
