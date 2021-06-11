@@ -1,19 +1,13 @@
 { Type =
     { id : Optional Text
+    , id_properties : List Text
     , location : Text
     , name : Text
     , resource_group_name : Text
-    , storage_authentication_type : Optional Text
+    , sku_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
-    , identity :
-        Optional
-          ( List
-              { principal_id : Optional Text
-              , tenant_id : Optional Text
-              , type : Optional Text
-              }
-          )
-    , storage_account : List { id : Text, is_primary : Optional Bool }
+    , warm_store_data_retention_time : Optional Text
+    , storage : List { key : Text, name : Text }
     , timeouts :
         Optional
           { create : Optional Text
@@ -24,16 +18,8 @@
     }
 , default =
   { id = None Text
-  , storage_authentication_type = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
-  , identity =
-      None
-        ( List
-            { principal_id : Optional Text
-            , tenant_id : Optional Text
-            , type : Optional Text
-            }
-        )
+  , warm_store_data_retention_time = None Text
   , timeouts =
       None
         { create : Optional Text

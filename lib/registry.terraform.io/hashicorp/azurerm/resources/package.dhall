@@ -38,6 +38,7 @@
     ./azurerm_api_management_named_value.dhall
 , azurerm_api_management_openid_connect_provider =
     ./azurerm_api_management_openid_connect_provider.dhall
+, azurerm_api_management_policy = ./azurerm_api_management_policy.dhall
 , azurerm_api_management_product_api =
     ./azurerm_api_management_product_api.dhall
 , azurerm_api_management_product = ./azurerm_api_management_product.dhall
@@ -235,6 +236,8 @@
 , azurerm_dev_test_virtual_network = ./azurerm_dev_test_virtual_network.dhall
 , azurerm_dev_test_windows_virtual_machine =
     ./azurerm_dev_test_windows_virtual_machine.dhall
+, azurerm_digital_twins_endpoint_eventgrid =
+    ./azurerm_digital_twins_endpoint_eventgrid.dhall
 , azurerm_digital_twins_instance = ./azurerm_digital_twins_instance.dhall
 , azurerm_disk_encryption_set = ./azurerm_disk_encryption_set.dhall
 , azurerm_dns_aaaa_record = ./azurerm_dns_aaaa_record.dhall
@@ -322,6 +325,8 @@
     ./azurerm_iothub_shared_access_policy.dhall
 , azurerm_iot_time_series_insights_access_policy =
     ./azurerm_iot_time_series_insights_access_policy.dhall
+, azurerm_iot_time_series_insights_gen2_environment =
+    ./azurerm_iot_time_series_insights_gen2_environment.dhall
 , azurerm_iot_time_series_insights_reference_data_set =
     ./azurerm_iot_time_series_insights_reference_data_set.dhall
 , azurerm_iot_time_series_insights_standard_environment =
