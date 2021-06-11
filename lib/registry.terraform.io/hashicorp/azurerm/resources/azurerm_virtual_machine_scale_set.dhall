@@ -8,6 +8,7 @@
     , name : Text
     , overprovision : Optional Bool
     , priority : Optional Text
+    , proximity_placement_group_id : Optional Text
     , resource_group_name : Text
     , single_placement_group : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -161,6 +162,7 @@
   , license_type = None Text
   , overprovision = None Bool
   , priority = None Text
+  , proximity_placement_group_id = None Text
   , single_placement_group = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zones = None (List Text)

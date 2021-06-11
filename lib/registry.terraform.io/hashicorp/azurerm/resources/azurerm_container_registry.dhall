@@ -12,6 +12,7 @@
           ( List
               { default_action : Text
               , ip_rule : List { action : Text, ip_range : Text }
+              , virtual_network : List { action : Text, subnet_id : Text }
               }
           )
     , resource_group_name : Text
@@ -32,6 +33,7 @@
         ( List
             { default_action : Text
             , ip_rule : List { action : Text, ip_range : Text }
+            , virtual_network : List { action : Text, subnet_id : Text }
             }
         )
   , sku = None Text

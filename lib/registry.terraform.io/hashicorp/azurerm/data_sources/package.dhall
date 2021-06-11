@@ -53,6 +53,8 @@
     ./azurerm_monitor_diagnostic_categories.dhall
 , azurerm_monitor_log_profile = ./azurerm_monitor_log_profile.dhall
 , azurerm_mssql_elasticpool = ./azurerm_mssql_elasticpool.dhall
+, azurerm_network_ddos_protection_plan =
+    ./azurerm_network_ddos_protection_plan.dhall
 , azurerm_network_interface = ./azurerm_network_interface.dhall
 , azurerm_network_security_group = ./azurerm_network_security_group.dhall
 , azurerm_network_watcher = ./azurerm_network_watcher.dhall
@@ -61,6 +63,7 @@
     ./azurerm_notification_hub_namespace.dhall
 , azurerm_platform_image = ./azurerm_platform_image.dhall
 , azurerm_policy_definition = ./azurerm_policy_definition.dhall
+, azurerm_proximity_placement_group = ./azurerm_proximity_placement_group.dhall
 , azurerm_public_ip = ./azurerm_public_ip.dhall
 , azurerm_public_ips = ./azurerm_public_ips.dhall
 , azurerm_recovery_services_protection_policy_vm =
@@ -71,12 +74,17 @@
 , azurerm_role_definition = ./azurerm_role_definition.dhall
 , azurerm_route_table = ./azurerm_route_table.dhall
 , azurerm_scheduler_job_collection = ./azurerm_scheduler_job_collection.dhall
+, azurerm_servicebus_namespace_authorization_rule =
+    ./azurerm_servicebus_namespace_authorization_rule.dhall
 , azurerm_servicebus_namespace = ./azurerm_servicebus_namespace.dhall
 , azurerm_shared_image = ./azurerm_shared_image.dhall
 , azurerm_shared_image_gallery = ./azurerm_shared_image_gallery.dhall
 , azurerm_shared_image_version = ./azurerm_shared_image_version.dhall
 , azurerm_snapshot = ./azurerm_snapshot.dhall
+, azurerm_sql_database = ./azurerm_sql_database.dhall
 , azurerm_sql_server = ./azurerm_sql_server.dhall
+, azurerm_storage_account_blob_container_sas =
+    ./azurerm_storage_account_blob_container_sas.dhall
 , azurerm_storage_account = ./azurerm_storage_account.dhall
 , azurerm_storage_account_sas = ./azurerm_storage_account_sas.dhall
 , azurerm_stream_analytics_job = ./azurerm_stream_analytics_job.dhall

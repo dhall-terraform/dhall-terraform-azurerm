@@ -39,11 +39,14 @@
 , azurerm_application_security_group =
     ./azurerm_application_security_group.dhall
 , azurerm_app_service_active_slot = ./azurerm_app_service_active_slot.dhall
+, azurerm_app_service_certificate = ./azurerm_app_service_certificate.dhall
 , azurerm_app_service_custom_hostname_binding =
     ./azurerm_app_service_custom_hostname_binding.dhall
 , azurerm_app_service = ./azurerm_app_service.dhall
 , azurerm_app_service_plan = ./azurerm_app_service_plan.dhall
 , azurerm_app_service_slot = ./azurerm_app_service_slot.dhall
+, azurerm_app_service_source_control_token =
+    ./azurerm_app_service_source_control_token.dhall
 , azurerm_automation_account = ./azurerm_automation_account.dhall
 , azurerm_automation_credential = ./azurerm_automation_credential.dhall
 , azurerm_automation_dsc_configuration =
@@ -69,6 +72,8 @@
 , azurerm_batch_application = ./azurerm_batch_application.dhall
 , azurerm_batch_certificate = ./azurerm_batch_certificate.dhall
 , azurerm_batch_pool = ./azurerm_batch_pool.dhall
+, azurerm_bot_channels_registration = ./azurerm_bot_channels_registration.dhall
+, azurerm_bot_connection = ./azurerm_bot_connection.dhall
 , azurerm_cdn_endpoint = ./azurerm_cdn_endpoint.dhall
 , azurerm_cdn_profile = ./azurerm_cdn_profile.dhall
 , azurerm_cognitive_account = ./azurerm_cognitive_account.dhall
@@ -154,6 +159,8 @@
     ./azurerm_firewall_nat_rule_collection.dhall
 , azurerm_firewall_network_rule_collection =
     ./azurerm_firewall_network_rule_collection.dhall
+, azurerm_frontdoor = ./azurerm_frontdoor.dhall
+, azurerm_frontdoor_firewall_policy = ./azurerm_frontdoor_firewall_policy.dhall
 , azurerm_function_app = ./azurerm_function_app.dhall
 , azurerm_hdinsight_hadoop_cluster = ./azurerm_hdinsight_hadoop_cluster.dhall
 , azurerm_hdinsight_hbase_cluster = ./azurerm_hdinsight_hbase_cluster.dhall
@@ -178,6 +185,8 @@
 , azurerm_key_vault_key = ./azurerm_key_vault_key.dhall
 , azurerm_key_vault_secret = ./azurerm_key_vault_secret.dhall
 , azurerm_kubernetes_cluster = ./azurerm_kubernetes_cluster.dhall
+, azurerm_kusto_cluster = ./azurerm_kusto_cluster.dhall
+, azurerm_kusto_database = ./azurerm_kusto_database.dhall
 , azurerm_lb_backend_address_pool = ./azurerm_lb_backend_address_pool.dhall
 , azurerm_lb = ./azurerm_lb.dhall
 , azurerm_lb_nat_pool = ./azurerm_lb_nat_pool.dhall
@@ -210,6 +219,7 @@
 , azurerm_mariadb_server = ./azurerm_mariadb_server.dhall
 , azurerm_mariadb_virtual_network_rule =
     ./azurerm_mariadb_virtual_network_rule.dhall
+, azurerm_marketplace_agreement = ./azurerm_marketplace_agreement.dhall
 , azurerm_media_services_account = ./azurerm_media_services_account.dhall
 , azurerm_metric_alertrule = ./azurerm_metric_alertrule.dhall
 , azurerm_monitor_action_group = ./azurerm_monitor_action_group.dhall
@@ -264,6 +274,9 @@
 , azurerm_private_dns_a_record = ./azurerm_private_dns_a_record.dhall
 , azurerm_private_dns_cname_record = ./azurerm_private_dns_cname_record.dhall
 , azurerm_private_dns_zone = ./azurerm_private_dns_zone.dhall
+, azurerm_private_dns_zone_virtual_network_link =
+    ./azurerm_private_dns_zone_virtual_network_link.dhall
+, azurerm_proximity_placement_group = ./azurerm_proximity_placement_group.dhall
 , azurerm_public_ip = ./azurerm_public_ip.dhall
 , azurerm_public_ip_prefix = ./azurerm_public_ip_prefix.dhall
 , azurerm_recovery_network_mapping = ./azurerm_recovery_network_mapping.dhall
@@ -340,6 +353,8 @@
     ./azurerm_stream_analytics_output_mssql.dhall
 , azurerm_stream_analytics_output_servicebus_queue =
     ./azurerm_stream_analytics_output_servicebus_queue.dhall
+, azurerm_stream_analytics_output_servicebus_topic =
+    ./azurerm_stream_analytics_output_servicebus_topic.dhall
 , azurerm_stream_analytics_stream_input_blob =
     ./azurerm_stream_analytics_stream_input_blob.dhall
 , azurerm_stream_analytics_stream_input_eventhub =
@@ -366,4 +381,6 @@
 , azurerm_virtual_network_gateway = ./azurerm_virtual_network_gateway.dhall
 , azurerm_virtual_network_peering = ./azurerm_virtual_network_peering.dhall
 , azurerm_virtual_wan = ./azurerm_virtual_wan.dhall
+, azurerm_web_application_firewall_policy =
+    ./azurerm_web_application_firewall_policy.dhall
 }

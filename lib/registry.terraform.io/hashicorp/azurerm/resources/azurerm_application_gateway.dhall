@@ -187,6 +187,8 @@
               , policy_type : Optional Text
               }
           )
+    , trusted_root_certificate :
+        Optional (List { data : Text, id : Optional Text, name : Text })
     , url_path_map :
         Optional
           ( List
@@ -347,6 +349,8 @@
             , policy_type : Optional Text
             }
         )
+  , trusted_root_certificate =
+      None (List { data : Text, id : Optional Text, name : Text })
   , url_path_map =
       None
         ( List

@@ -7,6 +7,7 @@
                     { enabled : Bool
                     , http_application_routing_zone_name : Text
                     }
+              , kube_dashboard : List { enabled : Bool }
               , oms_agent :
                   List { enabled : Bool, log_analytics_workspace_id : Text }
               }
@@ -100,6 +101,7 @@
             { http_application_routing :
                 List
                   { enabled : Bool, http_application_routing_zone_name : Text }
+            , kube_dashboard : List { enabled : Bool }
             , oms_agent :
                 List { enabled : Bool, log_analytics_workspace_id : Text }
             }

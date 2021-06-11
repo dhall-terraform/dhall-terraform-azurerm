@@ -1,5 +1,6 @@
 { Type =
-    { client_certificate_password : Optional Text
+    { auxiliary_tenant_ids : Optional (List Text)
+    , client_certificate_password : Optional Text
     , client_certificate_path : Optional Text
     , client_id : Optional Text
     , client_secret : Optional Text
@@ -14,7 +15,8 @@
     , use_msi : Optional Bool
     }
 , default =
-  { client_certificate_password = None Text
+  { auxiliary_tenant_ids = None (List Text)
+  , client_certificate_password = None Text
   , client_certificate_path = None Text
   , client_id = None Text
   , client_secret = None Text

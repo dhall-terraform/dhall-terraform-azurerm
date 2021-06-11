@@ -12,7 +12,8 @@
     , sku : List { capacity : Natural, family : Text, name : Text, tier : Text }
     , storage_profile :
         List
-          { backup_retention_days : Optional Natural
+          { auto_grow : Optional Text
+          , backup_retention_days : Optional Natural
           , geo_redundant_backup : Optional Text
           , storage_mb : Natural
           }

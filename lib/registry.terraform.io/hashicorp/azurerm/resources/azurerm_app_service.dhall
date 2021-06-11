@@ -111,7 +111,14 @@
               , http_logs :
                   Optional
                     ( List
-                        { file_system :
+                        { azure_blob_storage :
+                            Optional
+                              ( List
+                                  { retention_in_days : Natural
+                                  , sas_url : Text
+                                  }
+                              )
+                        , file_system :
                             Optional
                               ( List
                                   { retention_in_days : Natural
@@ -132,7 +139,13 @@
               , ftps_state : Optional Text
               , http2_enabled : Optional Bool
               , ip_restriction :
-                  Optional (List { ip_address : Text, subnet_mask : Text })
+                  Optional
+                    ( List
+                        { ip_address : Text
+                        , subnet_mask : Text
+                        , virtual_network_subnet_id : Text
+                        }
+                    )
               , java_container : Optional Text
               , java_container_version : Optional Text
               , java_version : Optional Text
@@ -277,7 +290,12 @@
             , http_logs :
                 Optional
                   ( List
-                      { file_system :
+                      { azure_blob_storage :
+                          Optional
+                            ( List
+                                { retention_in_days : Natural, sas_url : Text }
+                            )
+                      , file_system :
                           Optional
                             ( List
                                 { retention_in_days : Natural
@@ -298,7 +316,13 @@
             , ftps_state : Optional Text
             , http2_enabled : Optional Bool
             , ip_restriction :
-                Optional (List { ip_address : Text, subnet_mask : Text })
+                Optional
+                  ( List
+                      { ip_address : Text
+                      , subnet_mask : Text
+                      , virtual_network_subnet_id : Text
+                      }
+                  )
             , java_container : Optional Text
             , java_container_version : Optional Text
             , java_version : Optional Text

@@ -1,5 +1,7 @@
 { Type =
     { create_option : Text
+    , disk_iops_read_write : Optional Natural
+    , disk_mbps_read_write : Optional Natural
     , disk_size_gb : Optional Natural
     , id : Optional Text
     , image_reference_id : Optional Text
@@ -24,7 +26,9 @@
           )
     }
 , default =
-  { disk_size_gb = None Natural
+  { disk_iops_read_write = None Natural
+  , disk_mbps_read_write = None Natural
+  , disk_size_gb = None Natural
   , id = None Text
   , image_reference_id = None Text
   , os_type = None Text

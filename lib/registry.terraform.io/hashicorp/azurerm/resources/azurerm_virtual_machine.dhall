@@ -8,10 +8,12 @@
     , name : Text
     , network_interface_ids : List Text
     , primary_network_interface_id : Optional Text
+    , proximity_placement_group_id : Optional Text
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , vm_size : Text
     , zones : Optional (List Text)
+    , additional_capabilities : Optional (List { ultra_ssd_enabled : Bool })
     , boot_diagnostics : Optional (List { enabled : Bool, storage_uri : Text })
     , identity :
         Optional
@@ -116,8 +118,10 @@
   , id = None Text
   , license_type = None Text
   , primary_network_interface_id = None Text
+  , proximity_placement_group_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zones = None (List Text)
+  , additional_capabilities = None (List { ultra_ssd_enabled : Bool })
   , boot_diagnostics = None (List { enabled : Bool, storage_uri : Text })
   , identity =
       None
