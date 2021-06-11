@@ -50,6 +50,7 @@
                     { metric_trigger :
                         List
                           { metric_name : Text
+                          , metric_namespace : Optional Text
                           , metric_resource_id : Text
                           , operator : Text
                           , statistic : Text
@@ -57,6 +58,14 @@
                           , time_aggregation : Text
                           , time_grain : Text
                           , time_window : Text
+                          , dimensions :
+                              Optional
+                                ( List
+                                    { name : Text
+                                    , operator : Text
+                                    , values : List Text
+                                    }
+                                )
                           }
                     , scale_action :
                         List

@@ -15,6 +15,7 @@
     , tactics : Optional (List Text)
     , trigger_operator : Optional Text
     , trigger_threshold : Optional Natural
+    , event_grouping : Optional (List { aggregation_method : Text })
     , incident_configuration :
         Optional
           ( List
@@ -49,6 +50,7 @@
   , tactics = None (List Text)
   , trigger_operator = None Text
   , trigger_threshold = None Natural
+  , event_grouping = None (List { aggregation_method : Text })
   , incident_configuration =
       None
         ( List

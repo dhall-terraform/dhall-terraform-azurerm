@@ -113,6 +113,20 @@
               , enable_frontend_tls10 : Optional Bool
               , enable_frontend_tls11 : Optional Bool
               , enable_triple_des_ciphers : Optional Bool
+              , tls_ecdhe_ecdsa_with_aes128_cbc_sha_ciphers_enabled :
+                  Optional Bool
+              , tls_ecdhe_ecdsa_with_aes256_cbc_sha_ciphers_enabled :
+                  Optional Bool
+              , tls_ecdhe_rsa_with_aes128_cbc_sha_ciphers_enabled :
+                  Optional Bool
+              , tls_ecdhe_rsa_with_aes256_cbc_sha_ciphers_enabled :
+                  Optional Bool
+              , tls_rsa_with_aes128_cbc_sha256_ciphers_enabled : Optional Bool
+              , tls_rsa_with_aes128_cbc_sha_ciphers_enabled : Optional Bool
+              , tls_rsa_with_aes128_gcm_sha256_ciphers_enabled : Optional Bool
+              , tls_rsa_with_aes256_cbc_sha256_ciphers_enabled : Optional Bool
+              , tls_rsa_with_aes256_cbc_sha_ciphers_enabled : Optional Bool
+              , triple_des_ciphers_enabled : Optional Bool
               }
           )
     , sign_in : Optional (List { enabled : Bool })
@@ -246,6 +260,18 @@
             , enable_frontend_tls10 : Optional Bool
             , enable_frontend_tls11 : Optional Bool
             , enable_triple_des_ciphers : Optional Bool
+            , tls_ecdhe_ecdsa_with_aes128_cbc_sha_ciphers_enabled :
+                Optional Bool
+            , tls_ecdhe_ecdsa_with_aes256_cbc_sha_ciphers_enabled :
+                Optional Bool
+            , tls_ecdhe_rsa_with_aes128_cbc_sha_ciphers_enabled : Optional Bool
+            , tls_ecdhe_rsa_with_aes256_cbc_sha_ciphers_enabled : Optional Bool
+            , tls_rsa_with_aes128_cbc_sha256_ciphers_enabled : Optional Bool
+            , tls_rsa_with_aes128_cbc_sha_ciphers_enabled : Optional Bool
+            , tls_rsa_with_aes128_gcm_sha256_ciphers_enabled : Optional Bool
+            , tls_rsa_with_aes256_cbc_sha256_ciphers_enabled : Optional Bool
+            , tls_rsa_with_aes256_cbc_sha_ciphers_enabled : Optional Bool
+            , triple_des_ciphers_enabled : Optional Bool
             }
         )
   , sign_in = None (List { enabled : Bool })

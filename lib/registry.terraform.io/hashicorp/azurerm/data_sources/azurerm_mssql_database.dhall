@@ -9,6 +9,7 @@
     , read_scale : Optional Bool
     , server_id : Text
     , sku_name : Optional Text
+    , storage_account_type : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , zone_redundant : Optional Bool
     , timeouts : Optional { read : Optional Text }
@@ -22,6 +23,7 @@
   , read_replica_count = None Natural
   , read_scale = None Bool
   , sku_name = None Text
+  , storage_account_type = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zone_redundant = None Bool
   , timeouts = None { read : Optional Text }

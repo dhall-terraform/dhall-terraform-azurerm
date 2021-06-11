@@ -82,6 +82,7 @@
 , azurerm_healthcare_service = ./azurerm_healthcare_service.dhall
 , azurerm_image = ./azurerm_image.dhall
 , azurerm_images = ./azurerm_images.dhall
+, azurerm_iothub = ./azurerm_iothub.dhall
 , azurerm_iothub_dps = ./azurerm_iothub_dps.dhall
 , azurerm_iothub_dps_shared_access_policy =
     ./azurerm_iothub_dps_shared_access_policy.dhall

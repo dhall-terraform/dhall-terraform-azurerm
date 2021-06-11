@@ -430,6 +430,7 @@
     ./azurerm_mariadb_virtual_network_rule.dhall
 , azurerm_marketplace_agreement = ./azurerm_marketplace_agreement.dhall
 , azurerm_media_asset = ./azurerm_media_asset.dhall
+, azurerm_media_content_key_policy = ./azurerm_media_content_key_policy.dhall
 , azurerm_media_job = ./azurerm_media_job.dhall
 , azurerm_media_services_account = ./azurerm_media_services_account.dhall
 , azurerm_media_streaming_endpoint = ./azurerm_media_streaming_endpoint.dhall

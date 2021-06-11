@@ -84,6 +84,7 @@
           ( List
               { balance_similar_node_groups : Optional Bool
               , max_graceful_termination_sec : Optional Text
+              , new_pod_scale_up_delay : Optional Text
               , scale_down_delay_after_add : Optional Text
               , scale_down_delay_after_delete : Optional Text
               , scale_down_delay_after_failure : Optional Text
@@ -120,6 +121,7 @@
               { principal_id : Optional Text
               , tenant_id : Optional Text
               , type : Text
+              , user_assigned_identity_id : Optional Text
               }
           )
     , linux_profile :
@@ -261,6 +263,7 @@
         ( List
             { balance_similar_node_groups : Optional Bool
             , max_graceful_termination_sec : Optional Text
+            , new_pod_scale_up_delay : Optional Text
             , scale_down_delay_after_add : Optional Text
             , scale_down_delay_after_delete : Optional Text
             , scale_down_delay_after_failure : Optional Text
@@ -276,6 +279,7 @@
             { principal_id : Optional Text
             , tenant_id : Optional Text
             , type : Text
+            , user_assigned_identity_id : Optional Text
             }
         )
   , linux_profile =

@@ -50,7 +50,14 @@
     , fqdn : Optional Text
     , id : Optional Text
     , identity :
-        Optional (List { principal_id : Text, tenant_id : Text, type : Text })
+        Optional
+          ( List
+              { principal_id : Text
+              , tenant_id : Text
+              , type : Text
+              , user_assigned_identity_id : Text
+              }
+          )
     , kube_admin_config :
         Optional
           ( List
@@ -175,7 +182,14 @@
   , fqdn = None Text
   , id = None Text
   , identity =
-      None (List { principal_id : Text, tenant_id : Text, type : Text })
+      None
+        ( List
+            { principal_id : Text
+            , tenant_id : Text
+            , type : Text
+            , user_assigned_identity_id : Text
+            }
+        )
   , kube_admin_config =
       None
         ( List

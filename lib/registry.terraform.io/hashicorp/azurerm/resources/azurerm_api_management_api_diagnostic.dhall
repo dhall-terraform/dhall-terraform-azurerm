@@ -8,6 +8,7 @@
     , identifier : Text
     , log_client_ip : Optional Bool
     , resource_group_name : Text
+    , sampling_percentage : Optional Natural
     , verbosity : Optional Text
     , backend_request :
         Optional
@@ -50,6 +51,7 @@
   , http_correlation_protocol = None Text
   , id = None Text
   , log_client_ip = None Bool
+  , sampling_percentage = None Natural
   , verbosity = None Text
   , backend_request =
       None

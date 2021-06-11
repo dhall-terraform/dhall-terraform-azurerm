@@ -26,6 +26,7 @@
     , sample_name : Optional Text
     , server_id : Text
     , sku_name : Optional Text
+    , storage_account_type : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , zone_redundant : Optional Bool
     , long_term_retention_policy :
@@ -85,6 +86,7 @@
   , restore_point_in_time = None Text
   , sample_name = None Text
   , sku_name = None Text
+  , storage_account_type = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zone_redundant = None Bool
   , long_term_retention_policy =
