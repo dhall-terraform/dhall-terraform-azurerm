@@ -2,6 +2,15 @@
     { administrator_login : Text
     , administrator_login_password : Text
     , connection_policy : Optional Text
+    , extended_auditing_policy :
+        Optional
+          ( List
+              { retention_in_days : Natural
+              , storage_account_access_key : Text
+              , storage_account_access_key_is_secondary : Bool
+              , storage_endpoint : Text
+              }
+          )
     , fully_qualified_domain_name : Optional Text
     , id : Optional Text
     , location : Text
@@ -16,15 +25,6 @@
               { login_username : Text
               , object_id : Text
               , tenant_id : Optional Text
-              }
-          )
-    , extended_auditing_policy :
-        Optional
-          ( List
-              { retention_in_days : Optional Natural
-              , storage_account_access_key : Text
-              , storage_account_access_key_is_secondary : Optional Bool
-              , storage_endpoint : Text
               }
           )
     , identity :
@@ -45,6 +45,15 @@
     }
 , default =
   { connection_policy = None Text
+  , extended_auditing_policy =
+      None
+        ( List
+            { retention_in_days : Natural
+            , storage_account_access_key : Text
+            , storage_account_access_key_is_secondary : Bool
+            , storage_endpoint : Text
+            }
+        )
   , fully_qualified_domain_name = None Text
   , id = None Text
   , public_network_access_enabled = None Bool
@@ -55,15 +64,6 @@
             { login_username : Text
             , object_id : Text
             , tenant_id : Optional Text
-            }
-        )
-  , extended_auditing_policy =
-      None
-        ( List
-            { retention_in_days : Optional Natural
-            , storage_account_access_key : Text
-            , storage_account_access_key_is_secondary : Optional Bool
-            , storage_endpoint : Text
             }
         )
   , identity =

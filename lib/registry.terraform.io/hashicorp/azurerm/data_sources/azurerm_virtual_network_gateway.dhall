@@ -27,7 +27,10 @@
     , vpn_client_configuration :
         Optional
           ( List
-              { address_space : List Text
+              { aad_audience : Text
+              , aad_issuer : Text
+              , aad_tenant : Text
+              , address_space : List Text
               , radius_server_address : Text
               , radius_server_secret : Text
               , revoked_certificate : List { name : Text, thumbprint : Text }
@@ -63,7 +66,10 @@
   , vpn_client_configuration =
       None
         ( List
-            { address_space : List Text
+            { aad_audience : Text
+            , aad_issuer : Text
+            , aad_tenant : Text
+            , address_space : List Text
             , radius_server_address : Text
             , radius_server_secret : Text
             , revoked_certificate : List { name : Text, thumbprint : Text }

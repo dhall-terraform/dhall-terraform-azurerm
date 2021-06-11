@@ -1,5 +1,6 @@
 { Type =
     { auto_delete_on_idle : Optional Text
+    , dead_lettering_on_filter_evaluation_error : Optional Bool
     , dead_lettering_on_message_expiration : Optional Bool
     , default_message_ttl : Optional Text
     , enable_batched_operations : Optional Bool
@@ -24,6 +25,7 @@
     }
 , default =
   { auto_delete_on_idle = None Text
+  , dead_lettering_on_filter_evaluation_error = None Bool
   , dead_lettering_on_message_expiration = None Bool
   , default_message_ttl = None Text
   , enable_batched_operations = None Bool

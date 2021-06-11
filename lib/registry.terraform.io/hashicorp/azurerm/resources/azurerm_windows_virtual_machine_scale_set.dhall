@@ -5,6 +5,7 @@
     , custom_data : Optional Text
     , do_not_run_extensions_on_overprovisioned_machines : Optional Bool
     , enable_automatic_updates : Optional Bool
+    , encryption_at_host_enabled : Optional Bool
     , eviction_policy : Optional Text
     , health_probe_id : Optional Text
     , id : Optional Text
@@ -153,6 +154,7 @@
   , custom_data = None Text
   , do_not_run_extensions_on_overprovisioned_machines = None Bool
   , enable_automatic_updates = None Bool
+  , encryption_at_host_enabled = None Bool
   , eviction_policy = None Text
   , health_probe_id = None Text
   , id = None Text

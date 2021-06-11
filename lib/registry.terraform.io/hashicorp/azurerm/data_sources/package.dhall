@@ -16,6 +16,7 @@
 , azurerm_app_service = ./azurerm_app_service.dhall
 , azurerm_app_service_environment = ./azurerm_app_service_environment.dhall
 , azurerm_app_service_plan = ./azurerm_app_service_plan.dhall
+, azurerm_attestation_provider = ./azurerm_attestation_provider.dhall
 , azurerm_automation_account = ./azurerm_automation_account.dhall
 , azurerm_automation_variable_bool = ./azurerm_automation_variable_bool.dhall
 , azurerm_automation_variable_datetime =
@@ -64,6 +65,7 @@
 , azurerm_express_route_circuit = ./azurerm_express_route_circuit.dhall
 , azurerm_firewall = ./azurerm_firewall.dhall
 , azurerm_function_app = ./azurerm_function_app.dhall
+, azurerm_function_app_host_keys = ./azurerm_function_app_host_keys.dhall
 , azurerm_hdinsight_cluster = ./azurerm_hdinsight_cluster.dhall
 , azurerm_healthcare_service = ./azurerm_healthcare_service.dhall
 , azurerm_image = ./azurerm_image.dhall
@@ -87,6 +89,7 @@
 , azurerm_kusto_cluster = ./azurerm_kusto_cluster.dhall
 , azurerm_lb_backend_address_pool = ./azurerm_lb_backend_address_pool.dhall
 , azurerm_lb = ./azurerm_lb.dhall
+, azurerm_lb_rule = ./azurerm_lb_rule.dhall
 , azurerm_log_analytics_workspace = ./azurerm_log_analytics_workspace.dhall
 , azurerm_logic_app_integration_account =
     ./azurerm_logic_app_integration_account.dhall

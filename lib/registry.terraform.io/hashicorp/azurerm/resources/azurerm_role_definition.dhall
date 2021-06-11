@@ -1,5 +1,5 @@
 { Type =
-    { assignable_scopes : List Text
+    { assignable_scopes : Optional (List Text)
     , description : Optional Text
     , id : Optional Text
     , name : Text
@@ -21,7 +21,8 @@
           }
     }
 , default =
-  { description = None Text
+  { assignable_scopes = None (List Text)
+  , description = None Text
   , id = None Text
   , role_definition_id = None Text
   , timeouts =

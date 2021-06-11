@@ -2,6 +2,8 @@
     ./azurerm_advanced_threat_protection.dhall
 , azurerm_analysis_services_server = ./azurerm_analysis_services_server.dhall
 , azurerm_api_management_api = ./azurerm_api_management_api.dhall
+, azurerm_api_management_api_diagnostic =
+    ./azurerm_api_management_api_diagnostic.dhall
 , azurerm_api_management_api_operation =
     ./azurerm_api_management_api_operation.dhall
 , azurerm_api_management_api_operation_policy =
@@ -74,6 +76,7 @@
     ./azurerm_app_service_source_control_token.dhall
 , azurerm_app_service_virtual_network_swift_connection =
     ./azurerm_app_service_virtual_network_swift_connection.dhall
+, azurerm_attestation_provider = ./azurerm_attestation_provider.dhall
 , azurerm_automation_account = ./azurerm_automation_account.dhall
 , azurerm_automation_certificate = ./azurerm_automation_certificate.dhall
 , azurerm_automation_connection_certificate =
@@ -170,6 +173,8 @@
     ./azurerm_data_factory_linked_service_azure_file_storage.dhall
 , azurerm_data_factory_linked_service_azure_function =
     ./azurerm_data_factory_linked_service_azure_function.dhall
+, azurerm_data_factory_linked_service_azure_sql_database =
+    ./azurerm_data_factory_linked_service_azure_sql_database.dhall
 , azurerm_data_factory_linked_service_cosmosdb =
     ./azurerm_data_factory_linked_service_cosmosdb.dhall
 , azurerm_data_factory_linked_service_data_lake_storage_gen2 =
@@ -397,6 +402,8 @@
 , azurerm_monitor_scheduled_query_rules_log =
     ./azurerm_monitor_scheduled_query_rules_log.dhall
 , azurerm_mssql_database = ./azurerm_mssql_database.dhall
+, azurerm_mssql_database_extended_auditing_policy =
+    ./azurerm_mssql_database_extended_auditing_policy.dhall
 , azurerm_mssql_database_vulnerability_assessment_rule_baseline =
     ./azurerm_mssql_database_vulnerability_assessment_rule_baseline.dhall
 , azurerm_mssql_elasticpool = ./azurerm_mssql_elasticpool.dhall

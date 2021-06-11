@@ -6,6 +6,15 @@
     , edition : Optional Text
     , elastic_pool_name : Optional Text
     , encryption : Optional Text
+    , extended_auditing_policy :
+        Optional
+          ( List
+              { retention_in_days : Natural
+              , storage_account_access_key : Text
+              , storage_account_access_key_is_secondary : Bool
+              , storage_endpoint : Text
+              }
+          )
     , id : Optional Text
     , location : Text
     , max_size_bytes : Optional Text
@@ -21,15 +30,6 @@
     , source_database_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , zone_redundant : Optional Bool
-    , extended_auditing_policy :
-        Optional
-          ( List
-              { retention_in_days : Optional Natural
-              , storage_account_access_key : Text
-              , storage_account_access_key_is_secondary : Optional Bool
-              , storage_endpoint : Text
-              }
-          )
     , import :
         Optional
           ( List
@@ -71,6 +71,15 @@
   , edition = None Text
   , elastic_pool_name = None Text
   , encryption = None Text
+  , extended_auditing_policy =
+      None
+        ( List
+            { retention_in_days : Natural
+            , storage_account_access_key : Text
+            , storage_account_access_key_is_secondary : Bool
+            , storage_endpoint : Text
+            }
+        )
   , id = None Text
   , max_size_bytes = None Text
   , max_size_gb = None Text
@@ -82,15 +91,6 @@
   , source_database_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zone_redundant = None Bool
-  , extended_auditing_policy =
-      None
-        ( List
-            { retention_in_days : Optional Natural
-            , storage_account_access_key : Text
-            , storage_account_access_key_is_secondary : Optional Bool
-            , storage_endpoint : Text
-            }
-        )
   , import =
       None
         ( List

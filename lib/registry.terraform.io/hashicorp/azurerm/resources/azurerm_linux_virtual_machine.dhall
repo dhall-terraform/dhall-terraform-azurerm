@@ -7,6 +7,7 @@
     , custom_data : Optional Text
     , dedicated_host_id : Optional Text
     , disable_password_authentication : Optional Bool
+    , encryption_at_host_enabled : Optional Bool
     , eviction_policy : Optional Text
     , id : Optional Text
     , location : Text
@@ -73,6 +74,7 @@
   , custom_data = None Text
   , dedicated_host_id = None Text
   , disable_password_authentication = None Bool
+  , encryption_at_host_enabled = None Bool
   , eviction_policy = None Text
   , id = None Text
   , max_bid_price = None Natural

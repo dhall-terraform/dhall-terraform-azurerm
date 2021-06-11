@@ -7,6 +7,7 @@
     , custom_data : Optional Text
     , dedicated_host_id : Optional Text
     , enable_automatic_updates : Optional Bool
+    , encryption_at_host_enabled : Optional Bool
     , eviction_policy : Optional Text
     , id : Optional Text
     , license_type : Optional Text
@@ -81,6 +82,7 @@
   , custom_data = None Text
   , dedicated_host_id = None Text
   , enable_automatic_updates = None Bool
+  , encryption_at_host_enabled = None Bool
   , eviction_policy = None Text
   , id = None Text
   , license_type = None Text
