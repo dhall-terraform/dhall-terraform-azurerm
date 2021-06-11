@@ -16,6 +16,7 @@
     , resource_group_name : Text
     , service_id : Text
     , service_name : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { id = None Text
@@ -33,5 +34,6 @@
             }
         )
   , service_name = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

@@ -83,6 +83,7 @@
               { always_on : Optional Bool
               , http2_enabled : Optional Bool
               , linux_fx_version : Optional Text
+              , min_tls_version : Optional Text
               , use_32_bit_worker_process : Optional Bool
               , virtual_network_name : Optional Text
               , websockets_enabled : Optional Bool
@@ -174,6 +175,7 @@
             { always_on : Optional Bool
             , http2_enabled : Optional Bool
             , linux_fx_version : Optional Text
+            , min_tls_version : Optional Text
             , use_32_bit_worker_process : Optional Bool
             , virtual_network_name : Optional Text
             , websockets_enabled : Optional Bool

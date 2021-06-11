@@ -73,6 +73,8 @@
 , azurerm_platform_image = ./azurerm_platform_image.dhall
 , azurerm_policy_definition = ./azurerm_policy_definition.dhall
 , azurerm_postgresql_server = ./azurerm_postgresql_server.dhall
+, azurerm_private_endpoint_connection =
+    ./azurerm_private_endpoint_connection.dhall
 , azurerm_private_link_endpoint_connection =
     ./azurerm_private_link_endpoint_connection.dhall
 , azurerm_private_link_service = ./azurerm_private_link_service.dhall

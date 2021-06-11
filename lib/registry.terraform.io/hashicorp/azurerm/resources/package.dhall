@@ -30,6 +30,7 @@
 , azurerm_api_management_subscription =
     ./azurerm_api_management_subscription.dhall
 , azurerm_api_management_user = ./azurerm_api_management_user.dhall
+, azurerm_app_configuration = ./azurerm_app_configuration.dhall
 , azurerm_application_gateway = ./azurerm_application_gateway.dhall
 , azurerm_application_insights_analytics_item =
     ./azurerm_application_insights_analytics_item.dhall
@@ -79,6 +80,7 @@
 , azurerm_batch_certificate = ./azurerm_batch_certificate.dhall
 , azurerm_batch_pool = ./azurerm_batch_pool.dhall
 , azurerm_bot_channel_email = ./azurerm_bot_channel_email.dhall
+, azurerm_bot_channel_ms_teams = ./azurerm_bot_channel_ms_teams.dhall
 , azurerm_bot_channel_slack = ./azurerm_bot_channel_slack.dhall
 , azurerm_bot_channels_registration = ./azurerm_bot_channels_registration.dhall
 , azurerm_bot_connection = ./azurerm_bot_connection.dhall
@@ -263,7 +265,13 @@
 , azurerm_monitor_log_profile = ./azurerm_monitor_log_profile.dhall
 , azurerm_monitor_metric_alert = ./azurerm_monitor_metric_alert.dhall
 , azurerm_monitor_metric_alertrule = ./azurerm_monitor_metric_alertrule.dhall
+, azurerm_mssql_database_vulnerability_assessment_rule_baseline =
+    ./azurerm_mssql_database_vulnerability_assessment_rule_baseline.dhall
 , azurerm_mssql_elasticpool = ./azurerm_mssql_elasticpool.dhall
+, azurerm_mssql_server_security_alert_policy =
+    ./azurerm_mssql_server_security_alert_policy.dhall
+, azurerm_mssql_server_vulnerability_assessment =
+    ./azurerm_mssql_server_vulnerability_assessment.dhall
 , azurerm_mysql_configuration = ./azurerm_mysql_configuration.dhall
 , azurerm_mysql_database = ./azurerm_mysql_database.dhall
 , azurerm_mysql_firewall_rule = ./azurerm_mysql_firewall_rule.dhall
@@ -316,6 +324,7 @@
 , azurerm_private_dns_zone = ./azurerm_private_dns_zone.dhall
 , azurerm_private_dns_zone_virtual_network_link =
     ./azurerm_private_dns_zone_virtual_network_link.dhall
+, azurerm_private_endpoint = ./azurerm_private_endpoint.dhall
 , azurerm_private_link_endpoint = ./azurerm_private_link_endpoint.dhall
 , azurerm_private_link_service = ./azurerm_private_link_service.dhall
 , azurerm_proximity_placement_group = ./azurerm_proximity_placement_group.dhall

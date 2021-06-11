@@ -14,6 +14,7 @@
               }
           )
     , type : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { id = None Text
@@ -31,5 +32,6 @@
             }
         )
   , type = None Text
+  , timeouts = None { read : Optional Text }
   }
 }
