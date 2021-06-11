@@ -129,10 +129,41 @@
           , name : Text
           , redirect_configuration_id : Optional Text
           , redirect_configuration_name : Optional Text
+          , rewrite_rule_set_id : Optional Text
+          , rewrite_rule_set_name : Optional Text
           , rule_type : Text
           , url_path_map_id : Optional Text
           , url_path_map_name : Optional Text
           }
+    , rewrite_rule_set :
+        Optional
+          ( List
+              { id : Optional Text
+              , name : Text
+              , rewrite_rule :
+                  Optional
+                    ( List
+                        { name : Text
+                        , rule_sequence : Natural
+                        , condition :
+                            Optional
+                              ( List
+                                  { ignore_case : Optional Bool
+                                  , negate : Optional Bool
+                                  , pattern : Text
+                                  , variable : Text
+                                  }
+                              )
+                        , request_header_configuration :
+                            Optional
+                              (List { header_name : Text, header_value : Text })
+                        , response_header_configuration :
+                            Optional
+                              (List { header_name : Text, header_value : Text })
+                        }
+                    )
+              }
+          )
     , sku : List { capacity : Optional Natural, name : Text, tier : Text }
     , ssl_certificate :
         Optional
@@ -144,6 +175,16 @@
               , public_cert_data : Optional Text
               }
           )
+    , ssl_policy :
+        Optional
+          ( List
+              { cipher_suites : Optional (List Text)
+              , disabled_protocols : Optional (List Text)
+              , min_protocol_version : Optional Text
+              , policy_name : Optional Text
+              , policy_type : Optional Text
+              }
+          )
     , url_path_map :
         Optional
           ( List
@@ -153,6 +194,8 @@
               , default_backend_http_settings_name : Optional Text
               , default_redirect_configuration_id : Optional Text
               , default_redirect_configuration_name : Optional Text
+              , default_rewrite_rule_set_id : Optional Text
+              , default_rewrite_rule_set_name : Optional Text
               , id : Optional Text
               , name : Text
               , path_rule :
@@ -166,6 +209,8 @@
                     , paths : List Text
                     , redirect_configuration_id : Optional Text
                     , redirect_configuration_name : Optional Text
+                    , rewrite_rule_set_id : Optional Text
+                    , rewrite_rule_set_name : Optional Text
                     }
               }
           )
@@ -250,6 +295,35 @@
             , target_url : Optional Text
             }
         )
+  , rewrite_rule_set =
+      None
+        ( List
+            { id : Optional Text
+            , name : Text
+            , rewrite_rule :
+                Optional
+                  ( List
+                      { name : Text
+                      , rule_sequence : Natural
+                      , condition :
+                          Optional
+                            ( List
+                                { ignore_case : Optional Bool
+                                , negate : Optional Bool
+                                , pattern : Text
+                                , variable : Text
+                                }
+                            )
+                      , request_header_configuration :
+                          Optional
+                            (List { header_name : Text, header_value : Text })
+                      , response_header_configuration :
+                          Optional
+                            (List { header_name : Text, header_value : Text })
+                      }
+                  )
+            }
+        )
   , ssl_certificate =
       None
         ( List
@@ -258,6 +332,16 @@
             , name : Text
             , password : Text
             , public_cert_data : Optional Text
+            }
+        )
+  , ssl_policy =
+      None
+        ( List
+            { cipher_suites : Optional (List Text)
+            , disabled_protocols : Optional (List Text)
+            , min_protocol_version : Optional Text
+            , policy_name : Optional Text
+            , policy_type : Optional Text
             }
         )
   , url_path_map =
@@ -269,6 +353,8 @@
             , default_backend_http_settings_name : Optional Text
             , default_redirect_configuration_id : Optional Text
             , default_redirect_configuration_name : Optional Text
+            , default_rewrite_rule_set_id : Optional Text
+            , default_rewrite_rule_set_name : Optional Text
             , id : Optional Text
             , name : Text
             , path_rule :
@@ -282,6 +368,8 @@
                   , paths : List Text
                   , redirect_configuration_id : Optional Text
                   , redirect_configuration_name : Optional Text
+                  , rewrite_rule_set_id : Optional Text
+                  , rewrite_rule_set_name : Optional Text
                   }
             }
         )

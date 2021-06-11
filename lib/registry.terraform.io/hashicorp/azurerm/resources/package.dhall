@@ -32,6 +32,8 @@
 , azurerm_application_insights_api_key =
     ./azurerm_application_insights_api_key.dhall
 , azurerm_application_insights = ./azurerm_application_insights.dhall
+, azurerm_application_insights_web_test =
+    ./azurerm_application_insights_web_test.dhall
 , azurerm_application_security_group =
     ./azurerm_application_security_group.dhall
 , azurerm_app_service_active_slot = ./azurerm_app_service_active_slot.dhall
