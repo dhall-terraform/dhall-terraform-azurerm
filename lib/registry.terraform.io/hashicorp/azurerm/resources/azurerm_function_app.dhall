@@ -16,7 +16,9 @@
     , possible_outbound_ip_addresses : Optional Text
     , resource_group_name : Text
     , site_credential : Optional (List { password : Text, username : Text })
-    , storage_connection_string : Text
+    , storage_account_access_key : Optional Text
+    , storage_account_name : Optional Text
+    , storage_connection_string : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Text
     , auth_settings :
@@ -124,6 +126,9 @@
   , outbound_ip_addresses = None Text
   , possible_outbound_ip_addresses = None Text
   , site_credential = None (List { password : Text, username : Text })
+  , storage_account_access_key = None Text
+  , storage_account_name = None Text
+  , storage_connection_string = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , version = None Text
   , auth_settings =

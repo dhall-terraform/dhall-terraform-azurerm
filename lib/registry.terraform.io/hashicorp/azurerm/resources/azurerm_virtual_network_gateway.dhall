@@ -23,7 +23,7 @@
         List
           { name : Optional Text
           , private_ip_address_allocation : Optional Text
-          , public_ip_address_id : Optional Text
+          , public_ip_address_id : Text
           , subnet_id : Text
           }
     , timeouts :

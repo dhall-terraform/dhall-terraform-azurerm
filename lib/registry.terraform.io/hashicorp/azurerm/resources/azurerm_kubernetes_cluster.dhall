@@ -40,6 +40,7 @@
     , location : Text
     , name : Text
     , node_resource_group : Optional Text
+    , private_cluster_enabled : Optional Bool
     , private_fqdn : Optional Text
     , private_link_enabled : Optional Bool
     , resource_group_name : Text
@@ -186,6 +187,7 @@
         )
   , kubernetes_version = None Text
   , node_resource_group = None Text
+  , private_cluster_enabled = None Bool
   , private_fqdn = None Text
   , private_link_enabled = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })

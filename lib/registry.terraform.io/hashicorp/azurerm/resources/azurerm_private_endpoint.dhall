@@ -4,6 +4,7 @@
     , name : Text
     , resource_group_name : Text
     , subnet_id : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , private_service_connection :
         List
           { is_manual_connection : Bool
@@ -23,6 +24,7 @@
     }
 , default =
   { id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text

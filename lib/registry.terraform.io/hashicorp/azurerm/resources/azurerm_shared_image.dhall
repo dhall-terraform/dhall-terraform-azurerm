@@ -2,6 +2,7 @@
     { description : Optional Text
     , eula : Optional Text
     , gallery_name : Text
+    , hyper_v_generation : Optional Text
     , id : Optional Text
     , location : Text
     , name : Text
@@ -22,6 +23,7 @@
 , default =
   { description = None Text
   , eula = None Text
+  , hyper_v_generation = None Text
   , id = None Text
   , privacy_statement_uri = None Text
   , release_note_uri = None Text

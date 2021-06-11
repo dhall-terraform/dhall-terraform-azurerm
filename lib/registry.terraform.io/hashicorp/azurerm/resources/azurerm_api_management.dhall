@@ -8,6 +8,7 @@
     , notification_sender_email : Optional Text
     , policy : Optional (List { xml_content : Text, xml_link : Text })
     , portal_url : Optional Text
+    , private_ip_addresses : Optional (List Text)
     , public_ip_addresses : Optional (List Text)
     , publisher_email : Text
     , publisher_name : Text
@@ -15,6 +16,7 @@
     , scm_url : Optional Text
     , sku_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , virtual_network_type : Optional Text
     , additional_location :
         Optional
           ( List
@@ -118,6 +120,7 @@
           , read : Optional Text
           , update : Optional Text
           }
+    , virtual_network_configuration : Optional (List { subnet_id : Text })
     }
 , default =
   { gateway_regional_url = None Text
@@ -127,9 +130,11 @@
   , notification_sender_email = None Text
   , policy = None (List { xml_content : Text, xml_link : Text })
   , portal_url = None Text
+  , private_ip_addresses = None (List Text)
   , public_ip_addresses = None (List Text)
   , scm_url = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , virtual_network_type = None Text
   , additional_location =
       None
         ( List
@@ -233,5 +238,6 @@
         , read : Optional Text
         , update : Optional Text
         }
+  , virtual_network_configuration = None (List { subnet_id : Text })
   }
 }

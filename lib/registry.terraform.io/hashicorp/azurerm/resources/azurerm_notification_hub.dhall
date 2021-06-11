@@ -4,6 +4,7 @@
     , name : Text
     , namespace_name : Text
     , resource_group_name : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , apns_credential :
         Optional
           ( List
@@ -25,6 +26,7 @@
     }
 , default =
   { id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , apns_credential =
       None
         ( List

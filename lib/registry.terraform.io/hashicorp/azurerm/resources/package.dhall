@@ -30,6 +30,8 @@
 , azurerm_api_management_identity_provider_twitter =
     ./azurerm_api_management_identity_provider_twitter.dhall
 , azurerm_api_management_logger = ./azurerm_api_management_logger.dhall
+, azurerm_api_management_named_value =
+    ./azurerm_api_management_named_value.dhall
 , azurerm_api_management_openid_connect_provider =
     ./azurerm_api_management_openid_connect_provider.dhall
 , azurerm_api_management_product_api =
@@ -285,6 +287,7 @@
 , azurerm_logic_app_workflow = ./azurerm_logic_app_workflow.dhall
 , azurerm_machine_learning_workspace =
     ./azurerm_machine_learning_workspace.dhall
+, azurerm_maintenance_configuration = ./azurerm_maintenance_configuration.dhall
 , azurerm_managed_application_definition =
     ./azurerm_managed_application_definition.dhall
 , azurerm_managed_disk = ./azurerm_managed_disk.dhall
@@ -403,6 +406,8 @@
 , azurerm_servicebus_namespace_authorization_rule =
     ./azurerm_servicebus_namespace_authorization_rule.dhall
 , azurerm_servicebus_namespace = ./azurerm_servicebus_namespace.dhall
+, azurerm_servicebus_namespace_network_rule_set =
+    ./azurerm_servicebus_namespace_network_rule_set.dhall
 , azurerm_servicebus_queue_authorization_rule =
     ./azurerm_servicebus_queue_authorization_rule.dhall
 , azurerm_servicebus_queue = ./azurerm_servicebus_queue.dhall
@@ -430,6 +435,7 @@
     ./azurerm_site_recovery_replication_policy.dhall
 , azurerm_snapshot = ./azurerm_snapshot.dhall
 , azurerm_spatial_anchors_account = ./azurerm_spatial_anchors_account.dhall
+, azurerm_spring_cloud_app = ./azurerm_spring_cloud_app.dhall
 , azurerm_spring_cloud_service = ./azurerm_spring_cloud_service.dhall
 , azurerm_sql_active_directory_administrator =
     ./azurerm_sql_active_directory_administrator.dhall

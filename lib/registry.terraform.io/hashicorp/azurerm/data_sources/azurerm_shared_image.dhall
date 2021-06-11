@@ -2,6 +2,7 @@
     { description : Optional Text
     , eula : Optional Text
     , gallery_name : Text
+    , hyper_v_generation : Optional Text
     , id : Optional Text
     , identifier :
         Optional (List { offer : Text, publisher : Text, sku : Text })
@@ -17,6 +18,7 @@
 , default =
   { description = None Text
   , eula = None Text
+  , hyper_v_generation = None Text
   , id = None Text
   , identifier = None (List { offer : Text, publisher : Text, sku : Text })
   , location = None Text

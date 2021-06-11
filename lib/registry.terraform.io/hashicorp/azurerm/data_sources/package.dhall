@@ -75,6 +75,7 @@
 , azurerm_logic_app_workflow = ./azurerm_logic_app_workflow.dhall
 , azurerm_machine_learning_workspace =
     ./azurerm_machine_learning_workspace.dhall
+, azurerm_maintenance_configuration = ./azurerm_maintenance_configuration.dhall
 , azurerm_managed_application_definition =
     ./azurerm_managed_application_definition.dhall
 , azurerm_managed_disk = ./azurerm_managed_disk.dhall
@@ -109,6 +110,7 @@
 , azurerm_policy_definition = ./azurerm_policy_definition.dhall
 , azurerm_policy_set_definition = ./azurerm_policy_set_definition.dhall
 , azurerm_postgresql_server = ./azurerm_postgresql_server.dhall
+, azurerm_private_dns_zone = ./azurerm_private_dns_zone.dhall
 , azurerm_private_endpoint_connection =
     ./azurerm_private_endpoint_connection.dhall
 , azurerm_private_link_service = ./azurerm_private_link_service.dhall

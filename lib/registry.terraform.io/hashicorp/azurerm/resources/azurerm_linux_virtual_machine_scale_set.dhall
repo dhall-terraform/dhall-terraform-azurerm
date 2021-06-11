@@ -29,6 +29,8 @@
     , additional_capabilities :
         Optional (List { ultra_ssd_enabled : Optional Bool })
     , admin_ssh_key : Optional (List { public_key : Text, username : Text })
+    , automatic_instance_repair :
+        Optional (List { enabled : Bool, grace_period : Optional Text })
     , automatic_os_upgrade_policy :
         Optional
           ( List
@@ -146,6 +148,8 @@
   , zones = None (List Text)
   , additional_capabilities = None (List { ultra_ssd_enabled : Optional Bool })
   , admin_ssh_key = None (List { public_key : Text, username : Text })
+  , automatic_instance_repair =
+      None (List { enabled : Bool, grace_period : Optional Text })
   , automatic_os_upgrade_policy =
       None
         ( List

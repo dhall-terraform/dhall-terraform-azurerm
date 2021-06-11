@@ -3,7 +3,7 @@
     , display_name : Text
     , id : Optional Text
     , primary_key : Optional Text
-    , product_id : Text
+    , product_id : Optional Text
     , resource_group_name : Text
     , secondary_key : Optional Text
     , state : Optional Text
@@ -20,6 +20,7 @@
 , default =
   { id = None Text
   , primary_key = None Text
+  , product_id = None Text
   , secondary_key = None Text
   , state = None Text
   , subscription_id = None Text

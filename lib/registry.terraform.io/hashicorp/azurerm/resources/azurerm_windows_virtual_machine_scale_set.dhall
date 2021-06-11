@@ -32,6 +32,8 @@
         Optional (List { ultra_ssd_enabled : Optional Bool })
     , additional_unattend_content :
         Optional (List { content : Text, setting : Text })
+    , automatic_instance_repair :
+        Optional (List { enabled : Bool, grace_period : Optional Text })
     , automatic_os_upgrade_policy :
         Optional
           ( List
@@ -156,6 +158,8 @@
   , zones = None (List Text)
   , additional_capabilities = None (List { ultra_ssd_enabled : Optional Bool })
   , additional_unattend_content = None (List { content : Text, setting : Text })
+  , automatic_instance_repair =
+      None (List { enabled : Bool, grace_period : Optional Text })
   , automatic_os_upgrade_policy =
       None
         ( List

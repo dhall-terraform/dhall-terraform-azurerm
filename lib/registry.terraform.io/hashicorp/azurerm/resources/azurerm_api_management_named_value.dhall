@@ -1,9 +1,12 @@
 { Type =
     { api_management_name : Text
-    , enabled : Optional Bool
+    , display_name : Text
     , id : Optional Text
-    , identifier : Text
+    , name : Text
     , resource_group_name : Text
+    , secret : Optional Bool
+    , tags : Optional (List Text)
+    , value : Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -13,8 +16,9 @@
           }
     }
 , default =
-  { enabled = None Bool
-  , id = None Text
+  { id = None Text
+  , secret = None Bool
+  , tags = None (List Text)
   , timeouts =
       None
         { create : Optional Text

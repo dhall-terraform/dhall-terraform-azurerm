@@ -15,6 +15,7 @@
     , name : Text
     , namespace_name : Text
     , resource_group_name : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts : Optional { read : Optional Text }
     }
 , default =
@@ -31,6 +32,7 @@
   , gcm_credential = None (List { api_key : Text })
   , id = None Text
   , location = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts = None { read : Optional Text }
   }
 }

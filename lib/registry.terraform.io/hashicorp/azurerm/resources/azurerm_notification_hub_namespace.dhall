@@ -7,6 +7,7 @@
     , resource_group_name : Text
     , servicebus_endpoint : Optional Text
     , sku_name : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -19,6 +20,7 @@
   { enabled = None Bool
   , id = None Text
   , servicebus_endpoint = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text
