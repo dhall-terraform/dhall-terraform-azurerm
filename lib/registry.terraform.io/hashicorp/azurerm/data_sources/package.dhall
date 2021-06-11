@@ -8,6 +8,12 @@
     ./azurerm_application_security_group.dhall
 , azurerm_app_service = ./azurerm_app_service.dhall
 , azurerm_app_service_plan = ./azurerm_app_service_plan.dhall
+, azurerm_automation_variable_bool = ./azurerm_automation_variable_bool.dhall
+, azurerm_automation_variable_datetime =
+    ./azurerm_automation_variable_datetime.dhall
+, azurerm_automation_variable_int = ./azurerm_automation_variable_int.dhall
+, azurerm_automation_variable_string =
+    ./azurerm_automation_variable_string.dhall
 , azurerm_availability_set = ./azurerm_availability_set.dhall
 , azurerm_azuread_application = ./azurerm_azuread_application.dhall
 , azurerm_azuread_service_principal = ./azurerm_azuread_service_principal.dhall
@@ -32,6 +38,8 @@
 , azurerm_key_vault_key = ./azurerm_key_vault_key.dhall
 , azurerm_key_vault_secret = ./azurerm_key_vault_secret.dhall
 , azurerm_kubernetes_cluster = ./azurerm_kubernetes_cluster.dhall
+, azurerm_kubernetes_service_versions =
+    ./azurerm_kubernetes_service_versions.dhall
 , azurerm_lb_backend_address_pool = ./azurerm_lb_backend_address_pool.dhall
 , azurerm_lb = ./azurerm_lb.dhall
 , azurerm_log_analytics_workspace = ./azurerm_log_analytics_workspace.dhall
@@ -72,6 +80,7 @@
 , azurerm_subscriptions = ./azurerm_subscriptions.dhall
 , azurerm_traffic_manager_geographical_location =
     ./azurerm_traffic_manager_geographical_location.dhall
+, azurerm_user_assigned_identity = ./azurerm_user_assigned_identity.dhall
 , azurerm_virtual_machine = ./azurerm_virtual_machine.dhall
 , azurerm_virtual_network = ./azurerm_virtual_network.dhall
 , azurerm_virtual_network_gateway = ./azurerm_virtual_network_gateway.dhall

@@ -21,6 +21,7 @@
               { auto_upgrade_minor_version : Optional Bool
               , name : Text
               , protected_settings : Optional Text
+              , provision_after_extensions : Optional (List Text)
               , publisher : Text
               , settings : Optional Text
               , type : Text
@@ -171,6 +172,7 @@
             { auto_upgrade_minor_version : Optional Bool
             , name : Text
             , protected_settings : Optional Text
+            , provision_after_extensions : Optional (List Text)
             , publisher : Text
             , settings : Optional Text
             , type : Text

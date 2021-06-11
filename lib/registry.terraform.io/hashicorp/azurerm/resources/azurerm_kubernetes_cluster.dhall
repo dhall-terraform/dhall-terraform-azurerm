@@ -1,5 +1,6 @@
 { Type =
-    { dns_prefix : Text
+    { api_server_authorized_ip_ranges : Optional (List Text)
+    , dns_prefix : Text
     , fqdn : Optional Text
     , id : Optional Text
     , kube_admin_config :
@@ -58,6 +59,7 @@
           , name : Text
           , os_disk_size_gb : Optional Natural
           , os_type : Optional Text
+          , type : Optional Text
           , vm_size : Text
           , vnet_subnet_id : Optional Text
           }
@@ -93,7 +95,8 @@
     , service_principal : List { client_id : Text, client_secret : Text }
     }
 , default =
-  { fqdn = None Text
+  { api_server_authorized_ip_ranges = None (List Text)
+  , fqdn = None Text
   , id = None Text
   , kube_admin_config =
       None

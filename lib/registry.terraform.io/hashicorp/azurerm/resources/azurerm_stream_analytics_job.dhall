@@ -11,7 +11,12 @@
     , output_error_policy : Text
     , resource_group_name : Text
     , streaming_units : Natural
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , transformation_query : Text
     }
-, default = { id = None Text, job_id = None Text }
+, default =
+  { id = None Text
+  , job_id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
+  }
 }

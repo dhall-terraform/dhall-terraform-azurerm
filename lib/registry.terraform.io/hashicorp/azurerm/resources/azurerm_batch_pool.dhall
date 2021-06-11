@@ -19,6 +19,7 @@
               , visibility : Optional (List Text)
               }
           )
+    , container_configuration : Optional (List { type : Optional Text })
     , fixed_scale :
         Optional
           ( List
@@ -83,6 +84,7 @@
             , visibility : Optional (List Text)
             }
         )
+  , container_configuration = None (List { type : Optional Text })
   , fixed_scale =
       None
         ( List

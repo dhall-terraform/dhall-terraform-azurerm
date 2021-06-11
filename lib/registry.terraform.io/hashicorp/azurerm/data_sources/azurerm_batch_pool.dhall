@@ -2,6 +2,7 @@
     { account_name : Text
     , auto_scale :
         Optional (List { evaluation_interval : Text, formula : Text })
+    , container_configuration : Optional (List { type : Text })
     , display_name : Optional Text
     , fixed_scale :
         Optional
@@ -67,6 +68,7 @@
     }
 , default =
   { auto_scale = None (List { evaluation_interval : Text, formula : Text })
+  , container_configuration = None (List { type : Text })
   , display_name = None Text
   , fixed_scale =
       None

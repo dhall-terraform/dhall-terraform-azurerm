@@ -1,6 +1,10 @@
 { azurerm_api_management_api = ./azurerm_api_management_api.dhall
 , azurerm_api_management_api_operation =
     ./azurerm_api_management_api_operation.dhall
+, azurerm_api_management_api_operation_policy =
+    ./azurerm_api_management_api_operation_policy.dhall
+, azurerm_api_management_api_policy = ./azurerm_api_management_api_policy.dhall
+, azurerm_api_management_api_schema = ./azurerm_api_management_api_schema.dhall
 , azurerm_api_management_api_version_set =
     ./azurerm_api_management_api_version_set.dhall
 , azurerm_api_management_authorization_server =
@@ -18,6 +22,8 @@
 , azurerm_api_management_product = ./azurerm_api_management_product.dhall
 , azurerm_api_management_product_group =
     ./azurerm_api_management_product_group.dhall
+, azurerm_api_management_product_policy =
+    ./azurerm_api_management_product_policy.dhall
 , azurerm_api_management_property = ./azurerm_api_management_property.dhall
 , azurerm_api_management_subscription =
     ./azurerm_api_management_subscription.dhall
@@ -43,6 +49,12 @@
 , azurerm_automation_module = ./azurerm_automation_module.dhall
 , azurerm_automation_runbook = ./azurerm_automation_runbook.dhall
 , azurerm_automation_schedule = ./azurerm_automation_schedule.dhall
+, azurerm_automation_variable_bool = ./azurerm_automation_variable_bool.dhall
+, azurerm_automation_variable_datetime =
+    ./azurerm_automation_variable_datetime.dhall
+, azurerm_automation_variable_int = ./azurerm_automation_variable_int.dhall
+, azurerm_automation_variable_string =
+    ./azurerm_automation_variable_string.dhall
 , azurerm_autoscale_setting = ./azurerm_autoscale_setting.dhall
 , azurerm_availability_set = ./azurerm_availability_set.dhall
 , azurerm_azuread_application = ./azurerm_azuread_application.dhall
@@ -60,6 +72,12 @@
 , azurerm_container_registry = ./azurerm_container_registry.dhall
 , azurerm_container_service = ./azurerm_container_service.dhall
 , azurerm_cosmosdb_account = ./azurerm_cosmosdb_account.dhall
+, azurerm_cosmosdb_cassandra_keyspace =
+    ./azurerm_cosmosdb_cassandra_keyspace.dhall
+, azurerm_cosmosdb_mongo_collection = ./azurerm_cosmosdb_mongo_collection.dhall
+, azurerm_cosmosdb_mongo_database = ./azurerm_cosmosdb_mongo_database.dhall
+, azurerm_cosmosdb_sql_database = ./azurerm_cosmosdb_sql_database.dhall
+, azurerm_cosmosdb_table = ./azurerm_cosmosdb_table.dhall
 , azurerm_databricks_workspace = ./azurerm_databricks_workspace.dhall
 , azurerm_data_factory_dataset_mysql =
     ./azurerm_data_factory_dataset_mysql.dhall
@@ -68,6 +86,8 @@
 , azurerm_data_factory_dataset_sql_server_table =
     ./azurerm_data_factory_dataset_sql_server_table.dhall
 , azurerm_data_factory = ./azurerm_data_factory.dhall
+, azurerm_data_factory_linked_service_data_lake_storage_gen2 =
+    ./azurerm_data_factory_linked_service_data_lake_storage_gen2.dhall
 , azurerm_data_factory_linked_service_mysql =
     ./azurerm_data_factory_linked_service_mysql.dhall
 , azurerm_data_factory_linked_service_postgresql =
@@ -121,6 +141,8 @@
 , azurerm_firewall_application_rule_collection =
     ./azurerm_firewall_application_rule_collection.dhall
 , azurerm_firewall = ./azurerm_firewall.dhall
+, azurerm_firewall_nat_rule_collection =
+    ./azurerm_firewall_nat_rule_collection.dhall
 , azurerm_firewall_network_rule_collection =
     ./azurerm_firewall_network_rule_collection.dhall
 , azurerm_function_app = ./azurerm_function_app.dhall
@@ -204,6 +226,7 @@
 , azurerm_network_interface_nat_rule_association =
     ./azurerm_network_interface_nat_rule_association.dhall
 , azurerm_network_packet_capture = ./azurerm_network_packet_capture.dhall
+, azurerm_network_profile = ./azurerm_network_profile.dhall
 , azurerm_network_security_group = ./azurerm_network_security_group.dhall
 , azurerm_network_security_rule = ./azurerm_network_security_rule.dhall
 , azurerm_network_watcher = ./azurerm_network_watcher.dhall

@@ -10,6 +10,7 @@
     , location : Text
     , name : Text
     , resource_group_name : Text
+    , site_credential : Optional (List { password : Text, username : Text })
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , connection_string :
         Optional (List { name : Text, type : Text, value : Text })
@@ -64,6 +65,7 @@
   , enabled = None Bool
   , https_only = None Bool
   , id = None Text
+  , site_credential = None (List { password : Text, username : Text })
   , tags = None (List { mapKey : Text, mapValue : Text })
   , connection_string = None (List { name : Text, type : Text, value : Text })
   , identity =

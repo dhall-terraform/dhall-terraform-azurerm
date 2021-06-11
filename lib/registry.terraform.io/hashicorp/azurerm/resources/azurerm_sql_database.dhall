@@ -10,6 +10,7 @@
     , location : Text
     , max_size_bytes : Optional Text
     , name : Text
+    , read_scale : Optional Bool
     , requested_service_objective_id : Optional Text
     , requested_service_objective_name : Optional Text
     , resource_group_name : Text
@@ -54,6 +55,7 @@
   , encryption = None Text
   , id = None Text
   , max_size_bytes = None Text
+  , read_scale = None Bool
   , requested_service_objective_id = None Text
   , requested_service_objective_name = None Text
   , restore_point_in_time = None Text

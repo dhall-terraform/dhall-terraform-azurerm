@@ -20,6 +20,7 @@
               , name : Text
               , os_disk_size_gb : Natural
               , os_type : Text
+              , type : Text
               , vm_size : Text
               , vnet_subnet_id : Text
               }
@@ -105,6 +106,7 @@
             , name : Text
             , os_disk_size_gb : Natural
             , os_type : Text
+            , type : Text
             , vm_size : Text
             , vnet_subnet_id : Text
             }

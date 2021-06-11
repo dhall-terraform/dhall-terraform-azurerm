@@ -22,21 +22,24 @@
         Optional
           (List { day_of_week : Text, start_hour_utc : Optional Natural })
     , redis_configuration :
-        List
-          { aof_backup_enabled : Optional Bool
-          , aof_storage_connection_string_0 : Optional Text
-          , aof_storage_connection_string_1 : Optional Text
-          , maxclients : Optional Natural
-          , maxfragmentationmemory_reserved : Optional Natural
-          , maxmemory_delta : Optional Natural
-          , maxmemory_policy : Optional Text
-          , maxmemory_reserved : Optional Natural
-          , notify_keyspace_events : Optional Text
-          , rdb_backup_enabled : Optional Bool
-          , rdb_backup_frequency : Optional Natural
-          , rdb_backup_max_snapshot_count : Optional Natural
-          , rdb_storage_connection_string : Optional Text
-          }
+        Optional
+          ( List
+              { aof_backup_enabled : Optional Bool
+              , aof_storage_connection_string_0 : Optional Text
+              , aof_storage_connection_string_1 : Optional Text
+              , enable_authentication : Optional Bool
+              , maxclients : Optional Natural
+              , maxfragmentationmemory_reserved : Optional Natural
+              , maxmemory_delta : Optional Natural
+              , maxmemory_policy : Optional Text
+              , maxmemory_reserved : Optional Natural
+              , notify_keyspace_events : Optional Text
+              , rdb_backup_enabled : Optional Bool
+              , rdb_backup_frequency : Optional Natural
+              , rdb_backup_max_snapshot_count : Optional Natural
+              , rdb_storage_connection_string : Optional Text
+              }
+          )
     }
 , default =
   { enable_non_ssl_port = None Bool
@@ -54,5 +57,24 @@
   , zones = None (List Text)
   , patch_schedule =
       None (List { day_of_week : Text, start_hour_utc : Optional Natural })
+  , redis_configuration =
+      None
+        ( List
+            { aof_backup_enabled : Optional Bool
+            , aof_storage_connection_string_0 : Optional Text
+            , aof_storage_connection_string_1 : Optional Text
+            , enable_authentication : Optional Bool
+            , maxclients : Optional Natural
+            , maxfragmentationmemory_reserved : Optional Natural
+            , maxmemory_delta : Optional Natural
+            , maxmemory_policy : Optional Text
+            , maxmemory_reserved : Optional Natural
+            , notify_keyspace_events : Optional Text
+            , rdb_backup_enabled : Optional Bool
+            , rdb_backup_frequency : Optional Natural
+            , rdb_backup_max_snapshot_count : Optional Natural
+            , rdb_storage_connection_string : Optional Text
+            }
+        )
   }
 }

@@ -9,6 +9,9 @@
     , zones : Optional (List Text)
     , authentication_certificate :
         Optional (List { data : Text, id : Optional Text, name : Text })
+    , autoscale_configuration :
+        Optional
+          (List { max_capacity : Optional Natural, min_capacity : Natural })
     , backend_address_pool :
         List
           { fqdn_list : Optional (List Text)
@@ -20,7 +23,8 @@
           }
     , backend_http_settings :
         List
-          { cookie_based_affinity : Text
+          { affinity_cookie_name : Optional Text
+          , cookie_based_affinity : Text
           , host_name : Optional Text
           , id : Optional Text
           , name : Text
@@ -129,7 +133,7 @@
           , url_path_map_id : Optional Text
           , url_path_map_name : Optional Text
           }
-    , sku : List { capacity : Natural, name : Text, tier : Text }
+    , sku : List { capacity : Optional Natural, name : Text, tier : Text }
     , ssl_certificate :
         Optional
           ( List
@@ -175,6 +179,21 @@
               , request_body_check : Optional Bool
               , rule_set_type : Optional Text
               , rule_set_version : Text
+              , disabled_rule_group :
+                  Optional
+                    ( List
+                        { rule_group_name : Text
+                        , rules : Optional (List Natural)
+                        }
+                    )
+              , exclusion :
+                  Optional
+                    ( List
+                        { match_variable : Text
+                        , selector : Optional Text
+                        , selector_match_operator : Optional Text
+                        }
+                    )
               }
           )
     }
@@ -186,6 +205,8 @@
   , zones = None (List Text)
   , authentication_certificate =
       None (List { data : Text, id : Optional Text, name : Text })
+  , autoscale_configuration =
+      None (List { max_capacity : Optional Natural, min_capacity : Natural })
   , custom_error_configuration =
       None
         ( List
@@ -274,6 +295,21 @@
             , request_body_check : Optional Bool
             , rule_set_type : Optional Text
             , rule_set_version : Text
+            , disabled_rule_group :
+                Optional
+                  ( List
+                      { rule_group_name : Text
+                      , rules : Optional (List Natural)
+                      }
+                  )
+            , exclusion :
+                Optional
+                  ( List
+                      { match_variable : Text
+                      , selector : Optional Text
+                      , selector_match_operator : Optional Text
+                      }
+                  )
             }
         )
   }
