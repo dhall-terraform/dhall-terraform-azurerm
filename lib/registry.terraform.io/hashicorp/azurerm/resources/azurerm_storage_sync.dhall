@@ -1,10 +1,10 @@
 { Type =
-    { account_name : Text
-    , id : Optional Text
+    { id : Optional Text
+    , incoming_traffic_policy : Optional Text
+    , location : Text
     , name : Text
     , resource_group_name : Text
-    , throughput : Optional Natural
-    , autoscale_settings : Optional (List { max_throughput : Optional Natural })
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -15,8 +15,8 @@
     }
 , default =
   { id = None Text
-  , throughput = None Natural
-  , autoscale_settings = None (List { max_throughput : Optional Natural })
+  , incoming_traffic_policy = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text

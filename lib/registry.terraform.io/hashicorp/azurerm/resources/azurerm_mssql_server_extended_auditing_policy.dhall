@@ -1,10 +1,10 @@
 { Type =
-    { account_name : Text
-    , id : Optional Text
-    , name : Text
-    , resource_group_name : Text
-    , throughput : Optional Natural
-    , autoscale_settings : Optional (List { max_throughput : Optional Natural })
+    { id : Optional Text
+    , retention_in_days : Optional Natural
+    , server_id : Text
+    , storage_account_access_key : Optional Text
+    , storage_account_access_key_is_secondary : Optional Bool
+    , storage_endpoint : Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -15,8 +15,9 @@
     }
 , default =
   { id = None Text
-  , throughput = None Natural
-  , autoscale_settings = None (List { max_throughput : Optional Natural })
+  , retention_in_days = None Natural
+  , storage_account_access_key = None Text
+  , storage_account_access_key_is_secondary = None Bool
   , timeouts =
       None
         { create : Optional Text

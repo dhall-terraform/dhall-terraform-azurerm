@@ -4,6 +4,7 @@
     , id : Optional Text
     , name : Text
     , role_definition_id : Optional Text
+    , role_definition_resource_id : Optional Text
     , scope : Text
     , permissions :
         List
@@ -25,6 +26,7 @@
   , description = None Text
   , id = None Text
   , role_definition_id = None Text
+  , role_definition_resource_id = None Text
   , timeouts =
       None
         { create : Optional Text

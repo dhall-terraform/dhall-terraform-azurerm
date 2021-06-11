@@ -6,6 +6,8 @@
     , default_hostname : Optional Text
     , enabled : Optional Bool
     , id : Optional Text
+    , identity :
+        Optional (List { principal_id : Text, tenant_id : Text, type : Text })
     , location : Optional Text
     , name : Text
     , os_type : Optional Text
@@ -70,6 +72,8 @@
   , default_hostname = None Text
   , enabled = None Bool
   , id = None Text
+  , identity =
+      None (List { principal_id : Text, tenant_id : Text, type : Text })
   , location = None Text
   , os_type = None Text
   , outbound_ip_addresses = None Text

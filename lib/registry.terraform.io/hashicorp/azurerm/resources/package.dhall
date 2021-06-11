@@ -207,6 +207,8 @@
     ./azurerm_data_share_dataset_blob_storage.dhall
 , azurerm_data_share_dataset_data_lake_gen1 =
     ./azurerm_data_share_dataset_data_lake_gen1.dhall
+, azurerm_data_share_dataset_data_lake_gen2 =
+    ./azurerm_data_share_dataset_data_lake_gen2.dhall
 , azurerm_data_share = ./azurerm_data_share.dhall
 , azurerm_dedicated_hardware_security_module =
     ./azurerm_dedicated_hardware_security_module.dhall
@@ -339,6 +341,8 @@
 , azurerm_lb_outbound_rule = ./azurerm_lb_outbound_rule.dhall
 , azurerm_lb_probe = ./azurerm_lb_probe.dhall
 , azurerm_lb_rule = ./azurerm_lb_rule.dhall
+, azurerm_lighthouse_assignment = ./azurerm_lighthouse_assignment.dhall
+, azurerm_lighthouse_definition = ./azurerm_lighthouse_definition.dhall
 , azurerm_linux_virtual_machine = ./azurerm_linux_virtual_machine.dhall
 , azurerm_linux_virtual_machine_scale_set =
     ./azurerm_linux_virtual_machine_scale_set.dhall
@@ -408,6 +412,8 @@
     ./azurerm_mssql_database_vulnerability_assessment_rule_baseline.dhall
 , azurerm_mssql_elasticpool = ./azurerm_mssql_elasticpool.dhall
 , azurerm_mssql_server = ./azurerm_mssql_server.dhall
+, azurerm_mssql_server_extended_auditing_policy =
+    ./azurerm_mssql_server_extended_auditing_policy.dhall
 , azurerm_mssql_server_security_alert_policy =
     ./azurerm_mssql_server_security_alert_policy.dhall
 , azurerm_mssql_server_vulnerability_assessment =
@@ -563,6 +569,7 @@
 , azurerm_storage_queue = ./azurerm_storage_queue.dhall
 , azurerm_storage_share = ./azurerm_storage_share.dhall
 , azurerm_storage_share_directory = ./azurerm_storage_share_directory.dhall
+, azurerm_storage_sync = ./azurerm_storage_sync.dhall
 , azurerm_storage_table = ./azurerm_storage_table.dhall
 , azurerm_storage_table_entity = ./azurerm_storage_table_entity.dhall
 , azurerm_stream_analytics_function_javascript_udf =
@@ -595,6 +602,7 @@
     ./azurerm_subnet_route_table_association.dhall
 , azurerm_synapse_firewall_rule = ./azurerm_synapse_firewall_rule.dhall
 , azurerm_synapse_spark_pool = ./azurerm_synapse_spark_pool.dhall
+, azurerm_synapse_sql_pool = ./azurerm_synapse_sql_pool.dhall
 , azurerm_synapse_workspace = ./azurerm_synapse_workspace.dhall
 , azurerm_template_deployment = ./azurerm_template_deployment.dhall
 , azurerm_traffic_manager_endpoint = ./azurerm_traffic_manager_endpoint.dhall

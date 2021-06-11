@@ -7,6 +7,7 @@
     , partition_key_path : Optional Text
     , resource_group_name : Text
     , throughput : Optional Natural
+    , autoscale_settings : Optional (List { max_throughput : Optional Natural })
     , timeouts :
         Optional
           { create : Optional Text
@@ -21,6 +22,7 @@
   , id = None Text
   , partition_key_path = None Text
   , throughput = None Natural
+  , autoscale_settings = None (List { max_throughput : Optional Natural })
   , timeouts =
       None
         { create : Optional Text

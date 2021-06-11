@@ -8,6 +8,7 @@
     , shard_key : Optional Text
     , system_indexes : Optional (List { keys : List Text, unique : Bool })
     , throughput : Optional Natural
+    , autoscale_settings : Optional (List { max_throughput : Optional Natural })
     , index : Optional (List { keys : List Text, unique : Optional Bool })
     , timeouts :
         Optional
@@ -23,6 +24,7 @@
   , shard_key = None Text
   , system_indexes = None (List { keys : List Text, unique : Bool })
   , throughput = None Natural
+  , autoscale_settings = None (List { max_throughput : Optional Natural })
   , index = None (List { keys : List Text, unique : Optional Bool })
   , timeouts =
       None

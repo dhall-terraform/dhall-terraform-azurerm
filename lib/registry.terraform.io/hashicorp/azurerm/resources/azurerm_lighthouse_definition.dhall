@@ -1,10 +1,11 @@
 { Type =
-    { account_name : Text
+    { description : Optional Text
     , id : Optional Text
+    , lighthouse_definition_id : Optional Text
+    , managing_tenant_id : Text
     , name : Text
-    , resource_group_name : Text
-    , throughput : Optional Natural
-    , autoscale_settings : Optional (List { max_throughput : Optional Natural })
+    , scope : Text
+    , authorization : List { principal_id : Text, role_definition_id : Text }
     , timeouts :
         Optional
           { create : Optional Text
@@ -14,9 +15,9 @@
           }
     }
 , default =
-  { id = None Text
-  , throughput = None Natural
-  , autoscale_settings = None (List { max_throughput : Optional Natural })
+  { description = None Text
+  , id = None Text
+  , lighthouse_definition_id = None Text
   , timeouts =
       None
         { create : Optional Text

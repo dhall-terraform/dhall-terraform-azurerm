@@ -2,7 +2,7 @@
     { id : Optional Text
     , key_name : Text
     , key_vault_id : Text
-    , key_version : Text
+    , key_version : Optional Text
     , storage_account_id : Text
     , timeouts :
         Optional
@@ -14,6 +14,7 @@
     }
 , default =
   { id = None Text
+  , key_version = None Text
   , timeouts =
       None
         { create : Optional Text
