@@ -1,5 +1,5 @@
 { Type =
-    { access_policy_object_ids : List Text
+    { access_policy_object_ids : Optional (List Text)
     , cosmosdb_throughput : Optional Natural
     , id : Optional Text
     , kind : Optional Text
@@ -34,7 +34,8 @@
           }
     }
 , default =
-  { cosmosdb_throughput = None Natural
+  { access_policy_object_ids = None (List Text)
+  , cosmosdb_throughput = None Natural
   , id = None Text
   , kind = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })

@@ -2,6 +2,7 @@
     { expiration_date : Optional Text
     , friendly_name : Optional Text
     , host_names : Optional (List Text)
+    , hosting_environment_profile_id : Optional Text
     , id : Optional Text
     , issue_date : Optional Text
     , issuer : Optional Text
@@ -26,6 +27,7 @@
   { expiration_date = None Text
   , friendly_name = None Text
   , host_names = None (List Text)
+  , hosting_environment_profile_id = None Text
   , id = None Text
   , issue_date = None Text
   , issuer = None Text

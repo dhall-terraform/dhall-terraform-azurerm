@@ -42,6 +42,8 @@
 , azurerm_data_factory = ./azurerm_data_factory.dhall
 , azurerm_data_lake_store = ./azurerm_data_lake_store.dhall
 , azurerm_data_share_account = ./azurerm_data_share_account.dhall
+, azurerm_data_share_dataset_blob_storage =
+    ./azurerm_data_share_dataset_blob_storage.dhall
 , azurerm_data_share = ./azurerm_data_share.dhall
 , azurerm_dedicated_host = ./azurerm_dedicated_host.dhall
 , azurerm_dedicated_host_group = ./azurerm_dedicated_host_group.dhall

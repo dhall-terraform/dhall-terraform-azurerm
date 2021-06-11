@@ -145,6 +145,8 @@
 , azurerm_data_factory = ./azurerm_data_factory.dhall
 , azurerm_data_factory_integration_runtime_managed =
     ./azurerm_data_factory_integration_runtime_managed.dhall
+, azurerm_data_factory_integration_runtime_self_hosted =
+    ./azurerm_data_factory_integration_runtime_self_hosted.dhall
 , azurerm_data_factory_linked_service_data_lake_storage_gen2 =
     ./azurerm_data_factory_linked_service_data_lake_storage_gen2.dhall
 , azurerm_data_factory_linked_service_key_vault =
@@ -167,6 +169,8 @@
 , azurerm_data_lake_store_firewall_rule =
     ./azurerm_data_lake_store_firewall_rule.dhall
 , azurerm_data_share_account = ./azurerm_data_share_account.dhall
+, azurerm_data_share_dataset_blob_storage =
+    ./azurerm_data_share_dataset_blob_storage.dhall
 , azurerm_data_share = ./azurerm_data_share.dhall
 , azurerm_dedicated_host = ./azurerm_dedicated_host.dhall
 , azurerm_dedicated_host_group = ./azurerm_dedicated_host_group.dhall
@@ -199,6 +203,7 @@
 , azurerm_eventgrid_topic = ./azurerm_eventgrid_topic.dhall
 , azurerm_eventhub_authorization_rule =
     ./azurerm_eventhub_authorization_rule.dhall
+, azurerm_eventhub_cluster = ./azurerm_eventhub_cluster.dhall
 , azurerm_eventhub_consumer_group = ./azurerm_eventhub_consumer_group.dhall
 , azurerm_eventhub = ./azurerm_eventhub.dhall
 , azurerm_eventhub_namespace_authorization_rule =
@@ -306,6 +311,10 @@
 , azurerm_logic_app_workflow = ./azurerm_logic_app_workflow.dhall
 , azurerm_machine_learning_workspace =
     ./azurerm_machine_learning_workspace.dhall
+, azurerm_maintenance_assignment_dedicated_host =
+    ./azurerm_maintenance_assignment_dedicated_host.dhall
+, azurerm_maintenance_assignment_virtual_machine =
+    ./azurerm_maintenance_assignment_virtual_machine.dhall
 , azurerm_maintenance_configuration = ./azurerm_maintenance_configuration.dhall
 , azurerm_managed_application_definition =
     ./azurerm_managed_application_definition.dhall

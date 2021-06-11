@@ -1,5 +1,6 @@
 { Type =
-    { gateway_regional_url : Optional Text
+    { developer_portal_url : Optional Text
+    , gateway_regional_url : Optional Text
     , gateway_url : Optional Text
     , id : Optional Text
     , location : Text
@@ -134,7 +135,8 @@
     , virtual_network_configuration : Optional (List { subnet_id : Text })
     }
 , default =
-  { gateway_regional_url = None Text
+  { developer_portal_url = None Text
+  , gateway_regional_url = None Text
   , gateway_url = None Text
   , id = None Text
   , management_api_url = None Text

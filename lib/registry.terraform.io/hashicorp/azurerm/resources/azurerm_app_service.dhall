@@ -161,7 +161,18 @@
               , python_version : Optional Text
               , remote_debugging_enabled : Optional Bool
               , remote_debugging_version : Optional Text
+              , scm_ip_restriction :
+                  Optional
+                    ( List
+                        { action : Text
+                        , ip_address : Text
+                        , name : Text
+                        , priority : Natural
+                        , virtual_network_subnet_id : Text
+                        }
+                    )
               , scm_type : Optional Text
+              , scm_use_main_ip_restriction : Optional Bool
               , use_32_bit_worker_process : Optional Bool
               , websockets_enabled : Optional Bool
               , windows_fx_version : Optional Text
@@ -348,7 +359,18 @@
             , python_version : Optional Text
             , remote_debugging_enabled : Optional Bool
             , remote_debugging_version : Optional Text
+            , scm_ip_restriction :
+                Optional
+                  ( List
+                      { action : Text
+                      , ip_address : Text
+                      , name : Text
+                      , priority : Natural
+                      , virtual_network_subnet_id : Text
+                      }
+                  )
             , scm_type : Optional Text
+            , scm_use_main_ip_restriction : Optional Bool
             , use_32_bit_worker_process : Optional Bool
             , websockets_enabled : Optional Bool
             , windows_fx_version : Optional Text

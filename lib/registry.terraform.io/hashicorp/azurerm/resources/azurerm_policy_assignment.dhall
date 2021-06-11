@@ -1,6 +1,7 @@
 { Type =
     { description : Optional Text
     , display_name : Optional Text
+    , enforcement_mode : Optional Bool
     , id : Optional Text
     , location : Optional Text
     , name : Text
@@ -27,6 +28,7 @@
 , default =
   { description = None Text
   , display_name = None Text
+  , enforcement_mode = None Bool
   , id = None Text
   , location = None Text
   , not_scopes = None (List Text)

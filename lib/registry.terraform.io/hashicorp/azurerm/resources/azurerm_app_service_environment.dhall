@@ -8,6 +8,7 @@
     , resource_group_name : Optional Text
     , subnet_id : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , user_whitelisted_ip_ranges : Optional (List Text)
     , timeouts :
         Optional
           { create : Optional Text
@@ -24,6 +25,7 @@
   , pricing_tier = None Text
   , resource_group_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , user_whitelisted_ip_ranges = None (List Text)
   , timeouts =
       None
         { create : Optional Text

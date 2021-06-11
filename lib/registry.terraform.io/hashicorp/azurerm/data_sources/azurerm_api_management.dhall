@@ -7,6 +7,7 @@
               , public_ip_addresses : List Text
               }
           )
+    , developer_portal_url : Optional Text
     , gateway_regional_url : Optional Text
     , gateway_url : Optional Text
     , hostname_configuration :
@@ -78,6 +79,7 @@
             , public_ip_addresses : List Text
             }
         )
+  , developer_portal_url = None Text
   , gateway_regional_url = None Text
   , gateway_url = None Text
   , hostname_configuration =

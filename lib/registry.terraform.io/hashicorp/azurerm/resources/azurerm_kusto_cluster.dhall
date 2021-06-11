@@ -1,6 +1,7 @@
 { Type =
     { data_ingestion_uri : Optional Text
     , enable_disk_encryption : Optional Bool
+    , enable_purge : Optional Bool
     , enable_streaming_ingest : Optional Bool
     , id : Optional Text
     , location : Text
@@ -20,6 +21,7 @@
 , default =
   { data_ingestion_uri = None Text
   , enable_disk_encryption = None Bool
+  , enable_purge = None Bool
   , enable_streaming_ingest = None Bool
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })

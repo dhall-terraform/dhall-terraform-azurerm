@@ -46,7 +46,16 @@
               , python_version : Text
               , remote_debugging_enabled : Bool
               , remote_debugging_version : Text
+              , scm_ip_restriction :
+                  List
+                    { action : Text
+                    , ip_address : Text
+                    , name : Text
+                    , priority : Natural
+                    , virtual_network_subnet_id : Text
+                    }
               , scm_type : Text
+              , scm_use_main_ip_restriction : Bool
               , use_32_bit_worker_process : Bool
               , websockets_enabled : Bool
               , windows_fx_version : Text
@@ -101,7 +110,16 @@
             , python_version : Text
             , remote_debugging_enabled : Bool
             , remote_debugging_version : Text
+            , scm_ip_restriction :
+                List
+                  { action : Text
+                  , ip_address : Text
+                  , name : Text
+                  , priority : Natural
+                  , virtual_network_subnet_id : Text
+                  }
             , scm_type : Text
+            , scm_use_main_ip_restriction : Bool
             , use_32_bit_worker_process : Bool
             , websockets_enabled : Bool
             , windows_fx_version : Text
