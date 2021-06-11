@@ -88,6 +88,7 @@
               { always_on : Optional Bool
               , auto_swap_slot_name : Optional Text
               , ftps_state : Optional Text
+              , health_check_path : Optional Text
               , http2_enabled : Optional Bool
               , ip_restriction :
                   Optional
@@ -216,6 +217,7 @@
             { always_on : Optional Bool
             , auto_swap_slot_name : Optional Text
             , ftps_state : Optional Text
+            , health_check_path : Optional Text
             , http2_enabled : Optional Bool
             , ip_restriction :
                 Optional

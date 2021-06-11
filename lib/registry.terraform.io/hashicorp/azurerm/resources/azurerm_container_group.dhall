@@ -71,6 +71,8 @@
                     { mount_path : Text
                     , name : Text
                     , read_only : Optional Bool
+                    , secret :
+                        Optional (List { mapKey : Text, mapValue : Text })
                     , share_name : Optional Text
                     , storage_account_key : Optional Text
                     , storage_account_name : Optional Text

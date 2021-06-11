@@ -1,11 +1,9 @@
 { Type =
     { id : Optional Text
-    , location_filters : Optional (List Text)
+    , key_vault_key_id : Optional Text
     , name : Text
-    , policy_assignment_id : Text
-    , policy_definition_reference_id : Optional Text
-    , resource_discovery_mode : Optional Text
-    , scope : Text
+    , source : Text
+    , storage_account_id : Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -16,9 +14,7 @@
     }
 , default =
   { id = None Text
-  , location_filters = None (List Text)
-  , policy_definition_reference_id = None Text
-  , resource_discovery_mode = None Text
+  , key_vault_key_id = None Text
   , timeouts =
       None
         { create : Optional Text

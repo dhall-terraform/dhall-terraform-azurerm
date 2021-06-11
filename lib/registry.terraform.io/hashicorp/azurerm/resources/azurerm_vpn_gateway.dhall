@@ -12,6 +12,24 @@
               { asn : Natural
               , bgp_peering_address : Optional Text
               , peer_weight : Natural
+              , instance_0_bgp_peering_address :
+                  Optional
+                    ( List
+                        { custom_ips : List Text
+                        , default_ips : Optional (List Text)
+                        , ip_configuration_id : Optional Text
+                        , tunnel_ips : Optional (List Text)
+                        }
+                    )
+              , instance_1_bgp_peering_address :
+                  Optional
+                    ( List
+                        { custom_ips : List Text
+                        , default_ips : Optional (List Text)
+                        , ip_configuration_id : Optional Text
+                        , tunnel_ips : Optional (List Text)
+                        }
+                    )
               }
           )
     , timeouts :
@@ -32,6 +50,24 @@
             { asn : Natural
             , bgp_peering_address : Optional Text
             , peer_weight : Natural
+            , instance_0_bgp_peering_address :
+                Optional
+                  ( List
+                      { custom_ips : List Text
+                      , default_ips : Optional (List Text)
+                      , ip_configuration_id : Optional Text
+                      , tunnel_ips : Optional (List Text)
+                      }
+                  )
+            , instance_1_bgp_peering_address :
+                Optional
+                  ( List
+                      { custom_ips : List Text
+                      , default_ips : Optional (List Text)
+                      , ip_configuration_id : Optional Text
+                      , tunnel_ips : Optional (List Text)
+                      }
+                  )
             }
         )
   , timeouts =

@@ -1,6 +1,8 @@
 { Type =
     { daily_quota_gb : Optional Natural
     , id : Optional Text
+    , internet_ingestion_enabled : Optional Bool
+    , internet_query_enabled : Optional Bool
     , location : Text
     , name : Text
     , portal_url : Optional Text
@@ -22,6 +24,8 @@
 , default =
   { daily_quota_gb = None Natural
   , id = None Text
+  , internet_ingestion_enabled = None Bool
+  , internet_query_enabled = None Bool
   , portal_url = None Text
   , primary_shared_key = None Text
   , retention_in_days = None Natural

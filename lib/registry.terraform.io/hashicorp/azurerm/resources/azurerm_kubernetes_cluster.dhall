@@ -107,6 +107,8 @@
           , node_taints : Optional (List Text)
           , orchestrator_version : Optional Text
           , os_disk_size_gb : Optional Natural
+          , os_disk_type : Optional Text
+          , proximity_placement_group_id : Optional Text
           , tags : Optional (List { mapKey : Text, mapValue : Text })
           , type : Optional Text
           , vm_size : Text

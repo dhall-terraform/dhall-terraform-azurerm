@@ -1,11 +1,10 @@
 { Type =
-    { id : Optional Text
-    , location_filters : Optional (List Text)
+    { host_name : Optional Text
+    , id : Optional Text
+    , location : Text
     , name : Text
-    , policy_assignment_id : Text
-    , policy_definition_reference_id : Optional Text
-    , resource_discovery_mode : Optional Text
-    , scope : Text
+    , resource_group_name : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -15,10 +14,9 @@
           }
     }
 , default =
-  { id = None Text
-  , location_filters = None (List Text)
-  , policy_definition_reference_id = None Text
-  , resource_discovery_mode = None Text
+  { host_name = None Text
+  , id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text

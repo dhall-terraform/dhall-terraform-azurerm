@@ -1,10 +1,42 @@
 { Type =
-    { api_management_logger_id : Text
+    { always_log_errors : Optional Bool
+    , api_management_logger_id : Text
     , api_management_name : Text
     , api_name : Text
+    , http_correlation_protocol : Optional Text
     , id : Optional Text
     , identifier : Text
+    , log_client_ip : Optional Bool
     , resource_group_name : Text
+    , verbosity : Optional Text
+    , backend_request :
+        Optional
+          ( List
+              { body_bytes : Optional Natural
+              , headers_to_log : Optional (List Text)
+              }
+          )
+    , backend_response :
+        Optional
+          ( List
+              { body_bytes : Optional Natural
+              , headers_to_log : Optional (List Text)
+              }
+          )
+    , frontend_request :
+        Optional
+          ( List
+              { body_bytes : Optional Natural
+              , headers_to_log : Optional (List Text)
+              }
+          )
+    , frontend_response :
+        Optional
+          ( List
+              { body_bytes : Optional Natural
+              , headers_to_log : Optional (List Text)
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -14,7 +46,39 @@
           }
     }
 , default =
-  { id = None Text
+  { always_log_errors = None Bool
+  , http_correlation_protocol = None Text
+  , id = None Text
+  , log_client_ip = None Bool
+  , verbosity = None Text
+  , backend_request =
+      None
+        ( List
+            { body_bytes : Optional Natural
+            , headers_to_log : Optional (List Text)
+            }
+        )
+  , backend_response =
+      None
+        ( List
+            { body_bytes : Optional Natural
+            , headers_to_log : Optional (List Text)
+            }
+        )
+  , frontend_request =
+      None
+        ( List
+            { body_bytes : Optional Natural
+            , headers_to_log : Optional (List Text)
+            }
+        )
+  , frontend_response =
+      None
+        ( List
+            { body_bytes : Optional Natural
+            , headers_to_log : Optional (List Text)
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

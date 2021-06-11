@@ -12,6 +12,20 @@
     , secondary_peer_address_prefix : Text
     , shared_key : Optional Text
     , vlan_id : Natural
+    , ipv6 :
+        Optional
+          ( List
+              { primary_peer_address_prefix : Text
+              , route_filter_id : Optional Text
+              , secondary_peer_address_prefix : Text
+              , microsoft_peering :
+                  List
+                    { advertised_public_prefixes : Optional (List Text)
+                    , customer_asn : Optional Natural
+                    , routing_registry_name : Optional Text
+                    }
+              }
+          )
     , microsoft_peering_config :
         Optional
           ( List
@@ -36,6 +50,20 @@
   , route_filter_id = None Text
   , secondary_azure_port = None Text
   , shared_key = None Text
+  , ipv6 =
+      None
+        ( List
+            { primary_peer_address_prefix : Text
+            , route_filter_id : Optional Text
+            , secondary_peer_address_prefix : Text
+            , microsoft_peering :
+                List
+                  { advertised_public_prefixes : Optional (List Text)
+                  , customer_asn : Optional Natural
+                  , routing_registry_name : Optional Text
+                  }
+            }
+        )
   , microsoft_peering_config =
       None
         ( List

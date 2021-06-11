@@ -1,7 +1,6 @@
 { Type =
-    { id : Optional Text
-    , identity :
-        Optional (List { principal_id : Text, tenant_id : Text, type : Text })
+    { host_name : Optional Text
+    , id : Optional Text
     , location : Optional Text
     , name : Text
     , resource_group_name : Text
@@ -9,9 +8,8 @@
     , timeouts : Optional { read : Optional Text }
     }
 , default =
-  { id = None Text
-  , identity =
-      None (List { principal_id : Text, tenant_id : Text, type : Text })
+  { host_name = None Text
+  , id = None Text
   , location = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts = None { read : Optional Text }

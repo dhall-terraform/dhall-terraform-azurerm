@@ -35,6 +35,7 @@
     , id : Optional Text
     , location : Optional Text
     , name : Text
+    , outbound_public_ip_addresses : Optional (List Text)
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts : Optional { read : Optional Text }
@@ -74,6 +75,7 @@
         )
   , id = None Text
   , location = None Text
+  , outbound_public_ip_addresses = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts = None { read : Optional Text }
   }

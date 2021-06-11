@@ -1,10 +1,12 @@
 { Type =
     { authorization_key : Optional Text
     , connection_protocol : Optional Text
+    , dpd_timeout_seconds : Optional Natural
     , enable_bgp : Optional Bool
     , express_route_circuit_id : Optional Text
     , express_route_gateway_bypass : Optional Bool
     , id : Optional Text
+    , local_azure_ip_address_enabled : Optional Bool
     , local_network_gateway_id : Optional Text
     , location : Text
     , name : Text
@@ -47,10 +49,12 @@
 , default =
   { authorization_key = None Text
   , connection_protocol = None Text
+  , dpd_timeout_seconds = None Natural
   , enable_bgp = None Bool
   , express_route_circuit_id = None Text
   , express_route_gateway_bypass = None Bool
   , id = None Text
+  , local_azure_ip_address_enabled = None Bool
   , local_network_gateway_id = None Text
   , peer_virtual_network_gateway_id = None Text
   , routing_weight = None Natural

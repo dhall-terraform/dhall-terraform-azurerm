@@ -6,6 +6,21 @@
     , number_of_record_sets : Optional Natural
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , soa_record :
+        Optional
+          ( List
+              { email : Text
+              , expire_time : Optional Natural
+              , fqdn : Optional Text
+              , host_name : Text
+              , minimum_ttl : Optional Natural
+              , refresh_time : Optional Natural
+              , retry_time : Optional Natural
+              , serial_number : Optional Natural
+              , tags : Optional (List { mapKey : Text, mapValue : Text })
+              , ttl : Optional Natural
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -20,6 +35,21 @@
   , name_servers = None (List Text)
   , number_of_record_sets = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , soa_record =
+      None
+        ( List
+            { email : Text
+            , expire_time : Optional Natural
+            , fqdn : Optional Text
+            , host_name : Text
+            , minimum_ttl : Optional Natural
+            , refresh_time : Optional Natural
+            , retry_time : Optional Natural
+            , serial_number : Optional Natural
+            , tags : Optional (List { mapKey : Text, mapValue : Text })
+            , ttl : Optional Natural
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

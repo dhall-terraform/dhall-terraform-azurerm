@@ -1,6 +1,7 @@
 { Type =
     { authorization_key : Optional Text
     , connection_protocol : Optional Text
+    , dpd_timeout_seconds : Optional Natural
     , egress_bytes_transferred : Optional Natural
     , enable_bgp : Optional Bool
     , express_route_circuit_id : Optional Text
@@ -20,6 +21,7 @@
               , sa_lifetime : Natural
               }
           )
+    , local_azure_ip_address_enabled : Optional Bool
     , local_network_gateway_id : Optional Text
     , location : Optional Text
     , name : Text
@@ -44,6 +46,7 @@
 , default =
   { authorization_key = None Text
   , connection_protocol = None Text
+  , dpd_timeout_seconds = None Natural
   , egress_bytes_transferred = None Natural
   , enable_bgp = None Bool
   , express_route_circuit_id = None Text
@@ -63,6 +66,7 @@
             , sa_lifetime : Natural
             }
         )
+  , local_azure_ip_address_enabled = None Bool
   , local_network_gateway_id = None Text
   , location = None Text
   , peer_virtual_network_gateway_id = None Text

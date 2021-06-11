@@ -5,6 +5,7 @@
     , client_cert_enabled : Optional Bool
     , connection_string :
         Optional (List { name : Text, type : Text, value : Text })
+    , custom_domain_verification_id : Optional Text
     , default_site_hostname : Optional Text
     , enabled : Optional Bool
     , https_only : Optional Bool
@@ -83,6 +84,7 @@
   , client_affinity_enabled = None Bool
   , client_cert_enabled = None Bool
   , connection_string = None (List { name : Text, type : Text, value : Text })
+  , custom_domain_verification_id = None Text
   , default_site_hostname = None Text
   , enabled = None Bool
   , https_only = None Bool

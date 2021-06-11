@@ -1,5 +1,6 @@
 { Type =
-    { id : Optional Text
+    { dns_servers : Optional (List Text)
+    , id : Optional Text
     , location : Text
     , name : Text
     , resource_group_name : Text
@@ -10,6 +11,17 @@
     , connection_configuration :
         List
           { name : Text
+          , route :
+              Optional
+                ( List
+                    { associated_route_table_id : Text
+                    , propagated_route_table :
+                        Optional
+                          ( List
+                              { ids : List Text, labels : Optional (List Text) }
+                          )
+                    }
+                )
           , vpn_client_address_pool : List { address_prefixes : List Text }
           }
     , timeouts :
@@ -21,7 +33,8 @@
           }
     }
 , default =
-  { id = None Text
+  { dns_servers = None (List Text)
+  , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None

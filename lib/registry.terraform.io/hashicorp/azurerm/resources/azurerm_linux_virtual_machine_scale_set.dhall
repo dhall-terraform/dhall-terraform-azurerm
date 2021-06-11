@@ -14,6 +14,7 @@
     , max_bid_price : Optional Natural
     , name : Text
     , overprovision : Optional Bool
+    , platform_fault_domain_count : Optional Natural
     , priority : Optional Text
     , provision_vm_agent : Optional Bool
     , proximity_placement_group_id : Optional Text
@@ -39,13 +40,15 @@
               , enable_automatic_os_upgrade : Bool
               }
           )
-    , boot_diagnostics : Optional (List { storage_account_uri : Text })
+    , boot_diagnostics : Optional (List { storage_account_uri : Optional Text })
     , data_disk :
         Optional
           ( List
               { caching : Text
               , create_option : Optional Text
               , disk_encryption_set_id : Optional Text
+              , disk_iops_read_write : Optional Natural
+              , disk_mbps_read_write : Optional Natural
               , disk_size_gb : Natural
               , lun : Natural
               , storage_account_type : Text
@@ -152,6 +155,7 @@
   , id = None Text
   , max_bid_price = None Natural
   , overprovision = None Bool
+  , platform_fault_domain_count = None Natural
   , priority = None Text
   , provision_vm_agent = None Bool
   , proximity_placement_group_id = None Text
@@ -174,13 +178,15 @@
             , enable_automatic_os_upgrade : Bool
             }
         )
-  , boot_diagnostics = None (List { storage_account_uri : Text })
+  , boot_diagnostics = None (List { storage_account_uri : Optional Text })
   , data_disk =
       None
         ( List
             { caching : Text
             , create_option : Optional Text
             , disk_encryption_set_id : Optional Text
+            , disk_iops_read_write : Optional Natural
+            , disk_mbps_read_write : Optional Natural
             , disk_size_gb : Natural
             , lun : Natural
             , storage_account_type : Text

@@ -25,6 +25,18 @@
               , sa_lifetime_seconds : Natural
               }
           )
+    , radius :
+        Optional
+          ( List
+              { client_root_certificate :
+                  Optional (List { name : Text, thumbprint : Text })
+              , server :
+                  Optional
+                    (List { address : Text, score : Natural, secret : Text })
+              , server_root_certificate :
+                  List { name : Text, public_cert_data : Text }
+              }
+          )
     , radius_server :
         Optional
           ( List
@@ -64,6 +76,18 @@
             , pfs_group : Text
             , sa_data_size_kilobytes : Natural
             , sa_lifetime_seconds : Natural
+            }
+        )
+  , radius =
+      None
+        ( List
+            { client_root_certificate :
+                Optional (List { name : Text, thumbprint : Text })
+            , server :
+                Optional
+                  (List { address : Text, score : Natural, secret : Text })
+            , server_root_certificate :
+                List { name : Text, public_cert_data : Text }
             }
         )
   , radius_server =

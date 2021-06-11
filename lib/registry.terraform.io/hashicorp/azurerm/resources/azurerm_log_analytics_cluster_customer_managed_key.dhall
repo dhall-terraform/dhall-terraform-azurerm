@@ -1,11 +1,7 @@
 { Type =
     { id : Optional Text
-    , location_filters : Optional (List Text)
-    , name : Text
-    , policy_assignment_id : Text
-    , policy_definition_reference_id : Optional Text
-    , resource_discovery_mode : Optional Text
-    , scope : Text
+    , key_vault_key_id : Text
+    , log_analytics_cluster_id : Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -16,9 +12,6 @@
     }
 , default =
   { id = None Text
-  , location_filters = None (List Text)
-  , policy_definition_reference_id = None Text
-  , resource_discovery_mode = None Text
   , timeouts =
       None
         { create : Optional Text

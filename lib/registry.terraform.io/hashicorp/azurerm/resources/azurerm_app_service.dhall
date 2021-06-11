@@ -3,6 +3,7 @@
     , app_settings : Optional (List { mapKey : Text, mapValue : Text })
     , client_affinity_enabled : Optional Bool
     , client_cert_enabled : Optional Bool
+    , custom_domain_verification_id : Optional Text
     , default_site_hostname : Optional Text
     , enabled : Optional Bool
     , https_only : Optional Bool
@@ -220,6 +221,7 @@
   { app_settings = None (List { mapKey : Text, mapValue : Text })
   , client_affinity_enabled = None Bool
   , client_cert_enabled = None Bool
+  , custom_domain_verification_id = None Text
   , default_site_hostname = None Text
   , enabled = None Bool
   , https_only = None Bool

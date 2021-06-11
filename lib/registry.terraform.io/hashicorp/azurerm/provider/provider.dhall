@@ -30,7 +30,12 @@
           , template_deployment :
               Optional (List { delete_nested_items_during_deletion : Bool })
           , virtual_machine :
-              Optional (List { delete_os_disk_on_deletion : Bool })
+              Optional
+                ( List
+                    { delete_os_disk_on_deletion : Optional Bool
+                    , graceful_shutdown : Optional Bool
+                    }
+                )
           , virtual_machine_scale_set :
               Optional (List { roll_instances_when_required : Bool })
           }

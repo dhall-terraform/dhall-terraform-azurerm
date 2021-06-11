@@ -53,11 +53,14 @@
     ./azurerm_data_share_dataset_data_lake_gen2.dhall
 , azurerm_data_share_dataset_kusto_cluster =
     ./azurerm_data_share_dataset_kusto_cluster.dhall
+, azurerm_data_share_dataset_kusto_database =
+    ./azurerm_data_share_dataset_kusto_database.dhall
 , azurerm_data_share = ./azurerm_data_share.dhall
 , azurerm_dedicated_host = ./azurerm_dedicated_host.dhall
 , azurerm_dedicated_host_group = ./azurerm_dedicated_host_group.dhall
 , azurerm_dev_test_lab = ./azurerm_dev_test_lab.dhall
 , azurerm_dev_test_virtual_network = ./azurerm_dev_test_virtual_network.dhall
+, azurerm_digital_twins_instance = ./azurerm_digital_twins_instance.dhall
 , azurerm_disk_encryption_set = ./azurerm_disk_encryption_set.dhall
 , azurerm_dns_zone = ./azurerm_dns_zone.dhall
 , azurerm_eventgrid_topic = ./azurerm_eventgrid_topic.dhall
@@ -165,6 +168,7 @@
 , azurerm_servicebus_namespace = ./azurerm_servicebus_namespace.dhall
 , azurerm_servicebus_queue_authorization_rule =
     ./azurerm_servicebus_queue_authorization_rule.dhall
+, azurerm_servicebus_subscription = ./azurerm_servicebus_subscription.dhall
 , azurerm_servicebus_topic_authorization_rule =
     ./azurerm_servicebus_topic_authorization_rule.dhall
 , azurerm_shared_image = ./azurerm_shared_image.dhall
@@ -181,6 +185,7 @@
 , azurerm_storage_account = ./azurerm_storage_account.dhall
 , azurerm_storage_account_sas = ./azurerm_storage_account_sas.dhall
 , azurerm_storage_container = ./azurerm_storage_container.dhall
+, azurerm_storage_encryption_scope = ./azurerm_storage_encryption_scope.dhall
 , azurerm_storage_management_policy = ./azurerm_storage_management_policy.dhall
 , azurerm_storage_sync = ./azurerm_storage_sync.dhall
 , azurerm_storage_sync_group = ./azurerm_storage_sync_group.dhall
@@ -191,6 +196,7 @@
 , azurerm_synapse_workspace = ./azurerm_synapse_workspace.dhall
 , azurerm_traffic_manager_geographical_location =
     ./azurerm_traffic_manager_geographical_location.dhall
+, azurerm_traffic_manager_profile = ./azurerm_traffic_manager_profile.dhall
 , azurerm_user_assigned_identity = ./azurerm_user_assigned_identity.dhall
 , azurerm_virtual_hub = ./azurerm_virtual_hub.dhall
 , azurerm_virtual_machine = ./azurerm_virtual_machine.dhall
@@ -199,6 +205,7 @@
 , azurerm_virtual_network_gateway_connection =
     ./azurerm_virtual_network_gateway_connection.dhall
 , azurerm_virtual_network_gateway = ./azurerm_virtual_network_gateway.dhall
+, azurerm_virtual_wan = ./azurerm_virtual_wan.dhall
 , azurerm_web_application_firewall_policy =
     ./azurerm_web_application_firewall_policy.dhall
 }

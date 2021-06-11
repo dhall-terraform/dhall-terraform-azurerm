@@ -18,6 +18,7 @@
     , id : Optional Text
     , ip_range_filter : Optional Text
     , is_virtual_network_filter_enabled : Optional Bool
+    , key_vault_key_id : Optional Text
     , kind : Optional Text
     , location : Optional Text
     , name : Text
@@ -56,6 +57,7 @@
   , id = None Text
   , ip_range_filter = None Text
   , is_virtual_network_filter_enabled = None Bool
+  , key_vault_key_id = None Text
   , kind = None Text
   , location = None Text
   , offer_type = None Text

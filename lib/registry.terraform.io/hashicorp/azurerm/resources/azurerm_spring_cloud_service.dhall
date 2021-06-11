@@ -2,6 +2,7 @@
     { id : Optional Text
     , location : Text
     , name : Text
+    , outbound_public_ip_addresses : Optional (List Text)
     , resource_group_name : Text
     , sku_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -67,6 +68,7 @@
     }
 , default =
   { id = None Text
+  , outbound_public_ip_addresses = None (List Text)
   , sku_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , config_server_git_setting =

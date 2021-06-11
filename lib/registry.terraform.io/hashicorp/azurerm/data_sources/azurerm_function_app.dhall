@@ -3,6 +3,7 @@
     , app_settings : Optional (List { mapKey : Text, mapValue : Text })
     , connection_string :
         Optional (List { name : Text, type : Text, value : Text })
+    , custom_domain_verification_id : Optional Text
     , default_hostname : Optional Text
     , enabled : Optional Bool
     , id : Optional Text
@@ -23,6 +24,7 @@
                   List
                     { allowed_origins : List Text, support_credentials : Bool }
               , ftps_state : Text
+              , health_check_path : Text
               , http2_enabled : Bool
               , ip_restriction :
                   List
@@ -69,6 +71,7 @@
   { app_service_plan_id = None Text
   , app_settings = None (List { mapKey : Text, mapValue : Text })
   , connection_string = None (List { name : Text, type : Text, value : Text })
+  , custom_domain_verification_id = None Text
   , default_hostname = None Text
   , enabled = None Bool
   , id = None Text
@@ -86,6 +89,7 @@
             , cors :
                 List { allowed_origins : List Text, support_credentials : Bool }
             , ftps_state : Text
+            , health_check_path : Text
             , http2_enabled : Bool
             , ip_restriction :
                 List

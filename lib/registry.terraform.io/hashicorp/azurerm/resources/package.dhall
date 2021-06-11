@@ -17,6 +17,8 @@
 , azurerm_api_management_backend = ./azurerm_api_management_backend.dhall
 , azurerm_api_management_certificate =
     ./azurerm_api_management_certificate.dhall
+, azurerm_api_management_custom_domain =
+    ./azurerm_api_management_custom_domain.dhall
 , azurerm_api_management = ./azurerm_api_management.dhall
 , azurerm_api_management_diagnostic = ./azurerm_api_management_diagnostic.dhall
 , azurerm_api_management_group = ./azurerm_api_management_group.dhall
@@ -68,6 +70,8 @@
 , azurerm_app_service_environment = ./azurerm_app_service_environment.dhall
 , azurerm_app_service_hybrid_connection =
     ./azurerm_app_service_hybrid_connection.dhall
+, azurerm_app_service_managed_certificate =
+    ./azurerm_app_service_managed_certificate.dhall
 , azurerm_app_service_plan = ./azurerm_app_service_plan.dhall
 , azurerm_app_service_slot = ./azurerm_app_service_slot.dhall
 , azurerm_app_service_slot_virtual_network_swift_connection =
@@ -213,6 +217,8 @@
     ./azurerm_data_share_dataset_data_lake_gen2.dhall
 , azurerm_data_share_dataset_kusto_cluster =
     ./azurerm_data_share_dataset_kusto_cluster.dhall
+, azurerm_data_share_dataset_kusto_database =
+    ./azurerm_data_share_dataset_kusto_database.dhall
 , azurerm_data_share = ./azurerm_data_share.dhall
 , azurerm_dedicated_hardware_security_module =
     ./azurerm_dedicated_hardware_security_module.dhall
@@ -229,6 +235,7 @@
 , azurerm_dev_test_virtual_network = ./azurerm_dev_test_virtual_network.dhall
 , azurerm_dev_test_windows_virtual_machine =
     ./azurerm_dev_test_windows_virtual_machine.dhall
+, azurerm_digital_twins_instance = ./azurerm_digital_twins_instance.dhall
 , azurerm_disk_encryption_set = ./azurerm_disk_encryption_set.dhall
 , azurerm_dns_aaaa_record = ./azurerm_dns_aaaa_record.dhall
 , azurerm_dns_a_record = ./azurerm_dns_a_record.dhall
@@ -356,6 +363,9 @@
 , azurerm_linux_virtual_machine_scale_set =
     ./azurerm_linux_virtual_machine_scale_set.dhall
 , azurerm_local_network_gateway = ./azurerm_local_network_gateway.dhall
+, azurerm_log_analytics_cluster_customer_managed_key =
+    ./azurerm_log_analytics_cluster_customer_managed_key.dhall
+, azurerm_log_analytics_cluster = ./azurerm_log_analytics_cluster.dhall
 , azurerm_log_analytics_data_export_rule =
     ./azurerm_log_analytics_data_export_rule.dhall
 , azurerm_log_analytics_datasource_windows_event =
@@ -369,6 +379,8 @@
 , azurerm_log_analytics_saved_search =
     ./azurerm_log_analytics_saved_search.dhall
 , azurerm_log_analytics_solution = ./azurerm_log_analytics_solution.dhall
+, azurerm_log_analytics_storage_insights =
+    ./azurerm_log_analytics_storage_insights.dhall
 , azurerm_log_analytics_workspace = ./azurerm_log_analytics_workspace.dhall
 , azurerm_logic_app_action_custom = ./azurerm_logic_app_action_custom.dhall
 , azurerm_logic_app_action_http = ./azurerm_logic_app_action_http.dhall
@@ -418,6 +430,8 @@
     ./azurerm_monitor_scheduled_query_rules_alert.dhall
 , azurerm_monitor_scheduled_query_rules_log =
     ./azurerm_monitor_scheduled_query_rules_log.dhall
+, azurerm_monitor_smart_detector_alert_rule =
+    ./azurerm_monitor_smart_detector_alert_rule.dhall
 , azurerm_mssql_database = ./azurerm_mssql_database.dhall
 , azurerm_mssql_database_extended_auditing_policy =
     ./azurerm_mssql_database_extended_auditing_policy.dhall
@@ -522,6 +536,8 @@
 , azurerm_route_filter = ./azurerm_route_filter.dhall
 , azurerm_route_table = ./azurerm_route_table.dhall
 , azurerm_search_service = ./azurerm_search_service.dhall
+, azurerm_security_center_automation =
+    ./azurerm_security_center_automation.dhall
 , azurerm_security_center_auto_provisioning =
     ./azurerm_security_center_auto_provisioning.dhall
 , azurerm_security_center_contact = ./azurerm_security_center_contact.dhall
@@ -593,6 +609,9 @@
 , azurerm_storage_container = ./azurerm_storage_container.dhall
 , azurerm_storage_data_lake_gen2_filesystem =
     ./azurerm_storage_data_lake_gen2_filesystem.dhall
+, azurerm_storage_data_lake_gen2_path =
+    ./azurerm_storage_data_lake_gen2_path.dhall
+, azurerm_storage_encryption_scope = ./azurerm_storage_encryption_scope.dhall
 , azurerm_storage_management_policy = ./azurerm_storage_management_policy.dhall
 , azurerm_storage_queue = ./azurerm_storage_queue.dhall
 , azurerm_storage_share = ./azurerm_storage_share.dhall
@@ -646,10 +665,14 @@
 , azurerm_virtual_desktop_workspace_application_group_association =
     ./azurerm_virtual_desktop_workspace_application_group_association.dhall
 , azurerm_virtual_desktop_workspace = ./azurerm_virtual_desktop_workspace.dhall
+, azurerm_virtual_hub_bgp_connection =
+    ./azurerm_virtual_hub_bgp_connection.dhall
 , azurerm_virtual_hub_connection = ./azurerm_virtual_hub_connection.dhall
 , azurerm_virtual_hub = ./azurerm_virtual_hub.dhall
 , azurerm_virtual_hub_ip = ./azurerm_virtual_hub_ip.dhall
 , azurerm_virtual_hub_route_table = ./azurerm_virtual_hub_route_table.dhall
+, azurerm_virtual_hub_security_partner_provider =
+    ./azurerm_virtual_hub_security_partner_provider.dhall
 , azurerm_virtual_machine_data_disk_attachment =
     ./azurerm_virtual_machine_data_disk_attachment.dhall
 , azurerm_virtual_machine = ./azurerm_virtual_machine.dhall
@@ -663,6 +686,7 @@
 , azurerm_virtual_network_gateway = ./azurerm_virtual_network_gateway.dhall
 , azurerm_virtual_network_peering = ./azurerm_virtual_network_peering.dhall
 , azurerm_virtual_wan = ./azurerm_virtual_wan.dhall
+, azurerm_vpn_gateway_connection = ./azurerm_vpn_gateway_connection.dhall
 , azurerm_vpn_gateway = ./azurerm_vpn_gateway.dhall
 , azurerm_vpn_server_configuration = ./azurerm_vpn_server_configuration.dhall
 , azurerm_vpn_site = ./azurerm_vpn_site.dhall

@@ -5,6 +5,7 @@
           ( List
               { asn : Natural, peer_weight : Natural, peering_address : Text }
           )
+    , custom_route : Optional (List { address_prefixes : List Text })
     , default_local_network_gateway_id : Optional Text
     , enable_bgp : Optional Bool
     , generation : Optional Text
@@ -20,6 +21,7 @@
           )
     , location : Optional Text
     , name : Text
+    , private_ip_address_enabled : Optional Bool
     , resource_group_name : Text
     , sku : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -46,6 +48,7 @@
   , bgp_settings =
       None
         (List { asn : Natural, peer_weight : Natural, peering_address : Text })
+  , custom_route = None (List { address_prefixes : List Text })
   , default_local_network_gateway_id = None Text
   , enable_bgp = None Bool
   , generation = None Text
@@ -60,6 +63,7 @@
             }
         )
   , location = None Text
+  , private_ip_address_enabled = None Bool
   , sku = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , type = None Text

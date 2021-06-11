@@ -9,12 +9,14 @@
     , enable_automatic_updates : Optional Bool
     , encryption_at_host_enabled : Optional Bool
     , eviction_policy : Optional Text
+    , extensions_time_budget : Optional Text
     , id : Optional Text
     , license_type : Optional Text
     , location : Text
     , max_bid_price : Optional Natural
     , name : Text
     , network_interface_ids : List Text
+    , patch_mode : Optional Text
     , priority : Optional Text
     , private_ip_address : Optional Text
     , private_ip_addresses : Optional (List Text)
@@ -34,7 +36,7 @@
         Optional (List { ultra_ssd_enabled : Optional Bool })
     , additional_unattend_content :
         Optional (List { content : Text, setting : Text })
-    , boot_diagnostics : Optional (List { storage_account_uri : Text })
+    , boot_diagnostics : Optional (List { storage_account_uri : Optional Text })
     , identity :
         Optional
           ( List
@@ -84,9 +86,11 @@
   , enable_automatic_updates = None Bool
   , encryption_at_host_enabled = None Bool
   , eviction_policy = None Text
+  , extensions_time_budget = None Text
   , id = None Text
   , license_type = None Text
   , max_bid_price = None Natural
+  , patch_mode = None Text
   , priority = None Text
   , private_ip_address = None Text
   , private_ip_addresses = None (List Text)
@@ -102,7 +106,7 @@
   , zone = None Text
   , additional_capabilities = None (List { ultra_ssd_enabled : Optional Bool })
   , additional_unattend_content = None (List { content : Text, setting : Text })
-  , boot_diagnostics = None (List { storage_account_uri : Text })
+  , boot_diagnostics = None (List { storage_account_uri : Optional Text })
   , identity =
       None
         ( List

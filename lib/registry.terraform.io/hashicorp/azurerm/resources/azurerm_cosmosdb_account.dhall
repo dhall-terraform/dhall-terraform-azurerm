@@ -7,6 +7,7 @@
     , id : Optional Text
     , ip_range_filter : Optional Text
     , is_virtual_network_filter_enabled : Optional Bool
+    , key_vault_key_id : Optional Text
     , kind : Optional Text
     , location : Text
     , name : Text
@@ -15,6 +16,7 @@
     , primary_master_key : Optional Text
     , primary_readonly_key : Optional Text
     , primary_readonly_master_key : Optional Text
+    , public_network_access_enabled : Optional Bool
     , read_endpoints : Optional (List Text)
     , resource_group_name : Text
     , secondary_key : Optional Text
@@ -62,11 +64,13 @@
   , id = None Text
   , ip_range_filter = None Text
   , is_virtual_network_filter_enabled = None Bool
+  , key_vault_key_id = None Text
   , kind = None Text
   , primary_key = None Text
   , primary_master_key = None Text
   , primary_readonly_key = None Text
   , primary_readonly_master_key = None Text
+  , public_network_access_enabled = None Bool
   , read_endpoints = None (List Text)
   , secondary_key = None Text
   , secondary_master_key = None Text

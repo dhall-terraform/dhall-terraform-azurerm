@@ -6,6 +6,7 @@
     , id : Optional Text
     , location : Text
     , name : Text
+    , private_ip_address_enabled : Optional Bool
     , resource_group_name : Text
     , sku : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -19,6 +20,7 @@
               , peering_address : Optional Text
               }
           )
+    , custom_route : Optional (List { address_prefixes : Optional (List Text) })
     , ip_configuration :
         List
           { name : Optional Text
@@ -56,6 +58,7 @@
   , enable_bgp = None Bool
   , generation = None Text
   , id = None Text
+  , private_ip_address_enabled = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
   , vpn_type = None Text
   , bgp_settings =
@@ -66,6 +69,7 @@
             , peering_address : Optional Text
             }
         )
+  , custom_route = None (List { address_prefixes : Optional (List Text) })
   , timeouts =
       None
         { create : Optional Text

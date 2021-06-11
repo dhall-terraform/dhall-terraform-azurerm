@@ -1,11 +1,11 @@
 { Type =
     { id : Optional Text
-    , location_filters : Optional (List Text)
+    , location : Text
     , name : Text
-    , policy_assignment_id : Text
-    , policy_definition_reference_id : Optional Text
-    , resource_discovery_mode : Optional Text
-    , scope : Text
+    , resource_group_name : Text
+    , security_provider_name : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , virtual_hub_id : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -16,9 +16,8 @@
     }
 , default =
   { id = None Text
-  , location_filters = None (List Text)
-  , policy_definition_reference_id = None Text
-  , resource_discovery_mode = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
+  , virtual_hub_id = None Text
   , timeouts =
       None
         { create : Optional Text

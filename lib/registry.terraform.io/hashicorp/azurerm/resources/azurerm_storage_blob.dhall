@@ -1,5 +1,6 @@
 { Type =
     { access_tier : Optional Text
+    , content_md5 : Optional Text
     , content_type : Optional Text
     , id : Optional Text
     , metadata : Optional (List { mapKey : Text, mapValue : Text })
@@ -23,6 +24,7 @@
     }
 , default =
   { access_tier = None Text
+  , content_md5 = None Text
   , content_type = None Text
   , id = None Text
   , metadata = None (List { mapKey : Text, mapValue : Text })

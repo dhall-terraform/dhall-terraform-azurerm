@@ -9,6 +9,7 @@
     , disable_password_authentication : Optional Bool
     , encryption_at_host_enabled : Optional Bool
     , eviction_policy : Optional Text
+    , extensions_time_budget : Optional Text
     , id : Optional Text
     , location : Text
     , max_bid_price : Optional Natural
@@ -31,7 +32,7 @@
     , additional_capabilities :
         Optional (List { ultra_ssd_enabled : Optional Bool })
     , admin_ssh_key : Optional (List { public_key : Text, username : Text })
-    , boot_diagnostics : Optional (List { storage_account_uri : Text })
+    , boot_diagnostics : Optional (List { storage_account_uri : Optional Text })
     , identity :
         Optional
           ( List
@@ -76,6 +77,7 @@
   , disable_password_authentication = None Bool
   , encryption_at_host_enabled = None Bool
   , eviction_policy = None Text
+  , extensions_time_budget = None Text
   , id = None Text
   , max_bid_price = None Natural
   , priority = None Text
@@ -92,7 +94,7 @@
   , zone = None Text
   , additional_capabilities = None (List { ultra_ssd_enabled : Optional Bool })
   , admin_ssh_key = None (List { public_key : Text, username : Text })
-  , boot_diagnostics = None (List { storage_account_uri : Text })
+  , boot_diagnostics = None (List { storage_account_uri : Optional Text })
   , identity =
       None
         ( List

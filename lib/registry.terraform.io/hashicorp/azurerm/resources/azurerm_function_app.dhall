@@ -2,6 +2,7 @@
     { app_service_plan_id : Text
     , app_settings : Optional (List { mapKey : Text, mapValue : Text })
     , client_affinity_enabled : Optional Bool
+    , custom_domain_verification_id : Optional Text
     , daily_memory_time_quota : Optional Natural
     , default_hostname : Optional Text
     , enable_builtin_logging : Optional Bool
@@ -88,6 +89,7 @@
               { always_on : Optional Bool
               , auto_swap_slot_name : Optional Text
               , ftps_state : Optional Text
+              , health_check_path : Optional Text
               , http2_enabled : Optional Bool
               , ip_restriction :
                   Optional
@@ -148,6 +150,7 @@
 , default =
   { app_settings = None (List { mapKey : Text, mapValue : Text })
   , client_affinity_enabled = None Bool
+  , custom_domain_verification_id = None Text
   , daily_memory_time_quota = None Natural
   , default_hostname = None Text
   , enable_builtin_logging = None Bool
@@ -229,6 +232,7 @@
             { always_on : Optional Bool
             , auto_swap_slot_name : Optional Text
             , ftps_state : Optional Text
+            , health_check_path : Optional Text
             , http2_enabled : Optional Bool
             , ip_restriction :
                 Optional
