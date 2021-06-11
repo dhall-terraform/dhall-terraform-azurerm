@@ -14,6 +14,7 @@
               , storage_endpoint : Text
               }
           )
+    , geo_backup_enabled : Optional Bool
     , id : Optional Text
     , license_type : Optional Text
     , max_size_gb : Optional Natural
@@ -77,6 +78,7 @@
             , storage_endpoint : Text
             }
         )
+  , geo_backup_enabled = None Bool
   , id = None Text
   , license_type = None Text
   , max_size_gb = None Natural

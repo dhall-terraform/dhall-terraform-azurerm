@@ -226,6 +226,7 @@
                     , backend_address_pool_name : Optional Text
                     , backend_http_settings_id : Optional Text
                     , backend_http_settings_name : Optional Text
+                    , firewall_policy_id : Optional Text
                     , id : Optional Text
                     , name : Text
                     , paths : List Text
@@ -405,6 +406,7 @@
                   , backend_address_pool_name : Optional Text
                   , backend_http_settings_id : Optional Text
                   , backend_http_settings_name : Optional Text
+                  , firewall_policy_id : Optional Text
                   , id : Optional Text
                   , name : Text
                   , paths : List Text

@@ -194,6 +194,8 @@
     ./azurerm_data_factory_integration_runtime_self_hosted.dhall
 , azurerm_data_factory_linked_service_azure_blob_storage =
     ./azurerm_data_factory_linked_service_azure_blob_storage.dhall
+, azurerm_data_factory_linked_service_azure_databricks =
+    ./azurerm_data_factory_linked_service_azure_databricks.dhall
 , azurerm_data_factory_linked_service_azure_file_storage =
     ./azurerm_data_factory_linked_service_azure_file_storage.dhall
 , azurerm_data_factory_linked_service_azure_function =
@@ -233,6 +235,8 @@
 , azurerm_data_lake_store_file = ./azurerm_data_lake_store_file.dhall
 , azurerm_data_lake_store_firewall_rule =
     ./azurerm_data_lake_store_firewall_rule.dhall
+, azurerm_data_lake_store_virtual_network_rule =
+    ./azurerm_data_lake_store_virtual_network_rule.dhall
 , azurerm_data_share_account = ./azurerm_data_share_account.dhall
 , azurerm_data_share_dataset_blob_storage =
     ./azurerm_data_share_dataset_blob_storage.dhall
@@ -468,6 +472,7 @@
 , azurerm_media_content_key_policy = ./azurerm_media_content_key_policy.dhall
 , azurerm_media_job = ./azurerm_media_job.dhall
 , azurerm_media_live_event = ./azurerm_media_live_event.dhall
+, azurerm_media_live_event_output = ./azurerm_media_live_event_output.dhall
 , azurerm_media_services_account = ./azurerm_media_services_account.dhall
 , azurerm_media_streaming_endpoint = ./azurerm_media_streaming_endpoint.dhall
 , azurerm_media_streaming_locator = ./azurerm_media_streaming_locator.dhall
@@ -683,6 +688,8 @@
 , azurerm_spring_cloud_active_deployment =
     ./azurerm_spring_cloud_active_deployment.dhall
 , azurerm_spring_cloud_app = ./azurerm_spring_cloud_app.dhall
+, azurerm_spring_cloud_app_mysql_association =
+    ./azurerm_spring_cloud_app_mysql_association.dhall
 , azurerm_spring_cloud_app_redis_association =
     ./azurerm_spring_cloud_app_redis_association.dhall
 , azurerm_spring_cloud_certificate = ./azurerm_spring_cloud_certificate.dhall

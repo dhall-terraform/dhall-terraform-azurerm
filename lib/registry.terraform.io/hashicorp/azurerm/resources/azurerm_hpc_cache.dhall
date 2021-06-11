@@ -10,6 +10,7 @@
     , root_squash_enabled : Optional Bool
     , sku_name : Text
     , subnet_id : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , default_access_policy :
         Optional
           ( List
@@ -42,6 +43,7 @@
   , mtu = None Natural
   , ntp_server = None Text
   , root_squash_enabled = None Bool
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , default_access_policy =
       None
         ( List

@@ -29,6 +29,14 @@
           , resource_type : Optional Text
           , status : Optional Text
           , sub_status : Optional Text
+          , service_health :
+              Optional
+                ( List
+                    { events : Optional (List Text)
+                    , locations : Optional (List Text)
+                    , services : Optional (List Text)
+                    }
+                )
           }
     , timeouts :
         Optional
