@@ -11,7 +11,8 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tier : Text
     , tls_min_version : Optional Text
-    , gateway : List { enabled : Bool, password : Text, username : Text }
+    , gateway :
+        List { enabled : Optional Bool, password : Text, username : Text }
     , roles :
         List
           { edge_node :

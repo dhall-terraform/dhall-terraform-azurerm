@@ -1,5 +1,16 @@
 { Type =
-    { certificate_data : Optional Text
+    { certificate_attribute :
+        Optional
+          ( List
+              { created : Text
+              , enabled : Bool
+              , expires : Text
+              , not_before : Text
+              , recovery_level : Text
+              , updated : Text
+              }
+          )
+    , certificate_data : Optional Text
     , id : Optional Text
     , key_vault_id : Text
     , name : Text
@@ -57,7 +68,18 @@
           }
     }
 , default =
-  { certificate_data = None Text
+  { certificate_attribute =
+      None
+        ( List
+            { created : Text
+            , enabled : Bool
+            , expires : Text
+            , not_before : Text
+            , recovery_level : Text
+            , updated : Text
+            }
+        )
+  , certificate_data = None Text
   , id = None Text
   , secret_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })

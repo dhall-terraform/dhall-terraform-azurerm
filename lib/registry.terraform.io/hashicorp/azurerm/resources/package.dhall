@@ -276,6 +276,8 @@
 , azurerm_kubernetes_cluster_node_pool =
     ./azurerm_kubernetes_cluster_node_pool.dhall
 , azurerm_kusto_cluster = ./azurerm_kusto_cluster.dhall
+, azurerm_kusto_cluster_principal_assignment =
+    ./azurerm_kusto_cluster_principal_assignment.dhall
 , azurerm_kusto_database = ./azurerm_kusto_database.dhall
 , azurerm_kusto_database_principal = ./azurerm_kusto_database_principal.dhall
 , azurerm_kusto_eventhub_data_connection =

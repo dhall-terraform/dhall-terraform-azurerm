@@ -1,5 +1,6 @@
 { Type =
-    { front_end_scale_factor : Optional Natural
+    { allowed_user_ip_cidrs : Optional (List Text)
+    , front_end_scale_factor : Optional Natural
     , id : Optional Text
     , internal_load_balancing_mode : Optional Text
     , location : Optional Text
@@ -18,7 +19,8 @@
           }
     }
 , default =
-  { front_end_scale_factor = None Natural
+  { allowed_user_ip_cidrs = None (List Text)
+  , front_end_scale_factor = None Natural
   , id = None Text
   , internal_load_balancing_mode = None Text
   , location = None Text

@@ -3,6 +3,7 @@
     , location : Text
     , name : Text
     , resource_group_name : Text
+    , sku_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , config_server_git_setting :
         Optional
@@ -52,9 +53,11 @@
           , read : Optional Text
           , update : Optional Text
           }
+    , trace : Optional (List { instrumentation_key : Text })
     }
 , default =
   { id = None Text
+  , sku_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , config_server_git_setting =
       None
@@ -104,5 +107,6 @@
         , read : Optional Text
         , update : Optional Text
         }
+  , trace = None (List { instrumentation_key : Text })
   }
 }

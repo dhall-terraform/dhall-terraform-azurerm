@@ -10,6 +10,7 @@
     , privacy_statement_uri : Optional Text
     , release_note_uri : Optional Text
     , resource_group_name : Text
+    , specialized : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , identifier : List { offer : Text, publisher : Text, sku : Text }
     , timeouts :
@@ -27,6 +28,7 @@
   , id = None Text
   , privacy_statement_uri = None Text
   , release_note_uri = None Text
+  , specialized = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None

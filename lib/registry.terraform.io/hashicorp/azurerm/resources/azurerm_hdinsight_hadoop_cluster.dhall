@@ -10,7 +10,8 @@
     , tier : Text
     , tls_min_version : Optional Text
     , component_version : List { hadoop : Text }
-    , gateway : List { enabled : Bool, password : Text, username : Text }
+    , gateway :
+        List { enabled : Optional Bool, password : Text, username : Text }
     , metastores :
         Optional
           ( List

@@ -6,6 +6,7 @@
     , location : Optional Text
     , managed_image_id : Optional Text
     , name : Text
+    , os_disk_snapshot_id : Optional Text
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , target_region :
@@ -23,6 +24,7 @@
   , id = None Text
   , location = None Text
   , managed_image_id = None Text
+  , os_disk_snapshot_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , target_region =
       None

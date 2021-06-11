@@ -5,6 +5,7 @@
     , location : Optional Text
     , name : Text
     , resource_group_name : Text
+    , sku_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Text
     , timeouts : Optional { read : Optional Text }
@@ -14,6 +15,7 @@
   , fqdn = None Text
   , id = None Text
   , location = None Text
+  , sku_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , version = None Text
   , timeouts = None { read : Optional Text }

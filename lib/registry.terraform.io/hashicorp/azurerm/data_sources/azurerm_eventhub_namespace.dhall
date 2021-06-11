@@ -15,6 +15,7 @@
     , resource_group_name : Text
     , sku : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , zone_redundant : Optional Bool
     , timeouts : Optional { read : Optional Text }
     }
 , default =
@@ -32,6 +33,7 @@
   , maximum_throughput_units = None Natural
   , sku = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , zone_redundant = None Bool
   , timeouts = None { read : Optional Text }
   }
 }

@@ -4,8 +4,9 @@
     , id : Optional Text
     , image_name : Text
     , location : Text
-    , managed_image_id : Text
+    , managed_image_id : Optional Text
     , name : Text
+    , os_disk_snapshot_id : Optional Text
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , target_region :
@@ -25,6 +26,8 @@
 , default =
   { exclude_from_latest = None Bool
   , id = None Text
+  , managed_image_id = None Text
+  , os_disk_snapshot_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
