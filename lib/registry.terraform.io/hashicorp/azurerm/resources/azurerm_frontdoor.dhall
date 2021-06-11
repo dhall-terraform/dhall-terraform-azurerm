@@ -7,6 +7,16 @@
     , backend_pools_send_receive_timeout_seconds : Optional Natural
     , cname : Optional Text
     , enforce_backend_pools_certificate_name_check : Bool
+    , explicit_resource_order :
+        Optional
+          ( List
+              { backend_pool_health_probe_ids : List Text
+              , backend_pool_ids : List Text
+              , backend_pool_load_balancing_ids : List Text
+              , frontend_endpoint_ids : List Text
+              , routing_rule_ids : List Text
+              }
+          )
     , friendly_name : Optional Text
     , frontend_endpoints : Optional (List { mapKey : Text, mapValue : Text })
     , header_frontdoor_id : Optional Text
@@ -54,25 +64,12 @@
           }
     , frontend_endpoint :
         List
-          { custom_https_provisioning_enabled : Optional Bool
-          , host_name : Text
+          { host_name : Text
           , id : Optional Text
           , name : Text
           , session_affinity_enabled : Optional Bool
           , session_affinity_ttl_seconds : Optional Natural
           , web_application_firewall_policy_link_id : Optional Text
-          , custom_https_configuration :
-              Optional
-                ( List
-                    { azure_key_vault_certificate_secret_name : Optional Text
-                    , azure_key_vault_certificate_secret_version : Optional Text
-                    , azure_key_vault_certificate_vault_id : Optional Text
-                    , certificate_source : Optional Text
-                    , minimum_tls_version : Optional Text
-                    , provisioning_state : Optional Text
-                    , provisioning_substate : Optional Text
-                    }
-                )
           }
     , routing_rule :
         List
@@ -120,6 +117,16 @@
   , backend_pools = None (List { mapKey : Text, mapValue : Text })
   , backend_pools_send_receive_timeout_seconds = None Natural
   , cname = None Text
+  , explicit_resource_order =
+      None
+        ( List
+            { backend_pool_health_probe_ids : List Text
+            , backend_pool_ids : List Text
+            , backend_pool_load_balancing_ids : List Text
+            , frontend_endpoint_ids : List Text
+            , routing_rule_ids : List Text
+            }
+        )
   , friendly_name = None Text
   , frontend_endpoints = None (List { mapKey : Text, mapValue : Text })
   , header_frontdoor_id = None Text

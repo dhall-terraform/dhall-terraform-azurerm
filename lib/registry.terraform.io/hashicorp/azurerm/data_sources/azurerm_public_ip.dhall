@@ -5,6 +5,7 @@
     , id : Optional Text
     , idle_timeout_in_minutes : Optional Natural
     , ip_address : Optional Text
+    , ip_tags : Optional (List { mapKey : Text, mapValue : Text })
     , ip_version : Optional Text
     , location : Optional Text
     , name : Text
@@ -22,6 +23,7 @@
   , id = None Text
   , idle_timeout_in_minutes = None Natural
   , ip_address = None Text
+  , ip_tags = None (List { mapKey : Text, mapValue : Text })
   , ip_version = None Text
   , location = None Text
   , reverse_fqdn = None Text

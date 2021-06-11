@@ -11,7 +11,14 @@
           )
     , id : Optional Text
     , identity :
-        Optional (List { principal_id : Text, tenant_id : Text, type : Text })
+        Optional
+          ( List
+              { identity_ids : List Text
+              , principal_id : Text
+              , tenant_id : Text
+              , type : Text
+              }
+          )
     , location : Optional Text
     , name : Text
     , resource_group_name : Text
@@ -42,7 +49,14 @@
         )
   , id = None Text
   , identity =
-      None (List { principal_id : Text, tenant_id : Text, type : Text })
+      None
+        ( List
+            { identity_ids : List Text
+            , principal_id : Text
+            , tenant_id : Text
+            , type : Text
+            }
+        )
   , location = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , vsts_configuration =

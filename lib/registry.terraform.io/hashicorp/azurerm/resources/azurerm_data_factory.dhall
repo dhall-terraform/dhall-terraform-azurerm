@@ -1,5 +1,6 @@
 { Type =
-    { id : Optional Text
+    { customer_managed_key_id : Optional Text
+    , id : Optional Text
     , location : Text
     , name : Text
     , public_network_enabled : Optional Bool
@@ -18,7 +19,8 @@
     , identity :
         Optional
           ( List
-              { principal_id : Optional Text
+              { identity_ids : Optional (List Text)
+              , principal_id : Optional Text
               , tenant_id : Optional Text
               , type : Text
               }
@@ -43,7 +45,8 @@
           )
     }
 , default =
-  { id = None Text
+  { customer_managed_key_id = None Text
+  , id = None Text
   , public_network_enabled = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
   , github_configuration =
@@ -59,7 +62,8 @@
   , identity =
       None
         ( List
-            { principal_id : Optional Text
+            { identity_ids : Optional (List Text)
+            , principal_id : Optional Text
             , tenant_id : Optional Text
             , type : Text
             }

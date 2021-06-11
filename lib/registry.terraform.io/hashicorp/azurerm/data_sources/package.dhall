@@ -16,6 +16,8 @@
     ./azurerm_app_service_certificate_order.dhall
 , azurerm_app_service = ./azurerm_app_service.dhall
 , azurerm_app_service_environment = ./azurerm_app_service_environment.dhall
+, azurerm_app_service_environment_v3 =
+    ./azurerm_app_service_environment_v3.dhall
 , azurerm_app_service_plan = ./azurerm_app_service_plan.dhall
 , azurerm_attestation_provider = ./azurerm_attestation_provider.dhall
 , azurerm_automation_account = ./azurerm_automation_account.dhall
@@ -213,6 +215,7 @@
 , azurerm_storage_management_policy = ./azurerm_storage_management_policy.dhall
 , azurerm_storage_sync = ./azurerm_storage_sync.dhall
 , azurerm_storage_sync_group = ./azurerm_storage_sync_group.dhall
+, azurerm_storage_table_entity = ./azurerm_storage_table_entity.dhall
 , azurerm_stream_analytics_job = ./azurerm_stream_analytics_job.dhall
 , azurerm_subnet = ./azurerm_subnet.dhall
 , azurerm_subscription = ./azurerm_subscription.dhall

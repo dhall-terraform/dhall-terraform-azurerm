@@ -19,7 +19,12 @@
     , endpoint :
         List
           { address : Optional Text
+          , coverage_level : Optional Text
+          , excluded_ip_addresses : Optional (List Text)
+          , included_ip_addresses : Optional (List Text)
           , name : Text
+          , target_resource_id : Optional Text
+          , target_resource_type : Optional Text
           , virtual_machine_id : Optional Text
           , filter :
               Optional

@@ -2,7 +2,6 @@
     { custom_https_provisioning_enabled : Bool
     , frontend_endpoint_id : Text
     , id : Optional Text
-    , resource_group_name : Optional Text
     , custom_https_configuration :
         Optional
           ( List
@@ -25,7 +24,6 @@
     }
 , default =
   { id = None Text
-  , resource_group_name = None Text
   , custom_https_configuration =
       None
         ( List

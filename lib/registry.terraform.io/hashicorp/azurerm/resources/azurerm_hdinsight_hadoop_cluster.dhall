@@ -83,6 +83,30 @@
                 , username : Text
                 , virtual_network_id : Optional Text
                 , vm_size : Text
+                , autoscale :
+                    Optional
+                      ( List
+                          { capacity :
+                              Optional
+                                ( List
+                                    { max_instance_count : Natural
+                                    , min_instance_count : Natural
+                                    }
+                                )
+                          , recurrence :
+                              Optional
+                                ( List
+                                    { timezone : Text
+                                    , schedule :
+                                        List
+                                          { days : List Text
+                                          , target_instance_count : Natural
+                                          , time : Text
+                                          }
+                                    }
+                                )
+                          }
+                      )
                 }
           , zookeeper_node :
               List

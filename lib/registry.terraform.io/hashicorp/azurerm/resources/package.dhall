@@ -77,6 +77,8 @@
     ./azurerm_app_service_custom_hostname_binding.dhall
 , azurerm_app_service = ./azurerm_app_service.dhall
 , azurerm_app_service_environment = ./azurerm_app_service_environment.dhall
+, azurerm_app_service_environment_v3 =
+    ./azurerm_app_service_environment_v3.dhall
 , azurerm_app_service_hybrid_connection =
     ./azurerm_app_service_hybrid_connection.dhall
 , azurerm_app_service_managed_certificate =
@@ -154,10 +156,14 @@
 , azurerm_cosmosdb_gremlin_graph = ./azurerm_cosmosdb_gremlin_graph.dhall
 , azurerm_cosmosdb_mongo_collection = ./azurerm_cosmosdb_mongo_collection.dhall
 , azurerm_cosmosdb_mongo_database = ./azurerm_cosmosdb_mongo_database.dhall
+, azurerm_cosmosdb_notebook_workspace =
+    ./azurerm_cosmosdb_notebook_workspace.dhall
 , azurerm_cosmosdb_sql_container = ./azurerm_cosmosdb_sql_container.dhall
 , azurerm_cosmosdb_sql_database = ./azurerm_cosmosdb_sql_database.dhall
+, azurerm_cosmosdb_sql_function = ./azurerm_cosmosdb_sql_function.dhall
 , azurerm_cosmosdb_sql_stored_procedure =
     ./azurerm_cosmosdb_sql_stored_procedure.dhall
+, azurerm_cosmosdb_sql_trigger = ./azurerm_cosmosdb_sql_trigger.dhall
 , azurerm_cosmosdb_table = ./azurerm_cosmosdb_table.dhall
 , azurerm_cost_management_export_resource_group =
     ./azurerm_cost_management_export_resource_group.dhall
@@ -371,6 +377,8 @@
 , azurerm_iot_security_solution = ./azurerm_iot_security_solution.dhall
 , azurerm_iot_time_series_insights_access_policy =
     ./azurerm_iot_time_series_insights_access_policy.dhall
+, azurerm_iot_time_series_insights_event_source_iothub =
+    ./azurerm_iot_time_series_insights_event_source_iothub.dhall
 , azurerm_iot_time_series_insights_gen2_environment =
     ./azurerm_iot_time_series_insights_gen2_environment.dhall
 , azurerm_iot_time_series_insights_reference_data_set =
@@ -733,6 +741,8 @@
 , azurerm_storage_account_network_rules =
     ./azurerm_storage_account_network_rules.dhall
 , azurerm_storage_blob = ./azurerm_storage_blob.dhall
+, azurerm_storage_blob_inventory_policy =
+    ./azurerm_storage_blob_inventory_policy.dhall
 , azurerm_storage_container = ./azurerm_storage_container.dhall
 , azurerm_storage_data_lake_gen2_filesystem =
     ./azurerm_storage_data_lake_gen2_filesystem.dhall
