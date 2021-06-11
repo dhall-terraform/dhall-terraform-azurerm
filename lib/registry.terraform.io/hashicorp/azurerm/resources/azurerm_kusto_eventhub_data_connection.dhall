@@ -4,6 +4,7 @@
     , consumer_group : Text
     , data_format : Optional Text
     , database_name : Text
+    , event_system_properties : Optional (List Text)
     , eventhub_id : Text
     , id : Optional Text
     , location : Text
@@ -22,6 +23,7 @@
 , default =
   { compression = None Text
   , data_format = None Text
+  , event_system_properties = None (List Text)
   , id = None Text
   , mapping_rule_name = None Text
   , table_name = None Text

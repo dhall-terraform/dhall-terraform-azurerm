@@ -446,6 +446,8 @@
 , azurerm_managed_application = ./azurerm_managed_application.dhall
 , azurerm_managed_disk = ./azurerm_managed_disk.dhall
 , azurerm_management_group = ./azurerm_management_group.dhall
+, azurerm_management_group_template_deployment =
+    ./azurerm_management_group_template_deployment.dhall
 , azurerm_management_lock = ./azurerm_management_lock.dhall
 , azurerm_maps_account = ./azurerm_maps_account.dhall
 , azurerm_mariadb_configuration = ./azurerm_mariadb_configuration.dhall
@@ -753,6 +755,8 @@
 , azurerm_synapse_sql_pool = ./azurerm_synapse_sql_pool.dhall
 , azurerm_synapse_workspace = ./azurerm_synapse_workspace.dhall
 , azurerm_template_deployment = ./azurerm_template_deployment.dhall
+, azurerm_tenant_template_deployment =
+    ./azurerm_tenant_template_deployment.dhall
 , azurerm_traffic_manager_endpoint = ./azurerm_traffic_manager_endpoint.dhall
 , azurerm_traffic_manager_profile = ./azurerm_traffic_manager_profile.dhall
 , azurerm_user_assigned_identity = ./azurerm_user_assigned_identity.dhall

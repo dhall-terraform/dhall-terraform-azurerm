@@ -1,11 +1,11 @@
 { Type =
     { debug_level : Optional Text
-    , deployment_mode : Text
     , id : Optional Text
+    , location : Text
+    , management_group_id : Text
     , name : Text
     , output_content : Optional Text
     , parameters_content : Optional Text
-    , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , template_content : Optional Text
     , template_spec_version_id : Optional Text

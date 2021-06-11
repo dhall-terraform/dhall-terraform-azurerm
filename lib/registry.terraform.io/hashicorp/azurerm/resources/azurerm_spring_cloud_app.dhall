@@ -6,6 +6,7 @@
     , name : Text
     , resource_group_name : Text
     , service_name : Text
+    , tls_enabled : Optional Bool
     , url : Optional Text
     , identity :
         Optional
@@ -30,6 +31,7 @@
   , https_only = None Bool
   , id = None Text
   , is_public = None Bool
+  , tls_enabled = None Bool
   , url = None Text
   , identity =
       None

@@ -180,9 +180,11 @@
 , azurerm_servicebus_namespace = ./azurerm_servicebus_namespace.dhall
 , azurerm_servicebus_queue_authorization_rule =
     ./azurerm_servicebus_queue_authorization_rule.dhall
+, azurerm_servicebus_queue = ./azurerm_servicebus_queue.dhall
 , azurerm_servicebus_subscription = ./azurerm_servicebus_subscription.dhall
 , azurerm_servicebus_topic_authorization_rule =
     ./azurerm_servicebus_topic_authorization_rule.dhall
+, azurerm_servicebus_topic = ./azurerm_servicebus_topic.dhall
 , azurerm_shared_image = ./azurerm_shared_image.dhall
 , azurerm_shared_image_gallery = ./azurerm_shared_image_gallery.dhall
 , azurerm_shared_image_version = ./azurerm_shared_image_version.dhall
@@ -208,6 +210,7 @@
 , azurerm_subscription = ./azurerm_subscription.dhall
 , azurerm_subscriptions = ./azurerm_subscriptions.dhall
 , azurerm_synapse_workspace = ./azurerm_synapse_workspace.dhall
+, azurerm_template_spec_version = ./azurerm_template_spec_version.dhall
 , azurerm_traffic_manager_geographical_location =
     ./azurerm_traffic_manager_geographical_location.dhall
 , azurerm_traffic_manager_profile = ./azurerm_traffic_manager_profile.dhall

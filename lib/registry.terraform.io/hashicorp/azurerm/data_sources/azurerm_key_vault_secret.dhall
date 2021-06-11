@@ -6,6 +6,7 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , value : Optional Text
     , version : Optional Text
+    , versionless_id : Optional Text
     , timeouts : Optional { read : Optional Text }
     }
 , default =
@@ -14,6 +15,7 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , value = None Text
   , version = None Text
+  , versionless_id = None Text
   , timeouts = None { read : Optional Text }
   }
 }
