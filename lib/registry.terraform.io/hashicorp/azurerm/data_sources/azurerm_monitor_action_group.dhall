@@ -67,7 +67,13 @@
     , webhook_receiver :
         Optional
           ( List
-              { name : Text
+              { aad_auth :
+                  List
+                    { identifier_uri : Text
+                    , object_id : Text
+                    , tenant_id : Text
+                    }
+              , name : Text
               , service_uri : Text
               , use_common_alert_schema : Bool
               }
@@ -138,7 +144,13 @@
   , webhook_receiver =
       None
         ( List
-            { name : Text, service_uri : Text, use_common_alert_schema : Bool }
+            { aad_auth :
+                List
+                  { identifier_uri : Text, object_id : Text, tenant_id : Text }
+            , name : Text
+            , service_uri : Text
+            , use_common_alert_schema : Bool
+            }
         )
   , timeouts = None { read : Optional Text }
   }

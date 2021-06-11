@@ -174,6 +174,8 @@
 , azurerm_data_factory_dataset_json = ./azurerm_data_factory_dataset_json.dhall
 , azurerm_data_factory_dataset_mysql =
     ./azurerm_data_factory_dataset_mysql.dhall
+, azurerm_data_factory_dataset_parquet =
+    ./azurerm_data_factory_dataset_parquet.dhall
 , azurerm_data_factory_dataset_postgresql =
     ./azurerm_data_factory_dataset_postgresql.dhall
 , azurerm_data_factory_dataset_sql_server_table =
@@ -568,6 +570,7 @@
 , azurerm_proximity_placement_group = ./azurerm_proximity_placement_group.dhall
 , azurerm_public_ip = ./azurerm_public_ip.dhall
 , azurerm_public_ip_prefix = ./azurerm_public_ip_prefix.dhall
+, azurerm_purview_account = ./azurerm_purview_account.dhall
 , azurerm_recovery_services_vault = ./azurerm_recovery_services_vault.dhall
 , azurerm_redis_cache = ./azurerm_redis_cache.dhall
 , azurerm_redis_enterprise_cluster = ./azurerm_redis_enterprise_cluster.dhall
@@ -587,13 +590,19 @@
 , azurerm_route_filter = ./azurerm_route_filter.dhall
 , azurerm_route_table = ./azurerm_route_table.dhall
 , azurerm_search_service = ./azurerm_search_service.dhall
+, azurerm_security_center_assessment =
+    ./azurerm_security_center_assessment.dhall
 , azurerm_security_center_assessment_metadata =
     ./azurerm_security_center_assessment_metadata.dhall
+, azurerm_security_center_assessment_policy =
+    ./azurerm_security_center_assessment_policy.dhall
 , azurerm_security_center_automation =
     ./azurerm_security_center_automation.dhall
 , azurerm_security_center_auto_provisioning =
     ./azurerm_security_center_auto_provisioning.dhall
 , azurerm_security_center_contact = ./azurerm_security_center_contact.dhall
+, azurerm_security_center_server_vulnerability_assessment =
+    ./azurerm_security_center_server_vulnerability_assessment.dhall
 , azurerm_security_center_setting = ./azurerm_security_center_setting.dhall
 , azurerm_security_center_subscription_pricing =
     ./azurerm_security_center_subscription_pricing.dhall
@@ -608,6 +617,12 @@
     ./azurerm_sentinel_data_connector_aws_cloud_trail.dhall
 , azurerm_sentinel_data_connector_azure_active_directory =
     ./azurerm_sentinel_data_connector_azure_active_directory.dhall
+, azurerm_sentinel_data_connector_azure_advanced_threat_protection =
+    ./azurerm_sentinel_data_connector_azure_advanced_threat_protection.dhall
+, azurerm_sentinel_data_connector_azure_security_center =
+    ./azurerm_sentinel_data_connector_azure_security_center.dhall
+, azurerm_sentinel_data_connector_microsoft_cloud_app_security =
+    ./azurerm_sentinel_data_connector_microsoft_cloud_app_security.dhall
 , azurerm_sentinel_data_connector_office_365 =
     ./azurerm_sentinel_data_connector_office_365.dhall
 , azurerm_sentinel_data_connector_threat_intelligence =

@@ -1,5 +1,8 @@
 { Type =
-    { id : Optional Text
+    { condition : Optional Text
+    , condition_version : Optional Text
+    , description : Optional Text
+    , id : Optional Text
     , name : Optional Text
     , principal_id : Text
     , principal_type : Optional Text
@@ -16,7 +19,10 @@
           }
     }
 , default =
-  { id = None Text
+  { condition = None Text
+  , condition_version = None Text
+  , description = None Text
+  , id = None Text
   , name = None Text
   , principal_type = None Text
   , role_definition_id = None Text

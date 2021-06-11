@@ -1,5 +1,6 @@
 { Type =
     { account_name : Text
+    , create_from_snapshot_resource_id : Optional Text
     , id : Optional Text
     , location : Text
     , mount_ip_addresses : Optional (List Text)
@@ -43,7 +44,8 @@
           }
     }
 , default =
-  { id = None Text
+  { create_from_snapshot_resource_id = None Text
+  , id = None Text
   , mount_ip_addresses = None (List Text)
   , protocols = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })

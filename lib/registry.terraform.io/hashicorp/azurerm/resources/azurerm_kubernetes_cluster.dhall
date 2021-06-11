@@ -85,6 +85,7 @@
         Optional
           ( List
               { balance_similar_node_groups : Optional Bool
+              , expander : Optional Text
               , max_graceful_termination_sec : Optional Text
               , new_pod_scale_up_delay : Optional Text
               , scale_down_delay_after_add : Optional Text
@@ -271,6 +272,7 @@
       None
         ( List
             { balance_similar_node_groups : Optional Bool
+            , expander : Optional Text
             , max_graceful_termination_sec : Optional Text
             , new_pod_scale_up_delay : Optional Text
             , scale_down_delay_after_add : Optional Text

@@ -16,6 +16,7 @@
     , max_bid_price : Optional Natural
     , name : Text
     , network_interface_ids : List Text
+    , platform_fault_domain : Optional Natural
     , priority : Optional Text
     , private_ip_address : Optional Text
     , private_ip_addresses : Optional (List Text)
@@ -82,6 +83,7 @@
   , id = None Text
   , license_type = None Text
   , max_bid_price = None Natural
+  , platform_fault_domain = None Natural
   , priority = None Text
   , private_ip_address = None Text
   , private_ip_addresses = None (List Text)
