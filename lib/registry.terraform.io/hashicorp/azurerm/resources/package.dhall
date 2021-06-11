@@ -287,6 +287,8 @@
 , azurerm_log_analytics_workspace = ./azurerm_log_analytics_workspace.dhall
 , azurerm_logic_app_action_custom = ./azurerm_logic_app_action_custom.dhall
 , azurerm_logic_app_action_http = ./azurerm_logic_app_action_http.dhall
+, azurerm_logic_app_integration_account =
+    ./azurerm_logic_app_integration_account.dhall
 , azurerm_logic_app_trigger_custom = ./azurerm_logic_app_trigger_custom.dhall
 , azurerm_logic_app_trigger_http_request =
     ./azurerm_logic_app_trigger_http_request.dhall
@@ -312,6 +314,10 @@
 , azurerm_marketplace_agreement = ./azurerm_marketplace_agreement.dhall
 , azurerm_media_services_account = ./azurerm_media_services_account.dhall
 , azurerm_monitor_action_group = ./azurerm_monitor_action_group.dhall
+, azurerm_monitor_action_rule_action_group =
+    ./azurerm_monitor_action_rule_action_group.dhall
+, azurerm_monitor_action_rule_suppression =
+    ./azurerm_monitor_action_rule_suppression.dhall
 , azurerm_monitor_activity_log_alert =
     ./azurerm_monitor_activity_log_alert.dhall
 , azurerm_monitor_autoscale_setting = ./azurerm_monitor_autoscale_setting.dhall

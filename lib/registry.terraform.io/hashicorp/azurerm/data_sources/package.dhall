@@ -76,6 +76,8 @@
 , azurerm_lb_backend_address_pool = ./azurerm_lb_backend_address_pool.dhall
 , azurerm_lb = ./azurerm_lb.dhall
 , azurerm_log_analytics_workspace = ./azurerm_log_analytics_workspace.dhall
+, azurerm_logic_app_integration_account =
+    ./azurerm_logic_app_integration_account.dhall
 , azurerm_logic_app_workflow = ./azurerm_logic_app_workflow.dhall
 , azurerm_machine_learning_workspace =
     ./azurerm_machine_learning_workspace.dhall
@@ -160,6 +162,7 @@
 , azurerm_user_assigned_identity = ./azurerm_user_assigned_identity.dhall
 , azurerm_virtual_hub = ./azurerm_virtual_hub.dhall
 , azurerm_virtual_machine = ./azurerm_virtual_machine.dhall
+, azurerm_virtual_machine_scale_set = ./azurerm_virtual_machine_scale_set.dhall
 , azurerm_virtual_network = ./azurerm_virtual_network.dhall
 , azurerm_virtual_network_gateway_connection =
     ./azurerm_virtual_network_gateway_connection.dhall

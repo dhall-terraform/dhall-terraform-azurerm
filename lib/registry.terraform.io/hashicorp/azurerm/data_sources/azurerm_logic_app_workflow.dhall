@@ -4,6 +4,7 @@
     , connector_outbound_ip_addresses : Optional (List Text)
     , id : Optional Text
     , location : Optional Text
+    , logic_app_integration_account_id : Optional Text
     , name : Text
     , parameters : Optional (List { mapKey : Text, mapValue : Text })
     , resource_group_name : Text
@@ -20,6 +21,7 @@
   , connector_outbound_ip_addresses = None (List Text)
   , id = None Text
   , location = None Text
+  , logic_app_integration_account_id = None Text
   , parameters = None (List { mapKey : Text, mapValue : Text })
   , tags = None (List { mapKey : Text, mapValue : Text })
   , workflow_endpoint_ip_addresses = None (List Text)

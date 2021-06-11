@@ -1,5 +1,6 @@
 { Type =
-    { annotations : Optional (List Text)
+    { activities_json : Optional Text
+    , annotations : Optional (List Text)
     , data_factory_name : Text
     , description : Optional Text
     , id : Optional Text
@@ -16,7 +17,8 @@
           }
     }
 , default =
-  { annotations = None (List Text)
+  { activities_json = None Text
+  , annotations = None (List Text)
   , description = None Text
   , id = None Text
   , parameters = None (List { mapKey : Text, mapValue : Text })
