@@ -10,7 +10,16 @@
                     }
               , kube_dashboard : List { enabled : Bool }
               , oms_agent :
-                  List { enabled : Bool, log_analytics_workspace_id : Text }
+                  List
+                    { enabled : Bool
+                    , log_analytics_workspace_id : Text
+                    , oms_agent_identity :
+                        List
+                          { client_id : Text
+                          , object_id : Text
+                          , user_assigned_identity_id : Text
+                          }
+                    }
               }
           )
     , agent_pool_profile :
@@ -38,6 +47,8 @@
     , dns_prefix : Optional Text
     , fqdn : Optional Text
     , id : Optional Text
+    , identity :
+        Optional (List { principal_id : Text, tenant_id : Text, type : Text })
     , kube_admin_config :
         Optional
           ( List
@@ -62,6 +73,14 @@
               }
           )
     , kube_config_raw : Optional Text
+    , kubelet_identity :
+        Optional
+          ( List
+              { client_id : Text
+              , object_id : Text
+              , user_assigned_identity_id : Text
+              }
+          )
     , kubernetes_version : Optional Text
     , linux_profile :
         Optional
@@ -112,7 +131,16 @@
                   { enabled : Bool, http_application_routing_zone_name : Text }
             , kube_dashboard : List { enabled : Bool }
             , oms_agent :
-                List { enabled : Bool, log_analytics_workspace_id : Text }
+                List
+                  { enabled : Bool
+                  , log_analytics_workspace_id : Text
+                  , oms_agent_identity :
+                      List
+                        { client_id : Text
+                        , object_id : Text
+                        , user_assigned_identity_id : Text
+                        }
+                  }
             }
         )
   , agent_pool_profile =
@@ -140,6 +168,8 @@
   , dns_prefix = None Text
   , fqdn = None Text
   , id = None Text
+  , identity =
+      None (List { principal_id : Text, tenant_id : Text, type : Text })
   , kube_admin_config =
       None
         ( List
@@ -164,6 +194,14 @@
             }
         )
   , kube_config_raw = None Text
+  , kubelet_identity =
+      None
+        ( List
+            { client_id : Text
+            , object_id : Text
+            , user_assigned_identity_id : Text
+            }
+        )
   , kubernetes_version = None Text
   , linux_profile =
       None (List { admin_username : Text, ssh_key : List { key_data : Text } })

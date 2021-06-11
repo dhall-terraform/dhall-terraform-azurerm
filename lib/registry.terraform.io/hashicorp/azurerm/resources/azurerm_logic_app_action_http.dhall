@@ -6,6 +6,7 @@
     , method : Text
     , name : Text
     , uri : Text
+    , run_after : Optional (List { action_name : Text, action_result : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -18,6 +19,7 @@
   { body = None Text
   , headers = None (List { mapKey : Text, mapValue : Text })
   , id = None Text
+  , run_after = None (List { action_name : Text, action_result : Text })
   , timeouts =
       None
         { create : Optional Text

@@ -23,7 +23,8 @@
     , container_configuration :
         Optional
           ( List
-              { container_registries :
+              { container_image_names : Optional (List Text)
+              , container_registries :
                   Optional
                     ( List
                         { password : Text
@@ -133,7 +134,8 @@
   , container_configuration =
       None
         ( List
-            { container_registries :
+            { container_image_names : Optional (List Text)
+            , container_registries :
                 Optional
                   ( List
                       { password : Text

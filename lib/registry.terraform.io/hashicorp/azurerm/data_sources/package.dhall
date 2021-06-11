@@ -1,4 +1,5 @@
-{ azurerm_api_management_api = ./azurerm_api_management_api.dhall
+{ azurerm_advisor_recommendations = ./azurerm_advisor_recommendations.dhall
+, azurerm_api_management_api = ./azurerm_api_management_api.dhall
 , azurerm_api_management_api_version_set =
     ./azurerm_api_management_api_version_set.dhall
 , azurerm_api_management = ./azurerm_api_management.dhall

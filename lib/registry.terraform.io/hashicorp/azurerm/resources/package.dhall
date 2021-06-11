@@ -166,6 +166,8 @@
 , azurerm_dedicated_host = ./azurerm_dedicated_host.dhall
 , azurerm_dedicated_host_group = ./azurerm_dedicated_host_group.dhall
 , azurerm_devspace_controller = ./azurerm_devspace_controller.dhall
+, azurerm_dev_test_global_vm_shutdown_schedule =
+    ./azurerm_dev_test_global_vm_shutdown_schedule.dhall
 , azurerm_dev_test_lab = ./azurerm_dev_test_lab.dhall
 , azurerm_dev_test_linux_virtual_machine =
     ./azurerm_dev_test_linux_virtual_machine.dhall
@@ -338,6 +340,8 @@
 , azurerm_mysql_virtual_network_rule =
     ./azurerm_mysql_virtual_network_rule.dhall
 , azurerm_nat_gateway = ./azurerm_nat_gateway.dhall
+, azurerm_nat_gateway_public_ip_association =
+    ./azurerm_nat_gateway_public_ip_association.dhall
 , azurerm_netapp_account = ./azurerm_netapp_account.dhall
 , azurerm_netapp_pool = ./azurerm_netapp_pool.dhall
 , azurerm_netapp_snapshot = ./azurerm_netapp_snapshot.dhall

@@ -65,6 +65,14 @@
                     ( List
                         { enabled : Bool
                         , log_analytics_workspace_id : Optional Text
+                        , oms_agent_identity :
+                            Optional
+                              ( List
+                                  { client_id : Text
+                                  , object_id : Text
+                                  , user_assigned_identity_id : Text
+                                  }
+                              )
                         }
                     )
               }
@@ -210,6 +218,14 @@
                   ( List
                       { enabled : Bool
                       , log_analytics_workspace_id : Optional Text
+                      , oms_agent_identity :
+                          Optional
+                            ( List
+                                { client_id : Text
+                                , object_id : Text
+                                , user_assigned_identity_id : Text
+                                }
+                            )
                       }
                   )
             }
