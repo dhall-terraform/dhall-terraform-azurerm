@@ -404,6 +404,8 @@
 , azurerm_policy_definition = ./azurerm_policy_definition.dhall
 , azurerm_policy_remediation = ./azurerm_policy_remediation.dhall
 , azurerm_policy_set_definition = ./azurerm_policy_set_definition.dhall
+, azurerm_postgresql_active_directory_administrator =
+    ./azurerm_postgresql_active_directory_administrator.dhall
 , azurerm_postgresql_configuration = ./azurerm_postgresql_configuration.dhall
 , azurerm_postgresql_database = ./azurerm_postgresql_database.dhall
 , azurerm_postgresql_firewall_rule = ./azurerm_postgresql_firewall_rule.dhall

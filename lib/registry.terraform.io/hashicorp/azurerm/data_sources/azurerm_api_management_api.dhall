@@ -14,6 +14,7 @@
     , soap_pass_through : Optional Bool
     , subscription_key_parameter_names :
         Optional (List { header : Text, query : Text })
+    , subscription_required : Optional Bool
     , version : Optional Text
     , version_set_id : Optional Text
     , timeouts : Optional { read : Optional Text }
@@ -30,6 +31,7 @@
   , soap_pass_through = None Bool
   , subscription_key_parameter_names =
       None (List { header : Text, query : Text })
+  , subscription_required = None Bool
   , version = None Text
   , version_set_id = None Text
   , timeouts = None { read : Optional Text }

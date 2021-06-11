@@ -20,6 +20,9 @@
           , category : Text
           , level : Optional Text
           , operation_name : Optional Text
+          , recommendation_category : Optional Text
+          , recommendation_impact : Optional Text
+          , recommendation_type : Optional Text
           , resource_group : Optional Text
           , resource_id : Optional Text
           , resource_provider : Optional Text

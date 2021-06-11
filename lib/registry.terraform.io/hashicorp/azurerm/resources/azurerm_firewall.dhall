@@ -4,6 +4,7 @@
     , name : Text
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , threat_intel_mode : Optional Text
     , zones : Optional (List Text)
     , ip_configuration :
         List
@@ -23,6 +24,7 @@
 , default =
   { id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , threat_intel_mode = None Text
   , zones = None (List Text)
   , timeouts =
       None

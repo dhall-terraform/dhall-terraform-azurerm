@@ -12,6 +12,7 @@
     , revision : Text
     , service_url : Optional Text
     , soap_pass_through : Optional Bool
+    , subscription_required : Optional Bool
     , version : Optional Text
     , version_set_id : Optional Text
     , import :
@@ -40,6 +41,7 @@
   , is_online = None Bool
   , service_url = None Text
   , soap_pass_through = None Bool
+  , subscription_required = None Bool
   , version = None Text
   , version_set_id = None Text
   , import =

@@ -9,6 +9,16 @@
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , uri : Optional Text
+    , zones : Optional (List Text)
+    , identity :
+        Optional
+          ( List
+              { identity_ids : Optional (List Text)
+              , principal_id : Optional Text
+              , tenant_id : Optional Text
+              , type : Text
+              }
+          )
     , sku : List { capacity : Natural, name : Text }
     , timeouts :
         Optional
@@ -17,6 +27,14 @@
           , read : Optional Text
           , update : Optional Text
           }
+    , virtual_network_configuration :
+        Optional
+          ( List
+              { data_management_public_ip_id : Text
+              , engine_public_ip_id : Text
+              , subnet_id : Text
+              }
+          )
     }
 , default =
   { data_ingestion_uri = None Text
@@ -26,6 +44,16 @@
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , uri = None Text
+  , zones = None (List Text)
+  , identity =
+      None
+        ( List
+            { identity_ids : Optional (List Text)
+            , principal_id : Optional Text
+            , tenant_id : Optional Text
+            , type : Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text
@@ -33,5 +61,13 @@
         , read : Optional Text
         , update : Optional Text
         }
+  , virtual_network_configuration =
+      None
+        ( List
+            { data_management_public_ip_id : Text
+            , engine_public_ip_id : Text
+            , subnet_id : Text
+            }
+        )
   }
 }
