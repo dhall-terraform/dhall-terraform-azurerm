@@ -7,6 +7,7 @@
     , name : Text
     , resource_group_name : Text
     , type : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { description = None Text
@@ -14,5 +15,6 @@
   , external_id = None Text
   , id = None Text
   , type = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

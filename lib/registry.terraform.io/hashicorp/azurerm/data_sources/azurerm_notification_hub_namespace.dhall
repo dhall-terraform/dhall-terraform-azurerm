@@ -7,6 +7,7 @@
     , resource_group_name : Text
     , servicebus_endpoint : Optional Text
     , sku : Optional (List { name : Text })
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { enabled = None Bool
@@ -15,5 +16,6 @@
   , namespace_type = None Text
   , servicebus_endpoint = None Text
   , sku = None (List { name : Text })
+  , timeouts = None { read : Optional Text }
   }
 }

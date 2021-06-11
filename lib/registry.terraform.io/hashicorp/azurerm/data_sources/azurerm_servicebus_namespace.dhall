@@ -11,6 +11,7 @@
     , sku : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , zone_redundant : Optional Bool
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { capacity = None Natural
@@ -23,5 +24,6 @@
   , sku = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zone_redundant = None Bool
+  , timeouts = None { read : Optional Text }
   }
 }

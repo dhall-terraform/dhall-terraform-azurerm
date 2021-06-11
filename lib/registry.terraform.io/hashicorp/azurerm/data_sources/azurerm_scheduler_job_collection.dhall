@@ -15,6 +15,7 @@
     , sku : Optional Text
     , state : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { id = None Text
@@ -31,5 +32,6 @@
   , sku = None Text
   , state = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts = None { read : Optional Text }
   }
 }

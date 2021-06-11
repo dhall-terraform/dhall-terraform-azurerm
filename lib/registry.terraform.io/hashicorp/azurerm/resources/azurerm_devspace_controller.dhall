@@ -1,6 +1,6 @@
 { Type =
     { data_plane_fqdn : Optional Text
-    , host_suffix : Text
+    , host_suffix : Optional Text
     , id : Optional Text
     , location : Text
     , name : Text
@@ -12,6 +12,7 @@
     }
 , default =
   { data_plane_fqdn = None Text
+  , host_suffix = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   }

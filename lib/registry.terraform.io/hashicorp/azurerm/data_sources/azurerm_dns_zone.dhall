@@ -9,6 +9,7 @@
     , resource_group_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , zone_type : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { id = None Text
@@ -20,5 +21,6 @@
   , resource_group_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zone_type = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

@@ -19,6 +19,7 @@
     , source_uri : Optional Text
     , storage_account_id : Optional Text
     , time_created : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { creation_option = None Text
@@ -39,5 +40,6 @@
   , source_uri = None Text
   , storage_account_id = None Text
   , time_created = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

@@ -8,6 +8,7 @@
     , oauth2_allow_implicit_flow : Optional Bool
     , object_id : Optional Text
     , reply_urls : Optional (List Text)
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { application_id = None Text
@@ -19,5 +20,6 @@
   , oauth2_allow_implicit_flow = None Bool
   , object_id = None Text
   , reply_urls = None (List Text)
+  , timeouts = None { read : Optional Text }
   }
 }

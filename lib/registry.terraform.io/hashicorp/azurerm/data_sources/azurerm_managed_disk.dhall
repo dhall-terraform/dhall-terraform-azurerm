@@ -12,6 +12,7 @@
     , storage_account_type : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , zones : Optional (List Text)
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { create_option = None Text
@@ -25,5 +26,6 @@
   , storage_account_type = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zones = None (List Text)
+  , timeouts = None { read : Optional Text }
   }
 }

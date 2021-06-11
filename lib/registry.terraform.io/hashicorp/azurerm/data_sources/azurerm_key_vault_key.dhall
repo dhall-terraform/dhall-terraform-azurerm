@@ -10,6 +10,7 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , vault_uri : Optional Text
     , version : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { e = None Text
@@ -22,5 +23,6 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , vault_uri = None Text
   , version = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

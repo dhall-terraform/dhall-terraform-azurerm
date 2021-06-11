@@ -13,6 +13,7 @@
               }
           )
     , type : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { assignable_scopes = None (List Text)
@@ -28,5 +29,6 @@
             }
         )
   , type = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

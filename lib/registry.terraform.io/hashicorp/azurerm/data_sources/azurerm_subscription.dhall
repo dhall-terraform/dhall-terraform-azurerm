@@ -7,6 +7,7 @@
     , state : Optional Text
     , subscription_id : Optional Text
     , tenant_id : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { display_name = None Text
@@ -17,5 +18,6 @@
   , state = None Text
   , subscription_id = None Text
   , tenant_id = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

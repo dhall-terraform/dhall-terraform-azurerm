@@ -28,6 +28,7 @@
     , sort_descending : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , zone_resilient : Optional Bool
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { data_disk =
@@ -58,5 +59,6 @@
   , sort_descending = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zone_resilient = None Bool
+  , timeouts = None { read : Optional Text }
   }
 }

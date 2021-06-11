@@ -42,6 +42,8 @@
     ./azurerm_application_security_group.dhall
 , azurerm_app_service_active_slot = ./azurerm_app_service_active_slot.dhall
 , azurerm_app_service_certificate = ./azurerm_app_service_certificate.dhall
+, azurerm_app_service_certificate_order =
+    ./azurerm_app_service_certificate_order.dhall
 , azurerm_app_service_custom_hostname_binding =
     ./azurerm_app_service_custom_hostname_binding.dhall
 , azurerm_app_service = ./azurerm_app_service.dhall
@@ -55,6 +57,7 @@
     ./azurerm_automation_dsc_configuration.dhall
 , azurerm_automation_dsc_nodeconfiguration =
     ./azurerm_automation_dsc_nodeconfiguration.dhall
+, azurerm_automation_job_schedule = ./azurerm_automation_job_schedule.dhall
 , azurerm_automation_module = ./azurerm_automation_module.dhall
 , azurerm_automation_runbook = ./azurerm_automation_runbook.dhall
 , azurerm_automation_schedule = ./azurerm_automation_schedule.dhall
@@ -70,6 +73,7 @@
 , azurerm_azuread_service_principal = ./azurerm_azuread_service_principal.dhall
 , azurerm_azuread_service_principal_password =
     ./azurerm_azuread_service_principal_password.dhall
+, azurerm_bastion_host = ./azurerm_bastion_host.dhall
 , azurerm_batch_account = ./azurerm_batch_account.dhall
 , azurerm_batch_application = ./azurerm_batch_application.dhall
 , azurerm_batch_certificate = ./azurerm_batch_certificate.dhall
@@ -105,6 +109,8 @@
 , azurerm_data_factory_dataset_sql_server_table =
     ./azurerm_data_factory_dataset_sql_server_table.dhall
 , azurerm_data_factory = ./azurerm_data_factory.dhall
+, azurerm_data_factory_integration_runtime_managed =
+    ./azurerm_data_factory_integration_runtime_managed.dhall
 , azurerm_data_factory_linked_service_data_lake_storage_gen2 =
     ./azurerm_data_factory_linked_service_data_lake_storage_gen2.dhall
 , azurerm_data_factory_linked_service_mysql =
@@ -180,6 +186,7 @@
 , azurerm_hdinsight_rserver_cluster = ./azurerm_hdinsight_rserver_cluster.dhall
 , azurerm_hdinsight_spark_cluster = ./azurerm_hdinsight_spark_cluster.dhall
 , azurerm_hdinsight_storm_cluster = ./azurerm_hdinsight_storm_cluster.dhall
+, azurerm_healthcare_service = ./azurerm_healthcare_service.dhall
 , azurerm_image = ./azurerm_image.dhall
 , azurerm_iot_dps_certificate = ./azurerm_iot_dps_certificate.dhall
 , azurerm_iot_dps = ./azurerm_iot_dps.dhall
@@ -195,6 +202,8 @@
 , azurerm_kubernetes_cluster = ./azurerm_kubernetes_cluster.dhall
 , azurerm_kusto_cluster = ./azurerm_kusto_cluster.dhall
 , azurerm_kusto_database = ./azurerm_kusto_database.dhall
+, azurerm_kusto_eventhub_data_connection =
+    ./azurerm_kusto_eventhub_data_connection.dhall
 , azurerm_lb_backend_address_pool = ./azurerm_lb_backend_address_pool.dhall
 , azurerm_lb = ./azurerm_lb.dhall
 , azurerm_lb_nat_pool = ./azurerm_lb_nat_pool.dhall

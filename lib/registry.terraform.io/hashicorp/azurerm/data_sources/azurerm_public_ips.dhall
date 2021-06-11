@@ -14,6 +14,7 @@
               }
           )
     , resource_group_name : Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { allocation_type = None Text
@@ -30,5 +31,6 @@
             , name : Text
             }
         )
+  , timeouts = None { read : Optional Text }
   }
 }

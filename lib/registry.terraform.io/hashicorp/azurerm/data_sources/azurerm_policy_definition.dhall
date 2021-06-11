@@ -9,6 +9,7 @@
     , policy_rule : Optional Text
     , policy_type : Optional Text
     , type : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { description = None Text
@@ -20,5 +21,6 @@
   , policy_rule = None Text
   , policy_type = None Text
   , type = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

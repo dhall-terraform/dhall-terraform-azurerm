@@ -46,6 +46,7 @@
     , secondary_web_endpoint : Optional Text
     , secondary_web_host : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { access_tier = None Text
@@ -93,5 +94,6 @@
   , secondary_web_endpoint = None Text
   , secondary_web_host = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts = None { read : Optional Text }
   }
 }

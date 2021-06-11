@@ -15,6 +15,7 @@
     , name : Text
     , namespace_name : Text
     , resource_group_name : Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { apns_credential =
@@ -30,5 +31,6 @@
   , gcm_credential = None (List { api_key : Text })
   , id = None Text
   , location = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

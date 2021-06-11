@@ -10,6 +10,7 @@
     , secondary_access_key : Optional Text
     , storage_account_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { account_endpoint = None Text
@@ -21,5 +22,6 @@
   , secondary_access_key = None Text
   , storage_account_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts = None { read : Optional Text }
   }
 }

@@ -30,6 +30,7 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , virtual_network_rule : Optional (List { id : Text })
     , write_endpoints : Optional (List Text)
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { capabilities = None (List { name : Text })
@@ -60,5 +61,6 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , virtual_network_rule = None (List { id : Text })
   , write_endpoints = None (List Text)
+  , timeouts = None { read : Optional Text }
   }
 }

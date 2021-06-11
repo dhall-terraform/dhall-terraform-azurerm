@@ -14,6 +14,7 @@
               , tenant_id : Text
               }
           )
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { display_name_contains = None Text
@@ -31,5 +32,6 @@
             , tenant_id : Text
             }
         )
+  , timeouts = None { read : Optional Text }
   }
 }

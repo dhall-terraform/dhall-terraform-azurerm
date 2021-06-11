@@ -14,6 +14,7 @@
           )
     , subnets : Optional (List Text)
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { id = None Text
@@ -29,5 +30,6 @@
         )
   , subnets = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts = None { read : Optional Text }
   }
 }

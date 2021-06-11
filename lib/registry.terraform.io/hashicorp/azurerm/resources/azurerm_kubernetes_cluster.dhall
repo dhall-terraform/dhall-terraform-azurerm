@@ -38,7 +38,9 @@
         Optional
           ( List
               { aci_connector_linux :
-                  Optional (List { enabled : Bool, subnet_name : Text })
+                  Optional
+                    (List { enabled : Bool, subnet_name : Optional Text })
+              , azure_policy : Optional (List { enabled : Bool })
               , http_application_routing :
                   Optional
                     ( List
@@ -49,7 +51,11 @@
               , kube_dashboard : Optional (List { enabled : Bool })
               , oms_agent :
                   Optional
-                    (List { enabled : Bool, log_analytics_workspace_id : Text })
+                    ( List
+                        { enabled : Bool
+                        , log_analytics_workspace_id : Optional Text
+                        }
+                    )
               }
           )
     , agent_pool_profile :
@@ -141,7 +147,8 @@
       None
         ( List
             { aci_connector_linux :
-                Optional (List { enabled : Bool, subnet_name : Text })
+                Optional (List { enabled : Bool, subnet_name : Optional Text })
+            , azure_policy : Optional (List { enabled : Bool })
             , http_application_routing :
                 Optional
                   ( List
@@ -152,7 +159,11 @@
             , kube_dashboard : Optional (List { enabled : Bool })
             , oms_agent :
                 Optional
-                  (List { enabled : Bool, log_analytics_workspace_id : Text })
+                  ( List
+                      { enabled : Bool
+                      , log_analytics_workspace_id : Optional Text
+                      }
+                  )
             }
         )
   , linux_profile =

@@ -16,6 +16,7 @@
         Optional (List { header : Text, query : Text })
     , version : Optional Text
     , version_set_id : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { description = None Text
@@ -31,5 +32,6 @@
       None (List { header : Text, query : Text })
   , version = None Text
   , version_set_id = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

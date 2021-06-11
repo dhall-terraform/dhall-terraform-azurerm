@@ -11,6 +11,7 @@
     , storage_type : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , unique_identifier : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { artifacts_storage_account_id = None Text
@@ -23,5 +24,6 @@
   , storage_type = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , unique_identifier = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

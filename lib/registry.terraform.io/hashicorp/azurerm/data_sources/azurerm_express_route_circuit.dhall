@@ -26,6 +26,7 @@
           )
     , service_provider_provisioning_state : Optional Text
     , sku : Optional (List { family : Text, tier : Text })
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { id = None Text
@@ -53,5 +54,6 @@
         )
   , service_provider_provisioning_state = None Text
   , sku = None (List { family : Text, tier : Text })
+  , timeouts = None { read : Optional Text }
   }
 }

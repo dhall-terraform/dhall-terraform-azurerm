@@ -84,7 +84,7 @@
               Optional
                 ( List
                     { custom_fragment : Optional Text
-                    , custom_host : Text
+                    , custom_host : Optional Text
                     , custom_path : Optional Text
                     , custom_query_string : Optional Text
                     , redirect_protocol : Text

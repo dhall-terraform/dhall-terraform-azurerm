@@ -32,6 +32,7 @@
     , type : Optional Text
     , use_policy_based_traffic_selectors : Optional Bool
     , virtual_network_gateway_id : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { authorization_key = None Text
@@ -65,5 +66,6 @@
   , type = None Text
   , use_policy_based_traffic_selectors = None Bool
   , virtual_network_gateway_id = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

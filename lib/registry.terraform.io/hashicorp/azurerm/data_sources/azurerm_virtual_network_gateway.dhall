@@ -35,6 +35,7 @@
               }
           )
     , vpn_type : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { active_active = None Bool
@@ -69,5 +70,6 @@
             }
         )
   , vpn_type = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

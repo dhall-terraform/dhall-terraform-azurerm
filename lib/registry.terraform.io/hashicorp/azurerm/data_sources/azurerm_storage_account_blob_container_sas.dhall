@@ -21,6 +21,7 @@
           , read : Bool
           , write : Bool
           }
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { cache_control = None Text
@@ -32,5 +33,6 @@
   , id = None Text
   , ip_address = None Text
   , sas = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

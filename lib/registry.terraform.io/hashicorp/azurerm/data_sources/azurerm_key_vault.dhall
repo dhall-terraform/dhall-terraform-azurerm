@@ -32,6 +32,7 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tenant_id : Optional Text
     , vault_uri : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { access_policy =
@@ -65,5 +66,6 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , tenant_id = None Text
   , vault_uri = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

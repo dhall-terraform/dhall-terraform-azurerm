@@ -18,6 +18,12 @@
           }
     , resource_types : List { container : Bool, object : Bool, service : Bool }
     , services : List { blob : Bool, file : Bool, queue : Bool, table : Bool }
+    , timeouts : Optional { read : Optional Text }
     }
-, default = { https_only = None Bool, id = None Text, sas = None Text }
+, default =
+  { https_only = None Bool
+  , id = None Text
+  , sas = None Text
+  , timeouts = None { read : Optional Text }
+  }
 }

@@ -76,6 +76,7 @@
               , wait_for_success : Optional Bool
               }
           )
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { auto_scale = None (List { evaluation_interval : Text, formula : Text })
@@ -148,5 +149,6 @@
             , wait_for_success : Optional Bool
             }
         )
+  , timeouts = None { read : Optional Text }
   }
 }

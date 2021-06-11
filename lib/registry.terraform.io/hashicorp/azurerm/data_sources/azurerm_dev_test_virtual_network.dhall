@@ -22,6 +22,7 @@
               }
           )
     , unique_identifier : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { allowed_subnets =
@@ -44,5 +45,6 @@
             }
         )
   , unique_identifier = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

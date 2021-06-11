@@ -96,6 +96,13 @@
               , disable_frontend_tls11 : Optional Bool
               , disable_triple_des_chipers : Optional Bool
               , disable_triple_des_ciphers : Optional Bool
+              , enable_backend_ssl30 : Optional Bool
+              , enable_backend_tls10 : Optional Bool
+              , enable_backend_tls11 : Optional Bool
+              , enable_frontend_ssl30 : Optional Bool
+              , enable_frontend_tls10 : Optional Bool
+              , enable_frontend_tls11 : Optional Bool
+              , enable_triple_des_ciphers : Optional Bool
               }
           )
     , sign_in : Optional (List { enabled : Bool })
@@ -206,6 +213,13 @@
             , disable_frontend_tls11 : Optional Bool
             , disable_triple_des_chipers : Optional Bool
             , disable_triple_des_ciphers : Optional Bool
+            , enable_backend_ssl30 : Optional Bool
+            , enable_backend_tls10 : Optional Bool
+            , enable_backend_tls11 : Optional Bool
+            , enable_frontend_ssl30 : Optional Bool
+            , enable_frontend_tls10 : Optional Bool
+            , enable_frontend_tls11 : Optional Bool
+            , enable_triple_des_ciphers : Optional Bool
             }
         )
   , sign_in = None (List { enabled : Bool })

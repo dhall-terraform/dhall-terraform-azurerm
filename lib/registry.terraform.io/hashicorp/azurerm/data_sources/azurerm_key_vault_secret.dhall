@@ -7,6 +7,7 @@
     , value : Optional Text
     , vault_uri : Optional Text
     , version : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { content_type = None Text
@@ -16,5 +17,6 @@
   , value = None Text
   , vault_uri = None Text
   , version = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

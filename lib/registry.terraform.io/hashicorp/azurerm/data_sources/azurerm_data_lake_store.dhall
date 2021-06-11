@@ -9,6 +9,7 @@
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tier : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { encryption_state = None Text
@@ -19,5 +20,6 @@
   , location = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , tier = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

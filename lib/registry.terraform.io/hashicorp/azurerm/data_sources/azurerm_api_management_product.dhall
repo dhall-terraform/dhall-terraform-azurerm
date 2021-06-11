@@ -10,6 +10,7 @@
     , subscription_required : Optional Bool
     , subscriptions_limit : Optional Natural
     , terms : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { approval_required = None Bool
@@ -20,5 +21,6 @@
   , subscription_required = None Bool
   , subscriptions_limit = None Natural
   , terms = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

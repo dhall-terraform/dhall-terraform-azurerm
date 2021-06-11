@@ -10,6 +10,7 @@
     , sku : Optional Text
     , storage_account_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { admin_enabled = None Bool
@@ -21,5 +22,6 @@
   , sku = None Text
   , storage_account_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts = None { read : Optional Text }
   }
 }

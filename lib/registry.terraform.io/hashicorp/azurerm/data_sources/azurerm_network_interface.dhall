@@ -31,6 +31,7 @@
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , virtual_machine_id : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { applied_dns_servers = None (List Text)
@@ -63,5 +64,6 @@
   , private_ip_addresses = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
   , virtual_machine_id = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

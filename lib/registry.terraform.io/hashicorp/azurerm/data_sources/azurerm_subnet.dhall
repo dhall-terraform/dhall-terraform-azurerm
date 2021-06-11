@@ -8,6 +8,7 @@
     , route_table_id : Optional Text
     , service_endpoints : Optional (List Text)
     , virtual_network_name : Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { address_prefix = None Text
@@ -16,5 +17,6 @@
   , network_security_group_id = None Text
   , route_table_id = None Text
   , service_endpoints = None (List Text)
+  , timeouts = None { read : Optional Text }
   }
 }

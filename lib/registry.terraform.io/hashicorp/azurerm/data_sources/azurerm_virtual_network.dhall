@@ -8,6 +8,7 @@
     , resource_group_name : Text
     , subnets : Optional (List Text)
     , vnet_peerings : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { address_space = None (List Text)
@@ -17,5 +18,6 @@
   , location = None Text
   , subnets = None (List Text)
   , vnet_peerings = None (List { mapKey : Text, mapValue : Text })
+  , timeouts = None { read : Optional Text }
   }
 }

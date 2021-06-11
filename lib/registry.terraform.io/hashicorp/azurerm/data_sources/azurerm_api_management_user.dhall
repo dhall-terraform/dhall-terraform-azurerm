@@ -8,6 +8,7 @@
     , resource_group_name : Text
     , state : Optional Text
     , user_id : Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { email = None Text
@@ -16,5 +17,6 @@
   , last_name = None Text
   , note = None Text
   , state = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

@@ -13,6 +13,7 @@
     , resource_group_name : Text
     , sku : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { auto_inflate_enabled = None Bool
@@ -27,5 +28,6 @@
   , maximum_throughput_units = None Natural
   , sku = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts = None { read : Optional Text }
   }
 }

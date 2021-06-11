@@ -15,6 +15,7 @@
     , role_definition_id : Optional Text
     , scope : Optional Text
     , type : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { assignable_scopes = None (List Text)
@@ -33,5 +34,6 @@
   , role_definition_id = None Text
   , scope = None Text
   , type = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

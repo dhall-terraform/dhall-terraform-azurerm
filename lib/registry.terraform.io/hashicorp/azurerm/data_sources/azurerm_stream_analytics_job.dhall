@@ -12,6 +12,7 @@
     , resource_group_name : Text
     , streaming_units : Optional Natural
     , transformation_query : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { compatibility_level = None Text
@@ -25,5 +26,6 @@
   , output_error_policy = None Text
   , streaming_units = None Natural
   , transformation_query = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

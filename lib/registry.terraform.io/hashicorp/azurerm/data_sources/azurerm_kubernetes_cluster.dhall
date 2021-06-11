@@ -2,7 +2,8 @@
     { addon_profile :
         Optional
           ( List
-              { http_application_routing :
+              { azure_policy : List { enabled : Bool }
+              , http_application_routing :
                   List
                     { enabled : Bool
                     , http_application_routing_zone_name : Text
@@ -93,12 +94,14 @@
     , service_principal : Optional (List { client_id : Text })
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , windows_profile : Optional (List { admin_username : Text })
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { addon_profile =
       None
         ( List
-            { http_application_routing :
+            { azure_policy : List { enabled : Bool }
+            , http_application_routing :
                 List
                   { enabled : Bool, http_application_routing_zone_name : Text }
             , kube_dashboard : List { enabled : Bool }
@@ -184,5 +187,6 @@
   , service_principal = None (List { client_id : Text })
   , tags = None (List { mapKey : Text, mapValue : Text })
   , windows_profile = None (List { admin_username : Text })
+  , timeouts = None { read : Optional Text }
   }
 }

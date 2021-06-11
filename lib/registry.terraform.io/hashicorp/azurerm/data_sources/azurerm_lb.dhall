@@ -18,6 +18,7 @@
     , resource_group_name : Text
     , sku : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { frontend_ip_configuration =
@@ -37,5 +38,6 @@
   , private_ip_addresses = None (List Text)
   , sku = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts = None { read : Optional Text }
   }
 }

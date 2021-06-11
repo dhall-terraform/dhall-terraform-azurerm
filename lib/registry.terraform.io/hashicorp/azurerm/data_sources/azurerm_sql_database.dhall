@@ -11,6 +11,7 @@
     , resource_group_name : Text
     , server_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { collation = None Text
@@ -22,5 +23,6 @@
   , location = None Text
   , read_scale = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts = None { read : Optional Text }
   }
 }

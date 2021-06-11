@@ -13,6 +13,7 @@
     , ssh_endpoint : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tier : Optional Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { cluster_version = None Text
@@ -26,5 +27,6 @@
   , ssh_endpoint = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , tier = None Text
+  , timeouts = None { read : Optional Text }
   }
 }

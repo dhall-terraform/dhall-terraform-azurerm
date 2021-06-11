@@ -7,6 +7,8 @@
 , azurerm_application_security_group =
     ./azurerm_application_security_group.dhall
 , azurerm_app_service_certificate = ./azurerm_app_service_certificate.dhall
+, azurerm_app_service_certificate_order =
+    ./azurerm_app_service_certificate_order.dhall
 , azurerm_app_service = ./azurerm_app_service.dhall
 , azurerm_app_service_plan = ./azurerm_app_service_plan.dhall
 , azurerm_automation_variable_bool = ./azurerm_automation_variable_bool.dhall
@@ -26,6 +28,7 @@
 , azurerm_client_config = ./azurerm_client_config.dhall
 , azurerm_container_registry = ./azurerm_container_registry.dhall
 , azurerm_cosmosdb_account = ./azurerm_cosmosdb_account.dhall
+, azurerm_data_factory = ./azurerm_data_factory.dhall
 , azurerm_data_lake_store = ./azurerm_data_lake_store.dhall
 , azurerm_dev_test_lab = ./azurerm_dev_test_lab.dhall
 , azurerm_dev_test_virtual_network = ./azurerm_dev_test_virtual_network.dhall
@@ -34,6 +37,7 @@
 , azurerm_express_route_circuit = ./azurerm_express_route_circuit.dhall
 , azurerm_firewall = ./azurerm_firewall.dhall
 , azurerm_hdinsight_cluster = ./azurerm_hdinsight_cluster.dhall
+, azurerm_healthcare_service = ./azurerm_healthcare_service.dhall
 , azurerm_image = ./azurerm_image.dhall
 , azurerm_key_vault_access_policy = ./azurerm_key_vault_access_policy.dhall
 , azurerm_key_vault = ./azurerm_key_vault.dhall
@@ -64,6 +68,7 @@
     ./azurerm_notification_hub_namespace.dhall
 , azurerm_platform_image = ./azurerm_platform_image.dhall
 , azurerm_policy_definition = ./azurerm_policy_definition.dhall
+, azurerm_postgresql_server = ./azurerm_postgresql_server.dhall
 , azurerm_proximity_placement_group = ./azurerm_proximity_placement_group.dhall
 , azurerm_public_ip = ./azurerm_public_ip.dhall
 , azurerm_public_ip_prefix = ./azurerm_public_ip_prefix.dhall
@@ -73,6 +78,7 @@
 , azurerm_recovery_services_vault = ./azurerm_recovery_services_vault.dhall
 , azurerm_redis_cache = ./azurerm_redis_cache.dhall
 , azurerm_resource_group = ./azurerm_resource_group.dhall
+, azurerm_resources = ./azurerm_resources.dhall
 , azurerm_role_definition = ./azurerm_role_definition.dhall
 , azurerm_route_table = ./azurerm_route_table.dhall
 , azurerm_scheduler_job_collection = ./azurerm_scheduler_job_collection.dhall

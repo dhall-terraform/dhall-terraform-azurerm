@@ -53,6 +53,7 @@
     , site_credential : Optional (List { password : Text, username : Text })
     , source_control : Optional (List { branch : Text, repo_url : Text })
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { app_service_plan_id = None Text
@@ -105,5 +106,6 @@
   , site_credential = None (List { password : Text, username : Text })
   , source_control = None (List { branch : Text, repo_url : Text })
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts = None { read : Optional Text }
   }
 }

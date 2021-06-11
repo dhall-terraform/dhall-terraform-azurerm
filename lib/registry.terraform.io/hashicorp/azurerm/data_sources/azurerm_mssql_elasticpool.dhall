@@ -10,6 +10,7 @@
     , server_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , zone_redundant : Optional Bool
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { id = None Text
@@ -20,5 +21,6 @@
   , per_db_min_capacity = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zone_redundant = None Bool
+  , timeouts = None { read : Optional Text }
   }
 }

@@ -53,6 +53,7 @@
     , sku : Optional (List { capacity : Natural, name : Text })
     , sku_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { additional_location =
@@ -107,5 +108,6 @@
   , sku = None (List { capacity : Natural, name : Text })
   , sku_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts = None { read : Optional Text }
   }
 }

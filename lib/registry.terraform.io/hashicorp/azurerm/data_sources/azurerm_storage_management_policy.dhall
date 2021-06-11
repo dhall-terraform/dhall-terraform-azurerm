@@ -27,6 +27,7 @@
               }
           )
     , storage_account_id : Text
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { id = None Text
@@ -56,5 +57,6 @@
             , name : Text
             }
         )
+  , timeouts = None { read : Optional Text }
   }
 }
