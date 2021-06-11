@@ -13,6 +13,7 @@
     , publisher_name : Text
     , resource_group_name : Text
     , scm_url : Optional Text
+    , sku_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , additional_location :
         Optional
@@ -110,7 +111,7 @@
                     }
               }
           )
-    , sku : List { capacity : Natural, name : Text }
+    , sku : Optional (List { capacity : Optional Natural, name : Text })
     }
 , default =
   { gateway_regional_url = None Text
@@ -122,6 +123,7 @@
   , portal_url = None Text
   , public_ip_addresses = None (List Text)
   , scm_url = None Text
+  , sku_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , additional_location =
       None
@@ -219,5 +221,6 @@
                   }
             }
         )
+  , sku = None (List { capacity : Optional Natural, name : Text })
   }
 }

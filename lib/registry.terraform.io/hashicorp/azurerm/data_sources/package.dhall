@@ -6,6 +6,7 @@
 , azurerm_application_insights = ./azurerm_application_insights.dhall
 , azurerm_application_security_group =
     ./azurerm_application_security_group.dhall
+, azurerm_app_service_certificate = ./azurerm_app_service_certificate.dhall
 , azurerm_app_service = ./azurerm_app_service.dhall
 , azurerm_app_service_plan = ./azurerm_app_service_plan.dhall
 , azurerm_automation_variable_bool = ./azurerm_automation_variable_bool.dhall
@@ -65,6 +66,7 @@
 , azurerm_policy_definition = ./azurerm_policy_definition.dhall
 , azurerm_proximity_placement_group = ./azurerm_proximity_placement_group.dhall
 , azurerm_public_ip = ./azurerm_public_ip.dhall
+, azurerm_public_ip_prefix = ./azurerm_public_ip_prefix.dhall
 , azurerm_public_ips = ./azurerm_public_ips.dhall
 , azurerm_recovery_services_protection_policy_vm =
     ./azurerm_recovery_services_protection_policy_vm.dhall
@@ -87,6 +89,7 @@
     ./azurerm_storage_account_blob_container_sas.dhall
 , azurerm_storage_account = ./azurerm_storage_account.dhall
 , azurerm_storage_account_sas = ./azurerm_storage_account_sas.dhall
+, azurerm_storage_management_policy = ./azurerm_storage_management_policy.dhall
 , azurerm_stream_analytics_job = ./azurerm_stream_analytics_job.dhall
 , azurerm_subnet = ./azurerm_subnet.dhall
 , azurerm_subscription = ./azurerm_subscription.dhall

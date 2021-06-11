@@ -51,6 +51,7 @@
     , resource_group_name : Text
     , scm_url : Optional Text
     , sku : Optional (List { capacity : Natural, name : Text })
+    , sku_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     }
 , default =
@@ -104,6 +105,7 @@
   , publisher_name = None Text
   , scm_url = None Text
   , sku = None (List { capacity : Natural, name : Text })
+  , sku_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   }
 }

@@ -10,6 +10,7 @@
     , resource_group_name : Text
     , sku : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , zone_redundant : Optional Bool
     }
 , default =
   { capacity = None Natural
@@ -19,5 +20,6 @@
   , default_secondary_key = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , zone_redundant = None Bool
   }
 }

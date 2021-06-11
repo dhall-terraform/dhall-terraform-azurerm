@@ -10,6 +10,18 @@
     , location : Text
     , maximum_throughput_units : Optional Natural
     , name : Text
+    , network_rulesets :
+        Optional
+          ( List
+              { default_action : Text
+              , ip_rule : List { action : Text, ip_mask : Text }
+              , virtual_network_rule :
+                  List
+                    { ignore_missing_virtual_network_service_endpoint : Bool
+                    , subnet_id : Text
+                    }
+              }
+          )
     , resource_group_name : Text
     , sku : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -24,6 +36,18 @@
   , id = None Text
   , kafka_enabled = None Bool
   , maximum_throughput_units = None Natural
+  , network_rulesets =
+      None
+        ( List
+            { default_action : Text
+            , ip_rule : List { action : Text, ip_mask : Text }
+            , virtual_network_rule :
+                List
+                  { ignore_missing_virtual_network_service_endpoint : Bool
+                  , subnet_id : Text
+                  }
+            }
+        )
   , tags = None (List { mapKey : Text, mapValue : Text })
   }
 }

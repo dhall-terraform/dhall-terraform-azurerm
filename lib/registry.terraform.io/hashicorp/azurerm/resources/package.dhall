@@ -31,6 +31,8 @@
     ./azurerm_api_management_subscription.dhall
 , azurerm_api_management_user = ./azurerm_api_management_user.dhall
 , azurerm_application_gateway = ./azurerm_application_gateway.dhall
+, azurerm_application_insights_analytics_item =
+    ./azurerm_application_insights_analytics_item.dhall
 , azurerm_application_insights_api_key =
     ./azurerm_application_insights_api_key.dhall
 , azurerm_application_insights = ./azurerm_application_insights.dhall
@@ -72,8 +74,11 @@
 , azurerm_batch_application = ./azurerm_batch_application.dhall
 , azurerm_batch_certificate = ./azurerm_batch_certificate.dhall
 , azurerm_batch_pool = ./azurerm_batch_pool.dhall
+, azurerm_bot_channel_email = ./azurerm_bot_channel_email.dhall
+, azurerm_bot_channel_slack = ./azurerm_bot_channel_slack.dhall
 , azurerm_bot_channels_registration = ./azurerm_bot_channels_registration.dhall
 , azurerm_bot_connection = ./azurerm_bot_connection.dhall
+, azurerm_bot_web_app = ./azurerm_bot_web_app.dhall
 , azurerm_cdn_endpoint = ./azurerm_cdn_endpoint.dhall
 , azurerm_cdn_profile = ./azurerm_cdn_profile.dhall
 , azurerm_cognitive_account = ./azurerm_cognitive_account.dhall
@@ -91,6 +96,7 @@
 , azurerm_cosmosdb_sql_container = ./azurerm_cosmosdb_sql_container.dhall
 , azurerm_cosmosdb_sql_database = ./azurerm_cosmosdb_sql_database.dhall
 , azurerm_cosmosdb_table = ./azurerm_cosmosdb_table.dhall
+, azurerm_dashboard = ./azurerm_dashboard.dhall
 , azurerm_databricks_workspace = ./azurerm_databricks_workspace.dhall
 , azurerm_data_factory_dataset_mysql =
     ./azurerm_data_factory_dataset_mysql.dhall
@@ -147,6 +153,8 @@
 , azurerm_eventhub_namespace_authorization_rule =
     ./azurerm_eventhub_namespace_authorization_rule.dhall
 , azurerm_eventhub_namespace = ./azurerm_eventhub_namespace.dhall
+, azurerm_eventhub_namespace_disaster_recovery_config =
+    ./azurerm_eventhub_namespace_disaster_recovery_config.dhall
 , azurerm_express_route_circuit_authorization =
     ./azurerm_express_route_circuit_authorization.dhall
 , azurerm_express_route_circuit = ./azurerm_express_route_circuit.dhall
@@ -337,6 +345,9 @@
 , azurerm_storage_account = ./azurerm_storage_account.dhall
 , azurerm_storage_blob = ./azurerm_storage_blob.dhall
 , azurerm_storage_container = ./azurerm_storage_container.dhall
+, azurerm_storage_data_lake_gen2_filesystem =
+    ./azurerm_storage_data_lake_gen2_filesystem.dhall
+, azurerm_storage_management_policy = ./azurerm_storage_management_policy.dhall
 , azurerm_storage_queue = ./azurerm_storage_queue.dhall
 , azurerm_storage_share = ./azurerm_storage_share.dhall
 , azurerm_storage_share_directory = ./azurerm_storage_share_directory.dhall
