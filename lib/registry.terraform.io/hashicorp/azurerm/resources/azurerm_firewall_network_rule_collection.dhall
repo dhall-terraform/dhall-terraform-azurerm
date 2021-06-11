@@ -9,6 +9,7 @@
         List
           { description : Optional Text
           , destination_addresses : Optional (List Text)
+          , destination_fqdns : Optional (List Text)
           , destination_ip_groups : Optional (List Text)
           , destination_ports : List Text
           , name : Text

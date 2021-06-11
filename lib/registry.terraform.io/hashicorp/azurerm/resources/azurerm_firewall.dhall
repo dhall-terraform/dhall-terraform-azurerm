@@ -1,5 +1,6 @@
 { Type =
-    { id : Optional Text
+    { dns_servers : Optional (List Text)
+    , id : Optional Text
     , location : Text
     , name : Text
     , resource_group_name : Text
@@ -31,7 +32,8 @@
           }
     }
 , default =
-  { id = None Text
+  { dns_servers = None (List Text)
+  , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , threat_intel_mode = None Text
   , zones = None (List Text)

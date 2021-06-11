@@ -8,10 +8,11 @@
     , name : Text
     , parameters : Optional (List { mapKey : Text, mapValue : Text })
     , resource_group_name : Text
-    , service_principal_id : Text
-    , service_principal_key : Text
-    , tenant : Text
+    , service_principal_id : Optional Text
+    , service_principal_key : Optional Text
+    , tenant : Optional Text
     , url : Text
+    , use_managed_identity : Optional Bool
     , timeouts :
         Optional
           { create : Optional Text
@@ -27,6 +28,10 @@
   , id = None Text
   , integration_runtime_name = None Text
   , parameters = None (List { mapKey : Text, mapValue : Text })
+  , service_principal_id = None Text
+  , service_principal_key = None Text
+  , tenant = None Text
+  , use_managed_identity = None Bool
   , timeouts =
       None
         { create : Optional Text

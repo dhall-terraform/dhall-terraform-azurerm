@@ -270,6 +270,8 @@
 , azurerm_firewall_network_rule_collection =
     ./azurerm_firewall_network_rule_collection.dhall
 , azurerm_firewall_policy = ./azurerm_firewall_policy.dhall
+, azurerm_firewall_policy_rule_collection_group =
+    ./azurerm_firewall_policy_rule_collection_group.dhall
 , azurerm_frontdoor_custom_https_configuration =
     ./azurerm_frontdoor_custom_https_configuration.dhall
 , azurerm_frontdoor = ./azurerm_frontdoor.dhall
@@ -646,6 +648,8 @@
 , azurerm_virtual_desktop_workspace = ./azurerm_virtual_desktop_workspace.dhall
 , azurerm_virtual_hub_connection = ./azurerm_virtual_hub_connection.dhall
 , azurerm_virtual_hub = ./azurerm_virtual_hub.dhall
+, azurerm_virtual_hub_ip = ./azurerm_virtual_hub_ip.dhall
+, azurerm_virtual_hub_route_table = ./azurerm_virtual_hub_route_table.dhall
 , azurerm_virtual_machine_data_disk_attachment =
     ./azurerm_virtual_machine_data_disk_attachment.dhall
 , azurerm_virtual_machine = ./azurerm_virtual_machine.dhall
