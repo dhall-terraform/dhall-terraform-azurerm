@@ -26,6 +26,8 @@
                     , recover_soft_deleted_key_vaults : Optional Bool
                     }
                 )
+          , log_analytics_workspace :
+              Optional (List { permanently_delete_on_destroy : Bool })
           , network : Optional (List { relaxed_locking : Bool })
           , template_deployment :
               Optional (List { delete_nested_items_during_deletion : Bool })

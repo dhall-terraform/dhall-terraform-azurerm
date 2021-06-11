@@ -83,6 +83,14 @@
               { name : Text
               , service_uri : Text
               , use_common_alert_schema : Optional Bool
+              , aad_auth :
+                  Optional
+                    ( List
+                        { identifier_uri : Optional Text
+                        , object_id : Text
+                        , tenant_id : Optional Text
+                        }
+                    )
               }
           )
     }
@@ -165,6 +173,14 @@
             { name : Text
             , service_uri : Text
             , use_common_alert_schema : Optional Bool
+            , aad_auth :
+                Optional
+                  ( List
+                      { identifier_uri : Optional Text
+                      , object_id : Text
+                      , tenant_id : Optional Text
+                      }
+                  )
             }
         )
   }

@@ -11,6 +11,7 @@
     , eviction_policy : Optional Text
     , extensions_time_budget : Optional Text
     , id : Optional Text
+    , license_type : Optional Text
     , location : Text
     , max_bid_price : Optional Natural
     , name : Text
@@ -79,6 +80,7 @@
   , eviction_policy = None Text
   , extensions_time_budget = None Text
   , id = None Text
+  , license_type = None Text
   , max_bid_price = None Natural
   , priority = None Text
   , private_ip_address = None Text

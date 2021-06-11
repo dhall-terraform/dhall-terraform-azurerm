@@ -7,7 +7,8 @@
     , extended_auditing_policy :
         Optional
           ( List
-              { retention_in_days : Natural
+              { log_monitoring_enabled : Bool
+              , retention_in_days : Natural
               , storage_account_access_key : Text
               , storage_account_access_key_is_secondary : Bool
               , storage_endpoint : Text
@@ -69,7 +70,8 @@
   , extended_auditing_policy =
       None
         ( List
-            { retention_in_days : Natural
+            { log_monitoring_enabled : Bool
+            , retention_in_days : Natural
             , storage_account_access_key : Text
             , storage_account_access_key_is_secondary : Bool
             , storage_endpoint : Text

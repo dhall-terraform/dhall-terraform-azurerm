@@ -1,14 +1,12 @@
 { Type =
-    { content_type : Optional Text
-    , expiration_date : Optional Text
+    { alias : Optional Text
+    , billing_scope_id : Optional Text
     , id : Optional Text
-    , key_vault_id : Text
-    , name : Text
-    , not_before_date : Optional Text
+    , subscription_id : Optional Text
+    , subscription_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
-    , value : Text
-    , version : Optional Text
-    , versionless_id : Optional Text
+    , tenant_id : Optional Text
+    , workload : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -18,13 +16,13 @@
           }
     }
 , default =
-  { content_type = None Text
-  , expiration_date = None Text
+  { alias = None Text
+  , billing_scope_id = None Text
   , id = None Text
-  , not_before_date = None Text
+  , subscription_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
-  , version = None Text
-  , versionless_id = None Text
+  , tenant_id = None Text
+  , workload = None Text
   , timeouts =
       None
         { create : Optional Text

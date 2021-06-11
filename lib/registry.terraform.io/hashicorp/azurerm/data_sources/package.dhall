@@ -30,6 +30,9 @@
 , azurerm_batch_account = ./azurerm_batch_account.dhall
 , azurerm_batch_certificate = ./azurerm_batch_certificate.dhall
 , azurerm_batch_pool = ./azurerm_batch_pool.dhall
+, azurerm_billing_enrollment_account_scope =
+    ./azurerm_billing_enrollment_account_scope.dhall
+, azurerm_billing_mca_account_scope = ./azurerm_billing_mca_account_scope.dhall
 , azurerm_blueprint_definition = ./azurerm_blueprint_definition.dhall
 , azurerm_blueprint_published_version =
     ./azurerm_blueprint_published_version.dhall
@@ -217,6 +220,7 @@
     ./azurerm_virtual_network_gateway_connection.dhall
 , azurerm_virtual_network_gateway = ./azurerm_virtual_network_gateway.dhall
 , azurerm_virtual_wan = ./azurerm_virtual_wan.dhall
+, azurerm_vmware_private_cloud = ./azurerm_vmware_private_cloud.dhall
 , azurerm_web_application_firewall_policy =
     ./azurerm_web_application_firewall_policy.dhall
 }

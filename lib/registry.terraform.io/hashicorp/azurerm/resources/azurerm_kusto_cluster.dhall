@@ -1,5 +1,6 @@
 { Type =
     { data_ingestion_uri : Optional Text
+    , double_encryption_enabled : Optional Bool
     , enable_disk_encryption : Optional Bool
     , enable_purge : Optional Bool
     , enable_streaming_ingest : Optional Bool
@@ -44,6 +45,7 @@
     }
 , default =
   { data_ingestion_uri = None Text
+  , double_encryption_enabled = None Bool
   , enable_disk_encryption = None Bool
   , enable_purge = None Bool
   , enable_streaming_ingest = None Bool

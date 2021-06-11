@@ -382,6 +382,8 @@
 , azurerm_kusto_database_principal_assignment =
     ./azurerm_kusto_database_principal_assignment.dhall
 , azurerm_kusto_database_principal = ./azurerm_kusto_database_principal.dhall
+, azurerm_kusto_eventgrid_data_connection =
+    ./azurerm_kusto_eventgrid_data_connection.dhall
 , azurerm_kusto_eventhub_data_connection =
     ./azurerm_kusto_eventhub_data_connection.dhall
 , azurerm_kusto_iothub_data_connection =
@@ -602,6 +604,14 @@
     ./azurerm_sentinel_alert_rule_ms_security_incident.dhall
 , azurerm_sentinel_alert_rule_scheduled =
     ./azurerm_sentinel_alert_rule_scheduled.dhall
+, azurerm_sentinel_data_connector_aws_cloud_trail =
+    ./azurerm_sentinel_data_connector_aws_cloud_trail.dhall
+, azurerm_sentinel_data_connector_azure_active_directory =
+    ./azurerm_sentinel_data_connector_azure_active_directory.dhall
+, azurerm_sentinel_data_connector_office_365 =
+    ./azurerm_sentinel_data_connector_office_365.dhall
+, azurerm_sentinel_data_connector_threat_intelligence =
+    ./azurerm_sentinel_data_connector_threat_intelligence.dhall
 , azurerm_servicebus_namespace_authorization_rule =
     ./azurerm_servicebus_namespace_authorization_rule.dhall
 , azurerm_servicebus_namespace = ./azurerm_servicebus_namespace.dhall
@@ -714,6 +724,7 @@
     ./azurerm_subnet_route_table_association.dhall
 , azurerm_subnet_service_endpoint_storage_policy =
     ./azurerm_subnet_service_endpoint_storage_policy.dhall
+, azurerm_subscription = ./azurerm_subscription.dhall
 , azurerm_subscription_template_deployment =
     ./azurerm_subscription_template_deployment.dhall
 , azurerm_synapse_firewall_rule = ./azurerm_synapse_firewall_rule.dhall
@@ -754,6 +765,7 @@
 , azurerm_virtual_network_gateway = ./azurerm_virtual_network_gateway.dhall
 , azurerm_virtual_network_peering = ./azurerm_virtual_network_peering.dhall
 , azurerm_virtual_wan = ./azurerm_virtual_wan.dhall
+, azurerm_vmware_private_cloud = ./azurerm_vmware_private_cloud.dhall
 , azurerm_vpn_gateway_connection = ./azurerm_vpn_gateway_connection.dhall
 , azurerm_vpn_gateway = ./azurerm_vpn_gateway.dhall
 , azurerm_vpn_server_configuration = ./azurerm_vpn_server_configuration.dhall

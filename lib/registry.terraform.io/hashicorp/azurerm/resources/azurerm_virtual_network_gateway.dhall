@@ -18,6 +18,15 @@
               { asn : Optional Natural
               , peer_weight : Optional Natural
               , peering_address : Optional Text
+              , peering_addresses :
+                  Optional
+                    ( List
+                        { apipa_addresses : Optional (List Text)
+                        , default_addresses : Optional (List Text)
+                        , ip_configuration_name : Optional Text
+                        , tunnel_ip_addresses : Optional (List Text)
+                        }
+                    )
               }
           )
     , custom_route : Optional (List { address_prefixes : Optional (List Text) })
@@ -67,6 +76,15 @@
             { asn : Optional Natural
             , peer_weight : Optional Natural
             , peering_address : Optional Text
+            , peering_addresses :
+                Optional
+                  ( List
+                      { apipa_addresses : Optional (List Text)
+                      , default_addresses : Optional (List Text)
+                      , ip_configuration_name : Optional Text
+                      , tunnel_ip_addresses : Optional (List Text)
+                      }
+                  )
             }
         )
   , custom_route = None (List { address_prefixes : Optional (List Text) })

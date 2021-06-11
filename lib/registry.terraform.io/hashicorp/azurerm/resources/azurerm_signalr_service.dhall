@@ -22,6 +22,15 @@
           , read : Optional Text
           , update : Optional Text
           }
+    , upstream_endpoint :
+        Optional
+          ( List
+              { category_pattern : List Text
+              , event_pattern : List Text
+              , hub_pattern : List Text
+              , url_template : Text
+              }
+          )
     }
 , default =
   { hostname = None Text
@@ -43,5 +52,14 @@
         , read : Optional Text
         , update : Optional Text
         }
+  , upstream_endpoint =
+      None
+        ( List
+            { category_pattern : List Text
+            , event_pattern : List Text
+            , hub_pattern : List Text
+            , url_template : Text
+            }
+        )
   }
 }
