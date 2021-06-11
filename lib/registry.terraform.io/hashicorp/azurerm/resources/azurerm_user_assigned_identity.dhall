@@ -6,6 +6,7 @@
     , principal_id : Optional Text
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tenant_id : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -19,6 +20,7 @@
   , id = None Text
   , principal_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tenant_id = None Text
   , timeouts =
       None
         { create : Optional Text

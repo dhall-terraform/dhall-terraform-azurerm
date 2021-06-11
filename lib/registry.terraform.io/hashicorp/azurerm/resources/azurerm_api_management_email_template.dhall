@@ -1,17 +1,12 @@
 { Type =
-    { cache_name : Text
+    { api_management_name : Text
+    , body : Text
+    , description : Optional Text
     , id : Optional Text
-    , name : Text
     , resource_group_name : Text
-    , target_host_name : Text
-    , usage_model : Text
-    , namespace_junction :
-        List
-          { access_policy_name : Optional Text
-          , namespace_path : Text
-          , nfs_export : Text
-          , target_path : Optional Text
-          }
+    , subject : Text
+    , template_name : Text
+    , title : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -21,7 +16,9 @@
           }
     }
 , default =
-  { id = None Text
+  { description = None Text
+  , id = None Text
+  , title = None Text
   , timeouts =
       None
         { create : Optional Text

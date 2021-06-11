@@ -6,6 +6,7 @@
     , principal_id : Optional Text
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , tenant_id : Optional Text
     , timeouts : Optional { read : Optional Text }
     }
 , default =
@@ -14,6 +15,7 @@
   , location = None Text
   , principal_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , tenant_id = None Text
   , timeouts = None { read : Optional Text }
   }
 }

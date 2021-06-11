@@ -5,6 +5,7 @@
     , mount_addresses : Optional (List Text)
     , mtu : Optional Natural
     , name : Text
+    , ntp_server : Optional Text
     , resource_group_name : Text
     , root_squash_enabled : Optional Bool
     , sku_name : Text
@@ -25,6 +26,8 @@
                     }
               }
           )
+    , dns :
+        Optional (List { search_domain : Optional Text, servers : List Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -37,6 +40,7 @@
   { id = None Text
   , mount_addresses = None (List Text)
   , mtu = None Natural
+  , ntp_server = None Text
   , root_squash_enabled = None Bool
   , default_access_policy =
       None
@@ -54,6 +58,7 @@
                   }
             }
         )
+  , dns = None (List { search_domain : Optional Text, servers : List Text })
   , timeouts =
       None
         { create : Optional Text

@@ -30,6 +30,7 @@
               , nfsv3_enabled : Optional Bool
               , nfsv4_enabled : Optional Bool
               , protocols_enabled : Optional (List Text)
+              , root_access_enabled : Optional Bool
               , rule_index : Natural
               , unix_read_only : Optional Bool
               , unix_read_write : Optional Bool
@@ -66,6 +67,7 @@
             , nfsv3_enabled : Optional Bool
             , nfsv4_enabled : Optional Bool
             , protocols_enabled : Optional (List Text)
+            , root_access_enabled : Optional Bool
             , rule_index : Natural
             , unix_read_only : Optional Bool
             , unix_read_write : Optional Bool

@@ -2,6 +2,7 @@
     { app_service_plan_id : Text
     , app_settings : Optional (List { mapKey : Text, mapValue : Text })
     , client_affinity_enabled : Optional Bool
+    , client_cert_mode : Optional Text
     , custom_domain_verification_id : Optional Text
     , daily_memory_time_quota : Optional Natural
     , default_hostname : Optional Text
@@ -152,6 +153,7 @@
 , default =
   { app_settings = None (List { mapKey : Text, mapValue : Text })
   , client_affinity_enabled = None Bool
+  , client_cert_mode = None Text
   , custom_domain_verification_id = None Text
   , daily_memory_time_quota = None Natural
   , default_hostname = None Text

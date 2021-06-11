@@ -21,6 +21,8 @@
     ./azurerm_api_management_custom_domain.dhall
 , azurerm_api_management = ./azurerm_api_management.dhall
 , azurerm_api_management_diagnostic = ./azurerm_api_management_diagnostic.dhall
+, azurerm_api_management_email_template =
+    ./azurerm_api_management_email_template.dhall
 , azurerm_api_management_group = ./azurerm_api_management_group.dhall
 , azurerm_api_management_group_user = ./azurerm_api_management_group_user.dhall
 , azurerm_api_management_identity_provider_aadb2c =
@@ -136,6 +138,7 @@
 , azurerm_cdn_endpoint = ./azurerm_cdn_endpoint.dhall
 , azurerm_cdn_profile = ./azurerm_cdn_profile.dhall
 , azurerm_cognitive_account = ./azurerm_cognitive_account.dhall
+, azurerm_communication_service = ./azurerm_communication_service.dhall
 , azurerm_container_group = ./azurerm_container_group.dhall
 , azurerm_container_registry = ./azurerm_container_registry.dhall
 , azurerm_container_registry_webhook =
@@ -300,6 +303,7 @@
 , azurerm_express_route_circuit_peering =
     ./azurerm_express_route_circuit_peering.dhall
 , azurerm_express_route_gateway = ./azurerm_express_route_gateway.dhall
+, azurerm_express_route_port = ./azurerm_express_route_port.dhall
 , azurerm_firewall_application_rule_collection =
     ./azurerm_firewall_application_rule_collection.dhall
 , azurerm_firewall = ./azurerm_firewall.dhall
@@ -679,6 +683,8 @@
 , azurerm_spring_cloud_active_deployment =
     ./azurerm_spring_cloud_active_deployment.dhall
 , azurerm_spring_cloud_app = ./azurerm_spring_cloud_app.dhall
+, azurerm_spring_cloud_app_redis_association =
+    ./azurerm_spring_cloud_app_redis_association.dhall
 , azurerm_spring_cloud_certificate = ./azurerm_spring_cloud_certificate.dhall
 , azurerm_spring_cloud_custom_domain =
     ./azurerm_spring_cloud_custom_domain.dhall

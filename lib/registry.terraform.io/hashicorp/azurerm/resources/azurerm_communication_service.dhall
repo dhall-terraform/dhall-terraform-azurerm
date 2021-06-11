@@ -1,17 +1,9 @@
 { Type =
-    { cache_name : Text
+    { data_location : Optional Text
     , id : Optional Text
     , name : Text
     , resource_group_name : Text
-    , target_host_name : Text
-    , usage_model : Text
-    , namespace_junction :
-        List
-          { access_policy_name : Optional Text
-          , namespace_path : Text
-          , nfs_export : Text
-          , target_path : Optional Text
-          }
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -21,7 +13,9 @@
           }
     }
 , default =
-  { id = None Text
+  { data_location = None Text
+  , id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text

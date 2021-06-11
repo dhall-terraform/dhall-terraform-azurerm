@@ -1,6 +1,7 @@
 { Type =
     { app_service_plan_id : Optional Text
     , app_settings : Optional (List { mapKey : Text, mapValue : Text })
+    , client_cert_mode : Optional Text
     , connection_string :
         Optional (List { name : Text, type : Text, value : Text })
     , custom_domain_verification_id : Optional Text
@@ -72,6 +73,7 @@
 , default =
   { app_service_plan_id = None Text
   , app_settings = None (List { mapKey : Text, mapValue : Text })
+  , client_cert_mode = None Text
   , connection_string = None (List { name : Text, type : Text, value : Text })
   , custom_domain_verification_id = None Text
   , default_hostname = None Text
