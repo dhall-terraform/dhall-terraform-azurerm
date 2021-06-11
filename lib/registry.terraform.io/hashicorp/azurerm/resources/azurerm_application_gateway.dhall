@@ -61,7 +61,8 @@
         List { id : Optional Text, name : Text, subnet_id : Text }
     , http_listener :
         List
-          { frontend_ip_configuration_id : Optional Text
+          { firewall_policy_id : Optional Text
+          , frontend_ip_configuration_id : Optional Text
           , frontend_ip_configuration_name : Text
           , frontend_port_id : Optional Text
           , frontend_port_name : Text

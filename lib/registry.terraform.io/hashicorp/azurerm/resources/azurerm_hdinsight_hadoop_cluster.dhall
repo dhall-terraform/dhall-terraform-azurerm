@@ -44,6 +44,9 @@
                     )
               }
           )
+    , monitor :
+        Optional
+          (List { log_analytics_workspace_id : Text, primary_key : Text })
     , roles :
         List
           { edge_node :
@@ -147,6 +150,8 @@
                   )
             }
         )
+  , monitor =
+      None (List { log_analytics_workspace_id : Text, primary_key : Text })
   , storage_account =
       None
         ( List

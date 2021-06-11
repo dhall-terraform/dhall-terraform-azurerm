@@ -5,6 +5,7 @@
     , client_secret : Text
     , id : Optional Text
     , resource_group_name : Text
+    , signin_tenant : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -15,6 +16,7 @@
     }
 , default =
   { id = None Text
+  , signin_tenant = None Text
   , timeouts =
       None
         { create : Optional Text

@@ -3,6 +3,7 @@
     , container_registry_id : Optional Text
     , description : Optional Text
     , friendly_name : Optional Text
+    , high_business_impact : Optional Bool
     , id : Optional Text
     , key_vault_id : Text
     , location : Text
@@ -29,6 +30,7 @@
   { container_registry_id = None Text
   , description = None Text
   , friendly_name = None Text
+  , high_business_impact = None Bool
   , id = None Text
   , sku_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })

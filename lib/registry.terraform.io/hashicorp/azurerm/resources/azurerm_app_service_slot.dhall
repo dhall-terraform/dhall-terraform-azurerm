@@ -79,7 +79,8 @@
               { application_logs :
                   Optional
                     ( List
-                        { azure_blob_storage :
+                        { file_system_level : Optional Text
+                        , azure_blob_storage :
                             Optional
                               ( List
                                   { level : Text
@@ -128,6 +129,7 @@
                         , ip_address : Text
                         , name : Text
                         , priority : Natural
+                        , subnet_id : Text
                         , virtual_network_subnet_id : Text
                         }
                     )
@@ -149,6 +151,7 @@
                         , ip_address : Text
                         , name : Text
                         , priority : Natural
+                        , subnet_id : Text
                         , virtual_network_subnet_id : Text
                         }
                     )
@@ -248,7 +251,8 @@
             { application_logs :
                 Optional
                   ( List
-                      { azure_blob_storage :
+                      { file_system_level : Optional Text
+                      , azure_blob_storage :
                           Optional
                             ( List
                                 { level : Text
@@ -295,6 +299,7 @@
                       , ip_address : Text
                       , name : Text
                       , priority : Natural
+                      , subnet_id : Text
                       , virtual_network_subnet_id : Text
                       }
                   )
@@ -316,6 +321,7 @@
                       , ip_address : Text
                       , name : Text
                       , priority : Natural
+                      , subnet_id : Text
                       , virtual_network_subnet_id : Text
                       }
                   )

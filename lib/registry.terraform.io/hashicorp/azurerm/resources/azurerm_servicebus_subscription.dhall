@@ -12,6 +12,7 @@
     , namespace_name : Text
     , requires_session : Optional Bool
     , resource_group_name : Text
+    , status : Optional Text
     , topic_name : Text
     , timeouts :
         Optional
@@ -31,6 +32,7 @@
   , id = None Text
   , lock_duration = None Text
   , requires_session = None Bool
+  , status = None Text
   , timeouts =
       None
         { create : Optional Text

@@ -1,5 +1,18 @@
 { Type =
-    { event_hub_events_endpoint : Optional Text
+    { endpoint :
+        Optional
+          ( List
+              { batch_frequency_in_seconds : Natural
+              , connection_string : Text
+              , container_name : Text
+              , encoding : Text
+              , file_name_format : Text
+              , max_chunk_size_in_bytes : Natural
+              , name : Text
+              , type : Text
+              }
+          )
+    , event_hub_events_endpoint : Optional Text
     , event_hub_events_path : Optional Text
     , event_hub_operations_endpoint : Optional Text
     , event_hub_operations_path : Optional Text
@@ -10,6 +23,16 @@
     , location : Text
     , name : Text
     , resource_group_name : Text
+    , route :
+        Optional
+          ( List
+              { condition : Text
+              , enabled : Bool
+              , endpoint_names : List Text
+              , name : Text
+              , source : Text
+              }
+          )
     , shared_access_policy :
         Optional
           ( List
@@ -21,19 +44,6 @@
           )
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , type : Optional Text
-    , endpoint :
-        Optional
-          ( List
-              { batch_frequency_in_seconds : Optional Natural
-              , connection_string : Text
-              , container_name : Optional Text
-              , encoding : Optional Text
-              , file_name_format : Optional Text
-              , max_chunk_size_in_bytes : Optional Natural
-              , name : Text
-              , type : Text
-              }
-          )
     , fallback_route :
         Optional
           ( List
@@ -57,16 +67,6 @@
           )
     , ip_filter_rule :
         Optional (List { action : Text, ip_mask : Text, name : Text })
-    , route :
-        Optional
-          ( List
-              { condition : Optional Text
-              , enabled : Bool
-              , endpoint_names : List Text
-              , name : Text
-              , source : Text
-              }
-          )
     , sku : List { capacity : Natural, name : Text }
     , timeouts :
         Optional
@@ -77,7 +77,20 @@
           }
     }
 , default =
-  { event_hub_events_endpoint = None Text
+  { endpoint =
+      None
+        ( List
+            { batch_frequency_in_seconds : Natural
+            , connection_string : Text
+            , container_name : Text
+            , encoding : Text
+            , file_name_format : Text
+            , max_chunk_size_in_bytes : Natural
+            , name : Text
+            , type : Text
+            }
+        )
+  , event_hub_events_endpoint = None Text
   , event_hub_events_path = None Text
   , event_hub_operations_endpoint = None Text
   , event_hub_operations_path = None Text
@@ -85,6 +98,16 @@
   , event_hub_retention_in_days = None Natural
   , hostname = None Text
   , id = None Text
+  , route =
+      None
+        ( List
+            { condition : Text
+            , enabled : Bool
+            , endpoint_names : List Text
+            , name : Text
+            , source : Text
+            }
+        )
   , shared_access_policy =
       None
         ( List
@@ -96,19 +119,6 @@
         )
   , tags = None (List { mapKey : Text, mapValue : Text })
   , type = None Text
-  , endpoint =
-      None
-        ( List
-            { batch_frequency_in_seconds : Optional Natural
-            , connection_string : Text
-            , container_name : Optional Text
-            , encoding : Optional Text
-            , file_name_format : Optional Text
-            , max_chunk_size_in_bytes : Optional Natural
-            , name : Text
-            , type : Text
-            }
-        )
   , fallback_route =
       None
         ( List
@@ -131,16 +141,6 @@
             }
         )
   , ip_filter_rule = None (List { action : Text, ip_mask : Text, name : Text })
-  , route =
-      None
-        ( List
-            { condition : Optional Text
-            , enabled : Bool
-            , endpoint_names : List Text
-            , name : Text
-            , source : Text
-            }
-        )
   , timeouts =
       None
         { create : Optional Text

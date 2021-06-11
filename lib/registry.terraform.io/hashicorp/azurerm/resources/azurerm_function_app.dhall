@@ -86,13 +86,36 @@
         Optional
           ( List
               { always_on : Optional Bool
+              , auto_swap_slot_name : Optional Text
               , ftps_state : Optional Text
               , http2_enabled : Optional Bool
               , ip_restriction :
-                  Optional (List { ip_address : Text, subnet_id : Text })
+                  Optional
+                    ( List
+                        { action : Text
+                        , ip_address : Text
+                        , name : Text
+                        , priority : Natural
+                        , subnet_id : Text
+                        , virtual_network_subnet_id : Text
+                        }
+                    )
               , linux_fx_version : Optional Text
               , min_tls_version : Optional Text
               , pre_warmed_instance_count : Optional Natural
+              , scm_ip_restriction :
+                  Optional
+                    ( List
+                        { action : Text
+                        , ip_address : Text
+                        , name : Text
+                        , priority : Natural
+                        , subnet_id : Text
+                        , virtual_network_subnet_id : Text
+                        }
+                    )
+              , scm_type : Optional Text
+              , scm_use_main_ip_restriction : Optional Bool
               , use_32_bit_worker_process : Optional Bool
               , websockets_enabled : Optional Bool
               , cors :
@@ -102,6 +125,16 @@
                         , support_credentials : Optional Bool
                         }
                     )
+              }
+          )
+    , source_control :
+        Optional
+          ( List
+              { branch : Optional Text
+              , manual_integration : Optional Bool
+              , repo_url : Optional Text
+              , rollback_enabled : Optional Bool
+              , use_mercurial : Optional Bool
               }
           )
     , timeouts :
@@ -194,13 +227,36 @@
       None
         ( List
             { always_on : Optional Bool
+            , auto_swap_slot_name : Optional Text
             , ftps_state : Optional Text
             , http2_enabled : Optional Bool
             , ip_restriction :
-                Optional (List { ip_address : Text, subnet_id : Text })
+                Optional
+                  ( List
+                      { action : Text
+                      , ip_address : Text
+                      , name : Text
+                      , priority : Natural
+                      , subnet_id : Text
+                      , virtual_network_subnet_id : Text
+                      }
+                  )
             , linux_fx_version : Optional Text
             , min_tls_version : Optional Text
             , pre_warmed_instance_count : Optional Natural
+            , scm_ip_restriction :
+                Optional
+                  ( List
+                      { action : Text
+                      , ip_address : Text
+                      , name : Text
+                      , priority : Natural
+                      , subnet_id : Text
+                      , virtual_network_subnet_id : Text
+                      }
+                  )
+            , scm_type : Optional Text
+            , scm_use_main_ip_restriction : Optional Bool
             , use_32_bit_worker_process : Optional Bool
             , websockets_enabled : Optional Bool
             , cors :
@@ -210,6 +266,16 @@
                       , support_credentials : Optional Bool
                       }
                   )
+            }
+        )
+  , source_control =
+      None
+        ( List
+            { branch : Optional Text
+            , manual_integration : Optional Bool
+            , repo_url : Optional Text
+            , rollback_enabled : Optional Bool
+            , use_mercurial : Optional Bool
             }
         )
   , timeouts =

@@ -24,6 +24,16 @@
                   Optional (List { endpoint_name : Text, service_name : Text })
               }
           )
+    , oauth2_authorization :
+        Optional
+          (List { authorization_server_name : Text, scope : Optional Text })
+    , openid_authentication :
+        Optional
+          ( List
+              { bearer_token_sending_methods : Optional (List Text)
+              , openid_provider_name : Text
+              }
+          )
     , subscription_key_parameter_names :
         Optional (List { header : Text, query : Text })
     , timeouts :
@@ -51,6 +61,15 @@
             , content_value : Text
             , wsdl_selector :
                 Optional (List { endpoint_name : Text, service_name : Text })
+            }
+        )
+  , oauth2_authorization =
+      None (List { authorization_server_name : Text, scope : Optional Text })
+  , openid_authentication =
+      None
+        ( List
+            { bearer_token_sending_methods : Optional (List Text)
+            , openid_provider_name : Text
             }
         )
   , subscription_key_parameter_names =

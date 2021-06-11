@@ -36,6 +36,13 @@
           , read : Optional Text
           , update : Optional Text
           }
+    , traffic_selector_policy :
+        Optional
+          ( List
+              { local_address_cidrs : List Text
+              , remote_address_cidrs : List Text
+              }
+          )
     }
 , default =
   { authorization_key = None Text
@@ -70,5 +77,12 @@
         , read : Optional Text
         , update : Optional Text
         }
+  , traffic_selector_policy =
+      None
+        ( List
+            { local_address_cidrs : List Text
+            , remote_address_cidrs : List Text
+            }
+        )
   }
 }

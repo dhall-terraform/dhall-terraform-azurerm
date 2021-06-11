@@ -12,6 +12,41 @@
     , component_version : List { storm : Text }
     , gateway :
         List { enabled : Optional Bool, password : Text, username : Text }
+    , metastores :
+        Optional
+          ( List
+              { ambari :
+                  Optional
+                    ( List
+                        { database_name : Text
+                        , password : Text
+                        , server : Text
+                        , username : Text
+                        }
+                    )
+              , hive :
+                  Optional
+                    ( List
+                        { database_name : Text
+                        , password : Text
+                        , server : Text
+                        , username : Text
+                        }
+                    )
+              , oozie :
+                  Optional
+                    ( List
+                        { database_name : Text
+                        , password : Text
+                        , server : Text
+                        , username : Text
+                        }
+                    )
+              }
+          )
+    , monitor :
+        Optional
+          (List { log_analytics_workspace_id : Text, primary_key : Text })
     , roles :
         List
           { head_node :
@@ -66,6 +101,40 @@
   , ssh_endpoint = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , tls_min_version = None Text
+  , metastores =
+      None
+        ( List
+            { ambari :
+                Optional
+                  ( List
+                      { database_name : Text
+                      , password : Text
+                      , server : Text
+                      , username : Text
+                      }
+                  )
+            , hive :
+                Optional
+                  ( List
+                      { database_name : Text
+                      , password : Text
+                      , server : Text
+                      , username : Text
+                      }
+                  )
+            , oozie :
+                Optional
+                  ( List
+                      { database_name : Text
+                      , password : Text
+                      , server : Text
+                      , username : Text
+                      }
+                  )
+            }
+        )
+  , monitor =
+      None (List { log_analytics_workspace_id : Text, primary_key : Text })
   , storage_account =
       None
         ( List

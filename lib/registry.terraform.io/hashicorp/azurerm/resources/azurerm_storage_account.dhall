@@ -3,10 +3,12 @@
     , account_kind : Optional Text
     , account_replication_type : Text
     , account_tier : Text
+    , allow_blob_public_access : Optional Bool
     , enable_https_traffic_only : Optional Bool
     , id : Optional Text
     , is_hns_enabled : Optional Bool
     , location : Text
+    , min_tls_version : Optional Text
     , name : Text
     , primary_access_key : Optional Text
     , primary_blob_connection_string : Optional Text
@@ -139,9 +141,11 @@
 , default =
   { access_tier = None Text
   , account_kind = None Text
+  , allow_blob_public_access = None Bool
   , enable_https_traffic_only = None Bool
   , id = None Text
   , is_hns_enabled = None Bool
+  , min_tls_version = None Text
   , primary_access_key = None Text
   , primary_blob_connection_string = None Text
   , primary_blob_endpoint = None Text

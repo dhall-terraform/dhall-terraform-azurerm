@@ -68,12 +68,21 @@
     ./azurerm_app_service_hybrid_connection.dhall
 , azurerm_app_service_plan = ./azurerm_app_service_plan.dhall
 , azurerm_app_service_slot = ./azurerm_app_service_slot.dhall
+, azurerm_app_service_slot_virtual_network_swift_connection =
+    ./azurerm_app_service_slot_virtual_network_swift_connection.dhall
 , azurerm_app_service_source_control_token =
     ./azurerm_app_service_source_control_token.dhall
 , azurerm_app_service_virtual_network_swift_connection =
     ./azurerm_app_service_virtual_network_swift_connection.dhall
 , azurerm_automation_account = ./azurerm_automation_account.dhall
 , azurerm_automation_certificate = ./azurerm_automation_certificate.dhall
+, azurerm_automation_connection_certificate =
+    ./azurerm_automation_connection_certificate.dhall
+, azurerm_automation_connection_classic_certificate =
+    ./azurerm_automation_connection_classic_certificate.dhall
+, azurerm_automation_connection = ./azurerm_automation_connection.dhall
+, azurerm_automation_connection_service_principal =
+    ./azurerm_automation_connection_service_principal.dhall
 , azurerm_automation_credential = ./azurerm_automation_credential.dhall
 , azurerm_automation_dsc_configuration =
     ./azurerm_automation_dsc_configuration.dhall
@@ -136,6 +145,14 @@
 , azurerm_database_migration_service =
     ./azurerm_database_migration_service.dhall
 , azurerm_databricks_workspace = ./azurerm_databricks_workspace.dhall
+, azurerm_data_factory_dataset_azure_blob =
+    ./azurerm_data_factory_dataset_azure_blob.dhall
+, azurerm_data_factory_dataset_cosmosdb_sqlapi =
+    ./azurerm_data_factory_dataset_cosmosdb_sqlapi.dhall
+, azurerm_data_factory_dataset_delimited_text =
+    ./azurerm_data_factory_dataset_delimited_text.dhall
+, azurerm_data_factory_dataset_http = ./azurerm_data_factory_dataset_http.dhall
+, azurerm_data_factory_dataset_json = ./azurerm_data_factory_dataset_json.dhall
 , azurerm_data_factory_dataset_mysql =
     ./azurerm_data_factory_dataset_mysql.dhall
 , azurerm_data_factory_dataset_postgresql =
@@ -147,6 +164,14 @@
     ./azurerm_data_factory_integration_runtime_managed.dhall
 , azurerm_data_factory_integration_runtime_self_hosted =
     ./azurerm_data_factory_integration_runtime_self_hosted.dhall
+, azurerm_data_factory_linked_service_azure_blob_storage =
+    ./azurerm_data_factory_linked_service_azure_blob_storage.dhall
+, azurerm_data_factory_linked_service_azure_file_storage =
+    ./azurerm_data_factory_linked_service_azure_file_storage.dhall
+, azurerm_data_factory_linked_service_azure_function =
+    ./azurerm_data_factory_linked_service_azure_function.dhall
+, azurerm_data_factory_linked_service_cosmosdb =
+    ./azurerm_data_factory_linked_service_cosmosdb.dhall
 , azurerm_data_factory_linked_service_data_lake_storage_gen2 =
     ./azurerm_data_factory_linked_service_data_lake_storage_gen2.dhall
 , azurerm_data_factory_linked_service_key_vault =
@@ -155,8 +180,12 @@
     ./azurerm_data_factory_linked_service_mysql.dhall
 , azurerm_data_factory_linked_service_postgresql =
     ./azurerm_data_factory_linked_service_postgresql.dhall
+, azurerm_data_factory_linked_service_sftp =
+    ./azurerm_data_factory_linked_service_sftp.dhall
 , azurerm_data_factory_linked_service_sql_server =
     ./azurerm_data_factory_linked_service_sql_server.dhall
+, azurerm_data_factory_linked_service_web =
+    ./azurerm_data_factory_linked_service_web.dhall
 , azurerm_data_factory_pipeline = ./azurerm_data_factory_pipeline.dhall
 , azurerm_data_factory_trigger_schedule =
     ./azurerm_data_factory_trigger_schedule.dhall
@@ -171,7 +200,11 @@
 , azurerm_data_share_account = ./azurerm_data_share_account.dhall
 , azurerm_data_share_dataset_blob_storage =
     ./azurerm_data_share_dataset_blob_storage.dhall
+, azurerm_data_share_dataset_data_lake_gen1 =
+    ./azurerm_data_share_dataset_data_lake_gen1.dhall
 , azurerm_data_share = ./azurerm_data_share.dhall
+, azurerm_dedicated_hardware_security_module =
+    ./azurerm_dedicated_hardware_security_module.dhall
 , azurerm_dedicated_host = ./azurerm_dedicated_host.dhall
 , azurerm_dedicated_host_group = ./azurerm_dedicated_host_group.dhall
 , azurerm_devspace_controller = ./azurerm_devspace_controller.dhall
@@ -224,6 +257,8 @@
     ./azurerm_firewall_nat_rule_collection.dhall
 , azurerm_firewall_network_rule_collection =
     ./azurerm_firewall_network_rule_collection.dhall
+, azurerm_frontdoor_custom_https_configuration =
+    ./azurerm_frontdoor_custom_https_configuration.dhall
 , azurerm_frontdoor = ./azurerm_frontdoor.dhall
 , azurerm_frontdoor_firewall_policy = ./azurerm_frontdoor_firewall_policy.dhall
 , azurerm_function_app = ./azurerm_function_app.dhall
@@ -243,6 +278,8 @@
 , azurerm_hpc_cache = ./azurerm_hpc_cache.dhall
 , azurerm_hpc_cache_nfs_target = ./azurerm_hpc_cache_nfs_target.dhall
 , azurerm_image = ./azurerm_image.dhall
+, azurerm_integration_service_environment =
+    ./azurerm_integration_service_environment.dhall
 , azurerm_iotcentral_application = ./azurerm_iotcentral_application.dhall
 , azurerm_iothub_consumer_group = ./azurerm_iothub_consumer_group.dhall
 , azurerm_iothub = ./azurerm_iothub.dhall
@@ -269,16 +306,24 @@
     ./azurerm_iot_time_series_insights_standard_environment.dhall
 , azurerm_key_vault_access_policy = ./azurerm_key_vault_access_policy.dhall
 , azurerm_key_vault_certificate = ./azurerm_key_vault_certificate.dhall
+, azurerm_key_vault_certificate_issuer =
+    ./azurerm_key_vault_certificate_issuer.dhall
 , azurerm_key_vault = ./azurerm_key_vault.dhall
 , azurerm_key_vault_key = ./azurerm_key_vault_key.dhall
 , azurerm_key_vault_secret = ./azurerm_key_vault_secret.dhall
 , azurerm_kubernetes_cluster = ./azurerm_kubernetes_cluster.dhall
 , azurerm_kubernetes_cluster_node_pool =
     ./azurerm_kubernetes_cluster_node_pool.dhall
+, azurerm_kusto_attached_database_configuration =
+    ./azurerm_kusto_attached_database_configuration.dhall
+, azurerm_kusto_cluster_customer_managed_key =
+    ./azurerm_kusto_cluster_customer_managed_key.dhall
 , azurerm_kusto_cluster = ./azurerm_kusto_cluster.dhall
 , azurerm_kusto_cluster_principal_assignment =
     ./azurerm_kusto_cluster_principal_assignment.dhall
 , azurerm_kusto_database = ./azurerm_kusto_database.dhall
+, azurerm_kusto_database_principal_assignment =
+    ./azurerm_kusto_database_principal_assignment.dhall
 , azurerm_kusto_database_principal = ./azurerm_kusto_database_principal.dhall
 , azurerm_kusto_eventhub_data_connection =
     ./azurerm_kusto_eventhub_data_connection.dhall
@@ -359,6 +404,8 @@
 , azurerm_mssql_server_vulnerability_assessment =
     ./azurerm_mssql_server_vulnerability_assessment.dhall
 , azurerm_mssql_virtual_machine = ./azurerm_mssql_virtual_machine.dhall
+, azurerm_mysql_active_directory_administrator =
+    ./azurerm_mysql_active_directory_administrator.dhall
 , azurerm_mysql_configuration = ./azurerm_mysql_configuration.dhall
 , azurerm_mysql_database = ./azurerm_mysql_database.dhall
 , azurerm_mysql_firewall_rule = ./azurerm_mysql_firewall_rule.dhall
@@ -433,12 +480,14 @@
 , azurerm_recovery_services_vault = ./azurerm_recovery_services_vault.dhall
 , azurerm_redis_cache = ./azurerm_redis_cache.dhall
 , azurerm_redis_firewall_rule = ./azurerm_redis_firewall_rule.dhall
+, azurerm_redis_linked_server = ./azurerm_redis_linked_server.dhall
 , azurerm_relay_hybrid_connection = ./azurerm_relay_hybrid_connection.dhall
 , azurerm_relay_namespace = ./azurerm_relay_namespace.dhall
 , azurerm_resource_group = ./azurerm_resource_group.dhall
 , azurerm_role_assignment = ./azurerm_role_assignment.dhall
 , azurerm_role_definition = ./azurerm_role_definition.dhall
 , azurerm_route = ./azurerm_route.dhall
+, azurerm_route_filter = ./azurerm_route_filter.dhall
 , azurerm_route_table = ./azurerm_route_table.dhall
 , azurerm_search_service = ./azurerm_search_service.dhall
 , azurerm_security_center_contact = ./azurerm_security_center_contact.dhall
@@ -482,6 +531,7 @@
 , azurerm_snapshot = ./azurerm_snapshot.dhall
 , azurerm_spatial_anchors_account = ./azurerm_spatial_anchors_account.dhall
 , azurerm_spring_cloud_app = ./azurerm_spring_cloud_app.dhall
+, azurerm_spring_cloud_certificate = ./azurerm_spring_cloud_certificate.dhall
 , azurerm_spring_cloud_service = ./azurerm_spring_cloud_service.dhall
 , azurerm_sql_active_directory_administrator =
     ./azurerm_sql_active_directory_administrator.dhall
@@ -534,6 +584,9 @@
     ./azurerm_subnet_network_security_group_association.dhall
 , azurerm_subnet_route_table_association =
     ./azurerm_subnet_route_table_association.dhall
+, azurerm_synapse_firewall_rule = ./azurerm_synapse_firewall_rule.dhall
+, azurerm_synapse_spark_pool = ./azurerm_synapse_spark_pool.dhall
+, azurerm_synapse_workspace = ./azurerm_synapse_workspace.dhall
 , azurerm_template_deployment = ./azurerm_template_deployment.dhall
 , azurerm_traffic_manager_endpoint = ./azurerm_traffic_manager_endpoint.dhall
 , azurerm_traffic_manager_profile = ./azurerm_traffic_manager_profile.dhall

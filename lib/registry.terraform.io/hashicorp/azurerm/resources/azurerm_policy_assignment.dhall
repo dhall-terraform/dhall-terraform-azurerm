@@ -4,6 +4,7 @@
     , enforcement_mode : Optional Bool
     , id : Optional Text
     , location : Optional Text
+    , metadata : Optional Text
     , name : Text
     , not_scopes : Optional (List Text)
     , parameters : Optional Text
@@ -31,6 +32,7 @@
   , enforcement_mode = None Bool
   , id = None Text
   , location = None Text
+  , metadata = None Text
   , not_scopes = None (List Text)
   , parameters = None Text
   , identity =

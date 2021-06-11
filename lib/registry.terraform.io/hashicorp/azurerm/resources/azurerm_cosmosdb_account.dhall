@@ -1,6 +1,7 @@
 { Type =
     { connection_strings : Optional (List Text)
     , enable_automatic_failover : Optional Bool
+    , enable_free_tier : Optional Bool
     , enable_multiple_write_locations : Optional Bool
     , endpoint : Optional Text
     , id : Optional Text
@@ -39,11 +40,18 @@
           , read : Optional Text
           , update : Optional Text
           }
-    , virtual_network_rule : Optional (List { id : Text })
+    , virtual_network_rule :
+        Optional
+          ( List
+              { id : Text
+              , ignore_missing_vnet_service_endpoint : Optional Bool
+              }
+          )
     }
 , default =
   { connection_strings = None (List Text)
   , enable_automatic_failover = None Bool
+  , enable_free_tier = None Bool
   , enable_multiple_write_locations = None Bool
   , endpoint = None Text
   , id = None Text
@@ -65,6 +73,10 @@
         , read : Optional Text
         , update : Optional Text
         }
-  , virtual_network_rule = None (List { id : Text })
+  , virtual_network_rule =
+      None
+        ( List
+            { id : Text, ignore_missing_vnet_service_endpoint : Optional Bool }
+        )
   }
 }

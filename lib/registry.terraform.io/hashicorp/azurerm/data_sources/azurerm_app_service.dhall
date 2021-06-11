@@ -33,6 +33,7 @@
                     , ip_address : Text
                     , name : Text
                     , priority : Natural
+                    , subnet_id : Text
                     , virtual_network_subnet_id : Text
                     }
               , java_container : Text
@@ -52,6 +53,7 @@
                     , ip_address : Text
                     , name : Text
                     , priority : Natural
+                    , subnet_id : Text
                     , virtual_network_subnet_id : Text
                     }
               , scm_type : Text
@@ -62,7 +64,16 @@
               }
           )
     , site_credential : Optional (List { password : Text, username : Text })
-    , source_control : Optional (List { branch : Text, repo_url : Text })
+    , source_control :
+        Optional
+          ( List
+              { branch : Text
+              , manual_integration : Bool
+              , repo_url : Text
+              , rollback_enabled : Bool
+              , use_mercurial : Bool
+              }
+          )
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts : Optional { read : Optional Text }
     }
@@ -97,6 +108,7 @@
                   , ip_address : Text
                   , name : Text
                   , priority : Natural
+                  , subnet_id : Text
                   , virtual_network_subnet_id : Text
                   }
             , java_container : Text
@@ -116,6 +128,7 @@
                   , ip_address : Text
                   , name : Text
                   , priority : Natural
+                  , subnet_id : Text
                   , virtual_network_subnet_id : Text
                   }
             , scm_type : Text
@@ -126,7 +139,16 @@
             }
         )
   , site_credential = None (List { password : Text, username : Text })
-  , source_control = None (List { branch : Text, repo_url : Text })
+  , source_control =
+      None
+        ( List
+            { branch : Text
+            , manual_integration : Bool
+            , repo_url : Text
+            , rollback_enabled : Bool
+            , use_mercurial : Bool
+            }
+        )
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts = None { read : Optional Text }
   }

@@ -21,6 +21,14 @@
     , storage_mb : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , version : Text
+    , identity :
+        Optional
+          ( List
+              { principal_id : Optional Text
+              , tenant_id : Optional Text
+              , type : Text
+              }
+          )
     , storage_profile :
         Optional
           ( List
@@ -68,6 +76,14 @@
   , ssl_minimal_tls_version_enforced = None Text
   , storage_mb = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , identity =
+      None
+        ( List
+            { principal_id : Optional Text
+            , tenant_id : Optional Text
+            , type : Text
+            }
+        )
   , storage_profile =
       None
         ( List

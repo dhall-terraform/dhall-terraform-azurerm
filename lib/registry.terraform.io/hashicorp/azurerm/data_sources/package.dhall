@@ -44,6 +44,8 @@
 , azurerm_data_share_account = ./azurerm_data_share_account.dhall
 , azurerm_data_share_dataset_blob_storage =
     ./azurerm_data_share_dataset_blob_storage.dhall
+, azurerm_data_share_dataset_data_lake_gen1 =
+    ./azurerm_data_share_dataset_data_lake_gen1.dhall
 , azurerm_data_share = ./azurerm_data_share.dhall
 , azurerm_dedicated_host = ./azurerm_dedicated_host.dhall
 , azurerm_dedicated_host_group = ./azurerm_dedicated_host_group.dhall
@@ -72,6 +74,8 @@
     ./azurerm_iothub_shared_access_policy.dhall
 , azurerm_key_vault_access_policy = ./azurerm_key_vault_access_policy.dhall
 , azurerm_key_vault_certificate = ./azurerm_key_vault_certificate.dhall
+, azurerm_key_vault_certificate_issuer =
+    ./azurerm_key_vault_certificate_issuer.dhall
 , azurerm_key_vault = ./azurerm_key_vault.dhall
 , azurerm_key_vault_key = ./azurerm_key_vault_key.dhall
 , azurerm_key_vault_secret = ./azurerm_key_vault_secret.dhall
@@ -139,6 +143,7 @@
 , azurerm_resource_group = ./azurerm_resource_group.dhall
 , azurerm_resources = ./azurerm_resources.dhall
 , azurerm_role_definition = ./azurerm_role_definition.dhall
+, azurerm_route_filter = ./azurerm_route_filter.dhall
 , azurerm_route_table = ./azurerm_route_table.dhall
 , azurerm_sentinel_alert_rule = ./azurerm_sentinel_alert_rule.dhall
 , azurerm_servicebus_namespace_authorization_rule =
@@ -165,6 +170,7 @@
 , azurerm_subnet = ./azurerm_subnet.dhall
 , azurerm_subscription = ./azurerm_subscription.dhall
 , azurerm_subscriptions = ./azurerm_subscriptions.dhall
+, azurerm_synapse_workspace = ./azurerm_synapse_workspace.dhall
 , azurerm_traffic_manager_geographical_location =
     ./azurerm_traffic_manager_geographical_location.dhall
 , azurerm_user_assigned_identity = ./azurerm_user_assigned_identity.dhall
@@ -175,4 +181,6 @@
 , azurerm_virtual_network_gateway_connection =
     ./azurerm_virtual_network_gateway_connection.dhall
 , azurerm_virtual_network_gateway = ./azurerm_virtual_network_gateway.dhall
+, azurerm_web_application_firewall_policy =
+    ./azurerm_web_application_firewall_policy.dhall
 }

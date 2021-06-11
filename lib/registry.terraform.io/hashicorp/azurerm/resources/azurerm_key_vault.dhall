@@ -21,6 +21,7 @@
     , resource_group_name : Text
     , sku_name : Text
     , soft_delete_enabled : Optional Bool
+    , soft_delete_retention_days : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tenant_id : Text
     , vault_uri : Optional Text
@@ -60,6 +61,7 @@
   , id = None Text
   , purge_protection_enabled = None Bool
   , soft_delete_enabled = None Bool
+  , soft_delete_retention_days = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
   , vault_uri = None Text
   , network_acls =

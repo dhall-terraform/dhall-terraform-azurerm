@@ -5,7 +5,8 @@
     , container_configuration :
         Optional
           ( List
-              { container_registries :
+              { container_image_names : List Text
+              , container_registries :
                   List
                     { password : Text
                     , registry_server : Text
@@ -107,7 +108,8 @@
   , container_configuration =
       None
         ( List
-            { container_registries :
+            { container_image_names : List Text
+            , container_registries :
                 List
                   { password : Text, registry_server : Text, user_name : Text }
             , type : Text

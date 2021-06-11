@@ -7,6 +7,7 @@
     , primary_azure_port : Optional Text
     , primary_peer_address_prefix : Text
     , resource_group_name : Text
+    , route_filter_id : Optional Text
     , secondary_azure_port : Optional Text
     , secondary_peer_address_prefix : Text
     , shared_key : Optional Text
@@ -32,6 +33,7 @@
   , id = None Text
   , peer_asn = None Natural
   , primary_azure_port = None Text
+  , route_filter_id = None Text
   , secondary_azure_port = None Text
   , shared_key = None Text
   , microsoft_peering_config =

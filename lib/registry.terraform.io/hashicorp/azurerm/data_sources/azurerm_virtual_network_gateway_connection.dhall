@@ -29,6 +29,13 @@
     , routing_weight : Optional Natural
     , shared_key : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , traffic_selector_policy :
+        Optional
+          ( List
+              { local_address_cidrs : List Text
+              , remote_address_cidrs : List Text
+              }
+          )
     , type : Optional Text
     , use_policy_based_traffic_selectors : Optional Bool
     , virtual_network_gateway_id : Optional Text
@@ -63,6 +70,13 @@
   , routing_weight = None Natural
   , shared_key = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , traffic_selector_policy =
+      None
+        ( List
+            { local_address_cidrs : List Text
+            , remote_address_cidrs : List Text
+            }
+        )
   , type = None Text
   , use_policy_based_traffic_selectors = None Bool
   , virtual_network_gateway_id = None Text

@@ -13,6 +13,14 @@
     , specialized : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , identifier : List { offer : Text, publisher : Text, sku : Text }
+    , purchase_plan :
+        Optional
+          ( List
+              { name : Text
+              , product : Optional Text
+              , publisher : Optional Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -30,6 +38,11 @@
   , release_note_uri = None Text
   , specialized = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , purchase_plan =
+      None
+        ( List
+            { name : Text, product : Optional Text, publisher : Optional Text }
+        )
   , timeouts =
       None
         { create : Optional Text

@@ -1,6 +1,7 @@
 { Type =
     { auto_inflate_enabled : Optional Bool
     , capacity : Optional Natural
+    , dedicated_cluster_id : Optional Text
     , default_primary_connection_string : Optional Text
     , default_primary_connection_string_alias : Optional Text
     , default_primary_key : Optional Text
@@ -21,6 +22,7 @@
 , default =
   { auto_inflate_enabled = None Bool
   , capacity = None Natural
+  , dedicated_cluster_id = None Text
   , default_primary_connection_string = None Text
   , default_primary_connection_string_alias = None Text
   , default_primary_key = None Text

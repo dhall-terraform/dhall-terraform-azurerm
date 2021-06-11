@@ -9,6 +9,8 @@
     , scopes : List Text
     , severity : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , target_resource_location : Optional Text
+    , target_resource_type : Optional Text
     , window_size : Optional Text
     , action :
         Optional
@@ -18,17 +20,43 @@
                   Optional (List { mapKey : Text, mapValue : Text })
               }
           )
+    , application_insights_web_test_location_availability_criteria :
+        Optional
+          ( List
+              { component_id : Text
+              , failed_location_count : Natural
+              , web_test_id : Text
+              }
+          )
     , criteria :
-        List
-          { aggregation : Text
-          , metric_name : Text
-          , metric_namespace : Text
-          , operator : Text
-          , threshold : Natural
-          , dimension :
-              Optional
-                (List { name : Text, operator : Text, values : List Text })
-          }
+        Optional
+          ( List
+              { aggregation : Text
+              , metric_name : Text
+              , metric_namespace : Text
+              , operator : Text
+              , threshold : Natural
+              , dimension :
+                  Optional
+                    (List { name : Text, operator : Text, values : List Text })
+              }
+          )
+    , dynamic_criteria :
+        Optional
+          ( List
+              { aggregation : Text
+              , alert_sensitivity : Text
+              , evaluation_failure_count : Optional Natural
+              , evaluation_total_count : Optional Natural
+              , ignore_data_before : Optional Text
+              , metric_name : Text
+              , metric_namespace : Text
+              , operator : Text
+              , dimension :
+                  Optional
+                    (List { name : Text, operator : Text, values : List Text })
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -45,6 +73,8 @@
   , id = None Text
   , severity = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , target_resource_location = None Text
+  , target_resource_type = None Text
   , window_size = None Text
   , action =
       None
@@ -52,6 +82,43 @@
             { action_group_id : Text
             , webhook_properties :
                 Optional (List { mapKey : Text, mapValue : Text })
+            }
+        )
+  , application_insights_web_test_location_availability_criteria =
+      None
+        ( List
+            { component_id : Text
+            , failed_location_count : Natural
+            , web_test_id : Text
+            }
+        )
+  , criteria =
+      None
+        ( List
+            { aggregation : Text
+            , metric_name : Text
+            , metric_namespace : Text
+            , operator : Text
+            , threshold : Natural
+            , dimension :
+                Optional
+                  (List { name : Text, operator : Text, values : List Text })
+            }
+        )
+  , dynamic_criteria =
+      None
+        ( List
+            { aggregation : Text
+            , alert_sensitivity : Text
+            , evaluation_failure_count : Optional Natural
+            , evaluation_total_count : Optional Natural
+            , ignore_data_before : Optional Text
+            , metric_name : Text
+            , metric_namespace : Text
+            , operator : Text
+            , dimension :
+                Optional
+                  (List { name : Text, operator : Text, values : List Text })
             }
         )
   , timeouts =

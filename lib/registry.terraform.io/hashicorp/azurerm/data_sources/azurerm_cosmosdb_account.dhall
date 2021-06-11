@@ -9,6 +9,7 @@
               }
           )
     , enable_automatic_failover : Optional Bool
+    , enable_free_tier : Optional Bool
     , enable_multiple_write_locations : Optional Bool
     , endpoint : Optional Text
     , geo_location :
@@ -43,6 +44,7 @@
             }
         )
   , enable_automatic_failover = None Bool
+  , enable_free_tier = None Bool
   , enable_multiple_write_locations = None Bool
   , endpoint = None Text
   , geo_location =

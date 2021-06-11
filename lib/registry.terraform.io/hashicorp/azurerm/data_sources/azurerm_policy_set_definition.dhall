@@ -6,6 +6,14 @@
     , metadata : Optional Text
     , name : Optional Text
     , parameters : Optional Text
+    , policy_definition_reference :
+        Optional
+          ( List
+              { parameters : List { mapKey : Text, mapValue : Text }
+              , policy_definition_id : Text
+              , reference_id : Text
+              }
+          )
     , policy_definitions : Optional Text
     , policy_type : Optional Text
     , timeouts : Optional { read : Optional Text }
@@ -18,6 +26,14 @@
   , metadata = None Text
   , name = None Text
   , parameters = None Text
+  , policy_definition_reference =
+      None
+        ( List
+            { parameters : List { mapKey : Text, mapValue : Text }
+            , policy_definition_id : Text
+            , reference_id : Text
+            }
+        )
   , policy_definitions = None Text
   , policy_type = None Text
   , timeouts = None { read : Optional Text }

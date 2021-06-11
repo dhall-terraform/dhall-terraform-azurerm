@@ -3,11 +3,13 @@
     , account_kind : Optional Text
     , account_replication_type : Optional Text
     , account_tier : Optional Text
+    , allow_blob_public_access : Optional Bool
     , custom_domain : Optional (List { name : Text })
     , enable_https_traffic_only : Optional Bool
     , id : Optional Text
     , is_hns_enabled : Optional Bool
     , location : Optional Text
+    , min_tls_version : Optional Text
     , name : Text
     , primary_access_key : Optional Text
     , primary_blob_connection_string : Optional Text
@@ -50,11 +52,13 @@
   , account_kind = None Text
   , account_replication_type = None Text
   , account_tier = None Text
+  , allow_blob_public_access = None Bool
   , custom_domain = None (List { name : Text })
   , enable_https_traffic_only = None Bool
   , id = None Text
   , is_hns_enabled = None Bool
   , location = None Text
+  , min_tls_version = None Text
   , primary_access_key = None Text
   , primary_blob_connection_string = None Text
   , primary_blob_endpoint = None Text

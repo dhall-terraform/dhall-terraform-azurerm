@@ -3,6 +3,15 @@
     , content : Optional Text
     , description : Optional Text
     , id : Optional Text
+    , job_schedule :
+        Optional
+          ( List
+              { job_schedule_id : Text
+              , parameters : List { mapKey : Text, mapValue : Text }
+              , run_on : Text
+              , schedule_name : Text
+              }
+          )
     , location : Text
     , log_progress : Bool
     , log_verbose : Bool
@@ -30,6 +39,15 @@
   { content = None Text
   , description = None Text
   , id = None Text
+  , job_schedule =
+      None
+        ( List
+            { job_schedule_id : Text
+            , parameters : List { mapKey : Text, mapValue : Text }
+            , run_on : Text
+            , schedule_name : Text
+            }
+        )
   , tags = None (List { mapKey : Text, mapValue : Text })
   , publish_content_link =
       None

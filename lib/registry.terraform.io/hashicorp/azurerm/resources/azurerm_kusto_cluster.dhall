@@ -4,10 +4,12 @@
     , enable_purge : Optional Bool
     , enable_streaming_ingest : Optional Bool
     , id : Optional Text
+    , language_extensions : Optional (List Text)
     , location : Text
     , name : Text
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , trusted_external_tenants : Optional (List Text)
     , uri : Optional Text
     , zones : Optional (List Text)
     , identity :
@@ -19,7 +21,10 @@
               , type : Text
               }
           )
-    , sku : List { capacity : Natural, name : Text }
+    , optimized_auto_scale :
+        Optional
+          (List { maximum_instances : Natural, minimum_instances : Natural })
+    , sku : List { capacity : Optional Natural, name : Text }
     , timeouts :
         Optional
           { create : Optional Text
@@ -42,7 +47,9 @@
   , enable_purge = None Bool
   , enable_streaming_ingest = None Bool
   , id = None Text
+  , language_extensions = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , trusted_external_tenants = None (List Text)
   , uri = None Text
   , zones = None (List Text)
   , identity =
@@ -54,6 +61,8 @@
             , type : Text
             }
         )
+  , optimized_auto_scale =
+      None (List { maximum_instances : Natural, minimum_instances : Natural })
   , timeouts =
       None
         { create : Optional Text

@@ -13,7 +13,6 @@
     , possible_outbound_ip_addresses : Optional Text
     , resource_group_name : Text
     , site_credential : Optional (List { password : Text, username : Text })
-    , source_control : Optional (List { branch : Text, repo_url : Text })
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , auth_settings :
         Optional
@@ -98,7 +97,8 @@
               { application_logs :
                   Optional
                     ( List
-                        { azure_blob_storage :
+                        { file_system_level : Optional Text
+                        , azure_blob_storage :
                             Optional
                               ( List
                                   { level : Text
@@ -147,6 +147,7 @@
                         , ip_address : Text
                         , name : Text
                         , priority : Natural
+                        , subnet_id : Text
                         , virtual_network_subnet_id : Text
                         }
                     )
@@ -168,6 +169,7 @@
                         , ip_address : Text
                         , name : Text
                         , priority : Natural
+                        , subnet_id : Text
                         , virtual_network_subnet_id : Text
                         }
                     )
@@ -183,6 +185,16 @@
                         , support_credentials : Optional Bool
                         }
                     )
+              }
+          )
+    , source_control :
+        Optional
+          ( List
+              { branch : Optional Text
+              , manual_integration : Optional Bool
+              , repo_url : Optional Text
+              , rollback_enabled : Optional Bool
+              , use_mercurial : Optional Bool
               }
           )
     , storage_account :
@@ -215,7 +227,6 @@
   , outbound_ip_addresses = None Text
   , possible_outbound_ip_addresses = None Text
   , site_credential = None (List { password : Text, username : Text })
-  , source_control = None (List { branch : Text, repo_url : Text })
   , tags = None (List { mapKey : Text, mapValue : Text })
   , auth_settings =
       None
@@ -298,7 +309,8 @@
             { application_logs :
                 Optional
                   ( List
-                      { azure_blob_storage :
+                      { file_system_level : Optional Text
+                      , azure_blob_storage :
                           Optional
                             ( List
                                 { level : Text
@@ -345,6 +357,7 @@
                       , ip_address : Text
                       , name : Text
                       , priority : Natural
+                      , subnet_id : Text
                       , virtual_network_subnet_id : Text
                       }
                   )
@@ -366,6 +379,7 @@
                       , ip_address : Text
                       , name : Text
                       , priority : Natural
+                      , subnet_id : Text
                       , virtual_network_subnet_id : Text
                       }
                   )
@@ -381,6 +395,16 @@
                       , support_credentials : Optional Bool
                       }
                   )
+            }
+        )
+  , source_control =
+      None
+        ( List
+            { branch : Optional Text
+            , manual_integration : Optional Bool
+            , repo_url : Optional Text
+            , rollback_enabled : Optional Bool
+            , use_mercurial : Optional Bool
             }
         )
   , storage_account =

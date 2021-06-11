@@ -16,6 +16,7 @@
                     { match_values : List Text
                     , negation_condition : Optional Bool
                     , operator : Text
+                    , transforms : Optional (List Text)
                     , match_variables :
                         List { selector : Optional Text, variable_name : Text }
                     }
@@ -43,7 +44,15 @@
                 }
           }
     , policy_settings :
-        Optional (List { enabled : Optional Bool, mode : Optional Text })
+        Optional
+          ( List
+              { enabled : Optional Bool
+              , file_upload_limit_in_mb : Optional Natural
+              , max_request_body_size_in_kb : Optional Natural
+              , mode : Optional Text
+              , request_body_check : Optional Bool
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -67,13 +76,22 @@
                   { match_values : List Text
                   , negation_condition : Optional Bool
                   , operator : Text
+                  , transforms : Optional (List Text)
                   , match_variables :
                       List { selector : Optional Text, variable_name : Text }
                   }
             }
         )
   , policy_settings =
-      None (List { enabled : Optional Bool, mode : Optional Text })
+      None
+        ( List
+            { enabled : Optional Bool
+            , file_upload_limit_in_mb : Optional Natural
+            , max_request_body_size_in_kb : Optional Natural
+            , mode : Optional Text
+            , request_body_check : Optional Bool
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

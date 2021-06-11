@@ -47,7 +47,7 @@
           }
     , frontend_endpoint :
         List
-          { custom_https_provisioning_enabled : Bool
+          { custom_https_provisioning_enabled : Optional Bool
           , host_name : Text
           , id : Optional Text
           , name : Text

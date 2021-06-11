@@ -7,6 +7,8 @@
     , disable_correlation_request_id : Optional Bool
     , disable_terraform_partner_id : Optional Bool
     , environment : Optional Text
+    , metadata_host : Optional Text
+    , metadata_url : Optional Text
     , msi_endpoint : Optional Text
     , partner_id : Optional Text
     , skip_credentials_validation : Optional Bool
@@ -24,6 +26,7 @@
                     , recover_soft_deleted_key_vaults : Optional Bool
                     }
                 )
+          , network : Optional (List { relaxed_locking : Optional Bool })
           , virtual_machine :
               Optional (List { delete_os_disk_on_deletion : Bool })
           , virtual_machine_scale_set :
@@ -39,6 +42,8 @@
   , disable_correlation_request_id = None Bool
   , disable_terraform_partner_id = None Bool
   , environment = None Text
+  , metadata_host = None Text
+  , metadata_url = None Text
   , msi_endpoint = None Text
   , partner_id = None Text
   , skip_credentials_validation = None Bool

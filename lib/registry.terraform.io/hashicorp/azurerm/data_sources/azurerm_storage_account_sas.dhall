@@ -4,6 +4,7 @@
     , https_only : Optional Bool
     , id : Optional Text
     , sas : Optional Text
+    , signed_version : Optional Text
     , start : Text
     , permissions :
         List
@@ -24,6 +25,7 @@
   { https_only = None Bool
   , id = None Text
   , sas = None Text
+  , signed_version = None Text
   , timeouts = None { read : Optional Text }
   }
 }
