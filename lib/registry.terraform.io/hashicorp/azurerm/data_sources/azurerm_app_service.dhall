@@ -47,6 +47,7 @@
               , local_mysql_enabled : Bool
               , managed_pipeline_mode : Text
               , min_tls_version : Text
+              , number_of_workers : Natural
               , php_version : Text
               , python_version : Text
               , remote_debugging_enabled : Bool
@@ -127,6 +128,7 @@
             , local_mysql_enabled : Bool
             , managed_pipeline_mode : Text
             , min_tls_version : Text
+            , number_of_workers : Natural
             , php_version : Text
             , python_version : Text
             , remote_debugging_enabled : Bool

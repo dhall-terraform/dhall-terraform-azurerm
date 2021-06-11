@@ -10,6 +10,7 @@
     , subnet_id : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , user_whitelisted_ip_ranges : Optional (List Text)
+    , cluster_setting : Optional (List { name : Text, value : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -28,6 +29,7 @@
   , resource_group_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , user_whitelisted_ip_ranges = None (List Text)
+  , cluster_setting = None (List { name : Text, value : Text })
   , timeouts =
       None
         { create : Optional Text

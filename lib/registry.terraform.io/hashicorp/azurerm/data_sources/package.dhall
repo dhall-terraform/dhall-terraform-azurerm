@@ -165,6 +165,7 @@
 , azurerm_role_definition = ./azurerm_role_definition.dhall
 , azurerm_route_filter = ./azurerm_route_filter.dhall
 , azurerm_route_table = ./azurerm_route_table.dhall
+, azurerm_search_service = ./azurerm_search_service.dhall
 , azurerm_sentinel_alert_rule = ./azurerm_sentinel_alert_rule.dhall
 , azurerm_sentinel_alert_rule_template =
     ./azurerm_sentinel_alert_rule_template.dhall

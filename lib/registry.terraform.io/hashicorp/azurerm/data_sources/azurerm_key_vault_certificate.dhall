@@ -1,5 +1,6 @@
 { Type =
     { certificate_data : Optional Text
+    , certificate_data_base64 : Optional Text
     , certificate_policy :
         Optional
           ( List
@@ -47,6 +48,7 @@
     }
 , default =
   { certificate_data = None Text
+  , certificate_data_base64 = None Text
   , certificate_policy =
       None
         ( List

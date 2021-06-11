@@ -143,6 +143,7 @@
               , local_mysql_enabled : Optional Bool
               , managed_pipeline_mode : Optional Text
               , min_tls_version : Optional Text
+              , number_of_workers : Optional Natural
               , php_version : Optional Text
               , python_version : Optional Text
               , remote_debugging_enabled : Optional Bool
@@ -317,6 +318,7 @@
             , local_mysql_enabled : Optional Bool
             , managed_pipeline_mode : Optional Text
             , min_tls_version : Optional Text
+            , number_of_workers : Optional Natural
             , php_version : Optional Text
             , python_version : Optional Text
             , remote_debugging_enabled : Optional Bool

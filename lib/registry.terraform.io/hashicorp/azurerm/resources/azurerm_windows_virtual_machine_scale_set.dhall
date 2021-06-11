@@ -7,6 +7,7 @@
     , enable_automatic_updates : Optional Bool
     , encryption_at_host_enabled : Optional Bool
     , eviction_policy : Optional Text
+    , extensions_time_budget : Optional Text
     , health_probe_id : Optional Text
     , id : Optional Text
     , instances : Natural
@@ -159,6 +160,7 @@
   , enable_automatic_updates = None Bool
   , encryption_at_host_enabled = None Bool
   , eviction_policy = None Text
+  , extensions_time_budget = None Text
   , health_probe_id = None Text
   , id = None Text
   , license_type = None Text

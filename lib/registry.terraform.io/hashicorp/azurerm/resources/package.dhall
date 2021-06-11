@@ -184,6 +184,8 @@
     ./azurerm_data_factory_linked_service_azure_function.dhall
 , azurerm_data_factory_linked_service_azure_sql_database =
     ./azurerm_data_factory_linked_service_azure_sql_database.dhall
+, azurerm_data_factory_linked_service_azure_table_storage =
+    ./azurerm_data_factory_linked_service_azure_table_storage.dhall
 , azurerm_data_factory_linked_service_cosmosdb =
     ./azurerm_data_factory_linked_service_cosmosdb.dhall
 , azurerm_data_factory_linked_service_data_lake_storage_gen2 =
@@ -196,6 +198,8 @@
     ./azurerm_data_factory_linked_service_postgresql.dhall
 , azurerm_data_factory_linked_service_sftp =
     ./azurerm_data_factory_linked_service_sftp.dhall
+, azurerm_data_factory_linked_service_snowflake =
+    ./azurerm_data_factory_linked_service_snowflake.dhall
 , azurerm_data_factory_linked_service_sql_server =
     ./azurerm_data_factory_linked_service_sql_server.dhall
 , azurerm_data_factory_linked_service_synapse =
@@ -330,10 +334,12 @@
     ./azurerm_iothub_endpoint_servicebus_topic.dhall
 , azurerm_iothub_endpoint_storage_container =
     ./azurerm_iothub_endpoint_storage_container.dhall
+, azurerm_iothub_enrichment = ./azurerm_iothub_enrichment.dhall
 , azurerm_iothub_fallback_route = ./azurerm_iothub_fallback_route.dhall
 , azurerm_iothub_route = ./azurerm_iothub_route.dhall
 , azurerm_iothub_shared_access_policy =
     ./azurerm_iothub_shared_access_policy.dhall
+, azurerm_iot_security_solution = ./azurerm_iot_security_solution.dhall
 , azurerm_iot_time_series_insights_access_policy =
     ./azurerm_iot_time_series_insights_access_policy.dhall
 , azurerm_iot_time_series_insights_gen2_environment =
@@ -435,6 +441,7 @@
 , azurerm_media_services_account = ./azurerm_media_services_account.dhall
 , azurerm_media_streaming_endpoint = ./azurerm_media_streaming_endpoint.dhall
 , azurerm_media_streaming_locator = ./azurerm_media_streaming_locator.dhall
+, azurerm_media_streaming_policy = ./azurerm_media_streaming_policy.dhall
 , azurerm_media_transform = ./azurerm_media_transform.dhall
 , azurerm_monitor_action_group = ./azurerm_monitor_action_group.dhall
 , azurerm_monitor_action_rule_action_group =
@@ -615,8 +622,12 @@
     ./azurerm_site_recovery_replication_policy.dhall
 , azurerm_snapshot = ./azurerm_snapshot.dhall
 , azurerm_spatial_anchors_account = ./azurerm_spatial_anchors_account.dhall
+, azurerm_spring_cloud_active_deployment =
+    ./azurerm_spring_cloud_active_deployment.dhall
 , azurerm_spring_cloud_app = ./azurerm_spring_cloud_app.dhall
 , azurerm_spring_cloud_certificate = ./azurerm_spring_cloud_certificate.dhall
+, azurerm_spring_cloud_java_deployment =
+    ./azurerm_spring_cloud_java_deployment.dhall
 , azurerm_spring_cloud_service = ./azurerm_spring_cloud_service.dhall
 , azurerm_sql_active_directory_administrator =
     ./azurerm_sql_active_directory_administrator.dhall

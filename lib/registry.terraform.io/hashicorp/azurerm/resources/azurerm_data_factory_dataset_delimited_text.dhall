@@ -2,6 +2,7 @@
     { additional_properties : Optional (List { mapKey : Text, mapValue : Text })
     , annotations : Optional (List Text)
     , column_delimiter : Optional Text
+    , compression_codec : Optional Text
     , compression_level : Optional Text
     , data_factory_name : Text
     , description : Optional Text
@@ -38,6 +39,7 @@
   { additional_properties = None (List { mapKey : Text, mapValue : Text })
   , annotations = None (List Text)
   , column_delimiter = None Text
+  , compression_codec = None Text
   , compression_level = None Text
   , description = None Text
   , encoding = None Text

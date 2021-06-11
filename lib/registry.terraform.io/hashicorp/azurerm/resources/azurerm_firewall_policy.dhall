@@ -7,6 +7,7 @@
     , name : Text
     , resource_group_name : Text
     , rule_collection_groups : Optional (List Text)
+    , sku : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , threat_intelligence_mode : Optional Text
     , dns :
@@ -38,6 +39,7 @@
   , firewalls = None (List Text)
   , id = None Text
   , rule_collection_groups = None (List Text)
+  , sku = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , threat_intelligence_mode = None Text
   , dns =

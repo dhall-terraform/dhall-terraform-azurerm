@@ -11,6 +11,7 @@
               }
           )
     , certificate_data : Optional Text
+    , certificate_data_base64 : Optional Text
     , id : Optional Text
     , key_vault_id : Text
     , name : Text
@@ -80,6 +81,7 @@
             }
         )
   , certificate_data = None Text
+  , certificate_data_base64 = None Text
   , id = None Text
   , secret_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })

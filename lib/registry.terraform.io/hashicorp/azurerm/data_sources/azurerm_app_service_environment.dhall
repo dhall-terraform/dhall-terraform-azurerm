@@ -1,5 +1,6 @@
 { Type =
-    { front_end_scale_factor : Optional Natural
+    { cluster_setting : Optional (List { name : Text, value : Text })
+    , front_end_scale_factor : Optional Natural
     , id : Optional Text
     , internal_ip_address : Optional Text
     , location : Optional Text
@@ -12,7 +13,8 @@
     , timeouts : Optional { read : Optional Text }
     }
 , default =
-  { front_end_scale_factor = None Natural
+  { cluster_setting = None (List { name : Text, value : Text })
+  , front_end_scale_factor = None Natural
   , id = None Text
   , internal_ip_address = None Text
   , location = None Text

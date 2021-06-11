@@ -13,6 +13,8 @@
               , type : Text
               }
           )
+    , enrichment :
+        Optional (List { endpoint_names : List Text, key : Text, value : Text })
     , event_hub_events_endpoint : Optional Text
     , event_hub_events_path : Optional Text
     , event_hub_operations_endpoint : Optional Text
@@ -94,6 +96,8 @@
             , type : Text
             }
         )
+  , enrichment =
+      None (List { endpoint_names : List Text, key : Text, value : Text })
   , event_hub_events_endpoint = None Text
   , event_hub_events_path = None Text
   , event_hub_operations_endpoint = None Text

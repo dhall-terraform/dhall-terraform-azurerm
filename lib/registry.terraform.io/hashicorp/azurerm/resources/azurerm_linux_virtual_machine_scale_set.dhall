@@ -7,6 +7,7 @@
     , do_not_run_extensions_on_overprovisioned_machines : Optional Bool
     , encryption_at_host_enabled : Optional Bool
     , eviction_policy : Optional Text
+    , extensions_time_budget : Optional Text
     , health_probe_id : Optional Text
     , id : Optional Text
     , instances : Natural
@@ -151,6 +152,7 @@
   , do_not_run_extensions_on_overprovisioned_machines = None Bool
   , encryption_at_host_enabled = None Bool
   , eviction_policy = None Text
+  , extensions_time_budget = None Text
   , health_probe_id = None Text
   , id = None Text
   , max_bid_price = None Natural

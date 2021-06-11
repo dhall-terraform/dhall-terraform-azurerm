@@ -11,7 +11,7 @@
           ( List
               { principal_id : Optional Text
               , tenant_id : Optional Text
-              , type : Text
+              , type : Optional Text
               }
           )
     , persistent_disk :
@@ -34,7 +34,7 @@
         ( List
             { principal_id : Optional Text
             , tenant_id : Optional Text
-            , type : Text
+            , type : Optional Text
             }
         )
   , persistent_disk =
