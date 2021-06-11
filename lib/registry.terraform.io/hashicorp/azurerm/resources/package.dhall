@@ -203,6 +203,7 @@
     ./azurerm_iothub_endpoint_servicebus_topic.dhall
 , azurerm_iothub_endpoint_storage_container =
     ./azurerm_iothub_endpoint_storage_container.dhall
+, azurerm_iothub_fallback_route = ./azurerm_iothub_fallback_route.dhall
 , azurerm_iothub_route = ./azurerm_iothub_route.dhall
 , azurerm_iothub_shared_access_policy =
     ./azurerm_iothub_shared_access_policy.dhall
@@ -269,6 +270,7 @@
 , azurerm_mysql_server = ./azurerm_mysql_server.dhall
 , azurerm_mysql_virtual_network_rule =
     ./azurerm_mysql_virtual_network_rule.dhall
+, azurerm_nat_gateway = ./azurerm_nat_gateway.dhall
 , azurerm_netapp_account = ./azurerm_netapp_account.dhall
 , azurerm_netapp_pool = ./azurerm_netapp_pool.dhall
 , azurerm_network_connection_monitor =
@@ -295,6 +297,7 @@
 , azurerm_notification_hub_namespace =
     ./azurerm_notification_hub_namespace.dhall
 , azurerm_packet_capture = ./azurerm_packet_capture.dhall
+, azurerm_point_to_site_vpn_gateway = ./azurerm_point_to_site_vpn_gateway.dhall
 , azurerm_policy_assignment = ./azurerm_policy_assignment.dhall
 , azurerm_policy_definition = ./azurerm_policy_definition.dhall
 , azurerm_policy_set_definition = ./azurerm_policy_set_definition.dhall
@@ -307,11 +310,13 @@
 , azurerm_private_dns_aaaa_record = ./azurerm_private_dns_aaaa_record.dhall
 , azurerm_private_dns_a_record = ./azurerm_private_dns_a_record.dhall
 , azurerm_private_dns_cname_record = ./azurerm_private_dns_cname_record.dhall
+, azurerm_private_dns_mx_record = ./azurerm_private_dns_mx_record.dhall
 , azurerm_private_dns_ptr_record = ./azurerm_private_dns_ptr_record.dhall
 , azurerm_private_dns_srv_record = ./azurerm_private_dns_srv_record.dhall
 , azurerm_private_dns_zone = ./azurerm_private_dns_zone.dhall
 , azurerm_private_dns_zone_virtual_network_link =
     ./azurerm_private_dns_zone_virtual_network_link.dhall
+, azurerm_private_link_endpoint = ./azurerm_private_link_endpoint.dhall
 , azurerm_private_link_service = ./azurerm_private_link_service.dhall
 , azurerm_proximity_placement_group = ./azurerm_proximity_placement_group.dhall
 , azurerm_public_ip = ./azurerm_public_ip.dhall
@@ -373,6 +378,8 @@
 , azurerm_sql_server = ./azurerm_sql_server.dhall
 , azurerm_sql_virtual_network_rule = ./azurerm_sql_virtual_network_rule.dhall
 , azurerm_storage_account = ./azurerm_storage_account.dhall
+, azurerm_storage_account_network_rules =
+    ./azurerm_storage_account_network_rules.dhall
 , azurerm_storage_blob = ./azurerm_storage_blob.dhall
 , azurerm_storage_container = ./azurerm_storage_container.dhall
 , azurerm_storage_data_lake_gen2_filesystem =
@@ -403,6 +410,8 @@
 , azurerm_stream_analytics_stream_input_iothub =
     ./azurerm_stream_analytics_stream_input_iothub.dhall
 , azurerm_subnet = ./azurerm_subnet.dhall
+, azurerm_subnet_nat_gateway_association =
+    ./azurerm_subnet_nat_gateway_association.dhall
 , azurerm_subnet_network_security_group_association =
     ./azurerm_subnet_network_security_group_association.dhall
 , azurerm_subnet_route_table_association =
@@ -411,6 +420,7 @@
 , azurerm_traffic_manager_endpoint = ./azurerm_traffic_manager_endpoint.dhall
 , azurerm_traffic_manager_profile = ./azurerm_traffic_manager_profile.dhall
 , azurerm_user_assigned_identity = ./azurerm_user_assigned_identity.dhall
+, azurerm_virtual_hub = ./azurerm_virtual_hub.dhall
 , azurerm_virtual_machine_data_disk_attachment =
     ./azurerm_virtual_machine_data_disk_attachment.dhall
 , azurerm_virtual_machine = ./azurerm_virtual_machine.dhall
@@ -422,6 +432,8 @@
 , azurerm_virtual_network_gateway = ./azurerm_virtual_network_gateway.dhall
 , azurerm_virtual_network_peering = ./azurerm_virtual_network_peering.dhall
 , azurerm_virtual_wan = ./azurerm_virtual_wan.dhall
+, azurerm_vpn_gateway = ./azurerm_vpn_gateway.dhall
+, azurerm_vpn_server_configuration = ./azurerm_vpn_server_configuration.dhall
 , azurerm_web_application_firewall_policy =
     ./azurerm_web_application_firewall_policy.dhall
 }

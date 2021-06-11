@@ -1,7 +1,6 @@
 { Type =
     { id : Optional Text
     , location : Optional Text
-    , name : Text
     , private_endpoint_connections :
         Optional
           ( List
@@ -15,6 +14,8 @@
               }
           )
     , resource_group_name : Text
+    , service_id : Text
+    , service_name : Optional Text
     }
 , default =
   { id = None Text
@@ -31,5 +32,6 @@
             , status : Text
             }
         )
+  , service_name = None Text
   }
 }

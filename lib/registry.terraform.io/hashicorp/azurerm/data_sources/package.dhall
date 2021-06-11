@@ -59,6 +59,7 @@
     ./azurerm_monitor_diagnostic_categories.dhall
 , azurerm_monitor_log_profile = ./azurerm_monitor_log_profile.dhall
 , azurerm_mssql_elasticpool = ./azurerm_mssql_elasticpool.dhall
+, azurerm_nat_gateway = ./azurerm_nat_gateway.dhall
 , azurerm_netapp_account = ./azurerm_netapp_account.dhall
 , azurerm_netapp_pool = ./azurerm_netapp_pool.dhall
 , azurerm_network_ddos_protection_plan =
@@ -72,6 +73,8 @@
 , azurerm_platform_image = ./azurerm_platform_image.dhall
 , azurerm_policy_definition = ./azurerm_policy_definition.dhall
 , azurerm_postgresql_server = ./azurerm_postgresql_server.dhall
+, azurerm_private_link_endpoint_connection =
+    ./azurerm_private_link_endpoint_connection.dhall
 , azurerm_private_link_service = ./azurerm_private_link_service.dhall
 , azurerm_private_link_service_endpoint_connections =
     ./azurerm_private_link_service_endpoint_connections.dhall

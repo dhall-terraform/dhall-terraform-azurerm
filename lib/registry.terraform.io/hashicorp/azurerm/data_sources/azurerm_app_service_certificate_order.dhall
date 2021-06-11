@@ -27,6 +27,7 @@
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , validity_in_years : Optional Natural
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { app_service_certificate_not_renewable_reasons = None (List Text)
@@ -55,5 +56,6 @@
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , validity_in_years = None Natural
+  , timeouts = None { read : Optional Text }
   }
 }

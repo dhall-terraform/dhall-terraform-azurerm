@@ -1,5 +1,6 @@
 { Type =
-    { id : Optional Text
+    { fqdn : Optional Text
+    , id : Optional Text
     , name : Text
     , record : Text
     , records : Optional Text
@@ -9,7 +10,8 @@
     , zone_name : Text
     }
 , default =
-  { id = None Text
+  { fqdn = None Text
+  , id = None Text
   , records = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   }

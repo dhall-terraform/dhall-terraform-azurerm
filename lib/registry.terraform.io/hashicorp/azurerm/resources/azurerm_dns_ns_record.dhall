@@ -1,5 +1,6 @@
 { Type =
-    { id : Optional Text
+    { fqdn : Optional Text
+    , id : Optional Text
     , name : Text
     , records : Optional (List Text)
     , resource_group_name : Text
@@ -9,7 +10,8 @@
     , record : Optional (List { nsdname : Text })
     }
 , default =
-  { id = None Text
+  { fqdn = None Text
+  , id = None Text
   , records = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
   , record = None (List { nsdname : Text })

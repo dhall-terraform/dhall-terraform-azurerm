@@ -19,6 +19,7 @@
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , visibility_subscription_ids : Optional (List Text)
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { alias = None Text
@@ -39,5 +40,6 @@
   , network_interface_ids = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
   , visibility_subscription_ids = None (List Text)
+  , timeouts = None { read : Optional Text }
   }
 }

@@ -22,6 +22,7 @@
     , name : Text
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts : Optional { read : Optional Text }
     }
 , default =
   { access_policy_object_ids = None (List Text)
@@ -42,5 +43,6 @@
   , id = None Text
   , kind = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts = None { read : Optional Text }
   }
 }
