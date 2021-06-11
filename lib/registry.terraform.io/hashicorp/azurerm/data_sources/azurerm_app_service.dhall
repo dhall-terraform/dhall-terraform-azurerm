@@ -12,7 +12,9 @@
     , id : Optional Text
     , location : Optional Text
     , name : Text
+    , outbound_ip_address_list : Optional (List Text)
     , outbound_ip_addresses : Optional Text
+    , possible_outbound_ip_address_list : Optional (List Text)
     , possible_outbound_ip_addresses : Optional Text
     , resource_group_name : Text
     , site_config :
@@ -90,7 +92,9 @@
   , https_only = None Bool
   , id = None Text
   , location = None Text
+  , outbound_ip_address_list = None (List Text)
   , outbound_ip_addresses = None Text
+  , possible_outbound_ip_address_list = None (List Text)
   , possible_outbound_ip_addresses = None Text
   , site_config =
       None

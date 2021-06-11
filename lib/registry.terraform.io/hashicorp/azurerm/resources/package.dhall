@@ -261,6 +261,8 @@
 , azurerm_eventgrid_event_subscription =
     ./azurerm_eventgrid_event_subscription.dhall
 , azurerm_eventgrid_system_topic = ./azurerm_eventgrid_system_topic.dhall
+, azurerm_eventgrid_system_topic_event_subscription =
+    ./azurerm_eventgrid_system_topic_event_subscription.dhall
 , azurerm_eventgrid_topic = ./azurerm_eventgrid_topic.dhall
 , azurerm_eventhub_authorization_rule =
     ./azurerm_eventhub_authorization_rule.dhall
@@ -425,7 +427,9 @@
     ./azurerm_mariadb_virtual_network_rule.dhall
 , azurerm_marketplace_agreement = ./azurerm_marketplace_agreement.dhall
 , azurerm_media_asset = ./azurerm_media_asset.dhall
+, azurerm_media_job = ./azurerm_media_job.dhall
 , azurerm_media_services_account = ./azurerm_media_services_account.dhall
+, azurerm_media_streaming_endpoint = ./azurerm_media_streaming_endpoint.dhall
 , azurerm_media_transform = ./azurerm_media_transform.dhall
 , azurerm_monitor_action_group = ./azurerm_monitor_action_group.dhall
 , azurerm_monitor_action_rule_action_group =
@@ -667,9 +671,13 @@
     ./azurerm_subnet_network_security_group_association.dhall
 , azurerm_subnet_route_table_association =
     ./azurerm_subnet_route_table_association.dhall
+, azurerm_subnet_service_endpoint_storage_policy =
+    ./azurerm_subnet_service_endpoint_storage_policy.dhall
 , azurerm_subscription_template_deployment =
     ./azurerm_subscription_template_deployment.dhall
 , azurerm_synapse_firewall_rule = ./azurerm_synapse_firewall_rule.dhall
+, azurerm_synapse_managed_private_endpoint =
+    ./azurerm_synapse_managed_private_endpoint.dhall
 , azurerm_synapse_role_assignment = ./azurerm_synapse_role_assignment.dhall
 , azurerm_synapse_spark_pool = ./azurerm_synapse_spark_pool.dhall
 , azurerm_synapse_sql_pool = ./azurerm_synapse_sql_pool.dhall

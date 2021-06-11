@@ -1,6 +1,7 @@
 { Type =
     { fqdn : Optional Text
     , id : Optional Text
+    , max_return : Optional Natural
     , name : Text
     , profile_status : Optional Text
     , resource_group_name : Text
@@ -29,6 +30,7 @@
 , default =
   { fqdn = None Text
   , id = None Text
+  , max_return = None Natural
   , profile_status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =

@@ -6,6 +6,7 @@
     , id : Optional Text
     , name : Text
     , resource_group_name : Text
+    , service_endpoint_policy_ids : Optional (List Text)
     , service_endpoints : Optional (List Text)
     , virtual_network_name : Text
     , delegation :
@@ -30,6 +31,7 @@
   , enforce_private_link_endpoint_network_policies = None Bool
   , enforce_private_link_service_network_policies = None Bool
   , id = None Text
+  , service_endpoint_policy_ids = None (List Text)
   , service_endpoints = None (List Text)
   , delegation =
       None

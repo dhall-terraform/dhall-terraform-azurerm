@@ -10,7 +10,9 @@
     , id : Optional Text
     , location : Text
     , name : Text
+    , outbound_ip_address_list : Optional (List Text)
     , outbound_ip_addresses : Optional Text
+    , possible_outbound_ip_address_list : Optional (List Text)
     , possible_outbound_ip_addresses : Optional Text
     , resource_group_name : Text
     , site_credential : Optional (List { password : Text, username : Text })
@@ -226,7 +228,9 @@
   , enabled = None Bool
   , https_only = None Bool
   , id = None Text
+  , outbound_ip_address_list = None (List Text)
   , outbound_ip_addresses = None Text
+  , possible_outbound_ip_address_list = None (List Text)
   , possible_outbound_ip_addresses = None Text
   , site_credential = None (List { password : Text, username : Text })
   , tags = None (List { mapKey : Text, mapValue : Text })
