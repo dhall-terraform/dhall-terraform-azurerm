@@ -48,6 +48,7 @@
               , min_count : Natural
               , name : Text
               , node_labels : List { mapKey : Text, mapValue : Text }
+              , node_public_ip_prefix_id : Text
               , node_taints : List Text
               , orchestrator_version : Text
               , os_disk_size_gb : Natural
@@ -195,6 +196,7 @@
             , min_count : Natural
             , name : Text
             , node_labels : List { mapKey : Text, mapValue : Text }
+            , node_public_ip_prefix_id : Text
             , node_taints : List Text
             , orchestrator_version : Text
             , os_disk_size_gb : Natural

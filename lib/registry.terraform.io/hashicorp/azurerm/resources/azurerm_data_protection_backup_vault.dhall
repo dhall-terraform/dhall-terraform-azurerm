@@ -1,20 +1,17 @@
 { Type =
-    { cluster_purpose : Optional Text
-    , description : Optional Text
+    { datastore_type : Text
     , id : Optional Text
-    , kubernetes_cluster_id : Text
     , location : Text
-    , machine_learning_workspace_id : Text
     , name : Text
+    , redundancy : Text
+    , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
-    , ssl :
+    , identity :
         Optional
           ( List
-              { cert : Optional Text
-              , cname : Optional Text
-              , key : Optional Text
-              , leaf_domain_label : Optional Text
-              , overwrite_existing_domain : Optional Bool
+              { principal_id : Optional Text
+              , tenant_id : Optional Text
+              , type : Optional Text
               }
           )
     , timeouts :
@@ -26,18 +23,14 @@
           }
     }
 , default =
-  { cluster_purpose = None Text
-  , description = None Text
-  , id = None Text
+  { id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
-  , ssl =
+  , identity =
       None
         ( List
-            { cert : Optional Text
-            , cname : Optional Text
-            , key : Optional Text
-            , leaf_domain_label : Optional Text
-            , overwrite_existing_domain : Optional Bool
+            { principal_id : Optional Text
+            , tenant_id : Optional Text
+            , type : Optional Text
             }
         )
   , timeouts =

@@ -70,6 +70,7 @@
                         { effective_gateway_id : Optional Text
                         , enabled : Bool
                         , gateway_id : Optional Text
+                        , gateway_name : Optional Text
                         , ingress_application_gateway_identity :
                             Optional
                               ( List
@@ -134,6 +135,7 @@
           , name : Text
           , node_count : Optional Natural
           , node_labels : Optional (List { mapKey : Text, mapValue : Text })
+          , node_public_ip_prefix_id : Optional Text
           , node_taints : Optional (List Text)
           , only_critical_addons_enabled : Optional Bool
           , orchestrator_version : Optional Text
@@ -282,6 +284,7 @@
                       { effective_gateway_id : Optional Text
                       , enabled : Bool
                       , gateway_id : Optional Text
+                      , gateway_name : Optional Text
                       , ingress_application_gateway_identity :
                           Optional
                             ( List

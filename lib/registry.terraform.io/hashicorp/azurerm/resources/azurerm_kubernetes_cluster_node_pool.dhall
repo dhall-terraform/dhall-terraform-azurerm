@@ -13,6 +13,7 @@
     , name : Text
     , node_count : Optional Natural
     , node_labels : Optional (List { mapKey : Text, mapValue : Text })
+    , node_public_ip_prefix_id : Optional Text
     , node_taints : Optional (List Text)
     , orchestrator_version : Optional Text
     , os_disk_size_gb : Optional Natural
@@ -46,6 +47,7 @@
   , mode = None Text
   , node_count = None Natural
   , node_labels = None (List { mapKey : Text, mapValue : Text })
+  , node_public_ip_prefix_id = None Text
   , node_taints = None (List Text)
   , orchestrator_version = None Text
   , os_disk_size_gb = None Natural

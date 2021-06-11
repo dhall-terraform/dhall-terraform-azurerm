@@ -252,6 +252,8 @@
     ./azurerm_data_lake_store_firewall_rule.dhall
 , azurerm_data_lake_store_virtual_network_rule =
     ./azurerm_data_lake_store_virtual_network_rule.dhall
+, azurerm_data_protection_backup_vault =
+    ./azurerm_data_protection_backup_vault.dhall
 , azurerm_data_share_account = ./azurerm_data_share_account.dhall
 , azurerm_data_share_dataset_blob_storage =
     ./azurerm_data_share_dataset_blob_storage.dhall
@@ -599,6 +601,8 @@
 , azurerm_postgresql_firewall_rule = ./azurerm_postgresql_firewall_rule.dhall
 , azurerm_postgresql_flexible_server =
     ./azurerm_postgresql_flexible_server.dhall
+, azurerm_postgresql_flexible_server_firewall_rule =
+    ./azurerm_postgresql_flexible_server_firewall_rule.dhall
 , azurerm_postgresql_server = ./azurerm_postgresql_server.dhall
 , azurerm_postgresql_server_key = ./azurerm_postgresql_server_key.dhall
 , azurerm_postgresql_virtual_network_rule =
@@ -763,6 +767,8 @@
     ./azurerm_storage_data_lake_gen2_path.dhall
 , azurerm_storage_encryption_scope = ./azurerm_storage_encryption_scope.dhall
 , azurerm_storage_management_policy = ./azurerm_storage_management_policy.dhall
+, azurerm_storage_object_replication =
+    ./azurerm_storage_object_replication.dhall
 , azurerm_storage_queue = ./azurerm_storage_queue.dhall
 , azurerm_storage_share = ./azurerm_storage_share.dhall
 , azurerm_storage_share_directory = ./azurerm_storage_share_directory.dhall
@@ -849,6 +855,8 @@
 , azurerm_virtual_network_peering = ./azurerm_virtual_network_peering.dhall
 , azurerm_virtual_wan = ./azurerm_virtual_wan.dhall
 , azurerm_vmware_cluster = ./azurerm_vmware_cluster.dhall
+, azurerm_vmware_express_route_authorization =
+    ./azurerm_vmware_express_route_authorization.dhall
 , azurerm_vmware_private_cloud = ./azurerm_vmware_private_cloud.dhall
 , azurerm_vpn_gateway_connection = ./azurerm_vpn_gateway_connection.dhall
 , azurerm_vpn_gateway = ./azurerm_vpn_gateway.dhall

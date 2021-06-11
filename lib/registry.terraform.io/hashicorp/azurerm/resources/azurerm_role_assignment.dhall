@@ -1,6 +1,7 @@
 { Type =
     { condition : Optional Text
     , condition_version : Optional Text
+    , delegated_managed_identity_resource_id : Optional Text
     , description : Optional Text
     , id : Optional Text
     , name : Optional Text
@@ -21,6 +22,7 @@
 , default =
   { condition = None Text
   , condition_version = None Text
+  , delegated_managed_identity_resource_id = None Text
   , description = None Text
   , id = None Text
   , name = None Text
