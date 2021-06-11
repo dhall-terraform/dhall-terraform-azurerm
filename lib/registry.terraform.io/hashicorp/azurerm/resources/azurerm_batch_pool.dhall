@@ -42,6 +42,29 @@
               , target_low_priority_nodes : Optional Natural
               }
           )
+    , network_configuration :
+        Optional
+          ( List
+              { subnet_id : Text
+              , endpoint_configuration :
+                  Optional
+                    ( List
+                        { backend_port : Natural
+                        , frontend_port_range : Text
+                        , name : Text
+                        , protocol : Text
+                        , network_security_group_rules :
+                            Optional
+                              ( List
+                                  { access : Text
+                                  , priority : Natural
+                                  , source_address_prefix : Text
+                                  }
+                              )
+                        }
+                    )
+              }
+          )
     , start_task :
         Optional
           ( List
@@ -119,6 +142,29 @@
             { resize_timeout : Optional Text
             , target_dedicated_nodes : Optional Natural
             , target_low_priority_nodes : Optional Natural
+            }
+        )
+  , network_configuration =
+      None
+        ( List
+            { subnet_id : Text
+            , endpoint_configuration :
+                Optional
+                  ( List
+                      { backend_port : Natural
+                      , frontend_port_range : Text
+                      , name : Text
+                      , protocol : Text
+                      , network_security_group_rules :
+                          Optional
+                            ( List
+                                { access : Text
+                                , priority : Natural
+                                , source_address_prefix : Text
+                                }
+                            )
+                      }
+                  )
             }
         )
   , start_task =

@@ -9,7 +9,8 @@
     , dns_config : List { relative_name : Text, ttl : Natural }
     , monitor_config :
         List
-          { interval_in_seconds : Optional Natural
+          { expected_status_code_ranges : Optional (List Text)
+          , interval_in_seconds : Optional Natural
           , path : Optional Text
           , port : Natural
           , protocol : Text

@@ -74,6 +74,7 @@
               Optional
                 ( List
                     { backend_pool_name : Text
+                    , cache_enabled : Optional Bool
                     , cache_query_parameter_strip_directive : Optional Text
                     , cache_use_dynamic_compression : Optional Bool
                     , custom_forwarding_path : Optional Text

@@ -158,6 +158,7 @@
 , azurerm_data_lake_store_firewall_rule =
     ./azurerm_data_lake_store_firewall_rule.dhall
 , azurerm_ddos_protection_plan = ./azurerm_ddos_protection_plan.dhall
+, azurerm_dedicated_host = ./azurerm_dedicated_host.dhall
 , azurerm_dedicated_host_group = ./azurerm_dedicated_host_group.dhall
 , azurerm_devspace_controller = ./azurerm_devspace_controller.dhall
 , azurerm_dev_test_lab = ./azurerm_dev_test_lab.dhall

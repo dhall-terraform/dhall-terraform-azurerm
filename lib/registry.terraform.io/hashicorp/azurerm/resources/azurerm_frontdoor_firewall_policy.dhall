@@ -38,16 +38,40 @@
           ( List
               { type : Text
               , version : Text
+              , exclusion :
+                  Optional
+                    ( List
+                        { match_variable : Text
+                        , operator : Text
+                        , selector : Text
+                        }
+                    )
               , override :
                   Optional
                     ( List
                         { rule_group_name : Text
+                        , exclusion :
+                            Optional
+                              ( List
+                                  { match_variable : Text
+                                  , operator : Text
+                                  , selector : Text
+                                  }
+                              )
                         , rule :
                             Optional
                               ( List
                                   { action : Text
                                   , enabled : Optional Bool
                                   , rule_id : Text
+                                  , exclusion :
+                                      Optional
+                                        ( List
+                                            { match_variable : Text
+                                            , operator : Text
+                                            , selector : Text
+                                            }
+                                        )
                                   }
                               )
                         }
@@ -93,16 +117,40 @@
         ( List
             { type : Text
             , version : Text
+            , exclusion :
+                Optional
+                  ( List
+                      { match_variable : Text
+                      , operator : Text
+                      , selector : Text
+                      }
+                  )
             , override :
                 Optional
                   ( List
                       { rule_group_name : Text
+                      , exclusion :
+                          Optional
+                            ( List
+                                { match_variable : Text
+                                , operator : Text
+                                , selector : Text
+                                }
+                            )
                       , rule :
                           Optional
                             ( List
                                 { action : Text
                                 , enabled : Optional Bool
                                 , rule_id : Text
+                                , exclusion :
+                                    Optional
+                                      ( List
+                                          { match_variable : Text
+                                          , operator : Text
+                                          , selector : Text
+                                          }
+                                      )
                                 }
                             )
                       }

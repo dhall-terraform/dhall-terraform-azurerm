@@ -1,4 +1,6 @@
 { azurerm_api_management_api = ./azurerm_api_management_api.dhall
+, azurerm_api_management_api_version_set =
+    ./azurerm_api_management_api_version_set.dhall
 , azurerm_api_management = ./azurerm_api_management.dhall
 , azurerm_api_management_group = ./azurerm_api_management_group.dhall
 , azurerm_api_management_product = ./azurerm_api_management_product.dhall
@@ -31,6 +33,7 @@
 , azurerm_cosmosdb_account = ./azurerm_cosmosdb_account.dhall
 , azurerm_data_factory = ./azurerm_data_factory.dhall
 , azurerm_data_lake_store = ./azurerm_data_lake_store.dhall
+, azurerm_dedicated_host = ./azurerm_dedicated_host.dhall
 , azurerm_dedicated_host_group = ./azurerm_dedicated_host_group.dhall
 , azurerm_dev_test_lab = ./azurerm_dev_test_lab.dhall
 , azurerm_dev_test_virtual_network = ./azurerm_dev_test_virtual_network.dhall

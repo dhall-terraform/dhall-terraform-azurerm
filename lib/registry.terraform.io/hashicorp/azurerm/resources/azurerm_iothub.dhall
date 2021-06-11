@@ -3,6 +3,8 @@
     , event_hub_events_path : Optional Text
     , event_hub_operations_endpoint : Optional Text
     , event_hub_operations_path : Optional Text
+    , event_hub_partition_count : Optional Natural
+    , event_hub_retention_in_days : Optional Natural
     , hostname : Optional Text
     , id : Optional Text
     , location : Text
@@ -72,6 +74,8 @@
   , event_hub_events_path = None Text
   , event_hub_operations_endpoint = None Text
   , event_hub_operations_path = None Text
+  , event_hub_partition_count = None Natural
+  , event_hub_retention_in_days = None Natural
   , hostname = None Text
   , id = None Text
   , shared_access_policy =

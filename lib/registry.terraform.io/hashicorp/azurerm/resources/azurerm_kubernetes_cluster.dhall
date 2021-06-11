@@ -120,6 +120,15 @@
               , network_policy : Optional Text
               , pod_cidr : Optional Text
               , service_cidr : Optional Text
+              , load_balancer_profile :
+                  Optional
+                    ( List
+                        { effective_outbound_ips : Optional (List Text)
+                        , managed_outbound_ip_count : Optional Natural
+                        , outbound_ip_address_ids : Optional (List Text)
+                        , outbound_ip_prefix_ids : Optional (List Text)
+                        }
+                    )
               }
           )
     , role_based_access_control :
@@ -258,6 +267,15 @@
             , network_policy : Optional Text
             , pod_cidr : Optional Text
             , service_cidr : Optional Text
+            , load_balancer_profile :
+                Optional
+                  ( List
+                      { effective_outbound_ips : Optional (List Text)
+                      , managed_outbound_ip_count : Optional Natural
+                      , outbound_ip_address_ids : Optional (List Text)
+                      , outbound_ip_prefix_ids : Optional (List Text)
+                      }
+                  )
             }
         )
   , role_based_access_control =

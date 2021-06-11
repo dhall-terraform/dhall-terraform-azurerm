@@ -5,6 +5,7 @@
     , network_watcher_name : Text
     , resource_group_name : Text
     , storage_account_id : Text
+    , version : Optional Natural
     , retention_policy : List { days : Natural, enabled : Bool }
     , traffic_analytics :
         Optional
@@ -18,6 +19,7 @@
     }
 , default =
   { id = None Text
+  , version = None Natural
   , traffic_analytics =
       None
         ( List

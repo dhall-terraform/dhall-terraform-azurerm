@@ -49,6 +49,29 @@
               , visibility : Optional (List Text)
               }
           )
+    , network_configuration :
+        Optional
+          ( List
+              { subnet_id : Optional Text
+              , endpoint_configuration :
+                  Optional
+                    ( List
+                        { backend_port : Optional Natural
+                        , frontend_port_range : Optional Text
+                        , name : Optional Text
+                        , protocol : Optional Text
+                        , network_security_group_rules :
+                            Optional
+                              ( List
+                                  { access : Optional Text
+                                  , priority : Optional Natural
+                                  , source_address_prefix : Optional Text
+                                  }
+                              )
+                        }
+                    )
+              }
+          )
     , start_task :
         Optional
           ( List
@@ -121,6 +144,29 @@
             , store_location : Text
             , store_name : Optional Text
             , visibility : Optional (List Text)
+            }
+        )
+  , network_configuration =
+      None
+        ( List
+            { subnet_id : Optional Text
+            , endpoint_configuration :
+                Optional
+                  ( List
+                      { backend_port : Optional Natural
+                      , frontend_port_range : Optional Text
+                      , name : Optional Text
+                      , protocol : Optional Text
+                      , network_security_group_rules :
+                          Optional
+                            ( List
+                                { access : Optional Text
+                                , priority : Optional Natural
+                                , source_address_prefix : Optional Text
+                                }
+                            )
+                      }
+                  )
             }
         )
   , start_task =
