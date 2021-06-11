@@ -244,6 +244,7 @@
 , azurerm_eventgrid_domain_topic = ./azurerm_eventgrid_domain_topic.dhall
 , azurerm_eventgrid_event_subscription =
     ./azurerm_eventgrid_event_subscription.dhall
+, azurerm_eventgrid_system_topic = ./azurerm_eventgrid_system_topic.dhall
 , azurerm_eventgrid_topic = ./azurerm_eventgrid_topic.dhall
 , azurerm_eventhub_authorization_rule =
     ./azurerm_eventhub_authorization_rule.dhall
@@ -516,6 +517,7 @@
 , azurerm_route_table = ./azurerm_route_table.dhall
 , azurerm_search_service = ./azurerm_search_service.dhall
 , azurerm_security_center_contact = ./azurerm_security_center_contact.dhall
+, azurerm_security_center_setting = ./azurerm_security_center_setting.dhall
 , azurerm_security_center_subscription_pricing =
     ./azurerm_security_center_subscription_pricing.dhall
 , azurerm_security_center_workspace = ./azurerm_security_center_workspace.dhall

@@ -121,6 +121,7 @@
 , azurerm_mssql_database = ./azurerm_mssql_database.dhall
 , azurerm_mssql_elasticpool = ./azurerm_mssql_elasticpool.dhall
 , azurerm_mssql_server = ./azurerm_mssql_server.dhall
+, azurerm_mysql_server = ./azurerm_mysql_server.dhall
 , azurerm_nat_gateway = ./azurerm_nat_gateway.dhall
 , azurerm_netapp_account = ./azurerm_netapp_account.dhall
 , azurerm_netapp_pool = ./azurerm_netapp_pool.dhall

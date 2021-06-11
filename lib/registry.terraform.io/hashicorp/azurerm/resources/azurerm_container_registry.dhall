@@ -16,9 +16,11 @@
               }
           )
     , resource_group_name : Text
+    , retention_policy : Optional (List { days : Natural, enabled : Bool })
     , sku : Optional Text
     , storage_account_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , trust_policy : Optional (List { enabled : Bool })
     , timeouts :
         Optional
           { create : Optional Text
@@ -42,9 +44,11 @@
             , virtual_network : List { action : Text, subnet_id : Text }
             }
         )
+  , retention_policy = None (List { days : Natural, enabled : Bool })
   , sku = None Text
   , storage_account_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , trust_policy = None (List { enabled : Bool })
   , timeouts =
       None
         { create : Optional Text

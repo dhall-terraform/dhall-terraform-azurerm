@@ -12,7 +12,12 @@
               { id : Text
               , access_policy :
                   Optional
-                    (List { expiry : Text, permissions : Text, start : Text })
+                    ( List
+                        { expiry : Optional Text
+                        , permissions : Text
+                        , start : Optional Text
+                        }
+                    )
               }
           )
     , timeouts :
@@ -35,7 +40,12 @@
             { id : Text
             , access_policy :
                 Optional
-                  (List { expiry : Text, permissions : Text, start : Text })
+                  ( List
+                      { expiry : Optional Text
+                      , permissions : Text
+                      , start : Optional Text
+                      }
+                  )
             }
         )
   , timeouts =
