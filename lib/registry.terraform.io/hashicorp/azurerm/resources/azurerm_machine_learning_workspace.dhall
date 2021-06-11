@@ -1,22 +1,21 @@
 { Type =
-    { fqdn : Optional Text
+    { application_insights_id : Text
+    , container_registry_id : Optional Text
+    , description : Optional Text
+    , friendly_name : Optional Text
     , id : Optional Text
+    , key_vault_id : Text
+    , location : Text
     , name : Text
-    , profile_status : Optional Text
     , resource_group_name : Text
+    , sku_name : Optional Text
+    , storage_account_id : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
-    , traffic_routing_method : Text
-    , dns_config : List { relative_name : Text, ttl : Natural }
-    , monitor_config :
+    , identity :
         List
-          { expected_status_code_ranges : Optional (List Text)
-          , interval_in_seconds : Optional Natural
-          , path : Optional Text
-          , port : Natural
-          , protocol : Text
-          , timeout_in_seconds : Optional Natural
-          , tolerated_number_of_failures : Optional Natural
-          , custom_header : Optional (List { name : Text, value : Text })
+          { principal_id : Optional Text
+          , tenant_id : Optional Text
+          , type : Text
           }
     , timeouts :
         Optional
@@ -27,9 +26,11 @@
           }
     }
 , default =
-  { fqdn = None Text
+  { container_registry_id = None Text
+  , description = None Text
+  , friendly_name = None Text
   , id = None Text
-  , profile_status = None Text
+  , sku_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None

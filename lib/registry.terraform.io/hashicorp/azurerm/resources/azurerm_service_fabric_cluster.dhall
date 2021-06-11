@@ -38,6 +38,14 @@
                     }
               }
           )
+    , client_certificate_common_name :
+        Optional
+          ( List
+              { common_name : Text
+              , is_admin : Bool
+              , issuer_thumbprint : Optional Text
+              }
+          )
     , client_certificate_thumbprint :
         Optional (List { is_admin : Bool, thumbprint : Text })
     , diagnostics_config :
@@ -121,6 +129,14 @@
                   { certificate_common_name : Text
                   , certificate_issuer_thumbprint : Optional Text
                   }
+            }
+        )
+  , client_certificate_common_name =
+      None
+        ( List
+            { common_name : Text
+            , is_admin : Bool
+            , issuer_thumbprint : Optional Text
             }
         )
   , client_certificate_thumbprint =

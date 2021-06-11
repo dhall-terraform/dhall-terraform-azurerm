@@ -1,24 +1,26 @@
 { Type =
-    { cache_size_in_gb : Natural
+    { cache_name : Text
     , id : Optional Text
-    , location : Text
-    , mount_addresses : Optional (List Text)
     , name : Text
+    , namespace_path : Text
     , resource_group_name : Text
-    , sku_name : Text
-    , subnet_id : Text
+    , storage_container_id : Text
     , timeouts :
         Optional
           { create : Optional Text
           , delete : Optional Text
           , read : Optional Text
+          , update : Optional Text
           }
     }
 , default =
   { id = None Text
-  , mount_addresses = None (List Text)
   , timeouts =
       None
-        { create : Optional Text, delete : Optional Text, read : Optional Text }
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

@@ -5,6 +5,7 @@
     , id : Optional Text
     , metadata : Optional (List { mapKey : Text, mapValue : Text })
     , name : Text
+    , resource_manager_id : Optional Text
     , storage_account_name : Text
     , timeouts :
         Optional
@@ -20,6 +21,7 @@
   , has_legal_hold = None Bool
   , id = None Text
   , metadata = None (List { mapKey : Text, mapValue : Text })
+  , resource_manager_id = None Text
   , timeouts =
       None
         { create : Optional Text

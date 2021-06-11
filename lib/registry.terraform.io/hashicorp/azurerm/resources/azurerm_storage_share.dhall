@@ -3,6 +3,7 @@
     , metadata : Optional (List { mapKey : Text, mapValue : Text })
     , name : Text
     , quota : Optional Natural
+    , resource_manager_id : Optional Text
     , storage_account_name : Text
     , url : Optional Text
     , acl :
@@ -26,6 +27,7 @@
   { id = None Text
   , metadata = None (List { mapKey : Text, mapValue : Text })
   , quota = None Natural
+  , resource_manager_id = None Text
   , url = None Text
   , acl =
       None

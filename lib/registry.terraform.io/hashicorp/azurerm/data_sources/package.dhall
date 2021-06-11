@@ -73,6 +73,8 @@
 , azurerm_lb = ./azurerm_lb.dhall
 , azurerm_log_analytics_workspace = ./azurerm_log_analytics_workspace.dhall
 , azurerm_logic_app_workflow = ./azurerm_logic_app_workflow.dhall
+, azurerm_machine_learning_workspace =
+    ./azurerm_machine_learning_workspace.dhall
 , azurerm_managed_disk = ./azurerm_managed_disk.dhall
 , azurerm_management_group = ./azurerm_management_group.dhall
 , azurerm_maps_account = ./azurerm_maps_account.dhall
@@ -85,6 +87,7 @@
     ./azurerm_monitor_scheduled_query_rules_alert.dhall
 , azurerm_monitor_scheduled_query_rules_log =
     ./azurerm_monitor_scheduled_query_rules_log.dhall
+, azurerm_mssql_database = ./azurerm_mssql_database.dhall
 , azurerm_mssql_elasticpool = ./azurerm_mssql_elasticpool.dhall
 , azurerm_nat_gateway = ./azurerm_nat_gateway.dhall
 , azurerm_netapp_account = ./azurerm_netapp_account.dhall
@@ -95,6 +98,7 @@
     ./azurerm_network_ddos_protection_plan.dhall
 , azurerm_network_interface = ./azurerm_network_interface.dhall
 , azurerm_network_security_group = ./azurerm_network_security_group.dhall
+, azurerm_network_service_tags = ./azurerm_network_service_tags.dhall
 , azurerm_network_watcher = ./azurerm_network_watcher.dhall
 , azurerm_notification_hub = ./azurerm_notification_hub.dhall
 , azurerm_notification_hub_namespace =

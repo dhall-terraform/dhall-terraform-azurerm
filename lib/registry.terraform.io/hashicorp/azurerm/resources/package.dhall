@@ -124,6 +124,7 @@
 , azurerm_cosmosdb_table = ./azurerm_cosmosdb_table.dhall
 , azurerm_cost_management_export_resource_group =
     ./azurerm_cost_management_export_resource_group.dhall
+, azurerm_custom_provider = ./azurerm_custom_provider.dhall
 , azurerm_dashboard = ./azurerm_dashboard.dhall
 , azurerm_database_migration_project =
     ./azurerm_database_migration_project.dhall
@@ -220,6 +221,7 @@
 , azurerm_hdinsight_spark_cluster = ./azurerm_hdinsight_spark_cluster.dhall
 , azurerm_hdinsight_storm_cluster = ./azurerm_hdinsight_storm_cluster.dhall
 , azurerm_healthcare_service = ./azurerm_healthcare_service.dhall
+, azurerm_hpc_cache_blob_target = ./azurerm_hpc_cache_blob_target.dhall
 , azurerm_hpc_cache = ./azurerm_hpc_cache.dhall
 , azurerm_image = ./azurerm_image.dhall
 , azurerm_iotcentral_application = ./azurerm_iotcentral_application.dhall
@@ -276,6 +278,8 @@
 , azurerm_logic_app_trigger_recurrence =
     ./azurerm_logic_app_trigger_recurrence.dhall
 , azurerm_logic_app_workflow = ./azurerm_logic_app_workflow.dhall
+, azurerm_machine_learning_workspace =
+    ./azurerm_machine_learning_workspace.dhall
 , azurerm_managed_disk = ./azurerm_managed_disk.dhall
 , azurerm_management_group = ./azurerm_management_group.dhall
 , azurerm_management_lock = ./azurerm_management_lock.dhall
@@ -300,6 +304,7 @@
     ./azurerm_monitor_scheduled_query_rules_alert.dhall
 , azurerm_monitor_scheduled_query_rules_log =
     ./azurerm_monitor_scheduled_query_rules_log.dhall
+, azurerm_mssql_database = ./azurerm_mssql_database.dhall
 , azurerm_mssql_database_vulnerability_assessment_rule_baseline =
     ./azurerm_mssql_database_vulnerability_assessment_rule_baseline.dhall
 , azurerm_mssql_elasticpool = ./azurerm_mssql_elasticpool.dhall
@@ -307,6 +312,7 @@
     ./azurerm_mssql_server_security_alert_policy.dhall
 , azurerm_mssql_server_vulnerability_assessment =
     ./azurerm_mssql_server_vulnerability_assessment.dhall
+, azurerm_mssql_virtual_machine = ./azurerm_mssql_virtual_machine.dhall
 , azurerm_mysql_configuration = ./azurerm_mysql_configuration.dhall
 , azurerm_mysql_database = ./azurerm_mysql_database.dhall
 , azurerm_mysql_firewall_rule = ./azurerm_mysql_firewall_rule.dhall
@@ -348,6 +354,7 @@
 , azurerm_point_to_site_vpn_gateway = ./azurerm_point_to_site_vpn_gateway.dhall
 , azurerm_policy_assignment = ./azurerm_policy_assignment.dhall
 , azurerm_policy_definition = ./azurerm_policy_definition.dhall
+, azurerm_policy_remediation = ./azurerm_policy_remediation.dhall
 , azurerm_policy_set_definition = ./azurerm_policy_set_definition.dhall
 , azurerm_postgresql_configuration = ./azurerm_postgresql_configuration.dhall
 , azurerm_postgresql_database = ./azurerm_postgresql_database.dhall
