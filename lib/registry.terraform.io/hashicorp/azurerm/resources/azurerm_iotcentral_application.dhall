@@ -1,12 +1,13 @@
 { Type =
-    { fqdn : Optional Text
+    { display_name : Optional Text
     , id : Optional Text
-    , name : Optional Text
+    , location : Text
+    , name : Text
     , resource_group_name : Text
+    , sku : Optional Text
+    , sub_domain : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
-    , ttl : Natural
-    , zone_name : Text
-    , record : List { exchange : Text, preference : Natural }
+    , template : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -16,10 +17,11 @@
           }
     }
 , default =
-  { fqdn = None Text
+  { display_name = None Text
   , id = None Text
-  , name = None Text
+  , sku = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , template = None Text
   , timeouts =
       None
         { create : Optional Text

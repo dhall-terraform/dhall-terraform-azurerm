@@ -18,6 +18,7 @@
         Optional
           ( List
               { enabled : Bool
+              , interval_in_minutes : Optional Natural
               , workspace_id : Text
               , workspace_region : Text
               , workspace_resource_id : Text
@@ -38,6 +39,7 @@
       None
         ( List
             { enabled : Bool
+            , interval_in_minutes : Optional Natural
             , workspace_id : Text
             , workspace_region : Text
             , workspace_resource_id : Text

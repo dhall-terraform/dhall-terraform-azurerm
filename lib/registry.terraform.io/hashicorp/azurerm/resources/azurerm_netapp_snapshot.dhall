@@ -5,6 +5,7 @@
     , name : Text
     , pool_name : Text
     , resource_group_name : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , volume_name : Text
     , timeouts :
         Optional
@@ -16,6 +17,7 @@
     }
 , default =
   { id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text

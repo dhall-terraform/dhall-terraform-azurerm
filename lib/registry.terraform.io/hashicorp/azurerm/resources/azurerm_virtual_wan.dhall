@@ -8,6 +8,7 @@
     , office365_local_breakout_category : Optional Text
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , type : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -23,6 +24,7 @@
   , id = None Text
   , office365_local_breakout_category = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , type = None Text
   , timeouts =
       None
         { create : Optional Text

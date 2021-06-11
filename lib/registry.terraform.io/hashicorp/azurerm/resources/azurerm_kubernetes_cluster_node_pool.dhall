@@ -9,9 +9,11 @@
     , min_count : Optional Natural
     , name : Text
     , node_count : Optional Natural
+    , node_labels : Optional (List { mapKey : Text, mapValue : Text })
     , node_taints : Optional (List Text)
     , os_disk_size_gb : Optional Natural
     , os_type : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , vm_size : Text
     , vnet_subnet_id : Optional Text
     , timeouts :
@@ -31,9 +33,11 @@
   , max_pods = None Natural
   , min_count = None Natural
   , node_count = None Natural
+  , node_labels = None (List { mapKey : Text, mapValue : Text })
   , node_taints = None (List Text)
   , os_disk_size_gb = None Natural
   , os_type = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , vnet_subnet_id = None Text
   , timeouts =
       None

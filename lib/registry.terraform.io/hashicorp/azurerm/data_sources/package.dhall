@@ -30,6 +30,10 @@
 , azurerm_client_config = ./azurerm_client_config.dhall
 , azurerm_container_registry = ./azurerm_container_registry.dhall
 , azurerm_cosmosdb_account = ./azurerm_cosmosdb_account.dhall
+, azurerm_database_migration_project =
+    ./azurerm_database_migration_project.dhall
+, azurerm_database_migration_service =
+    ./azurerm_database_migration_service.dhall
 , azurerm_data_factory = ./azurerm_data_factory.dhall
 , azurerm_data_lake_store = ./azurerm_data_lake_store.dhall
 , azurerm_dedicated_host = ./azurerm_dedicated_host.dhall
@@ -63,6 +67,7 @@
 , azurerm_kubernetes_cluster = ./azurerm_kubernetes_cluster.dhall
 , azurerm_kubernetes_service_versions =
     ./azurerm_kubernetes_service_versions.dhall
+, azurerm_kusto_cluster = ./azurerm_kusto_cluster.dhall
 , azurerm_lb_backend_address_pool = ./azurerm_lb_backend_address_pool.dhall
 , azurerm_lb = ./azurerm_lb.dhall
 , azurerm_log_analytics_workspace = ./azurerm_log_analytics_workspace.dhall
@@ -75,6 +80,10 @@
 , azurerm_monitor_diagnostic_categories =
     ./azurerm_monitor_diagnostic_categories.dhall
 , azurerm_monitor_log_profile = ./azurerm_monitor_log_profile.dhall
+, azurerm_monitor_scheduled_query_rules_alert =
+    ./azurerm_monitor_scheduled_query_rules_alert.dhall
+, azurerm_monitor_scheduled_query_rules_log =
+    ./azurerm_monitor_scheduled_query_rules_log.dhall
 , azurerm_mssql_elasticpool = ./azurerm_mssql_elasticpool.dhall
 , azurerm_nat_gateway = ./azurerm_nat_gateway.dhall
 , azurerm_netapp_account = ./azurerm_netapp_account.dhall
@@ -110,6 +119,8 @@
 , azurerm_servicebus_namespace_authorization_rule =
     ./azurerm_servicebus_namespace_authorization_rule.dhall
 , azurerm_servicebus_namespace = ./azurerm_servicebus_namespace.dhall
+, azurerm_servicebus_topic_authorization_rule =
+    ./azurerm_servicebus_topic_authorization_rule.dhall
 , azurerm_shared_image = ./azurerm_shared_image.dhall
 , azurerm_shared_image_gallery = ./azurerm_shared_image_gallery.dhall
 , azurerm_shared_image_version = ./azurerm_shared_image_version.dhall

@@ -70,8 +70,10 @@
           , min_count : Optional Natural
           , name : Text
           , node_count : Optional Natural
+          , node_labels : Optional (List { mapKey : Text, mapValue : Text })
           , node_taints : Optional (List Text)
           , os_disk_size_gb : Optional Natural
+          , tags : Optional (List { mapKey : Text, mapValue : Text })
           , type : Optional Text
           , vm_size : Text
           , vnet_subnet_id : Optional Text

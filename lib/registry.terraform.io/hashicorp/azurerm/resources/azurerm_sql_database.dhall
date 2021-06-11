@@ -9,6 +9,7 @@
     , id : Optional Text
     , location : Text
     , max_size_bytes : Optional Text
+    , max_size_gb : Optional Text
     , name : Text
     , read_scale : Optional Bool
     , requested_service_objective_id : Optional Text
@@ -63,6 +64,7 @@
   , encryption = None Text
   , id = None Text
   , max_size_bytes = None Text
+  , max_size_gb = None Text
   , read_scale = None Bool
   , requested_service_objective_id = None Text
   , requested_service_objective_name = None Text

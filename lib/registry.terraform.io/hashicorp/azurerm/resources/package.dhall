@@ -98,6 +98,7 @@
 , azurerm_batch_application = ./azurerm_batch_application.dhall
 , azurerm_batch_certificate = ./azurerm_batch_certificate.dhall
 , azurerm_batch_pool = ./azurerm_batch_pool.dhall
+, azurerm_bot_channel_directline = ./azurerm_bot_channel_directline.dhall
 , azurerm_bot_channel_email = ./azurerm_bot_channel_email.dhall
 , azurerm_bot_channel_ms_teams = ./azurerm_bot_channel_ms_teams.dhall
 , azurerm_bot_channel_slack = ./azurerm_bot_channel_slack.dhall
@@ -122,6 +123,10 @@
 , azurerm_cosmosdb_sql_database = ./azurerm_cosmosdb_sql_database.dhall
 , azurerm_cosmosdb_table = ./azurerm_cosmosdb_table.dhall
 , azurerm_dashboard = ./azurerm_dashboard.dhall
+, azurerm_database_migration_project =
+    ./azurerm_database_migration_project.dhall
+, azurerm_database_migration_service =
+    ./azurerm_database_migration_service.dhall
 , azurerm_databricks_workspace = ./azurerm_databricks_workspace.dhall
 , azurerm_data_factory_dataset_mysql =
     ./azurerm_data_factory_dataset_mysql.dhall
@@ -213,7 +218,9 @@
 , azurerm_hdinsight_spark_cluster = ./azurerm_hdinsight_spark_cluster.dhall
 , azurerm_hdinsight_storm_cluster = ./azurerm_hdinsight_storm_cluster.dhall
 , azurerm_healthcare_service = ./azurerm_healthcare_service.dhall
+, azurerm_hpc_cache = ./azurerm_hpc_cache.dhall
 , azurerm_image = ./azurerm_image.dhall
+, azurerm_iotcentral_application = ./azurerm_iotcentral_application.dhall
 , azurerm_iothub_consumer_group = ./azurerm_iothub_consumer_group.dhall
 , azurerm_iothub = ./azurerm_iothub.dhall
 , azurerm_iothub_dps_certificate = ./azurerm_iothub_dps_certificate.dhall
@@ -287,6 +294,10 @@
     ./azurerm_monitor_diagnostic_setting.dhall
 , azurerm_monitor_log_profile = ./azurerm_monitor_log_profile.dhall
 , azurerm_monitor_metric_alert = ./azurerm_monitor_metric_alert.dhall
+, azurerm_monitor_scheduled_query_rules_alert =
+    ./azurerm_monitor_scheduled_query_rules_alert.dhall
+, azurerm_monitor_scheduled_query_rules_log =
+    ./azurerm_monitor_scheduled_query_rules_log.dhall
 , azurerm_mssql_database_vulnerability_assessment_rule_baseline =
     ./azurerm_mssql_database_vulnerability_assessment_rule_baseline.dhall
 , azurerm_mssql_elasticpool = ./azurerm_mssql_elasticpool.dhall
@@ -400,6 +411,7 @@
 , azurerm_site_recovery_replication_policy =
     ./azurerm_site_recovery_replication_policy.dhall
 , azurerm_snapshot = ./azurerm_snapshot.dhall
+, azurerm_spatial_anchors_account = ./azurerm_spatial_anchors_account.dhall
 , azurerm_sql_active_directory_administrator =
     ./azurerm_sql_active_directory_administrator.dhall
 , azurerm_sql_database = ./azurerm_sql_database.dhall

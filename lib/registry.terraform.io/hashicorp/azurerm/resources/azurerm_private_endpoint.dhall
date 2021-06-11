@@ -9,6 +9,7 @@
           { is_manual_connection : Bool
           , name : Text
           , private_connection_resource_id : Text
+          , private_ip_address : Optional Text
           , request_message : Optional Text
           , subresource_names : Optional (List Text)
           }

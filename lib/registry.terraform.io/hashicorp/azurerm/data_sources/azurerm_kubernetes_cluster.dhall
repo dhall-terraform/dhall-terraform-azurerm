@@ -24,9 +24,11 @@
               , max_pods : Natural
               , min_count : Natural
               , name : Text
+              , node_labels : List { mapKey : Text, mapValue : Text }
               , node_taints : List Text
               , os_disk_size_gb : Natural
               , os_type : Text
+              , tags : List { mapKey : Text, mapValue : Text }
               , type : Text
               , vm_size : Text
               , vnet_subnet_id : Text
@@ -123,9 +125,11 @@
             , max_pods : Natural
             , min_count : Natural
             , name : Text
+            , node_labels : List { mapKey : Text, mapValue : Text }
             , node_taints : List Text
             , os_disk_size_gb : Natural
             , os_type : Text
+            , tags : List { mapKey : Text, mapValue : Text }
             , type : Text
             , vm_size : Text
             , vnet_subnet_id : Text

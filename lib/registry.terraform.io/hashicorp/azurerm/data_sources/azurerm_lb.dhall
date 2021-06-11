@@ -6,6 +6,7 @@
               , name : Text
               , private_ip_address : Text
               , private_ip_address_allocation : Text
+              , private_ip_address_version : Text
               , public_ip_address_id : Text
               , subnet_id : Text
               , zones : List Text
@@ -29,6 +30,7 @@
             , name : Text
             , private_ip_address : Text
             , private_ip_address_allocation : Text
+            , private_ip_address_version : Text
             , public_ip_address_id : Text
             , subnet_id : Text
             , zones : List Text

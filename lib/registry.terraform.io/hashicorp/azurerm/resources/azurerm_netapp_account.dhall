@@ -3,6 +3,7 @@
     , location : Text
     , name : Text
     , resource_group_name : Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , active_directory :
         Optional
           ( List
@@ -24,6 +25,7 @@
     }
 , default =
   { id = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , active_directory =
       None
         ( List

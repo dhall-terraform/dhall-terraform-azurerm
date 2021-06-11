@@ -11,6 +11,7 @@
         Optional (List { day_of_week : Text, start_hour_utc : Natural })
     , port : Optional Natural
     , primary_access_key : Optional Text
+    , primary_connection_string : Optional Text
     , private_static_ip_address : Optional Text
     , redis_configuration :
         Optional
@@ -33,6 +34,7 @@
           )
     , resource_group_name : Text
     , secondary_access_key : Optional Text
+    , secondary_connection_string : Optional Text
     , shard_count : Optional Natural
     , sku_name : Optional Text
     , ssl_port : Optional Natural
@@ -53,6 +55,7 @@
       None (List { day_of_week : Text, start_hour_utc : Natural })
   , port = None Natural
   , primary_access_key = None Text
+  , primary_connection_string = None Text
   , private_static_ip_address = None Text
   , redis_configuration =
       None
@@ -74,6 +77,7 @@
             }
         )
   , secondary_access_key = None Text
+  , secondary_connection_string = None Text
   , shard_count = None Natural
   , sku_name = None Text
   , ssl_port = None Natural

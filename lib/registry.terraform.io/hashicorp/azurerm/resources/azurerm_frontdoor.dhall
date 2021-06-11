@@ -4,7 +4,7 @@
     , friendly_name : Optional Text
     , id : Optional Text
     , load_balancer_enabled : Optional Bool
-    , location : Text
+    , location : Optional Text
     , name : Text
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
@@ -27,10 +27,12 @@
           }
     , backend_pool_health_probe :
         List
-          { id : Optional Text
+          { enabled : Optional Bool
+          , id : Optional Text
           , interval_in_seconds : Optional Natural
           , name : Text
           , path : Optional Text
+          , probe_method : Optional Text
           , protocol : Optional Text
           }
     , backend_pool_load_balancing :
@@ -107,6 +109,7 @@
   , friendly_name = None Text
   , id = None Text
   , load_balancer_enabled = None Bool
+  , location = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None

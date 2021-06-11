@@ -4,6 +4,7 @@
     , location : Optional Text
     , name : Text
     , pool_name : Text
+    , protocols : Optional (List Text)
     , resource_group_name : Text
     , service_level : Optional Text
     , storage_quota_in_gb : Optional Natural
@@ -14,6 +15,7 @@
 , default =
   { id = None Text
   , location = None Text
+  , protocols = None (List Text)
   , service_level = None Text
   , storage_quota_in_gb = None Natural
   , subnet_id = None Text

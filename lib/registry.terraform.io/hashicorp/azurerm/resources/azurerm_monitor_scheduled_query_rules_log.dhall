@@ -1,12 +1,19 @@
 { Type =
-    { fqdn : Optional Text
+    { authorized_resource_ids : Optional (List Text)
+    , data_source_id : Text
+    , description : Optional Text
+    , enabled : Optional Bool
     , id : Optional Text
-    , name : Optional Text
+    , location : Text
+    , name : Text
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
-    , ttl : Natural
-    , zone_name : Text
-    , record : List { exchange : Text, preference : Natural }
+    , criteria :
+        List
+          { metric_name : Text
+          , dimension :
+              List { name : Text, operator : Optional Text, values : List Text }
+          }
     , timeouts :
         Optional
           { create : Optional Text
@@ -16,9 +23,10 @@
           }
     }
 , default =
-  { fqdn = None Text
+  { authorized_resource_ids = None (List Text)
+  , description = None Text
+  , enabled = None Bool
   , id = None Text
-  , name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None

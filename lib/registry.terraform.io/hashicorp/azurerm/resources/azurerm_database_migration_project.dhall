@@ -1,12 +1,12 @@
 { Type =
-    { fqdn : Optional Text
-    , id : Optional Text
-    , name : Optional Text
+    { id : Optional Text
+    , location : Text
+    , name : Text
     , resource_group_name : Text
+    , service_name : Text
+    , source_platform : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
-    , ttl : Natural
-    , zone_name : Text
-    , record : List { exchange : Text, preference : Natural }
+    , target_platform : Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -16,9 +16,7 @@
           }
     }
 , default =
-  { fqdn = None Text
-  , id = None Text
-  , name = None Text
+  { id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None

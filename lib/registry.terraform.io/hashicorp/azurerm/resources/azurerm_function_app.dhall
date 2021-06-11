@@ -10,6 +10,7 @@
     , kind : Optional Text
     , location : Text
     , name : Text
+    , os_type : Optional Text
     , outbound_ip_addresses : Optional Text
     , possible_outbound_ip_addresses : Optional Text
     , resource_group_name : Text
@@ -116,6 +117,7 @@
   , https_only = None Bool
   , id = None Text
   , kind = None Text
+  , os_type = None Text
   , outbound_ip_addresses = None Text
   , possible_outbound_ip_addresses = None Text
   , site_credential = None (List { password : Text, username : Text })

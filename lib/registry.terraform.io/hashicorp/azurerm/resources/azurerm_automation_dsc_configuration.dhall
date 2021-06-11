@@ -8,6 +8,7 @@
     , name : Text
     , resource_group_name : Text
     , state : Optional Text
+    , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -21,6 +22,7 @@
   , id = None Text
   , log_verbose = None Bool
   , state = None Text
+  , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None
         { create : Optional Text

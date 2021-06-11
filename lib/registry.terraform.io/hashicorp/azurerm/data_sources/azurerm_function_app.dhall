@@ -8,6 +8,7 @@
     , id : Optional Text
     , location : Optional Text
     , name : Text
+    , os_type : Optional Text
     , outbound_ip_addresses : Optional Text
     , possible_outbound_ip_addresses : Optional Text
     , resource_group_name : Text
@@ -23,6 +24,7 @@
   , enabled = None Bool
   , id = None Text
   , location = None Text
+  , os_type = None Text
   , outbound_ip_addresses = None Text
   , possible_outbound_ip_addresses = None Text
   , site_credential = None (List { password : Text, username : Text })
