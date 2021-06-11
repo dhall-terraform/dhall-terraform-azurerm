@@ -122,6 +122,8 @@
 , azurerm_cosmosdb_sql_container = ./azurerm_cosmosdb_sql_container.dhall
 , azurerm_cosmosdb_sql_database = ./azurerm_cosmosdb_sql_database.dhall
 , azurerm_cosmosdb_table = ./azurerm_cosmosdb_table.dhall
+, azurerm_cost_management_export_resource_group =
+    ./azurerm_cost_management_export_resource_group.dhall
 , azurerm_dashboard = ./azurerm_dashboard.dhall
 , azurerm_database_migration_project =
     ./azurerm_database_migration_project.dhall
@@ -353,6 +355,7 @@
 , azurerm_postgresql_server = ./azurerm_postgresql_server.dhall
 , azurerm_postgresql_virtual_network_rule =
     ./azurerm_postgresql_virtual_network_rule.dhall
+, azurerm_powerbi_embedded = ./azurerm_powerbi_embedded.dhall
 , azurerm_private_dns_aaaa_record = ./azurerm_private_dns_aaaa_record.dhall
 , azurerm_private_dns_a_record = ./azurerm_private_dns_a_record.dhall
 , azurerm_private_dns_cname_record = ./azurerm_private_dns_cname_record.dhall
@@ -467,6 +470,7 @@
 , azurerm_traffic_manager_endpoint = ./azurerm_traffic_manager_endpoint.dhall
 , azurerm_traffic_manager_profile = ./azurerm_traffic_manager_profile.dhall
 , azurerm_user_assigned_identity = ./azurerm_user_assigned_identity.dhall
+, azurerm_virtual_hub_connection = ./azurerm_virtual_hub_connection.dhall
 , azurerm_virtual_hub = ./azurerm_virtual_hub.dhall
 , azurerm_virtual_machine_data_disk_attachment =
     ./azurerm_virtual_machine_data_disk_attachment.dhall

@@ -168,10 +168,11 @@
     , ssl_certificate :
         Optional
           ( List
-              { data : Text
+              { data : Optional Text
               , id : Optional Text
+              , key_vault_secret_id : Optional Text
               , name : Text
-              , password : Text
+              , password : Optional Text
               , public_cert_data : Optional Text
               }
           )
@@ -336,10 +337,11 @@
   , ssl_certificate =
       None
         ( List
-            { data : Text
+            { data : Optional Text
             , id : Optional Text
+            , key_vault_secret_id : Optional Text
             , name : Text
-            , password : Text
+            , password : Optional Text
             , public_cert_data : Optional Text
             }
         )

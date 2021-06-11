@@ -18,6 +18,7 @@
     , provision_vm_agent : Optional Bool
     , proximity_placement_group_id : Optional Text
     , resource_group_name : Text
+    , scale_in_policy : Optional Text
     , single_placement_group : Optional Bool
     , sku : Text
     , source_image_id : Optional Text
@@ -118,6 +119,8 @@
     , source_image_reference :
         Optional
           (List { offer : Text, publisher : Text, sku : Text, version : Text })
+    , terminate_notification :
+        Optional (List { enabled : Bool, timeout : Optional Text })
     , timeouts :
         Optional
           { create : Optional Text
@@ -142,6 +145,7 @@
   , priority = None Text
   , provision_vm_agent = None Bool
   , proximity_placement_group_id = None Text
+  , scale_in_policy = None Text
   , single_placement_group = None Bool
   , source_image_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
@@ -198,6 +202,8 @@
         )
   , source_image_reference =
       None (List { offer : Text, publisher : Text, sku : Text, version : Text })
+  , terminate_notification =
+      None (List { enabled : Bool, timeout : Optional Text })
   , timeouts =
       None
         { create : Optional Text
