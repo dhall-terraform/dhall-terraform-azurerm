@@ -1,5 +1,5 @@
 { Type =
-    { address_space : List Text
+    { address_space : Optional (List Text)
     , gateway_address : Optional Text
     , gateway_fqdn : Optional Text
     , id : Optional Text
@@ -24,7 +24,8 @@
           }
     }
 , default =
-  { gateway_address = None Text
+  { address_space = None (List Text)
+  , gateway_address = None Text
   , gateway_fqdn = None Text
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })

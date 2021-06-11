@@ -9,7 +9,7 @@
     , secondary_key : Optional Text
     , state : Optional Text
     , subscription_id : Optional Text
-    , user_id : Text
+    , user_id : Optional Text
     , timeouts :
         Optional
           { create : Optional Text
@@ -26,6 +26,7 @@
   , secondary_key = None Text
   , state = None Text
   , subscription_id = None Text
+  , user_id = None Text
   , timeouts =
       None
         { create : Optional Text

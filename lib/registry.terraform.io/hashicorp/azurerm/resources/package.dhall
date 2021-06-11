@@ -487,6 +487,7 @@
 , azurerm_mssql_database_vulnerability_assessment_rule_baseline =
     ./azurerm_mssql_database_vulnerability_assessment_rule_baseline.dhall
 , azurerm_mssql_elasticpool = ./azurerm_mssql_elasticpool.dhall
+, azurerm_mssql_firewall_rule = ./azurerm_mssql_firewall_rule.dhall
 , azurerm_mssql_server = ./azurerm_mssql_server.dhall
 , azurerm_mssql_server_extended_auditing_policy =
     ./azurerm_mssql_server_extended_auditing_policy.dhall
@@ -495,6 +496,8 @@
 , azurerm_mssql_server_vulnerability_assessment =
     ./azurerm_mssql_server_vulnerability_assessment.dhall
 , azurerm_mssql_virtual_machine = ./azurerm_mssql_virtual_machine.dhall
+, azurerm_mssql_virtual_network_rule =
+    ./azurerm_mssql_virtual_network_rule.dhall
 , azurerm_mysql_active_directory_administrator =
     ./azurerm_mysql_active_directory_administrator.dhall
 , azurerm_mysql_configuration = ./azurerm_mysql_configuration.dhall
