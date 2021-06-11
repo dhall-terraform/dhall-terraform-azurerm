@@ -42,6 +42,7 @@
               , use_32_bit_worker_process : Bool
               , virtual_network_name : Text
               , websockets_enabled : Bool
+              , windows_fx_version : Text
               }
           )
     , site_credential : Optional (List { password : Text, username : Text })
@@ -88,6 +89,7 @@
             , use_32_bit_worker_process : Bool
             , virtual_network_name : Text
             , websockets_enabled : Bool
+            , windows_fx_version : Text
             }
         )
   , site_credential = None (List { password : Text, username : Text })

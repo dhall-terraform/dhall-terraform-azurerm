@@ -48,6 +48,7 @@
               , use_32_bit_worker_process : Optional Bool
               , virtual_network_name : Optional Text
               , websockets_enabled : Optional Bool
+              , windows_fx_version : Optional Text
               , cors :
                   Optional
                     ( List
@@ -102,6 +103,7 @@
             , use_32_bit_worker_process : Optional Bool
             , virtual_network_name : Optional Text
             , websockets_enabled : Optional Bool
+            , windows_fx_version : Optional Text
             , cors :
                 Optional
                   ( List

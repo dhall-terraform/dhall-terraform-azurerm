@@ -94,6 +94,7 @@
               , disable_frontend_tls10 : Optional Bool
               , disable_frontend_tls11 : Optional Bool
               , disable_triple_des_chipers : Optional Bool
+              , disable_triple_des_ciphers : Optional Bool
               }
           )
     , sign_in : Optional (List { enabled : Bool })
@@ -202,6 +203,7 @@
             , disable_frontend_tls10 : Optional Bool
             , disable_frontend_tls11 : Optional Bool
             , disable_triple_des_chipers : Optional Bool
+            , disable_triple_des_ciphers : Optional Bool
             }
         )
   , sign_in = None (List { enabled : Bool })

@@ -1,7 +1,9 @@
 { Type =
     { id : Optional Text
+    , is_xenon : Optional Bool
     , kind : Optional Text
     , location : Optional Text
+    , maximum_elastic_worker_count : Optional Natural
     , maximum_number_of_workers : Optional Natural
     , name : Text
     , properties :
@@ -18,8 +20,10 @@
     }
 , default =
   { id = None Text
+  , is_xenon = None Bool
   , kind = None Text
   , location = None Text
+  , maximum_elastic_worker_count = None Natural
   , maximum_number_of_workers = None Natural
   , properties =
       None

@@ -63,6 +63,7 @@
 , azurerm_recovery_services_protection_policy_vm =
     ./azurerm_recovery_services_protection_policy_vm.dhall
 , azurerm_recovery_services_vault = ./azurerm_recovery_services_vault.dhall
+, azurerm_redis_cache = ./azurerm_redis_cache.dhall
 , azurerm_resource_group = ./azurerm_resource_group.dhall
 , azurerm_role_definition = ./azurerm_role_definition.dhall
 , azurerm_route_table = ./azurerm_route_table.dhall
@@ -72,6 +73,7 @@
 , azurerm_shared_image_gallery = ./azurerm_shared_image_gallery.dhall
 , azurerm_shared_image_version = ./azurerm_shared_image_version.dhall
 , azurerm_snapshot = ./azurerm_snapshot.dhall
+, azurerm_sql_server = ./azurerm_sql_server.dhall
 , azurerm_storage_account = ./azurerm_storage_account.dhall
 , azurerm_storage_account_sas = ./azurerm_storage_account_sas.dhall
 , azurerm_stream_analytics_job = ./azurerm_stream_analytics_job.dhall
@@ -83,5 +85,7 @@
 , azurerm_user_assigned_identity = ./azurerm_user_assigned_identity.dhall
 , azurerm_virtual_machine = ./azurerm_virtual_machine.dhall
 , azurerm_virtual_network = ./azurerm_virtual_network.dhall
+, azurerm_virtual_network_gateway_connection =
+    ./azurerm_virtual_network_gateway_connection.dhall
 , azurerm_virtual_network_gateway = ./azurerm_virtual_network_gateway.dhall
 }
