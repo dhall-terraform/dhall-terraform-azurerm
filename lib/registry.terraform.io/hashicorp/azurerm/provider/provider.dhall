@@ -1,0 +1,29 @@
+{ Type =
+    { client_certificate_password : Optional Text
+    , client_certificate_path : Optional Text
+    , client_id : Optional Text
+    , client_secret : Optional Text
+    , environment : Optional Text
+    , msi_endpoint : Optional Text
+    , partner_id : Optional Text
+    , skip_credentials_validation : Optional Bool
+    , skip_provider_registration : Optional Bool
+    , subscription_id : Optional Text
+    , tenant_id : Optional Text
+    , use_msi : Optional Bool
+    }
+, default =
+  { client_certificate_password = None Text
+  , client_certificate_path = None Text
+  , client_id = None Text
+  , client_secret = None Text
+  , environment = None Text
+  , msi_endpoint = None Text
+  , partner_id = None Text
+  , skip_credentials_validation = None Bool
+  , skip_provider_registration = None Bool
+  , subscription_id = None Text
+  , tenant_id = None Text
+  , use_msi = None Bool
+  }
+}
