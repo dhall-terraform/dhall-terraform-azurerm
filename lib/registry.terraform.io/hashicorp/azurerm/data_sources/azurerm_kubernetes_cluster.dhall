@@ -40,6 +40,7 @@
               , os_type : Text
               , tags : List { mapKey : Text, mapValue : Text }
               , type : Text
+              , upgrade_settings : List { max_surge : Text }
               , vm_size : Text
               , vnet_subnet_id : Text
               }
@@ -172,6 +173,7 @@
             , os_type : Text
             , tags : List { mapKey : Text, mapValue : Text }
             , type : Text
+            , upgrade_settings : List { max_surge : Text }
             , vm_size : Text
             , vnet_subnet_id : Text
             }

@@ -16,6 +16,26 @@
     , sql_identity_control_enabled : Optional Bool
     , storage_data_lake_gen2_filesystem_id : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , azure_devops_repo :
+        Optional
+          ( List
+              { account_name : Text
+              , branch_name : Text
+              , project_name : Text
+              , repository_name : Text
+              , root_folder : Text
+              }
+          )
+    , github_repo :
+        Optional
+          ( List
+              { account_name : Text
+              , branch_name : Text
+              , git_url : Optional Text
+              , repository_name : Text
+              , root_folder : Text
+              }
+          )
     , timeouts :
         Optional
           { create : Optional Text
@@ -34,6 +54,26 @@
   , managed_virtual_network_enabled = None Bool
   , sql_identity_control_enabled = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , azure_devops_repo =
+      None
+        ( List
+            { account_name : Text
+            , branch_name : Text
+            , project_name : Text
+            , repository_name : Text
+            , root_folder : Text
+            }
+        )
+  , github_repo =
+      None
+        ( List
+            { account_name : Text
+            , branch_name : Text
+            , git_url : Optional Text
+            , repository_name : Text
+            , root_folder : Text
+            }
+        )
   , timeouts =
       None
         { create : Optional Text

@@ -1,5 +1,6 @@
 { Type =
     { api_server_authorized_ip_ranges : Optional (List Text)
+    , automatic_channel_upgrade : Optional Text
     , disk_encryption_set_id : Optional Text
     , dns_prefix : Text
     , enable_pod_security_policy : Optional Bool
@@ -93,6 +94,8 @@
               , scale_down_unready : Optional Text
               , scale_down_utilization_threshold : Optional Text
               , scan_interval : Optional Text
+              , skip_nodes_with_local_storage : Optional Bool
+              , skip_nodes_with_system_pods : Optional Bool
               }
           )
     , default_node_pool :
@@ -117,6 +120,7 @@
           , type : Optional Text
           , vm_size : Text
           , vnet_subnet_id : Optional Text
+          , upgrade_settings : Optional (List { max_surge : Text })
           }
     , identity :
         Optional
@@ -187,6 +191,7 @@
     }
 , default =
   { api_server_authorized_ip_ranges = None (List Text)
+  , automatic_channel_upgrade = None Text
   , disk_encryption_set_id = None Text
   , enable_pod_security_policy = None Bool
   , fqdn = None Text
@@ -275,6 +280,8 @@
             , scale_down_unready : Optional Text
             , scale_down_utilization_threshold : Optional Text
             , scan_interval : Optional Text
+            , skip_nodes_with_local_storage : Optional Bool
+            , skip_nodes_with_system_pods : Optional Bool
             }
         )
   , identity =

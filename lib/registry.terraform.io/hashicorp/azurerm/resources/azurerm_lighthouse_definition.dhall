@@ -5,7 +5,12 @@
     , managing_tenant_id : Text
     , name : Text
     , scope : Text
-    , authorization : List { principal_id : Text, role_definition_id : Text }
+    , authorization :
+        List
+          { principal_display_name : Optional Text
+          , principal_id : Text
+          , role_definition_id : Text
+          }
     , timeouts :
         Optional
           { create : Optional Text

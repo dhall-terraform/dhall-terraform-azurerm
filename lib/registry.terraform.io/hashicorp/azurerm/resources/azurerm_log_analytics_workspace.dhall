@@ -7,6 +7,7 @@
     , name : Text
     , portal_url : Optional Text
     , primary_shared_key : Optional Text
+    , reservation_capcity_in_gb_per_day : Optional Natural
     , resource_group_name : Text
     , retention_in_days : Optional Natural
     , secondary_shared_key : Optional Text
@@ -28,6 +29,7 @@
   , internet_query_enabled = None Bool
   , portal_url = None Text
   , primary_shared_key = None Text
+  , reservation_capcity_in_gb_per_day = None Natural
   , retention_in_days = None Natural
   , secondary_shared_key = None Text
   , sku = None Text

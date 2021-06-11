@@ -6,6 +6,7 @@
         Optional
           ( List
               { display_name : Text
+              , id : Text
               , location_placement_id : Text
               , quota_id : Text
               , spending_limit : Text
@@ -25,6 +26,7 @@
       None
         ( List
             { display_name : Text
+            , id : Text
             , location_placement_id : Text
             , quota_id : Text
             , spending_limit : Text

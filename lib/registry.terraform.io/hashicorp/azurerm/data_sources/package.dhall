@@ -7,6 +7,7 @@
 , azurerm_api_management_product = ./azurerm_api_management_product.dhall
 , azurerm_api_management_user = ./azurerm_api_management_user.dhall
 , azurerm_app_configuration = ./azurerm_app_configuration.dhall
+, azurerm_application_gateway = ./azurerm_application_gateway.dhall
 , azurerm_application_insights = ./azurerm_application_insights.dhall
 , azurerm_application_security_group =
     ./azurerm_application_security_group.dhall

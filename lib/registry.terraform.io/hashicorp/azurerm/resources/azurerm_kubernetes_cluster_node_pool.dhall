@@ -31,6 +31,7 @@
           , read : Optional Text
           , update : Optional Text
           }
+    , upgrade_settings : Optional (List { max_surge : Text })
     }
 , default =
   { availability_zones = None (List Text)
@@ -62,5 +63,6 @@
         , read : Optional Text
         , update : Optional Text
         }
+  , upgrade_settings = None (List { max_surge : Text })
   }
 }

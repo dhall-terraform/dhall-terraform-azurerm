@@ -22,6 +22,7 @@
     , resource_group_name : Text
     , spot_max_price : Optional Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , upgrade_settings : Optional (List { max_surge : Text })
     , vm_size : Optional Text
     , vnet_subnet_id : Optional Text
     , timeouts : Optional { read : Optional Text }
@@ -47,6 +48,7 @@
   , proximity_placement_group_id = None Text
   , spot_max_price = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , upgrade_settings = None (List { max_surge : Text })
   , vm_size = None Text
   , vnet_subnet_id = None Text
   , timeouts = None { read : Optional Text }
