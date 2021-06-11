@@ -12,6 +12,7 @@
     , primary_connection_string : Optional Text
     , private_static_ip_address : Optional Text
     , public_network_access_enabled : Optional Bool
+    , replicas_per_master : Optional Natural
     , resource_group_name : Text
     , secondary_access_key : Optional Text
     , secondary_connection_string : Optional Text
@@ -61,6 +62,7 @@
   , primary_connection_string = None Text
   , private_static_ip_address = None Text
   , public_network_access_enabled = None Bool
+  , replicas_per_master = None Natural
   , secondary_access_key = None Text
   , secondary_connection_string = None Text
   , shard_count = None Natural

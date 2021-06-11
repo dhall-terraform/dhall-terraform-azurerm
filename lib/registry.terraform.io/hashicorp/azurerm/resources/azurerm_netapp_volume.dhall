@@ -8,6 +8,7 @@
     , pool_name : Text
     , protocols : Optional (List Text)
     , resource_group_name : Text
+    , security_style : Optional Text
     , service_level : Text
     , storage_quota_in_gb : Natural
     , subnet_id : Text
@@ -49,6 +50,7 @@
   , id = None Text
   , mount_ip_addresses = None (List Text)
   , protocols = None (List Text)
+  , security_style = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , data_protection_replication =
       None

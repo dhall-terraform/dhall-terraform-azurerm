@@ -17,6 +17,7 @@
     , pool_name : Text
     , protocols : Optional (List Text)
     , resource_group_name : Text
+    , security_style : Optional Text
     , service_level : Optional Text
     , storage_quota_in_gb : Optional Natural
     , subnet_id : Optional Text
@@ -38,6 +39,7 @@
   , location = None Text
   , mount_ip_addresses = None (List Text)
   , protocols = None (List Text)
+  , security_style = None Text
   , service_level = None Text
   , storage_quota_in_gb = None Natural
   , subnet_id = None Text

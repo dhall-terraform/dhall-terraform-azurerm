@@ -77,6 +77,7 @@
 , azurerm_eventgrid_topic = ./azurerm_eventgrid_topic.dhall
 , azurerm_eventhub_authorization_rule =
     ./azurerm_eventhub_authorization_rule.dhall
+, azurerm_eventhub_cluster = ./azurerm_eventhub_cluster.dhall
 , azurerm_eventhub_consumer_group = ./azurerm_eventhub_consumer_group.dhall
 , azurerm_eventhub = ./azurerm_eventhub.dhall
 , azurerm_eventhub_namespace_authorization_rule =
@@ -175,6 +176,7 @@
 , azurerm_public_ips = ./azurerm_public_ips.dhall
 , azurerm_recovery_services_vault = ./azurerm_recovery_services_vault.dhall
 , azurerm_redis_cache = ./azurerm_redis_cache.dhall
+, azurerm_redis_enterprise_database = ./azurerm_redis_enterprise_database.dhall
 , azurerm_resource_group = ./azurerm_resource_group.dhall
 , azurerm_resources = ./azurerm_resources.dhall
 , azurerm_role_definition = ./azurerm_role_definition.dhall

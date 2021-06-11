@@ -6,6 +6,7 @@
     , kind : Optional Text
     , location : Text
     , name : Text
+    , public_network_access_enabled : Optional Bool
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , authentication_configuration :
@@ -40,6 +41,7 @@
   , cosmosdb_throughput = None Natural
   , id = None Text
   , kind = None Text
+  , public_network_access_enabled = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
   , authentication_configuration =
       None

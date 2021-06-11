@@ -1,5 +1,6 @@
 { Type =
     { account_name : Text
+    , analytical_storage_ttl : Optional Natural
     , database_name : Text
     , default_ttl_seconds : Optional Natural
     , id : Optional Text
@@ -19,7 +20,8 @@
           }
     }
 , default =
-  { default_ttl_seconds = None Natural
+  { analytical_storage_ttl = None Natural
+  , default_ttl_seconds = None Natural
   , id = None Text
   , shard_key = None Text
   , system_indexes = None (List { keys : List Text, unique : Bool })

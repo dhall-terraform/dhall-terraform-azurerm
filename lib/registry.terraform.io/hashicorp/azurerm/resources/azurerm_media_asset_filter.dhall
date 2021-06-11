@@ -25,13 +25,11 @@
         Optional
           ( List
               { condition :
-                  Optional
-                    ( List
-                        { operation : Optional Text
-                        , property : Optional Text
-                        , value : Optional Text
-                        }
-                    )
+                  List
+                    { operation : Optional Text
+                    , property : Optional Text
+                    , value : Optional Text
+                    }
               }
           )
     }
@@ -60,13 +58,11 @@
       None
         ( List
             { condition :
-                Optional
-                  ( List
-                      { operation : Optional Text
-                      , property : Optional Text
-                      , value : Optional Text
-                      }
-                  )
+                List
+                  { operation : Optional Text
+                  , property : Optional Text
+                  , value : Optional Text
+                  }
             }
         )
   }

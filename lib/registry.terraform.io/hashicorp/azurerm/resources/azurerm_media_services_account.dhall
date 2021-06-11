@@ -13,6 +13,13 @@
               , type : Optional Text
               }
           )
+    , key_delivery_access_control :
+        Optional
+          ( List
+              { default_action : Optional Text
+              , ip_allow_list : Optional (List Text)
+              }
+          )
     , storage_account : List { id : Text, is_primary : Optional Bool }
     , timeouts :
         Optional
@@ -32,6 +39,13 @@
             { principal_id : Optional Text
             , tenant_id : Optional Text
             , type : Optional Text
+            }
+        )
+  , key_delivery_access_control =
+      None
+        ( List
+            { default_action : Optional Text
+            , ip_allow_list : Optional (List Text)
             }
         )
   , timeouts =

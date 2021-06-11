@@ -6,7 +6,9 @@
     , id : Optional Text
     , name : Optional Text
     , port : Optional Natural
+    , primary_access_key : Optional Text
     , resource_group_name : Text
+    , secondary_access_key : Optional Text
     , module :
         Optional
           (List { args : Optional Text, name : Text, version : Optional Text })
@@ -24,6 +26,8 @@
   , id = None Text
   , name = None Text
   , port = None Natural
+  , primary_access_key = None Text
+  , secondary_access_key = None Text
   , module =
       None (List { args : Optional Text, name : Text, version : Optional Text })
   , timeouts =

@@ -1,5 +1,6 @@
 { Type =
     { cluster_version : Text
+    , encryption_in_transit_enabled : Optional Bool
     , https_endpoint : Optional Text
     , id : Optional Text
     , kafka_rest_proxy_endpoint : Optional Text
@@ -119,7 +120,8 @@
           }
     }
 , default =
-  { https_endpoint = None Text
+  { encryption_in_transit_enabled = None Bool
+  , https_endpoint = None Text
   , id = None Text
   , kafka_rest_proxy_endpoint = None Text
   , ssh_endpoint = None Text

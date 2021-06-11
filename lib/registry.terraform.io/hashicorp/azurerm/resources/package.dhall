@@ -463,6 +463,8 @@
 , azurerm_logic_app_trigger_recurrence =
     ./azurerm_logic_app_trigger_recurrence.dhall
 , azurerm_logic_app_workflow = ./azurerm_logic_app_workflow.dhall
+, azurerm_machine_learning_inference_cluster =
+    ./azurerm_machine_learning_inference_cluster.dhall
 , azurerm_machine_learning_workspace =
     ./azurerm_machine_learning_workspace.dhall
 , azurerm_maintenance_assignment_dedicated_host =
@@ -745,6 +747,7 @@
 , azurerm_sql_virtual_network_rule = ./azurerm_sql_virtual_network_rule.dhall
 , azurerm_ssh_public_key = ./azurerm_ssh_public_key.dhall
 , azurerm_stack_hci_cluster = ./azurerm_stack_hci_cluster.dhall
+, azurerm_static_site = ./azurerm_static_site.dhall
 , azurerm_storage_account_customer_managed_key =
     ./azurerm_storage_account_customer_managed_key.dhall
 , azurerm_storage_account = ./azurerm_storage_account.dhall

@@ -36,6 +36,16 @@
     , location : Optional Text
     , name : Text
     , outbound_public_ip_addresses : Optional (List Text)
+    , required_network_traffic_rules :
+        Optional
+          ( List
+              { direction : Text
+              , fqdns : List Text
+              , ip_addresses : List Text
+              , port : Natural
+              , protocol : Text
+              }
+          )
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timeouts : Optional { read : Optional Text }
@@ -76,6 +86,16 @@
   , id = None Text
   , location = None Text
   , outbound_public_ip_addresses = None (List Text)
+  , required_network_traffic_rules =
+      None
+        ( List
+            { direction : Text
+            , fqdns : List Text
+            , ip_addresses : List Text
+            , port : Natural
+            , protocol : Text
+            }
+        )
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts = None { read : Optional Text }
   }

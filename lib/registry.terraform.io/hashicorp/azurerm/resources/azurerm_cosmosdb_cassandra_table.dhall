@@ -1,5 +1,6 @@
 { Type =
-    { cassandra_keyspace_id : Text
+    { analytical_storage_ttl : Optional Natural
+    , cassandra_keyspace_id : Text
     , default_ttl : Optional Natural
     , id : Optional Text
     , name : Text
@@ -20,7 +21,8 @@
           }
     }
 , default =
-  { default_ttl = None Natural
+  { analytical_storage_ttl = None Natural
+  , default_ttl = None Natural
   , id = None Text
   , throughput = None Natural
   , autoscale_settings = None (List { max_throughput : Optional Natural })
