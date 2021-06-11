@@ -9,6 +9,13 @@
     , state : Text
     , storage_account_access_key : Optional Text
     , storage_endpoint : Optional Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { disabled_alerts = None (List Text)
@@ -18,5 +25,12 @@
   , retention_days = None Natural
   , storage_account_access_key = None Text
   , storage_endpoint = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

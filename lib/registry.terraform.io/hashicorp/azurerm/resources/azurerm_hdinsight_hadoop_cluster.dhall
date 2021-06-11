@@ -67,6 +67,13 @@
               , storage_resource_id : Text
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { https_endpoint = None Text
@@ -90,5 +97,12 @@
             , storage_resource_id : Text
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

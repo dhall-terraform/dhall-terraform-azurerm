@@ -27,11 +27,7 @@
               , ftps_state : Text
               , http2_enabled : Bool
               , ip_restriction :
-                  List
-                    { ip_address : Text
-                    , subnet_mask : Text
-                    , virtual_network_subnet_id : Text
-                    }
+                  List { ip_address : Text, virtual_network_subnet_id : Text }
               , java_container : Text
               , java_container_version : Text
               , java_version : Text
@@ -45,7 +41,6 @@
               , remote_debugging_version : Text
               , scm_type : Text
               , use_32_bit_worker_process : Bool
-              , virtual_network_name : Text
               , websockets_enabled : Bool
               , windows_fx_version : Text
               }
@@ -80,11 +75,7 @@
             , ftps_state : Text
             , http2_enabled : Bool
             , ip_restriction :
-                List
-                  { ip_address : Text
-                  , subnet_mask : Text
-                  , virtual_network_subnet_id : Text
-                  }
+                List { ip_address : Text, virtual_network_subnet_id : Text }
             , java_container : Text
             , java_container_version : Text
             , java_version : Text
@@ -98,7 +89,6 @@
             , remote_debugging_version : Text
             , scm_type : Text
             , use_32_bit_worker_process : Bool
-            , virtual_network_name : Text
             , websockets_enabled : Bool
             , windows_fx_version : Text
             }

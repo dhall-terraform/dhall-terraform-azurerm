@@ -7,6 +7,13 @@
     , storage_account_id : Text
     , version : Optional Natural
     , retention_policy : List { days : Natural, enabled : Bool }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     , traffic_analytics :
         Optional
           ( List
@@ -20,6 +27,13 @@
 , default =
   { id = None Text
   , version = None Natural
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   , traffic_analytics =
       None
         ( List

@@ -17,8 +17,10 @@
     , id : Optional Text
     , location : Text
     , name : Text
+    , purge_protection_enabled : Optional Bool
     , resource_group_name : Text
-    , sku_name : Optional Text
+    , sku_name : Text
+    , soft_delete_enabled : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tenant_id : Text
     , vault_uri : Optional Text
@@ -31,7 +33,13 @@
               , virtual_network_subnet_ids : Optional (List Text)
               }
           )
-    , sku : Optional (List { name : Optional Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { access_policy =
@@ -50,7 +58,8 @@
   , enabled_for_disk_encryption = None Bool
   , enabled_for_template_deployment = None Bool
   , id = None Text
-  , sku_name = None Text
+  , purge_protection_enabled = None Bool
+  , soft_delete_enabled = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
   , vault_uri = None Text
   , network_acls =
@@ -62,6 +71,12 @@
             , virtual_network_subnet_ids : Optional (List Text)
             }
         )
-  , sku = None (List { name : Optional Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

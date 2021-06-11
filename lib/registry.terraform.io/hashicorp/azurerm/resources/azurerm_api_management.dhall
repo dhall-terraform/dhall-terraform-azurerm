@@ -13,7 +13,7 @@
     , publisher_name : Text
     , resource_group_name : Text
     , scm_url : Optional Text
-    , sku_name : Optional Text
+    , sku_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , additional_location :
         Optional
@@ -89,15 +89,7 @@
     , security :
         Optional
           ( List
-              { disable_backend_ssl30 : Optional Bool
-              , disable_backend_tls10 : Optional Bool
-              , disable_backend_tls11 : Optional Bool
-              , disable_frontend_ssl30 : Optional Bool
-              , disable_frontend_tls10 : Optional Bool
-              , disable_frontend_tls11 : Optional Bool
-              , disable_triple_des_chipers : Optional Bool
-              , disable_triple_des_ciphers : Optional Bool
-              , enable_backend_ssl30 : Optional Bool
+              { enable_backend_ssl30 : Optional Bool
               , enable_backend_tls10 : Optional Bool
               , enable_backend_tls11 : Optional Bool
               , enable_frontend_ssl30 : Optional Bool
@@ -119,7 +111,13 @@
                     }
               }
           )
-    , sku : Optional (List { capacity : Optional Natural, name : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { gateway_regional_url = None Text
@@ -131,7 +129,6 @@
   , portal_url = None Text
   , public_ip_addresses = None (List Text)
   , scm_url = None Text
-  , sku_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , additional_location =
       None
@@ -207,15 +204,7 @@
   , security =
       None
         ( List
-            { disable_backend_ssl30 : Optional Bool
-            , disable_backend_tls10 : Optional Bool
-            , disable_backend_tls11 : Optional Bool
-            , disable_frontend_ssl30 : Optional Bool
-            , disable_frontend_tls10 : Optional Bool
-            , disable_frontend_tls11 : Optional Bool
-            , disable_triple_des_chipers : Optional Bool
-            , disable_triple_des_ciphers : Optional Bool
-            , enable_backend_ssl30 : Optional Bool
+            { enable_backend_ssl30 : Optional Bool
             , enable_backend_tls10 : Optional Bool
             , enable_backend_tls11 : Optional Bool
             , enable_frontend_ssl30 : Optional Bool
@@ -237,6 +226,12 @@
                   }
             }
         )
-  , sku = None (List { capacity : Optional Natural, name : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

@@ -1,13 +1,8 @@
 { Type =
     { access_tier : Optional Text
-    , account_encryption_source : Optional Text
     , account_kind : Optional Text
     , account_replication_type : Text
     , account_tier : Text
-    , account_type : Optional Text
-    , enable_advanced_threat_protection : Optional Bool
-    , enable_blob_encryption : Optional Bool
-    , enable_file_encryption : Optional Bool
     , enable_https_traffic_only : Optional Bool
     , id : Optional Text
     , is_hns_enabled : Optional Bool
@@ -50,7 +45,17 @@
     , blob_properties :
         Optional
           ( List
-              { delete_retention_policy :
+              { cors_rule :
+                  Optional
+                    ( List
+                        { allowed_headers : List Text
+                        , allowed_methods : List Text
+                        , allowed_origins : List Text
+                        , exposed_headers : List Text
+                        , max_age_in_seconds : Natural
+                        }
+                    )
+              , delete_retention_policy :
                   Optional (List { days : Optional Natural })
               }
           )
@@ -116,15 +121,24 @@
                     )
               }
           )
+    , static_website :
+        Optional
+          ( List
+              { error_404_document : Optional Text
+              , index_document : Optional Text
+              }
+          )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { access_tier = None Text
-  , account_encryption_source = None Text
   , account_kind = None Text
-  , account_type = None Text
-  , enable_advanced_threat_protection = None Bool
-  , enable_blob_encryption = None Bool
-  , enable_file_encryption = None Bool
   , enable_https_traffic_only = None Bool
   , id = None Text
   , is_hns_enabled = None Bool
@@ -164,7 +178,17 @@
   , blob_properties =
       None
         ( List
-            { delete_retention_policy :
+            { cors_rule :
+                Optional
+                  ( List
+                      { allowed_headers : List Text
+                      , allowed_methods : List Text
+                      , allowed_origins : List Text
+                      , exposed_headers : List Text
+                      , max_age_in_seconds : Natural
+                      }
+                  )
+            , delete_retention_policy :
                 Optional (List { days : Optional Natural })
             }
         )
@@ -229,5 +253,19 @@
                   )
             }
         )
+  , static_website =
+      None
+        ( List
+            { error_404_document : Optional Text
+            , index_document : Optional Text
+            }
+        )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

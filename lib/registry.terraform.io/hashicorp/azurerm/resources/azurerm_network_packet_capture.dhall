@@ -23,6 +23,13 @@
           , storage_account_id : Optional Text
           , storage_path : Optional Text
           }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { id = None Text
@@ -39,5 +46,12 @@
             , remote_port : Optional Text
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

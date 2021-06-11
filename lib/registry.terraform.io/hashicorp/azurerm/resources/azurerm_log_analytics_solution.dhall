@@ -12,6 +12,22 @@
           , promotion_code : Optional Text
           , publisher : Text
           }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
-, default.id = None Text
+, default =
+  { id = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
+  }
 }

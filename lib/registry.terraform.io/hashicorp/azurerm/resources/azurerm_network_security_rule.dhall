@@ -18,6 +18,13 @@
     , source_application_security_group_ids : Optional (List Text)
     , source_port_range : Optional Text
     , source_port_ranges : Optional (List Text)
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { description = None Text
@@ -32,5 +39,12 @@
   , source_application_security_group_ids = None (List Text)
   , source_port_range = None Text
   , source_port_ranges = None (List Text)
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

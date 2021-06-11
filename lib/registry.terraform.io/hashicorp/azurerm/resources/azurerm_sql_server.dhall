@@ -16,6 +16,13 @@
               , type : Text
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { fully_qualified_domain_name = None Text
@@ -29,5 +36,12 @@
             , type : Text
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

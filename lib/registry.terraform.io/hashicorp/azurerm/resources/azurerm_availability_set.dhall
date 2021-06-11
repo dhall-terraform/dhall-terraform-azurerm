@@ -8,6 +8,13 @@
     , proximity_placement_group_id : Optional Text
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { id = None Text
@@ -16,5 +23,12 @@
   , platform_update_domain_count = None Natural
   , proximity_placement_group_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

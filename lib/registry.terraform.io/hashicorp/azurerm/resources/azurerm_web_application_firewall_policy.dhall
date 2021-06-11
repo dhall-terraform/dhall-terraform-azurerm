@@ -23,6 +23,13 @@
           )
     , policy_settings :
         Optional (List { enabled : Optional Bool, mode : Optional Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { id = None Text
@@ -46,5 +53,12 @@
         )
   , policy_settings =
       None (List { enabled : Optional Bool, mode : Optional Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

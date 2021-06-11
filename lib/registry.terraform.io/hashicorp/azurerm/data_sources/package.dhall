@@ -12,6 +12,7 @@
 , azurerm_app_service_certificate_order =
     ./azurerm_app_service_certificate_order.dhall
 , azurerm_app_service = ./azurerm_app_service.dhall
+, azurerm_app_service_environment = ./azurerm_app_service_environment.dhall
 , azurerm_app_service_plan = ./azurerm_app_service_plan.dhall
 , azurerm_automation_account = ./azurerm_automation_account.dhall
 , azurerm_automation_variable_bool = ./azurerm_automation_variable_bool.dhall
@@ -21,12 +22,10 @@
 , azurerm_automation_variable_string =
     ./azurerm_automation_variable_string.dhall
 , azurerm_availability_set = ./azurerm_availability_set.dhall
-, azurerm_azuread_application = ./azurerm_azuread_application.dhall
-, azurerm_azuread_service_principal = ./azurerm_azuread_service_principal.dhall
+, azurerm_backup_policy_vm = ./azurerm_backup_policy_vm.dhall
 , azurerm_batch_account = ./azurerm_batch_account.dhall
 , azurerm_batch_certificate = ./azurerm_batch_certificate.dhall
 , azurerm_batch_pool = ./azurerm_batch_pool.dhall
-, azurerm_builtin_role_definition = ./azurerm_builtin_role_definition.dhall
 , azurerm_cdn_profile = ./azurerm_cdn_profile.dhall
 , azurerm_client_config = ./azurerm_client_config.dhall
 , azurerm_container_registry = ./azurerm_container_registry.dhall
@@ -40,6 +39,8 @@
 , azurerm_disk_encryption_set = ./azurerm_disk_encryption_set.dhall
 , azurerm_dns_zone = ./azurerm_dns_zone.dhall
 , azurerm_eventgrid_topic = ./azurerm_eventgrid_topic.dhall
+, azurerm_eventhub_authorization_rule =
+    ./azurerm_eventhub_authorization_rule.dhall
 , azurerm_eventhub_consumer_group = ./azurerm_eventhub_consumer_group.dhall
 , azurerm_eventhub_namespace_authorization_rule =
     ./azurerm_eventhub_namespace_authorization_rule.dhall
@@ -93,8 +94,6 @@
 , azurerm_postgresql_server = ./azurerm_postgresql_server.dhall
 , azurerm_private_endpoint_connection =
     ./azurerm_private_endpoint_connection.dhall
-, azurerm_private_link_endpoint_connection =
-    ./azurerm_private_link_endpoint_connection.dhall
 , azurerm_private_link_service = ./azurerm_private_link_service.dhall
 , azurerm_private_link_service_endpoint_connections =
     ./azurerm_private_link_service_endpoint_connections.dhall
@@ -102,15 +101,12 @@
 , azurerm_public_ip = ./azurerm_public_ip.dhall
 , azurerm_public_ip_prefix = ./azurerm_public_ip_prefix.dhall
 , azurerm_public_ips = ./azurerm_public_ips.dhall
-, azurerm_recovery_services_protection_policy_vm =
-    ./azurerm_recovery_services_protection_policy_vm.dhall
 , azurerm_recovery_services_vault = ./azurerm_recovery_services_vault.dhall
 , azurerm_redis_cache = ./azurerm_redis_cache.dhall
 , azurerm_resource_group = ./azurerm_resource_group.dhall
 , azurerm_resources = ./azurerm_resources.dhall
 , azurerm_role_definition = ./azurerm_role_definition.dhall
 , azurerm_route_table = ./azurerm_route_table.dhall
-, azurerm_scheduler_job_collection = ./azurerm_scheduler_job_collection.dhall
 , azurerm_servicebus_namespace_authorization_rule =
     ./azurerm_servicebus_namespace_authorization_rule.dhall
 , azurerm_servicebus_namespace = ./azurerm_servicebus_namespace.dhall

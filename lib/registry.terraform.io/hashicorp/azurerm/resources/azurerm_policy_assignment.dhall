@@ -16,6 +16,13 @@
               , type : Optional Text
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { description = None Text
@@ -32,5 +39,12 @@
             , type : Optional Text
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

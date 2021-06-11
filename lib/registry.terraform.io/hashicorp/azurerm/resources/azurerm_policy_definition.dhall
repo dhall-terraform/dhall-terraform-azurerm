@@ -9,6 +9,13 @@
     , parameters : Optional Text
     , policy_rule : Optional Text
     , policy_type : Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { description = None Text
@@ -17,5 +24,12 @@
   , metadata = None Text
   , parameters = None Text
   , policy_rule = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

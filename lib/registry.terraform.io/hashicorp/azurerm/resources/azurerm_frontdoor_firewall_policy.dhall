@@ -78,6 +78,13 @@
                     )
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { custom_block_response_body = None Text
@@ -157,5 +164,12 @@
                   )
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

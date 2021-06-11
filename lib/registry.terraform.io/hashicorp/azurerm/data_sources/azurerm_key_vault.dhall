@@ -26,9 +26,10 @@
               , virtual_network_subnet_ids : List Text
               }
           )
+    , purge_protection_enabled : Optional Bool
     , resource_group_name : Text
-    , sku : Optional (List { name : Text })
     , sku_name : Optional Text
+    , soft_delete_enabled : Optional Bool
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , tenant_id : Optional Text
     , vault_uri : Optional Text
@@ -61,8 +62,9 @@
             , virtual_network_subnet_ids : List Text
             }
         )
-  , sku = None (List { name : Text })
+  , purge_protection_enabled = None Bool
   , sku_name = None Text
+  , soft_delete_enabled = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
   , tenant_id = None Text
   , vault_uri = None Text

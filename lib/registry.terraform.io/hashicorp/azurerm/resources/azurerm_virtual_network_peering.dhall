@@ -8,6 +8,13 @@
     , resource_group_name : Text
     , use_remote_gateways : Optional Bool
     , virtual_network_name : Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { allow_forwarded_traffic = None Bool
@@ -15,5 +22,12 @@
   , allow_virtual_network_access = None Bool
   , id = None Text
   , use_remote_gateways = None Bool
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

@@ -11,6 +11,13 @@
     , service_provider_provisioning_state : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , sku : List { family : Text, tier : Text }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { allow_classic_operations = None Bool
@@ -18,5 +25,12 @@
   , service_key = None Text
   , service_provider_provisioning_state = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

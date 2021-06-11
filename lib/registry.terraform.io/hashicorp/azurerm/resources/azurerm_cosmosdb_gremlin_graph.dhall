@@ -19,12 +19,26 @@
           , included_paths : Optional (List Text)
           , indexing_mode : Text
           }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     , unique_key : Optional (List { paths : List Text })
     }
 , default =
   { id = None Text
   , partition_key_path = None Text
   , throughput = None Natural
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   , unique_key = None (List { paths : List Text })
   }
 }

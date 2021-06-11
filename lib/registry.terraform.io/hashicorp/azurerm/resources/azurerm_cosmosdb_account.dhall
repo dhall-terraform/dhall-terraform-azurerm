@@ -25,18 +25,20 @@
           , max_interval_in_seconds : Optional Natural
           , max_staleness_prefix : Optional Natural
           }
-    , failover_policy :
-        Optional
-          (List { id : Optional Text, location : Text, priority : Natural })
     , geo_location :
+        List
+          { failover_priority : Natural
+          , id : Optional Text
+          , location : Text
+          , prefix : Optional Text
+          }
+    , timeouts :
         Optional
-          ( List
-              { failover_priority : Natural
-              , id : Optional Text
-              , location : Text
-              , prefix : Optional Text
-              }
-          )
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     , virtual_network_rule : Optional (List { id : Text })
     }
 , default =
@@ -56,17 +58,13 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , write_endpoints = None (List Text)
   , capabilities = None (List { name : Text })
-  , failover_policy =
-      None (List { id : Optional Text, location : Text, priority : Natural })
-  , geo_location =
+  , timeouts =
       None
-        ( List
-            { failover_priority : Natural
-            , id : Optional Text
-            , location : Text
-            , prefix : Optional Text
-            }
-        )
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   , virtual_network_rule = None (List { id : Text })
   }
 }

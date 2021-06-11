@@ -1,6 +1,5 @@
 { Type =
     { address_space : Optional (List Text)
-    , address_spaces : Optional (List Text)
     , dns_servers : Optional (List Text)
     , id : Optional Text
     , location : Optional Text
@@ -12,7 +11,6 @@
     }
 , default =
   { address_space = None (List Text)
-  , address_spaces = None (List Text)
   , dns_servers = None (List Text)
   , id = None Text
   , location = None Text

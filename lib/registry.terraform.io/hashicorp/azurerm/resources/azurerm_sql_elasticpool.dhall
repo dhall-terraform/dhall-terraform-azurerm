@@ -11,6 +11,13 @@
     , resource_group_name : Text
     , server_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { creation_date = None Text
@@ -19,5 +26,12 @@
   , id = None Text
   , pool_size = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

@@ -82,6 +82,13 @@
               , x509_store_name : Text
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { add_on_features = None (List Text)
@@ -143,5 +150,12 @@
             , x509_store_name : Text
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

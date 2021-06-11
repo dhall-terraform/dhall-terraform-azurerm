@@ -14,10 +14,24 @@
           , regional_replica_count : Natural
           , storage_account_type : Optional Text
           }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { exclude_from_latest = None Bool
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

@@ -14,6 +14,13 @@
     , os_type : Optional Text
     , vm_size : Text
     , vnet_subnet_id : Optional Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { availability_zones = None (List Text)
@@ -28,5 +35,12 @@
   , os_disk_size_gb = None Natural
   , os_type = None Text
   , vnet_subnet_id = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

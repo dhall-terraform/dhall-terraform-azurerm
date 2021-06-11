@@ -13,6 +13,13 @@
     , resource_group_name : Text
     , sku : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { developer_app_insights_api_key = None Text
@@ -24,5 +31,12 @@
   , luis_app_ids = None (List Text)
   , luis_key = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

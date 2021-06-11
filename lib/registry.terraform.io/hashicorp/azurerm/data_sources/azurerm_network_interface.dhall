@@ -5,7 +5,6 @@
     , enable_ip_forwarding : Optional Bool
     , id : Optional Text
     , internal_dns_name_label : Optional Text
-    , internal_fqdn : Optional Text
     , ip_configuration :
         Optional
           ( List
@@ -40,7 +39,6 @@
   , enable_ip_forwarding = None Bool
   , id = None Text
   , internal_dns_name_label = None Text
-  , internal_fqdn = None Text
   , ip_configuration =
       None
         ( List

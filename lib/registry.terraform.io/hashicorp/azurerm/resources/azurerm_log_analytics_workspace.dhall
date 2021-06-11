@@ -10,6 +10,13 @@
     , sku : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , workspace_id : Optional Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { id = None Text
@@ -19,5 +26,12 @@
   , secondary_shared_key = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , workspace_id = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

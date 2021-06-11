@@ -12,6 +12,13 @@
     , read_write_endpoint_failover_policy :
         List { grace_minutes : Optional Natural, mode : Text }
     , readonly_endpoint_failover_policy : Optional (List { mode : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { databases = None (List Text)
@@ -20,5 +27,12 @@
   , role = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , readonly_endpoint_failover_policy = None (List { mode : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

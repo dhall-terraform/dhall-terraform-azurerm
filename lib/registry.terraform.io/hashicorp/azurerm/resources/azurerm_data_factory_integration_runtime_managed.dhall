@@ -21,6 +21,13 @@
           )
     , custom_setup_script :
         Optional (List { blob_container_uri : Text, sas_token : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     , vnet_integration : Optional (List { subnet_name : Text, vnet_id : Text })
     }
 , default =
@@ -41,6 +48,13 @@
         )
   , custom_setup_script =
       None (List { blob_container_uri : Text, sas_token : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   , vnet_integration = None (List { subnet_name : Text, vnet_id : Text })
   }
 }

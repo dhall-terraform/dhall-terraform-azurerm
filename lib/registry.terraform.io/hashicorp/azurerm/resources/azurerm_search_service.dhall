@@ -10,6 +10,13 @@
     , secondary_key : Optional Text
     , sku : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { id = None Text
@@ -19,5 +26,12 @@
   , replica_count = None Natural
   , secondary_key = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

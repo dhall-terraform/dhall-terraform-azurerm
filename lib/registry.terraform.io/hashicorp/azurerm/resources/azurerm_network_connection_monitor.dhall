@@ -14,11 +14,25 @@
           , virtual_machine_id : Optional Text
           }
     , source : List { port : Optional Natural, virtual_machine_id : Text }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { auto_start = None Bool
   , id = None Text
   , interval_in_seconds = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

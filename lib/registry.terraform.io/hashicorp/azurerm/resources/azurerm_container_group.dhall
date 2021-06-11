@@ -13,16 +13,13 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , container :
         List
-          { command : Optional Text
-          , commands : Optional (List Text)
+          { commands : Optional (List Text)
           , cpu : Natural
           , environment_variables :
               Optional (List { mapKey : Text, mapValue : Text })
           , image : Text
           , memory : Natural
           , name : Text
-          , port : Optional Natural
-          , protocol : Optional Text
           , secure_environment_variables :
               Optional (List { mapKey : Text, mapValue : Text })
           , gpu :
@@ -103,6 +100,13 @@
           )
     , image_registry_credential :
         Optional (List { password : Text, server : Text, username : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { dns_name_label = None Text
@@ -136,5 +140,12 @@
         )
   , image_registry_credential =
       None (List { password : Text, server : Text, username : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

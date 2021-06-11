@@ -7,13 +7,25 @@
     , resource_group_name : Text
     , shard_key : Optional Text
     , throughput : Optional Natural
-    , indexes : Optional (List { key : Text, unique : Optional Bool })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { default_ttl_seconds = None Natural
   , id = None Text
   , shard_key = None Text
   , throughput = None Natural
-  , indexes = None (List { key : Text, unique : Optional Bool })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

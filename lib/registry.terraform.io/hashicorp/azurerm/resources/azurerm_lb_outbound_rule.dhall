@@ -10,6 +10,13 @@
     , resource_group_name : Text
     , frontend_ip_configuration :
         Optional (List { id : Optional Text, name : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { allocated_outbound_ports = None Natural
@@ -17,5 +24,12 @@
   , id = None Text
   , idle_timeout_in_minutes = None Natural
   , frontend_ip_configuration = None (List { id : Optional Text, name : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

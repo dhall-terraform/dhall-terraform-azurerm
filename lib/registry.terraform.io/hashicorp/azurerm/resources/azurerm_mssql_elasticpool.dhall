@@ -1,15 +1,5 @@
 { Type =
-    { elastic_pool_properties :
-        Optional
-          ( List
-              { creation_date : Text
-              , license_type : Text
-              , max_size_bytes : Natural
-              , state : Text
-              , zone_redundant : Bool
-              }
-          )
-    , id : Optional Text
+    { id : Optional Text
     , location : Text
     , max_size_bytes : Optional Natural
     , max_size_gb : Optional Natural
@@ -27,22 +17,26 @@
           , name : Text
           , tier : Text
           }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
-  { elastic_pool_properties =
-      None
-        ( List
-            { creation_date : Text
-            , license_type : Text
-            , max_size_bytes : Natural
-            , state : Text
-            , zone_redundant : Bool
-            }
-        )
-  , id = None Text
+  { id = None Text
   , max_size_bytes = None Natural
   , max_size_gb = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zone_redundant = None Bool
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

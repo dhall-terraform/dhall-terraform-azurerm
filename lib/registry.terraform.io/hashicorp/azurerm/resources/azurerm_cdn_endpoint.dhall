@@ -27,6 +27,13 @@
           , https_port : Optional Natural
           , name : Text
           }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { content_types_to_compress = None (List Text)
@@ -46,5 +53,12 @@
         ( List
             { action : Text, country_codes : List Text, relative_path : Text }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

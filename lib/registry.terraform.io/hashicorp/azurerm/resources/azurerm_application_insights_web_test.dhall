@@ -14,6 +14,13 @@
     , synthetic_monitor_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , timeout : Optional Natural
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { description = None Text
@@ -24,5 +31,12 @@
   , synthetic_monitor_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timeout = None Natural
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

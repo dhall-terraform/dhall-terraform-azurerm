@@ -17,11 +17,25 @@
           , timeout_in_seconds : Optional Natural
           , tolerated_number_of_failures : Optional Natural
           }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { fqdn = None Text
   , id = None Text
   , profile_status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

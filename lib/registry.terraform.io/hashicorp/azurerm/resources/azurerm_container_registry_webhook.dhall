@@ -10,6 +10,13 @@
     , service_uri : Text
     , status : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { custom_headers = None (List { mapKey : Text, mapValue : Text })
@@ -17,5 +24,12 @@
   , scope = None Text
   , status = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

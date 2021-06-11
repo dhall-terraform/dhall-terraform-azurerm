@@ -123,10 +123,7 @@
               , ip_restriction :
                   Optional
                     ( List
-                        { ip_address : Text
-                        , subnet_mask : Text
-                        , virtual_network_subnet_id : Text
-                        }
+                        { ip_address : Text, virtual_network_subnet_id : Text }
                     )
               , java_container : Optional Text
               , java_container_version : Optional Text
@@ -141,7 +138,6 @@
               , remote_debugging_version : Optional Text
               , scm_type : Optional Text
               , use_32_bit_worker_process : Optional Bool
-              , virtual_network_name : Optional Text
               , websockets_enabled : Optional Bool
               , windows_fx_version : Optional Text
               , cors :
@@ -153,6 +149,13 @@
                     )
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { app_settings = None (List { mapKey : Text, mapValue : Text })
@@ -269,12 +272,7 @@
             , http2_enabled : Optional Bool
             , ip_restriction :
                 Optional
-                  ( List
-                      { ip_address : Text
-                      , subnet_mask : Text
-                      , virtual_network_subnet_id : Text
-                      }
-                  )
+                  (List { ip_address : Text, virtual_network_subnet_id : Text })
             , java_container : Optional Text
             , java_container_version : Optional Text
             , java_version : Optional Text
@@ -288,7 +286,6 @@
             , remote_debugging_version : Optional Text
             , scm_type : Optional Text
             , use_32_bit_worker_process : Optional Bool
-            , virtual_network_name : Optional Text
             , websockets_enabled : Optional Bool
             , windows_fx_version : Optional Text
             , cors :
@@ -300,5 +297,12 @@
                   )
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

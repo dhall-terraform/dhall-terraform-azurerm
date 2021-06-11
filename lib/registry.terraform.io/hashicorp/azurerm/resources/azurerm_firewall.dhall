@@ -7,16 +7,29 @@
     , zones : Optional (List Text)
     , ip_configuration :
         List
-          { internal_public_ip_address_id : Optional Text
-          , name : Text
+          { name : Text
           , private_ip_address : Optional Text
-          , public_ip_address_id : Optional Text
+          , public_ip_address_id : Text
           , subnet_id : Optional Text
+          }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
           }
     }
 , default =
   { id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zones = None (List Text)
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

@@ -14,6 +14,13 @@
         Optional (List { connection_string : Text, id : Text, secret : Text })
     , sku : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { endpoint = None Text
@@ -28,5 +35,12 @@
       None (List { connection_string : Text, id : Text, secret : Text })
   , sku = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

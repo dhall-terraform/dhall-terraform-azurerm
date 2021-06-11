@@ -18,7 +18,14 @@
               , location : Text
               }
           )
-    , sku : List { capacity : Natural, name : Text, tier : Optional Text }
+    , sku : List { capacity : Natural, name : Text }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { allocation_policy = None Text
@@ -37,5 +44,12 @@
             , location : Text
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

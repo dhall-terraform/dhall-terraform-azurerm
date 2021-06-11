@@ -110,6 +110,13 @@
           , vhd_uri : Optional Text
           , write_accelerator_enabled : Optional Bool
           }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { availability_set_id = None Text
@@ -205,5 +212,12 @@
             , version : Optional Text
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

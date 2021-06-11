@@ -1,6 +1,5 @@
 { Type =
     { id : Optional Text
-    , location : Optional Text
     , message_retention : Natural
     , name : Text
     , namespace_name : Text
@@ -24,10 +23,16 @@
                     }
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { id = None Text
-  , location = None Text
   , partition_ids = None (List Text)
   , capture_description =
       None
@@ -46,5 +51,12 @@
                   }
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

@@ -16,6 +16,13 @@
           , time_in_minutes : Optional Natural
           , webhook_url : Optional Text
           }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     , weekly_recurrence :
         Optional (List { time : Text, week_days : Optional (List Text) })
     }
@@ -25,6 +32,13 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , daily_recurrence = None (List { time : Text })
   , hourly_recurrence = None (List { minute : Natural })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   , weekly_recurrence =
       None (List { time : Text, week_days : Optional (List Text) })
   }

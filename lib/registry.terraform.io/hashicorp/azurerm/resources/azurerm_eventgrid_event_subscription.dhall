@@ -29,6 +29,13 @@
               , subject_ends_with : Optional Text
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     , webhook_endpoint : Optional (List { url : Text })
     }
 , default =
@@ -55,6 +62,13 @@
             , subject_ends_with : Optional Text
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   , webhook_endpoint = None (List { url : Text })
   }
 }

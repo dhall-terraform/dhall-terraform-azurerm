@@ -13,6 +13,13 @@
     , vlan_id : Natural
     , microsoft_peering_config :
         Optional (List { advertised_public_prefixes : List Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { azure_asn = None Natural
@@ -23,5 +30,12 @@
   , shared_key = None Text
   , microsoft_peering_config =
       None (List { advertised_public_prefixes : List Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

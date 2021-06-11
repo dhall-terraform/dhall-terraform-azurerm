@@ -10,6 +10,13 @@
     , storage_account_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , key_vault_reference : Optional (List { id : Text, url : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { account_endpoint = None Text
@@ -20,5 +27,12 @@
   , storage_account_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , key_vault_reference = None (List { id : Text, url : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

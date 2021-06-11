@@ -11,6 +11,13 @@
     , secondary_connection_string : Optional Text
     , secondary_key : Optional Text
     , service_connect : Optional Bool
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { device_connect = None Bool
@@ -22,5 +29,12 @@
   , secondary_connection_string = None Text
   , secondary_key = None Text
   , service_connect = None Bool
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

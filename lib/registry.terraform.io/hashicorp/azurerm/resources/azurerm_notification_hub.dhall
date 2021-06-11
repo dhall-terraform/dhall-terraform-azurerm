@@ -15,6 +15,13 @@
               }
           )
     , gcm_credential : Optional (List { api_key : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { id = None Text
@@ -29,5 +36,12 @@
             }
         )
   , gcm_credential = None (List { api_key : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

@@ -25,6 +25,13 @@
           )
     , subscription_key_parameter_names :
         Optional (List { header : Text, query : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { description = None Text
@@ -46,5 +53,12 @@
         )
   , subscription_key_parameter_names =
       None (List { header : Text, query : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

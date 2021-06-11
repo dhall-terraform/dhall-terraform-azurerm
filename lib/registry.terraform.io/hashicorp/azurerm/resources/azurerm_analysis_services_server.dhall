@@ -12,6 +12,13 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , ipv4_firewall_rule :
         Optional (List { name : Text, range_end : Text, range_start : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { admin_users = None (List Text)
@@ -23,5 +30,12 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , ipv4_firewall_rule =
       None (List { name : Text, range_end : Text, range_start : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

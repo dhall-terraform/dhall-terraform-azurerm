@@ -11,6 +11,13 @@
     , resource_group_name : Text
     , role : Text
     , type : Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { app_id = None Text
@@ -18,5 +25,12 @@
   , fully_qualified_name = None Text
   , id = None Text
   , name = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

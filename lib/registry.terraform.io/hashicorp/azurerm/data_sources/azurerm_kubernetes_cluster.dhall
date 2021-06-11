@@ -18,7 +18,6 @@
           ( List
               { availability_zones : List Text
               , count : Natural
-              , dns_prefix : Text
               , enable_auto_scaling : Bool
               , enable_node_public_ip : Bool
               , max_count : Natural
@@ -118,7 +117,6 @@
         ( List
             { availability_zones : List Text
             , count : Natural
-            , dns_prefix : Text
             , enable_auto_scaling : Bool
             , enable_node_public_ip : Bool
             , max_count : Natural

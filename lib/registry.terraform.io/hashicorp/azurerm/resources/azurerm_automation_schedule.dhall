@@ -1,6 +1,5 @@
 { Type =
-    { account_name : Optional Text
-    , automation_account_name : Optional Text
+    { automation_account_name : Text
     , description : Optional Text
     , expiry_time : Optional Text
     , frequency : Text
@@ -13,11 +12,16 @@
     , timezone : Optional Text
     , week_days : Optional (List Text)
     , monthly_occurrence : Optional (List { day : Text, occurrence : Natural })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
-  { account_name = None Text
-  , automation_account_name = None Text
-  , description = None Text
+  { description = None Text
   , expiry_time = None Text
   , id = None Text
   , interval = None Natural
@@ -26,5 +30,12 @@
   , timezone = None Text
   , week_days = None (List Text)
   , monthly_occurrence = None (List { day : Text, occurrence : Natural })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

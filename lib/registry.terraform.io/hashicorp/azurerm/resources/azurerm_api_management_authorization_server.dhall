@@ -18,6 +18,13 @@
     , resource_owner_username : Optional Text
     , support_state : Optional Bool
     , token_endpoint : Optional Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     , token_body_parameter : Optional (List { name : Text, value : Text })
     }
 , default =
@@ -31,6 +38,13 @@
   , resource_owner_username = None Text
   , support_state = None Bool
   , token_endpoint = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   , token_body_parameter = None (List { name : Text, value : Text })
   }
 }

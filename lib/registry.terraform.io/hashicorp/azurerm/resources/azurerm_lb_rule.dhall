@@ -11,11 +11,17 @@
     , idle_timeout_in_minutes : Optional Natural
     , load_distribution : Optional Text
     , loadbalancer_id : Text
-    , location : Optional Text
     , name : Text
     , probe_id : Optional Text
     , protocol : Text
     , resource_group_name : Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { backend_address_pool_id = None Text
@@ -26,7 +32,13 @@
   , id = None Text
   , idle_timeout_in_minutes = None Natural
   , load_distribution = None Text
-  , location = None Text
   , probe_id = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

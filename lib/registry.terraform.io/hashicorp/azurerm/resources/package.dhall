@@ -61,6 +61,7 @@
 , azurerm_app_service_custom_hostname_binding =
     ./azurerm_app_service_custom_hostname_binding.dhall
 , azurerm_app_service = ./azurerm_app_service.dhall
+, azurerm_app_service_environment = ./azurerm_app_service_environment.dhall
 , azurerm_app_service_plan = ./azurerm_app_service_plan.dhall
 , azurerm_app_service_slot = ./azurerm_app_service_slot.dhall
 , azurerm_app_service_source_control_token =
@@ -84,12 +85,7 @@
 , azurerm_automation_variable_int = ./azurerm_automation_variable_int.dhall
 , azurerm_automation_variable_string =
     ./azurerm_automation_variable_string.dhall
-, azurerm_autoscale_setting = ./azurerm_autoscale_setting.dhall
 , azurerm_availability_set = ./azurerm_availability_set.dhall
-, azurerm_azuread_application = ./azurerm_azuread_application.dhall
-, azurerm_azuread_service_principal = ./azurerm_azuread_service_principal.dhall
-, azurerm_azuread_service_principal_password =
-    ./azurerm_azuread_service_principal_password.dhall
 , azurerm_backup_container_storage_account =
     ./azurerm_backup_container_storage_account.dhall
 , azurerm_backup_policy_file_share = ./azurerm_backup_policy_file_share.dhall
@@ -111,12 +107,10 @@
 , azurerm_cdn_endpoint = ./azurerm_cdn_endpoint.dhall
 , azurerm_cdn_profile = ./azurerm_cdn_profile.dhall
 , azurerm_cognitive_account = ./azurerm_cognitive_account.dhall
-, azurerm_connection_monitor = ./azurerm_connection_monitor.dhall
 , azurerm_container_group = ./azurerm_container_group.dhall
 , azurerm_container_registry = ./azurerm_container_registry.dhall
 , azurerm_container_registry_webhook =
     ./azurerm_container_registry_webhook.dhall
-, azurerm_container_service = ./azurerm_container_service.dhall
 , azurerm_cosmosdb_account = ./azurerm_cosmosdb_account.dhall
 , azurerm_cosmosdb_cassandra_keyspace =
     ./azurerm_cosmosdb_cassandra_keyspace.dhall
@@ -157,7 +151,6 @@
 , azurerm_data_lake_store_file = ./azurerm_data_lake_store_file.dhall
 , azurerm_data_lake_store_firewall_rule =
     ./azurerm_data_lake_store_firewall_rule.dhall
-, azurerm_ddos_protection_plan = ./azurerm_ddos_protection_plan.dhall
 , azurerm_dedicated_host = ./azurerm_dedicated_host.dhall
 , azurerm_dedicated_host_group = ./azurerm_dedicated_host_group.dhall
 , azurerm_devspace_controller = ./azurerm_devspace_controller.dhall
@@ -198,6 +191,7 @@
 , azurerm_express_route_circuit = ./azurerm_express_route_circuit.dhall
 , azurerm_express_route_circuit_peering =
     ./azurerm_express_route_circuit_peering.dhall
+, azurerm_express_route_gateway = ./azurerm_express_route_gateway.dhall
 , azurerm_firewall_application_rule_collection =
     ./azurerm_firewall_application_rule_collection.dhall
 , azurerm_firewall = ./azurerm_firewall.dhall
@@ -220,8 +214,6 @@
 , azurerm_hdinsight_storm_cluster = ./azurerm_hdinsight_storm_cluster.dhall
 , azurerm_healthcare_service = ./azurerm_healthcare_service.dhall
 , azurerm_image = ./azurerm_image.dhall
-, azurerm_iot_dps_certificate = ./azurerm_iot_dps_certificate.dhall
-, azurerm_iot_dps = ./azurerm_iot_dps.dhall
 , azurerm_iothub_consumer_group = ./azurerm_iothub_consumer_group.dhall
 , azurerm_iothub = ./azurerm_iothub.dhall
 , azurerm_iothub_dps_certificate = ./azurerm_iothub_dps_certificate.dhall
@@ -259,13 +251,14 @@
 , azurerm_lb_outbound_rule = ./azurerm_lb_outbound_rule.dhall
 , azurerm_lb_probe = ./azurerm_lb_probe.dhall
 , azurerm_lb_rule = ./azurerm_lb_rule.dhall
+, azurerm_linux_virtual_machine = ./azurerm_linux_virtual_machine.dhall
+, azurerm_linux_virtual_machine_scale_set =
+    ./azurerm_linux_virtual_machine_scale_set.dhall
 , azurerm_local_network_gateway = ./azurerm_local_network_gateway.dhall
 , azurerm_log_analytics_linked_service =
     ./azurerm_log_analytics_linked_service.dhall
 , azurerm_log_analytics_solution = ./azurerm_log_analytics_solution.dhall
 , azurerm_log_analytics_workspace = ./azurerm_log_analytics_workspace.dhall
-, azurerm_log_analytics_workspace_linked_service =
-    ./azurerm_log_analytics_workspace_linked_service.dhall
 , azurerm_logic_app_action_custom = ./azurerm_logic_app_action_custom.dhall
 , azurerm_logic_app_action_http = ./azurerm_logic_app_action_http.dhall
 , azurerm_logic_app_trigger_custom = ./azurerm_logic_app_trigger_custom.dhall
@@ -286,7 +279,6 @@
     ./azurerm_mariadb_virtual_network_rule.dhall
 , azurerm_marketplace_agreement = ./azurerm_marketplace_agreement.dhall
 , azurerm_media_services_account = ./azurerm_media_services_account.dhall
-, azurerm_metric_alertrule = ./azurerm_metric_alertrule.dhall
 , azurerm_monitor_action_group = ./azurerm_monitor_action_group.dhall
 , azurerm_monitor_activity_log_alert =
     ./azurerm_monitor_activity_log_alert.dhall
@@ -295,7 +287,6 @@
     ./azurerm_monitor_diagnostic_setting.dhall
 , azurerm_monitor_log_profile = ./azurerm_monitor_log_profile.dhall
 , azurerm_monitor_metric_alert = ./azurerm_monitor_metric_alert.dhall
-, azurerm_monitor_metric_alertrule = ./azurerm_monitor_metric_alertrule.dhall
 , azurerm_mssql_database_vulnerability_assessment_rule_baseline =
     ./azurerm_mssql_database_vulnerability_assessment_rule_baseline.dhall
 , azurerm_mssql_elasticpool = ./azurerm_mssql_elasticpool.dhall
@@ -327,6 +318,8 @@
 , azurerm_network_interface = ./azurerm_network_interface.dhall
 , azurerm_network_interface_nat_rule_association =
     ./azurerm_network_interface_nat_rule_association.dhall
+, azurerm_network_interface_security_group_association =
+    ./azurerm_network_interface_security_group_association.dhall
 , azurerm_network_packet_capture = ./azurerm_network_packet_capture.dhall
 , azurerm_network_profile = ./azurerm_network_profile.dhall
 , azurerm_network_security_group = ./azurerm_network_security_group.dhall
@@ -359,24 +352,10 @@
 , azurerm_private_dns_zone_virtual_network_link =
     ./azurerm_private_dns_zone_virtual_network_link.dhall
 , azurerm_private_endpoint = ./azurerm_private_endpoint.dhall
-, azurerm_private_link_endpoint = ./azurerm_private_link_endpoint.dhall
 , azurerm_private_link_service = ./azurerm_private_link_service.dhall
 , azurerm_proximity_placement_group = ./azurerm_proximity_placement_group.dhall
 , azurerm_public_ip = ./azurerm_public_ip.dhall
 , azurerm_public_ip_prefix = ./azurerm_public_ip_prefix.dhall
-, azurerm_recovery_network_mapping = ./azurerm_recovery_network_mapping.dhall
-, azurerm_recovery_replicated_vm = ./azurerm_recovery_replicated_vm.dhall
-, azurerm_recovery_services_fabric = ./azurerm_recovery_services_fabric.dhall
-, azurerm_recovery_services_protected_vm =
-    ./azurerm_recovery_services_protected_vm.dhall
-, azurerm_recovery_services_protection_container =
-    ./azurerm_recovery_services_protection_container.dhall
-, azurerm_recovery_services_protection_container_mapping =
-    ./azurerm_recovery_services_protection_container_mapping.dhall
-, azurerm_recovery_services_protection_policy_vm =
-    ./azurerm_recovery_services_protection_policy_vm.dhall
-, azurerm_recovery_services_replication_policy =
-    ./azurerm_recovery_services_replication_policy.dhall
 , azurerm_recovery_services_vault = ./azurerm_recovery_services_vault.dhall
 , azurerm_redis_cache = ./azurerm_redis_cache.dhall
 , azurerm_redis_firewall_rule = ./azurerm_redis_firewall_rule.dhall
@@ -387,8 +366,6 @@
 , azurerm_role_definition = ./azurerm_role_definition.dhall
 , azurerm_route = ./azurerm_route.dhall
 , azurerm_route_table = ./azurerm_route_table.dhall
-, azurerm_scheduler_job_collection = ./azurerm_scheduler_job_collection.dhall
-, azurerm_scheduler_job = ./azurerm_scheduler_job.dhall
 , azurerm_search_service = ./azurerm_search_service.dhall
 , azurerm_security_center_contact = ./azurerm_security_center_contact.dhall
 , azurerm_security_center_subscription_pricing =
@@ -431,6 +408,8 @@
 , azurerm_sql_firewall_rule = ./azurerm_sql_firewall_rule.dhall
 , azurerm_sql_server = ./azurerm_sql_server.dhall
 , azurerm_sql_virtual_network_rule = ./azurerm_sql_virtual_network_rule.dhall
+, azurerm_storage_account_customer_managed_key =
+    ./azurerm_storage_account_customer_managed_key.dhall
 , azurerm_storage_account = ./azurerm_storage_account.dhall
 , azurerm_storage_account_network_rules =
     ./azurerm_storage_account_network_rules.dhall
@@ -482,6 +461,8 @@
 , azurerm_virtual_machine = ./azurerm_virtual_machine.dhall
 , azurerm_virtual_machine_extension = ./azurerm_virtual_machine_extension.dhall
 , azurerm_virtual_machine_scale_set = ./azurerm_virtual_machine_scale_set.dhall
+, azurerm_virtual_machine_scale_set_extension =
+    ./azurerm_virtual_machine_scale_set_extension.dhall
 , azurerm_virtual_network = ./azurerm_virtual_network.dhall
 , azurerm_virtual_network_gateway_connection =
     ./azurerm_virtual_network_gateway_connection.dhall
@@ -492,4 +473,7 @@
 , azurerm_vpn_server_configuration = ./azurerm_vpn_server_configuration.dhall
 , azurerm_web_application_firewall_policy =
     ./azurerm_web_application_firewall_policy.dhall
+, azurerm_windows_virtual_machine = ./azurerm_windows_virtual_machine.dhall
+, azurerm_windows_virtual_machine_scale_set =
+    ./azurerm_windows_virtual_machine_scale_set.dhall
 }

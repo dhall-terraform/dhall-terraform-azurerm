@@ -3,7 +3,6 @@
     , enforce_private_link_endpoint_network_policies : Optional Bool
     , enforce_private_link_service_network_policies : Optional Bool
     , id : Optional Text
-    , ip_configurations : Optional (List Text)
     , name : Text
     , network_security_group_id : Optional Text
     , resource_group_name : Text
@@ -17,7 +16,6 @@
   , enforce_private_link_endpoint_network_policies = None Bool
   , enforce_private_link_service_network_policies = None Bool
   , id = None Text
-  , ip_configurations = None (List Text)
   , network_security_group_id = None Text
   , route_table_id = None Text
   , service_endpoints = None (List Text)

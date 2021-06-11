@@ -11,15 +11,14 @@
     , reserved : Optional Bool
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
-    , properties :
-        Optional
-          ( List
-              { app_service_environment_id : Optional Text
-              , per_site_scaling : Optional Bool
-              , reserved : Optional Bool
-              }
-          )
     , sku : List { capacity : Optional Natural, size : Text, tier : Text }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { app_service_environment_id = None Text
@@ -31,13 +30,12 @@
   , per_site_scaling = None Bool
   , reserved = None Bool
   , tags = None (List { mapKey : Text, mapValue : Text })
-  , properties =
+  , timeouts =
       None
-        ( List
-            { app_service_environment_id : Optional Text
-            , per_site_scaling : Optional Bool
-            , reserved : Optional Bool
-            }
-        )
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

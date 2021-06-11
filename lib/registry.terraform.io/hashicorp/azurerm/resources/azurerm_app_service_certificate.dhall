@@ -14,6 +14,13 @@
     , subject_name : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , thumbprint : Optional Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { expiration_date = None Text
@@ -28,5 +35,12 @@
   , subject_name = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , thumbprint = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

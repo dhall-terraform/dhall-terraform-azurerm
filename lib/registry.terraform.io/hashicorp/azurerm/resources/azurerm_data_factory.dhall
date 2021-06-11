@@ -22,6 +22,13 @@
               , type : Text
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     , vsts_configuration :
         Optional
           ( List
@@ -55,6 +62,13 @@
             , type : Text
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   , vsts_configuration =
       None
         ( List

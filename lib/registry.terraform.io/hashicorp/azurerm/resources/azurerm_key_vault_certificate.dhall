@@ -1,12 +1,11 @@
 { Type =
     { certificate_data : Optional Text
     , id : Optional Text
-    , key_vault_id : Optional Text
+    , key_vault_id : Text
     , name : Text
     , secret_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , thumbprint : Optional Text
-    , vault_uri : Optional Text
     , version : Optional Text
     , certificate :
         Optional (List { contents : Text, password : Optional Text })
@@ -50,16 +49,23 @@
                     }
                 )
           }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          }
     }
 , default =
   { certificate_data = None Text
   , id = None Text
-  , key_vault_id = None Text
   , secret_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , thumbprint = None Text
-  , vault_uri = None Text
   , version = None Text
   , certificate = None (List { contents : Text, password : Optional Text })
+  , timeouts =
+      None
+        { create : Optional Text, delete : Optional Text, read : Optional Text }
   }
 }

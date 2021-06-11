@@ -40,6 +40,13 @@
               , rdb_storage_connection_string : Optional Text
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { enable_non_ssl_port = None Bool
@@ -76,5 +83,12 @@
             , rdb_storage_connection_string : Optional Text
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

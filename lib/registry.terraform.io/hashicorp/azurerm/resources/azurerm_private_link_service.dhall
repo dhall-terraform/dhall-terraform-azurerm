@@ -6,7 +6,6 @@
     , load_balancer_frontend_ip_configuration_ids : List Text
     , location : Text
     , name : Text
-    , network_interface_ids : Optional (List Text)
     , resource_group_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , visibility_subscription_ids : Optional (List Text)
@@ -18,14 +17,27 @@
           , private_ip_address_version : Optional Text
           , subnet_id : Text
           }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { alias = None Text
   , auto_approval_subscription_ids = None (List Text)
   , enable_proxy_protocol = None Bool
   , id = None Text
-  , network_interface_ids = None (List Text)
   , tags = None (List { mapKey : Text, mapValue : Text })
   , visibility_subscription_ids = None (List Text)
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

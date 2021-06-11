@@ -67,6 +67,13 @@
     , sms_receiver :
         Optional
           (List { country_code : Text, name : Text, phone_number : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     , voice_receiver :
         Optional
           (List { country_code : Text, name : Text, phone_number : Text })
@@ -143,6 +150,13 @@
         )
   , sms_receiver =
       None (List { country_code : Text, name : Text, phone_number : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   , voice_receiver =
       None (List { country_code : Text, name : Text, phone_number : Text })
   , webhook_receiver =

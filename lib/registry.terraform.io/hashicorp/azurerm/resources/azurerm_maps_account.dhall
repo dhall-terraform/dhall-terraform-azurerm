@@ -7,6 +7,13 @@
     , sku_name : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , x_ms_client_id : Optional Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { id = None Text
@@ -14,5 +21,12 @@
   , secondary_access_key = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , x_ms_client_id = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

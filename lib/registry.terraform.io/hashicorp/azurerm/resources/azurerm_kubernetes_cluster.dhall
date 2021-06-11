@@ -60,45 +60,22 @@
                     )
               }
           )
-    , agent_pool_profile :
-        Optional
-          ( List
-              { availability_zones : Optional (List Text)
-              , count : Optional Natural
-              , dns_prefix : Optional Text
-              , enable_auto_scaling : Optional Bool
-              , enable_node_public_ip : Optional Bool
-              , fqdn : Optional Text
-              , max_count : Optional Natural
-              , max_pods : Optional Natural
-              , min_count : Optional Natural
-              , name : Text
-              , node_taints : Optional (List Text)
-              , os_disk_size_gb : Optional Natural
-              , os_type : Optional Text
-              , type : Optional Text
-              , vm_size : Text
-              , vnet_subnet_id : Optional Text
-              }
-          )
     , default_node_pool :
-        Optional
-          ( List
-              { availability_zones : Optional (List Text)
-              , enable_auto_scaling : Optional Bool
-              , enable_node_public_ip : Optional Bool
-              , max_count : Optional Natural
-              , max_pods : Optional Natural
-              , min_count : Optional Natural
-              , name : Text
-              , node_count : Optional Natural
-              , node_taints : Optional (List Text)
-              , os_disk_size_gb : Optional Natural
-              , type : Optional Text
-              , vm_size : Text
-              , vnet_subnet_id : Optional Text
-              }
-          )
+        List
+          { availability_zones : Optional (List Text)
+          , enable_auto_scaling : Optional Bool
+          , enable_node_public_ip : Optional Bool
+          , max_count : Optional Natural
+          , max_pods : Optional Natural
+          , min_count : Optional Natural
+          , name : Text
+          , node_count : Optional Natural
+          , node_taints : Optional (List Text)
+          , os_disk_size_gb : Optional Natural
+          , type : Optional Text
+          , vm_size : Text
+          , vnet_subnet_id : Optional Text
+          }
     , identity :
         Optional
           ( List
@@ -147,6 +124,13 @@
               }
           )
     , service_principal : List { client_id : Text, client_secret : Text }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     , windows_profile :
         Optional
           (List { admin_password : Optional Text, admin_username : Text })
@@ -208,45 +192,6 @@
                   )
             }
         )
-  , agent_pool_profile =
-      None
-        ( List
-            { availability_zones : Optional (List Text)
-            , count : Optional Natural
-            , dns_prefix : Optional Text
-            , enable_auto_scaling : Optional Bool
-            , enable_node_public_ip : Optional Bool
-            , fqdn : Optional Text
-            , max_count : Optional Natural
-            , max_pods : Optional Natural
-            , min_count : Optional Natural
-            , name : Text
-            , node_taints : Optional (List Text)
-            , os_disk_size_gb : Optional Natural
-            , os_type : Optional Text
-            , type : Optional Text
-            , vm_size : Text
-            , vnet_subnet_id : Optional Text
-            }
-        )
-  , default_node_pool =
-      None
-        ( List
-            { availability_zones : Optional (List Text)
-            , enable_auto_scaling : Optional Bool
-            , enable_node_public_ip : Optional Bool
-            , max_count : Optional Natural
-            , max_pods : Optional Natural
-            , min_count : Optional Natural
-            , name : Text
-            , node_count : Optional Natural
-            , node_taints : Optional (List Text)
-            , os_disk_size_gb : Optional Natural
-            , type : Optional Text
-            , vm_size : Text
-            , vnet_subnet_id : Optional Text
-            }
-        )
   , identity =
       None
         ( List
@@ -293,6 +238,13 @@
                   )
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   , windows_profile =
       None (List { admin_password : Optional Text, admin_username : Text })
   }

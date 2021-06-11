@@ -19,6 +19,7 @@
     , source_database_deletion_date : Optional Text
     , source_database_id : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , zone_redundant : Optional Bool
     , import :
         Optional
           ( List
@@ -44,6 +45,13 @@
               , use_server_default : Optional Text
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { collation = None Text
@@ -62,6 +70,7 @@
   , source_database_deletion_date = None Text
   , source_database_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , zone_redundant = None Bool
   , import =
       None
         ( List
@@ -87,5 +96,12 @@
             , use_server_default : Optional Text
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

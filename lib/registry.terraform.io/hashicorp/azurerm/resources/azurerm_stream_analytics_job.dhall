@@ -13,6 +13,13 @@
     , streaming_units : Natural
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , transformation_query : Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { compatibility_level = None Text
@@ -24,5 +31,12 @@
   , job_id = None Text
   , output_error_policy = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

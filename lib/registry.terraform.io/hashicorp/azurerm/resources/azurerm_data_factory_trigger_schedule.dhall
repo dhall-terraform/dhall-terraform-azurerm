@@ -10,6 +10,13 @@
     , pipeline_parameters : Optional (List { mapKey : Text, mapValue : Text })
     , resource_group_name : Text
     , start_time : Optional Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { annotations = None (List Text)
@@ -19,5 +26,12 @@
   , interval = None Natural
   , pipeline_parameters = None (List { mapKey : Text, mapValue : Text })
   , start_time = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

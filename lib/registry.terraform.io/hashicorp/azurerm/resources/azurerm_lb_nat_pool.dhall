@@ -6,14 +6,26 @@
     , frontend_port_start : Natural
     , id : Optional Text
     , loadbalancer_id : Text
-    , location : Optional Text
     , name : Text
     , protocol : Text
     , resource_group_name : Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { frontend_ip_configuration_id = None Text
   , id = None Text
-  , location = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

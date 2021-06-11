@@ -25,6 +25,13 @@
               , max_age_in_seconds : Optional Natural
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { cosmosdb_throughput = None Natural
@@ -49,5 +56,12 @@
             , max_age_in_seconds : Optional Natural
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

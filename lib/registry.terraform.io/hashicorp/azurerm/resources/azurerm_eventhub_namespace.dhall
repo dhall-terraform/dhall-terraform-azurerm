@@ -6,7 +6,6 @@
     , default_secondary_connection_string : Optional Text
     , default_secondary_key : Optional Text
     , id : Optional Text
-    , kafka_enabled : Optional Bool
     , location : Text
     , maximum_throughput_units : Optional Natural
     , name : Text
@@ -25,6 +24,13 @@
     , resource_group_name : Text
     , sku : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { auto_inflate_enabled = None Bool
@@ -34,7 +40,6 @@
   , default_secondary_connection_string = None Text
   , default_secondary_key = None Text
   , id = None Text
-  , kafka_enabled = None Bool
   , maximum_throughput_units = None Natural
   , network_rulesets =
       None
@@ -49,5 +54,12 @@
             }
         )
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

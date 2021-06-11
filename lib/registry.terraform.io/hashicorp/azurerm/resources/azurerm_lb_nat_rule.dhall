@@ -9,10 +9,16 @@
     , id : Optional Text
     , idle_timeout_in_minutes : Optional Natural
     , loadbalancer_id : Text
-    , location : Optional Text
     , name : Text
     , protocol : Text
     , resource_group_name : Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { backend_ip_configuration_id = None Text
@@ -21,6 +27,12 @@
   , frontend_ip_configuration_id = None Text
   , id = None Text
   , idle_timeout_in_minutes = None Natural
-  , location = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

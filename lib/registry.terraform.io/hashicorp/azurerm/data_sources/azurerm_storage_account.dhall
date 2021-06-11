@@ -1,12 +1,9 @@
 { Type =
     { access_tier : Optional Text
-    , account_encryption_source : Optional Text
     , account_kind : Optional Text
     , account_replication_type : Optional Text
     , account_tier : Optional Text
     , custom_domain : Optional (List { name : Text })
-    , enable_blob_encryption : Optional Bool
-    , enable_file_encryption : Optional Bool
     , enable_https_traffic_only : Optional Bool
     , id : Optional Text
     , is_hns_enabled : Optional Bool
@@ -50,13 +47,10 @@
     }
 , default =
   { access_tier = None Text
-  , account_encryption_source = None Text
   , account_kind = None Text
   , account_replication_type = None Text
   , account_tier = None Text
   , custom_domain = None (List { name : Text })
-  , enable_blob_encryption = None Bool
-  , enable_file_encryption = None Bool
   , enable_https_traffic_only = None Bool
   , id = None Text
   , is_hns_enabled = None Bool

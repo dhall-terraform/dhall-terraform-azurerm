@@ -67,7 +67,14 @@
               , source : Text
               }
           )
-    , sku : List { capacity : Natural, name : Text, tier : Optional Text }
+    , sku : List { capacity : Natural, name : Text }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { event_hub_events_endpoint = None Text
@@ -134,5 +141,12 @@
             , source : Text
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

@@ -12,6 +12,13 @@
     , secondary_connection_string : Optional Text
     , secondary_key : Optional Text
     , service_config : Optional Bool
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { enrollment_read = None Bool
@@ -24,5 +31,12 @@
   , secondary_connection_string = None Text
   , secondary_key = None Text
   , service_config = None Bool
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

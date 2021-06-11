@@ -2,7 +2,6 @@
     { eventhub_name : Text
     , id : Optional Text
     , listen : Optional Bool
-    , location : Optional Text
     , manage : Optional Bool
     , name : Text
     , namespace_name : Text
@@ -12,16 +11,29 @@
     , secondary_connection_string : Optional Text
     , secondary_key : Optional Text
     , send : Optional Bool
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { id = None Text
   , listen = None Bool
-  , location = None Text
   , manage = None Bool
   , primary_connection_string = None Text
   , primary_key = None Text
   , secondary_connection_string = None Text
   , secondary_key = None Text
   , send = None Bool
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

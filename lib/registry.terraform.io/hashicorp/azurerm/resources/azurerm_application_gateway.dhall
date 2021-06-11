@@ -1,6 +1,5 @@
 { Type =
-    { disabled_ssl_protocols : Optional (List Text)
-    , enable_http2 : Optional Bool
+    { enable_http2 : Optional Bool
     , id : Optional Text
     , location : Text
     , name : Text
@@ -14,10 +13,8 @@
           (List { max_capacity : Optional Natural, min_capacity : Natural })
     , backend_address_pool :
         List
-          { fqdn_list : Optional (List Text)
-          , fqdns : Optional (List Text)
+          { fqdns : Optional (List Text)
           , id : Optional Text
-          , ip_address_list : Optional (List Text)
           , ip_addresses : Optional (List Text)
           , name : Text
           }
@@ -188,6 +185,13 @@
               , policy_type : Optional Text
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     , trusted_root_certificate :
         Optional (List { data : Text, id : Optional Text, name : Text })
     , url_path_map :
@@ -248,8 +252,7 @@
           )
     }
 , default =
-  { disabled_ssl_protocols = None (List Text)
-  , enable_http2 = None Bool
+  { enable_http2 = None Bool
   , id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zones = None (List Text)
@@ -350,6 +353,13 @@
             , policy_type : Optional Text
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   , trusted_root_certificate =
       None (List { data : Text, id : Optional Text, name : Text })
   , url_path_map =

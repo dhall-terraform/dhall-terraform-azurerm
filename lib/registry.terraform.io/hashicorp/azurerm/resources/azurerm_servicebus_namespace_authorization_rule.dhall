@@ -10,6 +10,13 @@
     , secondary_connection_string : Optional Text
     , secondary_key : Optional Text
     , send : Optional Bool
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { id = None Text
@@ -20,5 +27,12 @@
   , secondary_connection_string = None Text
   , secondary_key = None Text
   , send = None Bool
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

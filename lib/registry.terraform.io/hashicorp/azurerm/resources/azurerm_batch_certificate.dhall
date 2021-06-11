@@ -9,11 +9,25 @@
     , resource_group_name : Text
     , thumbprint : Text
     , thumbprint_algorithm : Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { id = None Text
   , name = None Text
   , password = None Text
   , public_data = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

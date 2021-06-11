@@ -19,6 +19,13 @@
           ( List
               { first : Text, last : Optional Text, scope : Optional Natural }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { endpoint_location = None Text
@@ -35,5 +42,12 @@
   , subnet =
       None
         (List { first : Text, last : Optional Text, scope : Optional Natural })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

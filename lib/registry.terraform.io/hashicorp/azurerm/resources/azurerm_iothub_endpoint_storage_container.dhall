@@ -9,6 +9,13 @@
     , max_chunk_size_in_bytes : Optional Natural
     , name : Text
     , resource_group_name : Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { batch_frequency_in_seconds = None Natural
@@ -16,5 +23,12 @@
   , file_name_format = None Text
   , id = None Text
   , max_chunk_size_in_bytes = None Natural
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

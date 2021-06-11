@@ -25,6 +25,13 @@
                   List { days : Optional Natural, enabled : Bool }
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { eventhub_authorization_rule_id = None Text
@@ -51,5 +58,12 @@
                 List { days : Optional Natural, enabled : Bool }
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

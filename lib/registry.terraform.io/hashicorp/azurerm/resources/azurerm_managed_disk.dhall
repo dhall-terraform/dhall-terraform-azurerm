@@ -26,6 +26,13 @@
                   Optional (List { key_url : Text, source_vault_id : Text })
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { disk_encryption_set_id = None Text
@@ -50,5 +57,12 @@
                 Optional (List { key_url : Text, source_vault_id : Text })
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

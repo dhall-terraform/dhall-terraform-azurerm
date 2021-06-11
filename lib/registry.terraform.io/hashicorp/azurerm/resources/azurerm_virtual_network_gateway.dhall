@@ -26,6 +26,13 @@
           , public_ip_address_id : Optional Text
           , subnet_id : Text
           }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     , vpn_client_configuration :
         Optional
           ( List
@@ -56,6 +63,13 @@
             , peering_address : Optional Text
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   , vpn_client_configuration =
       None
         ( List

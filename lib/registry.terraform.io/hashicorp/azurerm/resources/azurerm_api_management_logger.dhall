@@ -7,6 +7,13 @@
     , resource_group_name : Text
     , application_insights : Optional (List { instrumentation_key : Text })
     , eventhub : Optional (List { connection_string : Text, name : Text })
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { buffered = None Bool
@@ -14,5 +21,12 @@
   , id = None Text
   , application_insights = None (List { instrumentation_key : Text })
   , eventhub = None (List { connection_string : Text, name : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

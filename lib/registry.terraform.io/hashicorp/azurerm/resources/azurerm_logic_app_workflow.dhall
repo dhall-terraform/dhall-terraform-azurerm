@@ -8,6 +8,13 @@
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , workflow_schema : Optional Text
     , workflow_version : Optional Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { access_endpoint = None Text
@@ -16,5 +23,12 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , workflow_schema = None Text
   , workflow_version = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

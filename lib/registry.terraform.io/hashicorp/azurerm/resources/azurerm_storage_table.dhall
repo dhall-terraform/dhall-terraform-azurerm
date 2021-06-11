@@ -1,7 +1,6 @@
 { Type =
     { id : Optional Text
     , name : Text
-    , resource_group_name : Optional Text
     , storage_account_name : Text
     , acl :
         Optional
@@ -12,10 +11,16 @@
                     (List { expiry : Text, permissions : Text, start : Text })
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { id = None Text
-  , resource_group_name = None Text
   , acl =
       None
         ( List
@@ -25,5 +30,12 @@
                   (List { expiry : Text, permissions : Text, start : Text })
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

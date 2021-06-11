@@ -15,6 +15,13 @@
     , cors : Optional (List { allowed_origins : List Text })
     , features : Optional (List { flag : Text, value : Text })
     , sku : List { capacity : Natural, name : Text }
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { hostname = None Text
@@ -29,5 +36,12 @@
   , tags = None (List { mapKey : Text, mapValue : Text })
   , cors = None (List { allowed_origins : List Text })
   , features = None (List { flag : Text, value : Text })
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

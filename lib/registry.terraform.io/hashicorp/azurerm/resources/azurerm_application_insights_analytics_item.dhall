@@ -9,6 +9,13 @@
     , time_modified : Optional Text
     , type : Text
     , version : Optional Text
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     }
 , default =
   { function_alias = None Text
@@ -16,5 +23,12 @@
   , time_created = None Text
   , time_modified = None Text
   , version = None Text
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   }
 }

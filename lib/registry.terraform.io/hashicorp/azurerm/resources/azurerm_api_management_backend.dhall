@@ -34,6 +34,13 @@
                     (List { issuer_certificate_thumbprint : Text, name : Text })
               }
           )
+    , timeouts :
+        Optional
+          { create : Optional Text
+          , delete : Optional Text
+          , read : Optional Text
+          , update : Optional Text
+          }
     , tls :
         Optional
           ( List
@@ -72,6 +79,13 @@
                   (List { issuer_certificate_thumbprint : Text, name : Text })
             }
         )
+  , timeouts =
+      None
+        { create : Optional Text
+        , delete : Optional Text
+        , read : Optional Text
+        , update : Optional Text
+        }
   , tls =
       None
         ( List
