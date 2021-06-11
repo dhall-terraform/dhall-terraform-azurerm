@@ -14,7 +14,8 @@
     , network_interface :
         Optional
           ( List
-              { source_network_interface_id : Text
+              { recovery_public_ip_address_id : Text
+              , source_network_interface_id : Text
               , target_static_ip : Text
               , target_subnet_name : Text
               }
@@ -53,7 +54,8 @@
   , network_interface =
       None
         ( List
-            { source_network_interface_id : Text
+            { recovery_public_ip_address_id : Text
+            , source_network_interface_id : Text
             , target_static_ip : Text
             , target_subnet_name : Text
             }

@@ -12,6 +12,7 @@
     , not_before_date : Optional Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , version : Optional Text
+    , versionless_id : Optional Text
     , x : Optional Text
     , y : Optional Text
     , timeouts :
@@ -32,6 +33,7 @@
   , not_before_date = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , version = None Text
+  , versionless_id = None Text
   , x = None Text
   , y = None Text
   , timeouts =

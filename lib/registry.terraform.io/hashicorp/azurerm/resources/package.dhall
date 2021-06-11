@@ -59,6 +59,8 @@
 , azurerm_application_insights_api_key =
     ./azurerm_application_insights_api_key.dhall
 , azurerm_application_insights = ./azurerm_application_insights.dhall
+, azurerm_application_insights_smart_detection_rule =
+    ./azurerm_application_insights_smart_detection_rule.dhall
 , azurerm_application_insights_web_test =
     ./azurerm_application_insights_web_test.dhall
 , azurerm_application_security_group =
@@ -175,6 +177,10 @@
 , azurerm_data_factory_dataset_sql_server_table =
     ./azurerm_data_factory_dataset_sql_server_table.dhall
 , azurerm_data_factory = ./azurerm_data_factory.dhall
+, azurerm_data_factory_integration_runtime_azure =
+    ./azurerm_data_factory_integration_runtime_azure.dhall
+, azurerm_data_factory_integration_runtime_azure_ssis =
+    ./azurerm_data_factory_integration_runtime_azure_ssis.dhall
 , azurerm_data_factory_integration_runtime_managed =
     ./azurerm_data_factory_integration_runtime_managed.dhall
 , azurerm_data_factory_integration_runtime_self_hosted =
@@ -342,6 +348,7 @@
 , azurerm_iothub_route = ./azurerm_iothub_route.dhall
 , azurerm_iothub_shared_access_policy =
     ./azurerm_iothub_shared_access_policy.dhall
+, azurerm_iot_security_device_group = ./azurerm_iot_security_device_group.dhall
 , azurerm_iot_security_solution = ./azurerm_iot_security_solution.dhall
 , azurerm_iot_time_series_insights_access_policy =
     ./azurerm_iot_time_series_insights_access_policy.dhall
@@ -375,6 +382,8 @@
 , azurerm_kusto_database_principal = ./azurerm_kusto_database_principal.dhall
 , azurerm_kusto_eventhub_data_connection =
     ./azurerm_kusto_eventhub_data_connection.dhall
+, azurerm_lb_backend_address_pool_address =
+    ./azurerm_lb_backend_address_pool_address.dhall
 , azurerm_lb_backend_address_pool = ./azurerm_lb_backend_address_pool.dhall
 , azurerm_lb = ./azurerm_lb.dhall
 , azurerm_lb_nat_pool = ./azurerm_lb_nat_pool.dhall

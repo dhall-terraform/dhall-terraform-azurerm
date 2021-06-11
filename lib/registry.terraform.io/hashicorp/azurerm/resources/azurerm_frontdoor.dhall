@@ -1,14 +1,21 @@
 { Type =
-    { backend_pools_send_receive_timeout_seconds : Optional Natural
+    { backend_pool_health_probes :
+        Optional (List { mapKey : Text, mapValue : Text })
+    , backend_pool_load_balancing_settings :
+        Optional (List { mapKey : Text, mapValue : Text })
+    , backend_pools : Optional (List { mapKey : Text, mapValue : Text })
+    , backend_pools_send_receive_timeout_seconds : Optional Natural
     , cname : Optional Text
     , enforce_backend_pools_certificate_name_check : Bool
     , friendly_name : Optional Text
+    , frontend_endpoints : Optional (List { mapKey : Text, mapValue : Text })
     , header_frontdoor_id : Optional Text
     , id : Optional Text
     , load_balancer_enabled : Optional Bool
     , location : Optional Text
     , name : Text
     , resource_group_name : Text
+    , routing_rules : Optional (List { mapKey : Text, mapValue : Text })
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , backend_pool :
         List
@@ -107,13 +114,19 @@
           }
     }
 , default =
-  { backend_pools_send_receive_timeout_seconds = None Natural
+  { backend_pool_health_probes = None (List { mapKey : Text, mapValue : Text })
+  , backend_pool_load_balancing_settings =
+      None (List { mapKey : Text, mapValue : Text })
+  , backend_pools = None (List { mapKey : Text, mapValue : Text })
+  , backend_pools_send_receive_timeout_seconds = None Natural
   , cname = None Text
   , friendly_name = None Text
+  , frontend_endpoints = None (List { mapKey : Text, mapValue : Text })
   , header_frontdoor_id = None Text
   , id = None Text
   , load_balancer_enabled = None Bool
   , location = None Text
+  , routing_rules = None (List { mapKey : Text, mapValue : Text })
   , tags = None (List { mapKey : Text, mapValue : Text })
   , timeouts =
       None

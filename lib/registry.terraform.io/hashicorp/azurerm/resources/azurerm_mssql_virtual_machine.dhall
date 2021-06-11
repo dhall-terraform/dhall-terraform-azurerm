@@ -8,6 +8,26 @@
     , sql_license_type : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , virtual_machine_id : Text
+    , auto_backup :
+        Optional
+          ( List
+              { encryption_enabled : Optional Bool
+              , encryption_password : Optional Text
+              , retention_period_in_days : Natural
+              , storage_account_access_key : Text
+              , storage_blob_endpoint : Text
+              , system_databases_backup_enabled : Optional Bool
+              , manual_schedule :
+                  Optional
+                    ( List
+                        { full_backup_frequency : Text
+                        , full_backup_start_hour : Natural
+                        , full_backup_window_in_hours : Natural
+                        , log_backup_frequency_in_minutes : Natural
+                        }
+                    )
+              }
+          )
     , auto_patching :
         Optional
           ( List
@@ -57,6 +77,26 @@
   , sql_connectivity_update_password = None Text
   , sql_connectivity_update_username = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
+  , auto_backup =
+      None
+        ( List
+            { encryption_enabled : Optional Bool
+            , encryption_password : Optional Text
+            , retention_period_in_days : Natural
+            , storage_account_access_key : Text
+            , storage_blob_endpoint : Text
+            , system_databases_backup_enabled : Optional Bool
+            , manual_schedule :
+                Optional
+                  ( List
+                      { full_backup_frequency : Text
+                      , full_backup_start_hour : Natural
+                      , full_backup_window_in_hours : Natural
+                      , log_backup_frequency_in_minutes : Natural
+                      }
+                  )
+            }
+        )
   , auto_patching =
       None
         ( List

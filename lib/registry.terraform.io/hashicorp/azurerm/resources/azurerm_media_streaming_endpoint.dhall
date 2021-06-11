@@ -5,6 +5,7 @@
     , cdn_provider : Optional Text
     , custom_host_names : Optional (List Text)
     , description : Optional Text
+    , host_name : Optional Text
     , id : Optional Text
     , location : Text
     , max_cache_age_seconds : Optional Natural
@@ -56,6 +57,7 @@
   , cdn_provider = None Text
   , custom_host_names = None (List Text)
   , description = None Text
+  , host_name = None Text
   , id = None Text
   , max_cache_age_seconds = None Natural
   , tags = None (List { mapKey : Text, mapValue : Text })

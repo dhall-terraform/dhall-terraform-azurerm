@@ -90,6 +90,8 @@
     ./azurerm_iothub_shared_access_policy.dhall
 , azurerm_ip_group = ./azurerm_ip_group.dhall
 , azurerm_key_vault_access_policy = ./azurerm_key_vault_access_policy.dhall
+, azurerm_key_vault_certificate_data =
+    ./azurerm_key_vault_certificate_data.dhall
 , azurerm_key_vault_certificate = ./azurerm_key_vault_certificate.dhall
 , azurerm_key_vault_certificate_issuer =
     ./azurerm_key_vault_certificate_issuer.dhall

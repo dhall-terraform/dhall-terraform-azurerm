@@ -42,6 +42,7 @@
     , name : Text
     , node_resource_group : Optional Text
     , private_cluster_enabled : Optional Bool
+    , private_dns_zone_id : Optional Text
     , private_fqdn : Optional Text
     , private_link_enabled : Optional Bool
     , resource_group_name : Text
@@ -107,6 +108,7 @@
           , node_count : Optional Natural
           , node_labels : Optional (List { mapKey : Text, mapValue : Text })
           , node_taints : Optional (List Text)
+          , only_critical_addons_enabled : Optional Bool
           , orchestrator_version : Optional Text
           , os_disk_size_gb : Optional Natural
           , os_disk_type : Optional Text
@@ -224,6 +226,7 @@
   , kubernetes_version = None Text
   , node_resource_group = None Text
   , private_cluster_enabled = None Bool
+  , private_dns_zone_id = None Text
   , private_fqdn = None Text
   , private_link_enabled = None Bool
   , sku_tier = None Text
