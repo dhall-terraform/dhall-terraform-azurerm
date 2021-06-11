@@ -3,6 +3,7 @@
     , display_name : Optional Text
     , id : Optional Text
     , max_tasks_per_node : Optional Natural
+    , metadata : Optional (List { mapKey : Text, mapValue : Text })
     , name : Text
     , node_agent_sku_id : Text
     , resource_group_name : Text
@@ -85,6 +86,7 @@
   { display_name = None Text
   , id = None Text
   , max_tasks_per_node = None Natural
+  , metadata = None (List { mapKey : Text, mapValue : Text })
   , stop_pending_resize_operation = None Bool
   , auto_scale =
       None (List { evaluation_interval : Optional Text, formula : Text })

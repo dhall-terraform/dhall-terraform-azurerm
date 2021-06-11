@@ -31,15 +31,21 @@
 , azurerm_cosmosdb_account = ./azurerm_cosmosdb_account.dhall
 , azurerm_data_factory = ./azurerm_data_factory.dhall
 , azurerm_data_lake_store = ./azurerm_data_lake_store.dhall
+, azurerm_dedicated_host_group = ./azurerm_dedicated_host_group.dhall
 , azurerm_dev_test_lab = ./azurerm_dev_test_lab.dhall
 , azurerm_dev_test_virtual_network = ./azurerm_dev_test_virtual_network.dhall
+, azurerm_disk_encryption_set = ./azurerm_disk_encryption_set.dhall
 , azurerm_dns_zone = ./azurerm_dns_zone.dhall
+, azurerm_eventgrid_topic = ./azurerm_eventgrid_topic.dhall
 , azurerm_eventhub_namespace = ./azurerm_eventhub_namespace.dhall
 , azurerm_express_route_circuit = ./azurerm_express_route_circuit.dhall
 , azurerm_firewall = ./azurerm_firewall.dhall
 , azurerm_hdinsight_cluster = ./azurerm_hdinsight_cluster.dhall
 , azurerm_healthcare_service = ./azurerm_healthcare_service.dhall
 , azurerm_image = ./azurerm_image.dhall
+, azurerm_iothub_dps = ./azurerm_iothub_dps.dhall
+, azurerm_iothub_shared_access_policy =
+    ./azurerm_iothub_shared_access_policy.dhall
 , azurerm_key_vault_access_policy = ./azurerm_key_vault_access_policy.dhall
 , azurerm_key_vault = ./azurerm_key_vault.dhall
 , azurerm_key_vault_key = ./azurerm_key_vault_key.dhall
@@ -109,6 +115,7 @@
     ./azurerm_storage_account_blob_container_sas.dhall
 , azurerm_storage_account = ./azurerm_storage_account.dhall
 , azurerm_storage_account_sas = ./azurerm_storage_account_sas.dhall
+, azurerm_storage_container = ./azurerm_storage_container.dhall
 , azurerm_storage_management_policy = ./azurerm_storage_management_policy.dhall
 , azurerm_stream_analytics_job = ./azurerm_stream_analytics_job.dhall
 , azurerm_subnet = ./azurerm_subnet.dhall

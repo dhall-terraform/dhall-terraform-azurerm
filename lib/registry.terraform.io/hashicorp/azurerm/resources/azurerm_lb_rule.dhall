@@ -3,6 +3,7 @@
     , backend_port : Natural
     , disable_outbound_snat : Optional Bool
     , enable_floating_ip : Optional Bool
+    , enable_tcp_reset : Optional Bool
     , frontend_ip_configuration_id : Optional Text
     , frontend_ip_configuration_name : Text
     , frontend_port : Natural
@@ -20,6 +21,7 @@
   { backend_address_pool_id = None Text
   , disable_outbound_snat = None Bool
   , enable_floating_ip = None Bool
+  , enable_tcp_reset = None Bool
   , frontend_ip_configuration_id = None Text
   , id = None Text
   , idle_timeout_in_minutes = None Natural

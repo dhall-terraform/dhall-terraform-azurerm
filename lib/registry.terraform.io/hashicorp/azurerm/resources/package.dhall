@@ -21,8 +21,14 @@
 , azurerm_api_management_group_user = ./azurerm_api_management_group_user.dhall
 , azurerm_api_management_identity_provider_aad =
     ./azurerm_api_management_identity_provider_aad.dhall
+, azurerm_api_management_identity_provider_facebook =
+    ./azurerm_api_management_identity_provider_facebook.dhall
 , azurerm_api_management_identity_provider_google =
     ./azurerm_api_management_identity_provider_google.dhall
+, azurerm_api_management_identity_provider_microsoft =
+    ./azurerm_api_management_identity_provider_microsoft.dhall
+, azurerm_api_management_identity_provider_twitter =
+    ./azurerm_api_management_identity_provider_twitter.dhall
 , azurerm_api_management_logger = ./azurerm_api_management_logger.dhall
 , azurerm_api_management_openid_connect_provider =
     ./azurerm_api_management_openid_connect_provider.dhall
@@ -115,6 +121,7 @@
 , azurerm_cosmosdb_cassandra_keyspace =
     ./azurerm_cosmosdb_cassandra_keyspace.dhall
 , azurerm_cosmosdb_gremlin_database = ./azurerm_cosmosdb_gremlin_database.dhall
+, azurerm_cosmosdb_gremlin_graph = ./azurerm_cosmosdb_gremlin_graph.dhall
 , azurerm_cosmosdb_mongo_collection = ./azurerm_cosmosdb_mongo_collection.dhall
 , azurerm_cosmosdb_mongo_database = ./azurerm_cosmosdb_mongo_database.dhall
 , azurerm_cosmosdb_sql_container = ./azurerm_cosmosdb_sql_container.dhall
@@ -151,6 +158,7 @@
 , azurerm_data_lake_store_firewall_rule =
     ./azurerm_data_lake_store_firewall_rule.dhall
 , azurerm_ddos_protection_plan = ./azurerm_ddos_protection_plan.dhall
+, azurerm_dedicated_host_group = ./azurerm_dedicated_host_group.dhall
 , azurerm_devspace_controller = ./azurerm_devspace_controller.dhall
 , azurerm_dev_test_lab = ./azurerm_dev_test_lab.dhall
 , azurerm_dev_test_linux_virtual_machine =
@@ -160,6 +168,7 @@
 , azurerm_dev_test_virtual_network = ./azurerm_dev_test_virtual_network.dhall
 , azurerm_dev_test_windows_virtual_machine =
     ./azurerm_dev_test_windows_virtual_machine.dhall
+, azurerm_disk_encryption_set = ./azurerm_disk_encryption_set.dhall
 , azurerm_dns_aaaa_record = ./azurerm_dns_aaaa_record.dhall
 , azurerm_dns_a_record = ./azurerm_dns_a_record.dhall
 , azurerm_dns_caa_record = ./azurerm_dns_caa_record.dhall

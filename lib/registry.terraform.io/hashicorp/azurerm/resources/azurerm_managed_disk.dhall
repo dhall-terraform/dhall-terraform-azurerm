@@ -1,5 +1,6 @@
 { Type =
     { create_option : Text
+    , disk_encryption_set_id : Optional Text
     , disk_iops_read_write : Optional Natural
     , disk_mbps_read_write : Optional Natural
     , disk_size_gb : Optional Natural
@@ -11,6 +12,7 @@
     , resource_group_name : Text
     , source_resource_id : Optional Text
     , source_uri : Optional Text
+    , storage_account_id : Optional Text
     , storage_account_type : Text
     , tags : Optional (List { mapKey : Text, mapValue : Text })
     , zones : Optional (List Text)
@@ -26,7 +28,8 @@
           )
     }
 , default =
-  { disk_iops_read_write = None Natural
+  { disk_encryption_set_id = None Text
+  , disk_iops_read_write = None Natural
   , disk_mbps_read_write = None Natural
   , disk_size_gb = None Natural
   , id = None Text
@@ -34,6 +37,7 @@
   , os_type = None Text
   , source_resource_id = None Text
   , source_uri = None Text
+  , storage_account_id = None Text
   , tags = None (List { mapKey : Text, mapValue : Text })
   , zones = None (List Text)
   , encryption_settings =

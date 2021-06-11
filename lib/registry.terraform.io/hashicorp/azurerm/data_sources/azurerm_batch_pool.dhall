@@ -25,6 +25,7 @@
           )
     , id : Optional Text
     , max_tasks_per_node : Optional Natural
+    , metadata : Optional (List { mapKey : Text, mapValue : Text })
     , name : Text
     , node_agent_sku_id : Optional Text
     , resource_group_name : Text
@@ -100,6 +101,7 @@
         )
   , id = None Text
   , max_tasks_per_node = None Natural
+  , metadata = None (List { mapKey : Text, mapValue : Text })
   , node_agent_sku_id = None Text
   , storage_image_reference =
       None

@@ -65,7 +65,7 @@
               , source : Text
               }
           )
-    , sku : List { capacity : Natural, name : Text, tier : Text }
+    , sku : List { capacity : Natural, name : Text, tier : Optional Text }
     }
 , default =
   { event_hub_events_endpoint = None Text

@@ -18,7 +18,7 @@
               , location : Text
               }
           )
-    , sku : List { capacity : Natural, name : Text, tier : Text }
+    , sku : List { capacity : Natural, name : Text, tier : Optional Text }
     }
 , default =
   { allocation_policy = None Text
